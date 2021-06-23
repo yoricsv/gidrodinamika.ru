@@ -1,0 +1,2766 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201511 will be lost/reset.
+# Last config file used to build this data file was /home/gidrodin/tmp/awstats/awstats.gidrodinamika.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2013                
+POS_TIME 2697                
+POS_VISITOR 78363               
+POS_DAY 105647              
+POS_DOMAIN 3666                
+POS_LOGIN 4504                
+POS_ROBOT 4659                
+POS_WORMS 5300                
+POS_EMAILSENDER 5431                
+POS_EMAILRECEIVER 5574                
+POS_SESSION 106554              
+POS_SIDER 106766              
+POS_FILETYPES 5709                
+POS_DOWNLOADS 5880                
+POS_OS 23812               
+POS_BROWSER 24252               
+POS_SCREENSIZE 27285               
+POS_UNKNOWNREFERER 27359               
+POS_UNKNOWNREFERERBROWSER 29210               
+POS_ORIGIN 30155               
+POS_SEREFERRALS 30306               
+POS_PAGEREFS 30547               
+POS_SEARCHWORDS 35330               
+POS_KEYWORDS 40151               
+POS_MISC 2359                
+POS_ERRORS 42106               
+POS_CLUSTER 4360                
+POS_SIDER_404 42208               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20151201000150 745 150967 8807160231471
+FirstTime 20151101000411
+LastTime 20151130233849
+LastUpdate 20151201022240 745 0 744 0 0
+TotalVisits 1029                
+TotalUnique 663                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 717                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 491 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 40 42 20015473 171 344 8724557
+1 215 215 1656377 343 497 9882213
+2 22 22 138996 271 406 6229711
+3 107 171 11208781 157 296 6847589
+4 50 51 20043016 237 365 25614844
+5 65 65 529279 219 364 7597204
+6 125 127 20329745 215 378 26552164
+7 63 68 40241437 197 335 25650546
+8 117 121 20883228 228 380 5859449
+9 274 297 201203145 321 498 26382513
+10 309 327 265869198 257 456 10650072
+11 180 196 384615489 223 412 9168364
+12 225 233 141922846 278 485 8195742
+13 491 507 226135349 207 394 6250889
+14 259 277 306323340 198 379 7551415
+15 331 350 295540654 271 438 5478551
+16 288 302 412913578 165 346 7670142
+17 169 177 531100967 209 351 5018292
+18 80 86 126562767 182 292 4066314
+19 63 65 536331 262 409 4530041
+20 127 134 178334132 170 299 5332973
+21 63 68 60643988 243 409 25235873
+22 38 40 350620 173 300 6895162
+23 69 73 79851405 171 341 6330887
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 43
+ru 1585 1795 1956121648
+by 581 594 143252112
+ua 569 579 219040441
+kr 277 277 2294599
+us 131 134 40420577
+tr 123 123 7030226
+no 88 89 19996202
+jp 74 74 327443
+cn 55 55 216774
+de 50 50 316073
+cz 43 43 145687
+gb 40 40 138454
+lt 31 31 112176
+ca 19 19 106182
+fr 16 16 625532
+kz 16 16 49651
+zz 11 11 43663
+pl 10 10 40718
+hu 8 8 32822
+nl 6 8 39450461
+lv 4 4 16293
+uz 4 4 10016
+bg 3 3 10826
+ro 2 7 735934
+in 2 2 4942
+il 1 1 8289
+rs 1 1 2537
+es 1 1 2537
+kg 1 1 2537
+mx 1 1 2537
+az 2 2 5074
+lb 2 2 11619
+hk 1 1 2537
+ie 2 2 5074
+md 1 1 8289
+tw 1 1 2537
+tm 1 1 2537
+am 1 1 2537
+eu 2 2 4942
+ee 1 1 2537
+it 1 1 2537
+za 1 1 2537
+lu 1 1 2537
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 13
+bot[\s_+:,\.\;\/\\-] 3595 154174917 20151130235710 1571
+googlebot 879 73114230 20151130224847 62
+robot 423 25134041 20151130234623 54
+spider 112 7647778 20151130170903 2
+slurp 110 114429 20151130171849 35
+unknown 45 840 20151130172734 45
+no_user_agent 29 221235 20151129222614 0
+crawl 26 106432 20151127110606 3
+curl 24 198936 20151129104526 0
+[\s_+:,\.\;\/\\-]bot 10 21522 20151117052634 2
+discovery 4 33156 20151109153713 0
+checker 2 0 20151120122354 0
+google[_+\s]web[_+\s]preview 1 2537 20151108210217 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+php 2137 19394711 0 0
+html 1413 7286364 0 0
+pdf 240 2402083245 0 0
+doc 4 54043 0 0
+Unknown 220 1794820 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 387
+/files/gidrodinamika_cat_2014.pdf 79 13315 2471141527
+/catalog/gor/14-012/gdm14-012-har.pdf 20 2 2670066
+/catalog/gor/8-03/gdm8-03-har.pdf 19 2 2301960
+/catalog/gor/5-09/gdm5-09-obv.pdf 18 0 2363886
+/catalog/gor/21-03/gdm21-03-obv.pdf 16 0 1795792
+/catalog/vert/14-01/gdmp14-01-gab.pdf 14 0 1332772
+/catalog/vert/9/gdmp-obv.pdf 14 0 411586
+/catalog/gor/15-091/gdm15-091-har.pdf 14 0 2045442
+/catalog/gor/10-02/gdm10-02-har.pdf 13 0 1593449
+/catalog/vert/13/gdmp-obv.pdf 13 0 382187
+/catalog/gor/21-0312/gdm21-0312-har.pdf 13 0 1900236
+/catalog/gor/5-07(old)/gdm5-07-obv.pdf 11 0 1663387
+/catalog/gor/5-02(old)/gdm5-02-obv.pdf 11 0 1671043
+/catalog/gor/5-13/gdm5-13-obv.pdf 10 0 1179240
+/catalog/gor/15-01/gdm15-01-obv.pdf 10 0 1308020
+/catalog/gor/2-07(old)/gdm2-07-gab.pdf 9 0 1364670
+/catalog/vert/6-01/gdmp6-01-har.pdf 9 0 1188891
+/catalog/gor/9-06/gdm9-06-obv.pdf 9 0 967896
+/catalog/gor/8-051/gdm8-051-har.pdf 9 2 1283980
+/catalog/gor/21-0312/gdm21-0312-obv.pdf 9 0 1020141
+/catalog/gor/19/gdm19-obv.pdf 9 0 1132425
+/catalog/gor/8-04/gdm8-04-obv.pdf 9 0 1356462
+/catalog/gor/21-01/gdm21-01-har.pdf 9 0 1216890
+/catalog/vert/7-03/gdmp7-03-gab.pdf 9 0 983997
+/catalog/vert/8-01/gdmp8-01-har.pdf 8 0 981488
+/catalog/gor/14-08/gdm14-08-obv.pdf 8 0 982080
+/catalog/vert/21-06/gdmp21-06-har.pdf 8 0 963024
+/catalog/gor/54/gdm54-obv.pdf 7 0 929103
+/catalog/gor/27/gdm27-gab.pdf 7 0 1055670
+/catalog/gor/21-06/gdm21-06-har.pdf 7 0 1032787
+/catalog/gor/2-03(old)/gdm2-03-har.pdf 7 0 725200
+/catalog/gor/14-02/gdm14-02-har.pdf 7 0 941304
+/catalog/gor/10-042/gdm10-042-obv.pdf 7 0 1212890
+/catalog/gor/5-03(old)/gdm5-03-obv.pdf 7 0 891569
+/catalog/gor/2-07(old)/gdm2-07-obv.pdf 7 0 798378
+/catalog/gor/21-06/gdm21-06-obv.pdf 7 0 700385
+/catalog/gor/3(old)/gdm3-obv.pdf 7 0 1108464
+/catalog/gor/5-03(old)/gdm5-03-gab.pdf 7 0 1235934
+/catalog/gor/9-043/gdm9-043-gab.pdf 6 0 1526172
+/catalog/gor/19-04/gdm19-04-gab.pdf 6 0 1090122
+/catalog/vert/5/gdmp5-har.pdf 6 0 781320
+/catalog/gor/10-07/gdm10-07-obv.pdf 6 0 1084920
+/catalog/vert/8/gdmp8-gab.pdf 6 0 982674
+/catalog/gor/48/gdm48-gab.pdf 6 0 928080
+/catalog/gor/3(old)/gdm3-har.pdf 6 0 714066
+/catalog/gor/10-07/gdm10-07-har.pdf 6 0 818160
+/catalog/gor/10-04/gdm10-04-har.pdf 6 0 807036
+/catalog/gor/14-01/gdm14-01-gab.pdf 6 0 1108998
+/catalog/vert/2/gdmp2-gab.pdf 6 0 917316
+/catalog/vert/13/gdmp13-har.pdf 6 0 800994
+/catalog/gor/19-02/gdm19-02-gab.pdf 6 0 811278
+/catalog/vert/8-04/gdmp8-04-har.pdf 6 0 795966
+/catalog/gor/10-09/gdm10-09-har.pdf 6 0 744084
+/catalog/gor/21-034/gdm21-034-obv.pdf 6 2 1262247
+/catalog/gor/4-021/gdm4-021-har.pdf 6 0 634746
+/catalog/gor/5-02(old)/gdm5-02-har.pdf 6 0 775116
+/catalog/vert/8-01/gdmp-obv.pdf 5 0 146995
+/catalog/gor/4-082(old)/gdm4-082-obv.pdf 5 0 653550
+/catalog/vert/8-04/gdmp8-04-gab.pdf 5 0 655930
+/catalog/gor/48/gdm48-obv.pdf 5 0 756800
+/catalog/gor/9-04/gdm9-04-obv.pdf 5 0 756870
+/catalog/vert/14-05/gdmp14-05-har.pdf 5 0 651225
+/catalog/vert/8/gdmp-obv.pdf 5 0 146995
+/catalog/gor/14-012/gdm14-012-gab.pdf 5 0 1115520
+/catalog/vert/21-022/gdmp21-022-har.pdf 5 0 654200
+/catalog/vert/14-02/gdmp14-02-gab.pdf 5 0 680130
+/catalog/vert/15/gdmp15-har.pdf 5 0 619030
+/catalog/gor/%D0%941-01/gdmd1-01-gab.pdf 5 0 855410
+/catalog/gor/8-05/gdm8-05-obv.pdf 5 0 644150
+/catalog/vert/8-03/gdmp8-03-gab.pdf 5 0 777215
+/catalog/gor/9-041/gdm9-041-gab.pdf 5 0 1579235
+/catalog/gor/5-13/gdm5-13-har.pdf 5 0 1021670
+/catalog/gor/5-12/gdm5-12-obv.pdf 5 0 589845
+/catalog/gor/8-03/gdm8-03-obv.pdf 5 0 838135
+/catalog/gor/15-06/gdm15-06-har.pdf 5 0 676310
+/files/order.doc 5 0 61988
+/catalog/vert/51/gdmp51-har.pdf 5 0 594155
+/catalog/gor/19-020/gdm19-020-har.pdf 5 2 784370
+/catalog/gor/34/gdm34-har.pdf 5 0 678175
+/catalog/vert/7-06/gdmp7-06-har.pdf 5 0 628050
+/catalog/vert/7-09/gdmp7-09-har.pdf 5 0 630610
+/catalog/gor/14-08/gdm14-08-gab.pdf 5 0 921865
+/catalog/vert/21-06/gdmp-obv.pdf 4 0 117596
+/catalog/gor/70/gdm70-gab.pdf 4 0 620624
+/catalog/gor/15-06/gdm15-06-gab.pdf 4 0 892480
+/catalog/gor/12-01/gdm12-01-gab.pdf 4 0 714688
+/catalog/gor/4-01/gdm4-01-obv.pdf 4 0 453172
+/catalog/vert/21-04/gdmp-obv.pdf 4 0 117596
+/catalog/gor/54/gdm54-gab.pdf 4 0 838816
+/catalog/gor/5-09/gdm5-09-har.pdf 4 0 539372
+/catalog/vert/15/gdmp15-gab.pdf 4 0 472004
+/catalog/vert/14-02/gdmp-obv.pdf 4 0 117596
+/catalog/gor/21-01/gdm21-01-obv.pdf 4 0 517760
+/catalog/gor/21-031/gdm21-031-obv.pdf 4 0 541576
+/catalog/gor/12-02/gdm12-02-obv.pdf 4 2 734505
+/catalog/gor/64/gdm64-gab.pdf 4 0 1039544
+/catalog/gor/8-046/gdm8-046-har.pdf 4 0 555692
+/catalog/gor/5-12/gdm5-12-gab.pdf 4 0 1033036
+/catalog/gor/64/gdm64-har.pdf 4 0 536436
+/catalog/gor/19-02/gdm19-02-obv.pdf 4 0 425056
+/catalog/gor/54-01/gdm54-01-har.pdf 4 0 538340
+/catalog/gor/5(old)/gdm5-har.pdf 4 0 515968
+/catalog/vert/3/gdmp3-har.pdf 4 0 532332
+/catalog/gor/34/gdm34-obv.pdf 4 0 516204
+/catalog/gor/14-012/gdm14-012-obv.pdf 4 0 557168
+/catalog/gor/5-04(old)/gdm5-04-har.pdf 4 0 510304
+/catalog/gor/10-041/gdm10-041-har.pdf 4 0 513152
+/catalog/gor/5-03(old)/gdm5-03-har.pdf 4 0 508108
+/catalog/gor/4-011(old)/gdm4-011-gab.pdf 4 0 672692
+/catalog/gor/7/gdm7-gab.pdf 4 0 527428
+/catalog/vert/8-04/gdmp-obv.pdf 4 0 117596
+/catalog/gor/16-10/gdm16-10-har.pdf 4 0 554236
+/catalog/gor/19/gdm19-har.pdf 4 0 564724
+/catalog/vert/7/gdmp-obv.pdf 4 0 117596
+/catalog/vert/7-03/gdmp7-03-har.pdf 4 0 496080
+/catalog/gor/16-10/gdm16-10-gab.pdf 4 0 747544
+/catalog/gor/10-09/gdm10-09-obv.pdf 4 0 573624
+/catalog/gor/15-03/gdm15-03-gab.pdf 4 0 902136
+/catalog/gor/8-046/gdm8-046-gab.pdf 4 0 498712
+/catalog/gor/19-04/gdm19-04-har.pdf 4 0 5487576
+/catalog/gor/10-04/gdm10-04-obv.pdf 4 0 551232
+/catalog/gor/4-081(old)/gdm4-081-obv.pdf 4 0 524556
+/catalog/gor/5-01/gdm5-01-obv.pdf 4 0 466064
+/catalog/vert/21-021/gdmp21-021-gab.pdf 4 0 427552
+/catalog/gor/8-051/gdm8-051-gab.pdf 4 2 757910
+/catalog/vert/7-05/gdmp-obv.pdf 4 0 117596
+/catalog/gor/9-043/gdm9-043-har.pdf 4 0 1552440
+/catalog/vert/21-032/gdmp21-032-gab.pdf 4 0 583880
+/catalog/vert/6-01/gdmp6-01-gab.pdf 4 0 449308
+/catalog/gor/27/gdm27-obv.pdf 4 0 437272
+/catalog/gor/4-07(old)/gdm4-07-gab.pdf 4 0 632244
+/catalog/gor/21-04/gdm21-04-obv.pdf 4 0 659708
+/catalog/gor/70/gdm70-har.pdf 4 0 521184
+/catalog/gor/75/gdm75-obv.pdf 4 0 370028
+/catalog/gor/14-08/gdm14-08-har.pdf 4 0 618132
+/catalog/gor/8-051//gdm8-051-gab.pdf 4 0 606328
+/catalog/gor/19-04/gdm19-04-obv.pdf 4 0 460556
+/catalog/gor/9-06/gdm9-06-har.pdf 4 0 532984
+/catalog/gor/21-032/gdm21-032-har.pdf 4 0 720004
+/catalog/vert/21-021/gdmp21-021-har.pdf 4 0 523468
+/catalog/gor/21/gdm21-har.pdf 3 0 463719
+/catalog/gor/27/gdm27-har.pdf 3 0 354216
+/catalog/gor/19/gdm19-gab.pdf 3 0 385359
+/catalog/gor/13-07/gdm13-07-obv.pdf 3 0 318045
+/catalog/vert/21-022/gdmp21-022-gab.pdf 3 0 320706
+/catalog/gor/54-01/gdm54-01-gab.pdf 3 0 666000
+/catalog/gor/21-01//gdm21-01-har.pdf 3 6 676050
+/catalog/vert/14-01/gdmp14-01-har.pdf 3 0 378651
+/catalog/gor/7/gdm7-har.pdf 3 0 1171938
+/catalog/gor/5-10(old)/gdm5-10-gab.pdf 3 0 573741
+/catalog/vert/3/gdmp3-gab.pdf 3 0 327048
+/catalog/gor/4-081(old)/gdm4-081-har.pdf 3 0 376029
+/catalog/gor/21-032/gdm21-032-gab.pdf 3 0 390744
+/catalog/vert/21-022/gdmp-obv.pdf 3 0 88197
+/catalog/vert/51/gdmp-obv.pdf 3 0 88197
+/catalog/gor/5-10(old)/gdm5-10-obv.pdf 3 0 340890
+/catalog/vert/21-04/gdmp21-04-har.pdf 3 0 619491
+/catalog/gor/21/gdm21-obv.pdf 3 0 536034
+/catalog/gor/4-02(old)/gdm4-02-obv.pdf 3 0 347760
+/catalog/gor/4-07(old)/gdm4-07-har.pdf 3 0 370980
+/catalog/gor/4-07(old)/gdm4-07-obv.pdf 3 0 341973
+/catalog/vert/7-01/gdmp7-01-har.pdf 3 0 387489
+/catalog/gor/19-02/gdm19-02-har.pdf 3 0 366252
+/catalog/gor/5-09/gdm5-09-gab.pdf 3 0 362223
+/catalog/gor/14-01/gdm14-01-har.pdf 3 0 368028
+/catalog/gor/15-091/gdm15-091-obv.pdf 3 0 397941
+/catalog/gor/21-032/gdm21-032-obv.pdf 3 0 419370
+/catalog/gor/10-042/gdm10-042-har.pdf 3 0 371046
+/catalog/gor/13-07/gdm13-07-har.pdf 3 0 490848
+/catalog/vert/7-09/gdmp-obv.pdf 3 0 88197
+/catalog/gor/2-07(old)/gdm2-07-har.pdf 3 0 375867
+/catalog/gor/8-046/gdm8-046-obv.pdf 3 0 363360
+/catalog/gor/21-0312/gdm21-0312-gab.pdf 3 2 792564
+/catalog/gor/64/gdm64-obv.pdf 3 0 507768
+/catalog/gor/5-13/gdm5-13-gab.pdf 3 0 774429
+/catalog/vert/51/gdmp51-gab.pdf 3 0 451191
+/catalog/gor/12-02/gdm12-02-gab.pdf 3 2 619408
+/catalog/gor/4-02(old)/gdm4-02-gab.pdf 3 0 450513
+/catalog/gor/54/gdm54-har.pdf 3 0 365946
+/catalog/gor/5-011/gdm5-011-obv.pdf 3 0 291747
+/catalog/vert/21-02/gdmp21-02-har.pdf 3 0 394980
+/catalog/gor/5-04(old)/gdm5-04-gab.pdf 3 0 628572
+/catalog/vert/7-01/gdmp-obv.pdf 3 0 88197
+/catalog/gor/9-043/gdm9-043-obv.pdf 3 0 520704
+/catalog/gor/5-01/gdm5-01-gab.pdf 3 0 472062
+/catalog/gor/9-04/gdm9-04-har.pdf 3 0 398127
+/catalog/gor/4-011(old)/gdm4-011-har.pdf 3 0 341598
+/catalog/gor/75/gdm75-har.pdf 3 0 614256
+/catalog/gor/70/gdm70-obv.pdf 3 0 300984
+/catalog/gor/4-02(old)/gdm4-02-har.pdf 3 0 314499
+/catalog/gor/10-02/gdm10-02-obv.pdf 3 0 389028
+/catalog/vert/21-03/gdmp21-03-har.pdf 3 0 388203
+/catalog/gor/4-082(old)/gdm4-082-har.pdf 3 0 376029
+/catalog/gor/5-01/gdm5-01-har.pdf 3 0 984213
+/catalog/vert/21-02/gdmp21-02-gab.pdf 3 0 334275
+/catalog/gor/13-07/gdm13-07-gab.pdf 3 0 408219
+/catalog/vert/14-04/gdmp14-04-gab.pdf 3 0 400878
+/catalog/gor/8-10/gdm8-10-obv.pdf 3 0 326862
+/catalog/vert/14-04/gdmp14-04-har.pdf 3 0 355836
+/catalog/gor/2-03(old)/gdm2-03-obv.pdf 3 0 419103
+/catalog/gor/19-020/gdm19-020-obv.pdf 3 0 317073
+/catalog/gor/13-012/gdm13-012-har.pdf 3 0 416193
+/catalog/gor/12-02/gdm12-02-har.pdf 3 2 528152
+/catalog/gor/10-041/gdm10-041-gab.pdf 3 0 717516
+/catalog/gor/9-04/gdm9-04-gab.pdf 3 0 494943
+/catalog/gor/21-04/gdm21-04-gab.pdf 3 0 531717
+/catalog/vert/21-032/gdmp21-032-har.pdf 3 0 395733
+/catalog/gor/9-06/gdm9-06-gab.pdf 3 0 352296
+/catalog/gor/2-03(old)/gdm2-03-gab.pdf 3 0 455604
+/catalog/vert/7/gdmp7-har.pdf 3 0 375789
+/catalog/gor/8-051/gdm8-051-obv.pdf 3 0 386247
+/catalog/gor/5-04(old)/gdm5-04-obv.pdf 3 0 453561
+/catalog/vert/7-05/gdmp7-05-har.pdf 3 0 384000
+/catalog/vert/21-023/gdmp21-023-har.pdf 3 0 618339
+/catalog/gor/8-10/gdm8-10-har.pdf 3 0 422271
+/catalog/vert/21-023/gdmp21-023-gab.pdf 3 0 340248
+/catalog/gor/5-07(old)/gdm5-07-har.pdf 2 0 264722
+/catalog/vert/10/gdmp-obv.pdf 2 0 58798
+/catalog/vert/13/gdmp13-gab.pdf 2 0 211946
+/catalog/vert/21-032/gdmp-obv.pdf 2 0 58798
+/catalog/gor/21-031/gdm21-031-gab.pdf 2 0 247608
+/catalog/gor/8-04/gdm8-04-har.pdf 2 0 256508
+/catalog/gor/21-031/gdm21-031-har.pdf 2 0 272536
+/catalog/vert/21-021/gdmp-obv.pdf 2 0 58798
+/catalog/gor/12-01/gdm12-01-obv.pdf 2 0 234062
+/catalog/gor/8-05/gdm8-05-har.pdf 2 0 405920
+/catalog/vert/7-09/gdmp7-09-gab.pdf 2 0 244886
+/catalog/gor/5(old)/gdm5-obv.pdf 2 0 299446
+/catalog/gor/%D0%941-01/gdmd1-01-obv.pdf 2 0 241894
+/catalog/gor/8-051//gdm8-051-obv.pdf 2 0 257498
+/catalog/gor/8-03//gdm8-03-har.pdf 2 0 230196
+/catalog/gor/15-06/gdm15-06-obv.pdf 2 0 254038
+/catalog/vert/8-03/gdmp8-03-har.pdf 2 0 267250
+/catalog/vert/21-03//gdmp21-03-gab.pdf 2 0 204950
+/catalog/gor/9-041/gdm9-041-har.pdf 2 0 244850
+/catalog/vert/5/gdmp-obv.pdf 2 0 58798
+/catalog/vert/14-05/gdmp-obv.pdf 2 0 58798
+/catalog/gor/14-02/gdm14-02-gab.pdf 2 0 406644
+/catalog/gor/4-08(old)/gdm4-08-obv.pdf 2 0 277596
+/catalog/gor/21-01/gdm21-01-gab.pdf 2 0 471258
+/catalog/gor/7-01/gdm7-01-har.pdf 2 0 232474
+/catalog/gor/15-03/gdm15-03-obv.pdf 2 0 225532
+/catalog/gor/%D0%941-01/gdmd1-01-har.pdf 2 0 260030
+/catalog/vert/21-023/gdmp-obv.pdf 2 0 58798
+/catalog/gor/3(old)/gdm3-gab.pdf 2 0 429202
+/catalog/gor/4-081(old)/gdm4-081-gab.pdf 2 0 353870
+/catalog/vert/2/gdmp2-har.pdf 2 0 247724
+/catalog/gor/8-051//gdm8-051-har.pdf 2 0 256796
+/catalog/vert/14-05/gdmp14-05-gab.pdf 2 0 206570
+/catalog/vert/10/gdmp10-har.pdf 2 0 254886
+/catalog/gor/15-03/gdm15-03-har.pdf 2 0 308782
+/catalog/vert/14-04/gdmp-obv.pdf 2 0 58798
+/catalog/vert/14-02/gdmp14-02-har.pdf 2 0 400008
+/catalog/gor/21-01//gdm21-01-gab.pdf 2 2 706887
+/catalog/gor/10-02/gdm10-02-gab.pdf 2 0 290388
+/catalog/gor/70//gdm70-gab.pdf 2 2 465468
+/catalog/vert/7-04/gdmp7-04-har.pdf 2 0 245956
+/catalog/gor/4-08(old)/gdm4-08-gab.pdf 2 0 385058
+/catalog/gor/8-10/gdm8-10-gab.pdf 2 0 289492
+/catalog/gor/15-091/gdm15-091-gab.pdf 2 0 422012
+/catalog/vert/7-03/gdmp-obv.pdf 2 0 58798
+/catalog/gor/4-082(old)/gdm4-082-gab.pdf 2 0 376916
+/catalog/gor/8-03//gdm8-03-obv.pdf 2 0 335254
+/catalog/gor/5-02(old)/gdm5-02-gab.pdf 2 0 383862
+/catalog/vert/7/gdmp7-gab.pdf 2 0 215070
+/catalog/gor/13-012/gdm13-012-gab.pdf 2 0 288934
+/catalog/gor/5-07(old)/gdm5-07-gab.pdf 2 0 380000
+/catalog/gor/4-011(old)/gdm4-011-obv.pdf 2 0 258748
+/catalog/gor/21-0311/gdm21-0311-obv.pdf 2 2 337365
+/catalog/gor/4-01/gdm4-01-har.pdf 2 0 633826
+/catalog/vert/8/gdmp8-har.pdf 2 0 283576
+/catalog/gor/4-01/gdm4-01-gab.pdf 2 0 296966
+/catalog/gor/9-041/gdm9-041-obv.pdf 2 2 567336
+/catalog/vert/7-01/gdmp7-01-gab.pdf 2 0 214154
+/catalog/gor/21-0311/gdm21-0311-har.pdf 2 0 261070
+/catalog/gor/5-011/gdm5-011-har.pdf 2 0 658632
+/catalog/vert/7-06/gdmp7-06-gab.pdf 2 0 226748
+/catalog/gor/5-011/gdm5-011-gab.pdf 2 0 318978
+/catalog/gor/21-01//gdm21-01-obv.pdf 2 6 535374
+/catalog/vert/10/gdmp10-gab.pdf 2 0 212926
+/catalog/gor/5-10(old)/gdm5-10-har.pdf 2 0 659154
+/catalog/gor/15-01//gdm15-01-obv.pdf 2 0 261604
+/catalog/gor/16-10/gdm16-10-obv.pdf 2 0 265166
+/catalog/gor/8-046//gdm8-046-har.pdf 2 0 277846
+/catalog/gor/21-03/gdm21-03-har.pdf 2 0 288302
+/catalog/gor/21/gdm21-gab.pdf 2 0 370246
+/catalog/gor/52/gdm52-gab.pdf 1 0 235535
+/catalog/vert/7-05//gdmp-obv.pdf 1 0 29399
+/catalog/gor/7//gdm7-har.pdf 1 0 390646
+/catalog/vert/7-04/gdmp-obv.pdf 1 0 29399
+/catalog/gor/70//gdm70-obv.pdf 1 0 100328
+/catalog/gor/8-04//gdm8-04-obv.pdf 1 0 150718
+/catalog/gor/7-01//gdm7-01-obv.pdf 1 0 129741
+/catalog/gor/54-01//gdm54-01-obv.pdf 1 0 140664
+/catalog/vert/14-01/gdmp-obv.pdf 1 0 29399
+/catalog/gor/54-01//gdm54-01-har.pdf 1 0 134585
+/catalog/gor/9-041//gdm9-041-gab.pdf 1 0 315847
+/catalog/gor/21-034/gdm21-034-har.pdf 1 0 131786
+/catalog/gor/54-01/gdm54-01-obv.pdf 1 0 140664
+/catalog/gor/8-05//gdm8-05-har.pdf 1 0 202960
+/catalog/gor/10-042/gdm10-042-gab.pdf 1 0 196310
+/catalog/vert/9/gdmp9-gab.pdf 1 0 151466
+/catalog/gor/64//gdm64-gab.pdf 1 0 259886
+/catalog/gor/9-041//gdm9-041-obv.pdf 1 0 189112
+/catalog/gor/54//gdm54-har.pdf 1 0 121982
+/catalog/gor/7//gdm7-gab.pdf 1 0 131857
+/catalog/gor/8-03//gdm8-03-gab.pdf 1 0 198436
+/catalog/gor/8-10//gdm8-10-har.pdf 1 0 140757
+/catalog/gor/9-043//gdm9-043-obv.pdf 1 0 173568
+/catalog/vert/14-021/gdmp-obv.pdf 1 0 29399
+/catalog/vert/52/gdmp52-har.pdf 1 0 214998
+/catalog/gor/9-06//gdm9-06-gab.pdf 1 0 117432
+/catalog/gor/12-01/gdm12-01-har.pdf 1 0 125752
+/catalog/vert/7-05/gdmp7-05-gab.pdf 1 0 106544
+/catalog/gor/7-01/gdm7-01-gab.pdf 1 0 117015
+/catalog/vert/7-06/gdmp-obv.pdf 1 0 29399
+/catalog/gor/9-06//gdm9-06-obv.pdf 1 0 107544
+/catalog/vert/51//gdmp51-gab.pdf 1 0 150397
+/catalog/gor/75//gdm75-gab.pdf 1 0 125079
+/catalog/gor/21-034/gdm21-034-gab.pdf 1 0 244539
+/catalog/gor/8-04//gdm8-04-har.pdf 1 0 128254
+/catalog/gor/52//gdm52-obv.pdf 1 0 132653
+/catalog/gor/8-046//gdm8-046-obv.pdf 1 0 121120
+/catalog/gor/7-01//gdm7-01-har.pdf 1 0 116237
+/catalog/gor/5-12/gdm5-12-har.pdf 1 0 204454
+/catalog/gor/21-04/gdm21-04-har.pdf 1 0 145747
+/catalog/gor/5-11/gdm5-011-obv.pdf 1 0 117141
+/catalog/gor/54-01//gdm54-01-gab.pdf 1 0 222000
+/catalog/gor/8-04//gdm8-04-gab.pdf 1 0 141957
+/catalog/gor/9-04//gdm9-04-obv.pdf 1 0 151374
+/catalog/vert/8-03/gdmp-obv.pdf 1 0 29399
+/catalog/gor/%d0%941-02/gdmd1-02-har.pdf 1 0 133021
+/catalog/gor/9-043//gdm9-043-har.pdf 1 0 388110
+/catalog/gor/9-043//gdm9-043-gab.pdf 1 0 254362
+/catalog/vert/2/gdmp-obv.pdf 1 0 29399
+/catalog/gor/7//gdm7-obv.pdf 1 0 129297
+/catalog/gor/52//gdm52-gab.pdf 1 0 235535
+/catalog/gor/48/gdm48-har.pdf 1 0 136270
+/catalog/gor/8-046//gdm8-046-gab.pdf 1 0 124678
+/catalog/gor/34/gdm34-gab.pdf 1 0 154314
+/catalog/vert/21-03//gdmp-obv.pdf 1 0 29399
+/catalog/gor/15-01/gdm15-01-gab.pdf 1 0 210358
+/catalog/vert/21-06/gdmp21-06-gab.pdf 1 0 112430
+/catalog/gor/54//gdm54-gab.pdf 1 0 209704
+/catalog/gor/14-02/gdm14-02-obv.pdf 1 0 109218
+/catalog/gor/8-10//gdm8-10-gab.pdf 1 0 144746
+/catalog/gor/8-05/gdm8-05-gab.pdf 1 0 167345
+/catalog/gor/8-05//gdm8-05-gab.pdf 1 0 167345
+/catalog/gor/21-06/gdm21-06-gab.pdf 1 0 159596
+/catalog/vert/15/gdmp-obv.pdf 1 0 29399
+/catalog/gor/64//gdm64-obv.pdf 1 0 169256
+/catalog/gor/15-01/gdm15-01-har.pdf 1 0 134485
+/catalog/vert/21-02/gdmp-obv.pdf 1 0 29399
+/catalog/gor/%D0%941-02/gdmd1-02-gab.pdf 1 0 214168
+/catalog/gor/14-01//gdm14-01-har.pdf 1 0 122676
+/catalog/gor/9-04//gdm9-04-gab.pdf 1 0 164981
+/catalog/gor/8-10//gdm8-10-obv.pdf 1 0 108954
+/catalog/gor/7-01/gdm7-01-obv.pdf 1 0 129741
+/catalog/gor/70//gdm70-har.pdf 1 0 130296
+/catalog/gor/5-11/gdm5-011-gab.pdf 1 0 159489
+/catalog/gor/21-0311/gdm21-0311-gab.pdf 1 0 165606
+/catalog/gor/52//gdm52-har.pdf 1 0 132099
+/catalog/gor/%D0%941-02/gdmd1-02-har.pdf 1 0 133021
+/catalog/gor/52/gdm52-obv.pdf 1 0 132653
+/catalog/gor/9-04//gdm9-04-har.pdf 1 0 132709
+/catalog/gor/8-03/gdm8-03-gab.pdf 1 0 198436
+/catalog/vert/13//gdmp-obv.pdf 1 0 29399
+/catalog/gor/52/gdm52-har.pdf 1 0 132099
+/catalog/vert/21-04/gdmp21-04-gab.pdf 1 0 145736
+/catalog/gor/8-05//gdm8-05-obv.pdf 1 0 128830
+/catalog/gor/7/gdm7-obv.pdf 1 0 129297
+/catalog/gor/5-11/gdm5-011-har.pdf 1 0 329316
+/catalog/gor/10-04/gdm10-04-gab.pdf 1 0 168586
+/catalog/gor/75//gdm75-har.pdf 1 0 204752
+/catalog/gor/4-08(old)/gdm4-08-har.pdf 1 0 124378
+/catalog/vert/6-01/gdmp-obv.pdf 1 0 29399
+/catalog/vert/14-021/gdmp14-021-har.pdf 1 0 199748
+/catalog/gor/75//gdm75-obv.pdf 1 0 92507
+/catalog/gor/9-041//gdm9-041-har.pdf 1 0 122425
+/catalog/gor/10-07/gdm10-07-gab.pdf 1 0 229171
+/catalog/gor/54//gdm54-obv.pdf 1 0 132729
+/catalog/gor/9-06//gdm9-06-har.pdf 1 0 133246
+/catalog/vert/8-01/gdmp8-01-gab.pdf 1 0 113769
+/catalog/gor/7-01//gdm7-01-gab.pdf 1 0 117015
+/catalog/vert/9/gdmp9-har.pdf 1 0 133077
+/catalog/gor/64//gdm64-har.pdf 1 0 134109
+/catalog/gor/13-012/gdm13-012-obv.pdf 1 0 115974
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 28
+linuxandroid 66 45
+macosx6 1 1
+winlong 97 95
+winxp 3097 955
+winphone 14 14
+ios_iphone 17 16
+win2000 59 59
+winunknown 295 295
+win95 16 16
+j2me 3 3
+wince 6 6
+win2003 64 64
+macosx9 14 13
+win8 74 72
+ios_ipad 3 3
+macosx7 8 8
+unix 3 3
+winnt 170 106
+linuxubuntu 18 18
+win98 11 11
+linux 39 39
+win7 11806 1606
+winme 3 3
+macosx 8 8
+win16 6 6
+win8.1 828 215
+Unknown 640 87
+macosx8 3 3
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 151
+safari7.0.3 4 4
+firefox28.0 3 3
+webcapture 5 5
+opera6.0 1 1
+firefox3.6 1 1
+chrome45.0.2454.87 3 3
+firefox2.0.0.1 2 2
+chrome31.0.1650.57 7 7
+lynx 2 2
+chrome31.0.1650.63 8 5
+msie8.0 1304 120
+opera23.0.1522.75 23 23
+chrome34.0.1847.132 1 1
+chrome39.0.2171.65 1 1
+msie7.0 167 167
+firefox9.0.1 5 5
+chrome44.0.2403.111 2 2
+chrome42.0.2311.152 4 4
+chrome31.0.1650.59 2 2
+opera6.01 6 6
+opera32.0.1948.69 121 57
+chrome39.0.2171.96 1 1
+firefox40.0 4 4
+firefox10.0.1 1 1
+chrome46.0.2490.71 75 15
+firefox38.0 201 24
+chrome32.0.1700.107 1 1
+netscape0.6 2 2
+firefox33.0 16 16
+chrome36.0.1985.143 1 1
+opera12.10 3 3
+firefox25.0 1 0
+netscape5.0 4 4
+firefox14.0.1 4 4
+chrome46.0.2490.86 842 480
+chrome41.0.2228.0 4 4
+firefox36.0 1 1
+safari 9 9
+chrome34.0.1847.76 1 1
+android 30 21
+chrome43.0.2357.124 3 3
+chrome28.0.1500.95 3 1
+netscape4.76 2 2
+chrome46.0.2490.76 17 8
+chrome32.0.1700.102 34 23
+chrome43.0.2357.81 17 17
+netscape0.91 9 9
+chrome38.0.2125.122 1 1
+opera28.0.1750.48 1 1
+opera32.0.1953.96473 1 1
+msie5.0 15 15
+msie9.0 5563 37
+opera7.54 14 14
+opera12.02 1 0
+safari9.0.1 3 3
+opera9.27 10 10
+opera8.01 9 9
+msie5.5 34 34
+chrome19.77.34.5 1 1
+netscape4.79 6 6
+firefox2.0.0.11 1 1
+chrome45.0.2454.94 2 0
+firefox39.0 408 25
+chrome35.0.1916.153 2 2
+chrome43.0.2357.134 9 9
+chrome31.0.1650.16 2 2
+opera19.0.1326.63 28 28
+chrome23.0.1271.97 8 8
+chrome19.0.1084.52 1 1
+opera33.0.2002.97426 1 0
+msie6.0 407 343
+chrome40.0.2214.115 2 2
+chrome28.0.1500.94 6 6
+chrome36.0.1944.0 1 1
+chrome5.0.375.99 3 3
+chrome40.0.2214.111 1 1
+chrome39.0.2171.95 10 10
+firefox18.0 1 1
+firefox34.0 1 1
+opera7.60 2 2
+chrome27.0.1453.95 3 3
+netscape3.0 18 18
+chrome37.0.2062.120 4 4
+firefox41.0 499 118
+opera9.0 14 14
+opera18.0.1284.49 2 0
+chrome45.0.2454.99 4 4
+opera12.16 47 46
+firefox42.0 252 144
+opera7.0 5 5
+opera33.0.1990.43 51 18
+chrome34.0.1847.131 10 10
+opera33.0.1990.113 2 2
+firefox21.0 5 5
+firefox29.0 4 4
+firefox3.5.2 2 2
+firefox2.0.0.6 5 3
+chrome46.0.2490.80 777 483
+mozilla 578 26
+chrome18.0.1025.142 1 1
+chrome44.0.2403.157 453 28
+chrome42.0.2311.135 14 1
+firefox3.6.3 1 1
+firefox19.0 1 0
+firefox10.0.2 4 4
+firefox8.0.1 4 4
+chrome48.0.2552.0 14 14
+firefox15.0.1 1 1
+firefox35.0 27 27
+chrome21.0.1180.89 1 1
+opera12.17 27 22
+opera9.00 8 8
+chrome42.0.2311.111 1 1
+msie3.02 6 6
+chrome28.0.1468.0 7 7
+firefox31.0 7 7
+opera12.14 3 3
+opera33.0.1990.115 77 76
+firefox6.0.2 40 40
+firefox16.0 3 3
+msie2.0 5 5
+chrome33.0.1750.154 3 0
+safari8.0 1 1
+chrome30.0.1599.101 86 26
+Unknown 320 319
+opera33.0.1990.58 133 72
+chrome14.0.813.0 1 1
+chrome20.0.1090.0 1 0
+opera33.0.2002.97617 1 1
+opera31.0.1889.99 1 1
+netscape4.61 2 2
+firefox17.0 5 5
+opera8.00 9 9
+chrome27.0.1453.110 2 2
+chrome41.0.2227.0 2 2
+opera28.0.1750.51 6 6
+chrome20.0.1132.57 1 1
+chrome44.0.2403.107 2 2
+msie11.0 3428 358
+chrome19.0.1063.0 5 5
+firefox1.0.7 1 1
+chrome18.0.1025.133 1 1
+safari9.0 14 13
+chrome45.0.2454.101 61 57
+firefox1.0 1 1
+opera20.0.1387.91 1 0
+chrome19.0.1084.5409 3 3
+firefox37.0 3 3
+msie10.0 761 41
+safari5.1 1 1
+opera7.02 13 13
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 30
+Scrapy/1.0.3_(_http://scrapy.org) 20151103004425
+Opera/9.80_(Android;_Opera_Mini/7.6.40234/37.7011;_U;_ru)_Presto/2.12.423_Version/12.16 20151108192534
+Mozilla/5.0_(compatible;_Googlebot/2.1;__http://www.google.com/bot.html) 20151116171101
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~nazaux) 20151108124002
+Ruby 20151128141243
+iskanie_(_http://www.iskanie.com) 20151116000235
+Mozilla/5.0_(compatible;_Lipperhey-Kaus-Australis/5.0;__https://www.lipperhey.com/en/about/) 20151114014405
+Google_favicon 20151122180844
+Mozilla/5.0_(compatible;_BigBozz/2.2.1;__http://www.bigbozz.com/) 20151125225649
+Mozilla/5.0_(compatible;_bingbot/2.0;__http://www.bing.com/bingbot.htm) 20151123111157
+Python-urllib/2.6 20151117123846
+Yandex_DocViewer 20151127063817
+M 20151114131050
+kupit_kvartiru_v_sankt-peterburge_http://spbkvt.ru 20151127160113
+Opera/9.80_(Android;_Opera_Mini/8.0.1807/37.7011;_U;_ru)_Presto/2.12.423_Version/12.16 20151105204947
+Mozilla/4.0_(compatible;_Synapse) 20151114014344
+Mozilla/3.0_(compatible;_Indy_Library) 20151107142822
+Opera/9.27 20151116211708
+ePochta_Extractor/4.0 20151130115955
+Lynx/2.8.5rel.1_libwww-FM/2.15FC_SSL-MM/1.4.1c_OpenSSL/0.9.7e-dev 20151129150643
+Go_1.1_package_http 20151123014417
+Riddler_(http://riddler.io/about) 20151112154201
+Mozilla/5.0 20151127064215
+Mozilla/5.0_(compatible;_wmtips.com/1.0;__http://www.wmtips.com/tools/) 20151113205840
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~best1proxy) 20151107112640
+Mozilla/5.0_(compatible;_Web-Monitoring/1.0;__http://monoid.nic.ru/) 20151130163640
+Go-http-client/1.1 20151129191842
+nutch-1.4/Nutch-1.4 20151129193329
+Mozilla/5.0_(compatible;_SputnikBot/2.3;__http://corp.sputnik.ru/webmaster) 20151117153120
+1C_Enterprise/8.3 20151102055913
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 19
+Scrapy/1.0.3_(_http://scrapy.org) 20151103004425
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~nazaux) 20151108124002
+Ruby 20151128141243
+iskanie_(_http://www.iskanie.com) 20151116000235
+Google_favicon 20151122180844
+Python-urllib/2.6 20151117123846
+Yandex_DocViewer 20151127063817
+M 20151114131050
+kupit_kvartiru_v_sankt-peterburge_http://spbkvt.ru 20151127160113
+ePochta_Extractor/4.0 20151130115955
+Go_1.1_package_http 20151123014417
+Riddler_(http://riddler.io/about) 20151112154201
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~best1proxy) 20151107112640
+python-requests/2.6.2_CPython/2.7.6_Linux/3.13.0-61-generic 20151130221814
+Go-http-client/1.1 20151129191842
+Microsoft_Office_Excel_2013 20151116155354
+nutch-1.4/Nutch-1.4 20151129193329
+Microsoft_URL_Control_-_6.00.8862 20151113133627
+1C_Enterprise/8.3 20151102055913
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1014 12511
+From1 3 3
+From2 408 496
+From3 557 559
+From4 1788 3800
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 8
+google 256 300
+search 3 3
+metabot 1 1
+bing 6 6
+rambler 7 8
+baidu 2 2
+mailru 14 14
+yandex 119 162
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 138
+http://www.zakazvzloma.com 18 18
+http://zav.minsk.gov.by/economics/industry 16 16
+http://netpics.org 15 15
+http://www.hacktougroup.ru 14 14
+http://brendbutik.ru 13 13
+http://www.vzlom-na-zakaz.com 11 11
+http://www.yandex.by/clck/jsredir 11 11
+http://stairliftsfind.com 11 11
+http://designdevise.com 9 9
+http://www.shoppingmiracles.co.uk 9 9
+http://lenvred.org 9 9
+http://vozbujdenie.com 9 9
+http://womensterritory.ru 9 9
+http://yandex.by/clck/jsredir 8 8
+http://android-vsem.org 8 8
+http://magda-gadalka.ru 8 8
+http://www.pcvexpo.ru/ru-RU/home/exhibitors/list/exposition/exhibitorview.aspx 8 8
+http://xn--b1agm2d.net 8 8
+http://lombardfinder.ru 8 8
+http://detskie-zabavi.ru 8 8
+http://doeco.ru 7 7
+http://gidrodinamika.belorussia.su 7 7
+http://pornogig.com 7 7
+http://origin-my.ru 7 7
+http://sdi-pme.com 6 6
+http://vekzdorov.ru 3 3
+http://www.mioge.ru/ru-RU/exhibition/catalogue/exposition/exhibitorview.aspx 3 3
+http://berlininsl.com 2 2
+http://recsil.org 3 3
+http://www.webviki.ru/www.gidrodinamika.ru 1 1
+http://www.bookmaker-bet.com 3 3
+http://choosecuisine.com 3 3
+http://komputers-best.ru 2 2
+http://wallpapers-best.com 2 2
+http://bluerobot.info/nw2/trerorefisohe 1 1
+http://mosrif.ru/produktsiya/oblitsovochnaya-plita 5 5
+http://rwes.info 5 5
+http://bimatoprost-careprost.com 3 3
+http://crm.brainhouse.ru/accounts/58771 1 1
+http://na-telefon.biz 6 6
+http://carswithmuscles.com 1 1
+http://labplus.ru 3 3
+http://guz.su 5 5
+http://bimatoprost-careprost.com 5 5
+http://acuclubs.net 1 1
+http://fo-factory.ru 2 2
+http://rpma.org.ru/10-members-menu-ru.html 3 3
+http://expertnaya-ocenka.ru 3 3
+http://hvd-store.com 1 1
+http://wormix-cheats.ru 3 3
+http://ntsy.ru/wp-admin/post.php 1 1
+http://nagdak.ru 6 6
+http://hundejo.com 1 1
+http://angeladorer.com 6 6
+http://infazavr.ru 5 5
+http://hyipmanager.in 3 3
+http://mir-business-24.ru 5 5
+http://ublaze.ru 3 3
+http://ostroike.org 2 2
+http://www.gidrodinamika.refer.by 1 1
+http://megacat.by 1 1
+http://android4fun.org 3 3
+http://www.24videos.tv 3 3
+http://www.24videos.tv 3 3
+http://m.vk.com/away.php 1 1
+http://zaimhelp.ru 3 3
+http://prometeimd.com 1 1
+http://www.moscow-region.ru 2 2
+http://www/res/sayti_zavodov.php 2 2
+http://jobs.tut.by/employer/1215889 1 1
+http://burgerinmac.com.ua 2 2
+http://zav.minsk.gov.by 6 6
+http://www.uzel.org/url.php 1 1
+http://www.rospromtest.ru/questions.php 2 2
+http://www.yugo-star.ru 6 6
+http://cinemaenergy-hd.ru 6 6
+http://energy-ua.com 6 6
+http://www.ekspertmed.com 3 3
+http://by.kompass.com/c/%D0%B3%D0%B8%D0%B4%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BE/by150192/ 1 1
+http://www.oilforum.ru/topic/66493-germetichnie-nasosnie-agregati/ 2 2
+http://scripted.com/gidrodinamika.ru 1 1
+http://wheelchairliftfind.com 1 1
+http://burger-imperia.com 1 1
+http://dlskype.com/download.html 3 3
+http://www.sexkrasivo.net 3 3
+https://www.yandex.com/clck/jsredir 1 1
+http://blockworld.ru 3 3
+http://yandex.ua/clck/jsredir 3 4
+http://chcu.net/porno-video-2016/ 2 2
+http://wzgyyq.com 3 3
+http://www.bizby.ru/minsk-gidrodinamika.html 1 1
+http://gardene.ru 3 3
+http://editor.wix.com/html/editor/web/renderer/render/document/e4c59c8a-3525-48ad-b963-d7e1594364e3 0 1
+http://zebradudka.com 3 3
+http://brendbutik.ru 3 3
+http://zojirushi-products.ru 3 3
+http://luckyshop.net.ua 5 5
+http://gta-club.ru 6 6
+http://www.hdfreeporno.net 5 5
+http://na15.ru 3 3
+http://kino-filmi.com 3 3
+http://alphaforum.ru 3 3
+http://ecookna.com.ua 3 3
+http://keytosupply.com/comp/gidrodinamika-zao 1 1
+http://portal.kv.lc/projects/clients/275787/ 1 1
+http://www.micasainvest.com 3 3
+http://gidrodinamika.refer.by 1 1
+http://nardar.ru 3 3
+http://filmidivx.com 6 6
+http://www.rpma.org.ru/10-members-menu-ru.html 4 4
+http://ccpfy.net/porno-hd-2016/ 3 3
+http://vsesubwaysurfers.com 5 5
+http://lost-alpha.ru 3 3
+http://www.thejournal.ru 6 6
+http://regidium.ru 4 4
+http://bluerobot.info/nw2/trerorefisogu 1 1
+http://modabutik.ru 3 3
+http://bodybuilding-shop.biz 3 3
+http://www.casino-market.ru 1 1
+http://pizza-imperia.com 1 1
+http://s-master.biz 3 3
+http://catalogs-parts.com 1 1
+http://blogos.kz 3 3
+http://atlant-auto.info 3 3
+http://www.domain2008.com/domains/www.gidrodinamika.ru 2 2
+http://vesta-lada.net 3 3
+http://www.expocentr.ru/ru/menu2/visitors/search/byalphabet/index.php 1 1
+http://gdcentre.ru 4 4
+http://www.alpha-import.ru 4 4
+http://neftegas.info/catalog/nasosy-kompressory-truboprovodnaya-armatura/ 1 1
+http://downloadsphotoshop.com 3 3
+http://epi-co.ru 2 2
+http://lirunet.ru 3 3
+https://translate.googleusercontent.com/translate_c 1 1
+http://realnye-otzyvy.info 3 3
+http://infazavr.ru 3 3
+http://www.nigma.ru/index.php 1 1
+http://blogos.kz 3 3
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 42
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 9
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 7
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%b7%d0%b0%d0%be 5
+%d0%97%d0%90%d0%9e+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 5
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b 4
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 4
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%b1%d0%b5%d0%bb%d0%b0%d1%80%d1%83%d1%81%d1%8c 4
+%d0%93%d0%98%d0%94%d0%a0%d0%9e%d0%94%d0%98%d0%9d%d0%90%d0%9c%d0%98%d0%9a%d0%90+%d0%97%d0%90%d0%9e 3
+%d0%bd%d0%b0%d1%81%d0%be%d1%81+%d0%b3%d0%b4%d0%bc%d0%bf+%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%b2%d0%be%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d1%8c+%d0%97%d0%90%d0%9e+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 3
+rlv 3
+%d0%9d%d0%b0%d1%81%d0%be%d1%81+%d0%93%d0%94%d0%9c15-091 2
+%a7%a4%a7%da%a7%d5%a7%e2%a7%e0%a7%d5%a7%da%a7%df%a7%d1%a7%de%a7%da%a7%dc%a7%d1 2
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%b7%d0%b0%d0%be+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 2
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba+%d0%b1%d0%b5%d0%bb%d0%b0%d1%80%d1%83%d1%81%d1%8c 2
+%d0%97%d0%90%d0%9e+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%9c%d0%98%d0%9d%d0%a1%d0%9a 2
+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 2
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9 1
+%d0%93%d0%98%d0%a0%d0%9e%d0%94%d0%98%d0%9d%d0%90%d0%9c%d0%98%d0%9a%d0%90 1
+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bd%d0%b0+%d1%81%d0%bf%d0%b1%d1%84%d1%82%d1%83 1
+gidrodinamika 1
+%d1%81%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 1
+%d0%97%d0%90%d0%9e+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%d0%b3%d0%b4%d0%bc+%d0%bd%d0%b0%d1%81%d0%be%d1%81+%d1%80%d0%b0%d1%81%d1%88%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%ba%d0%b0 1
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9+%d1%81%d0%b0%d0%b9%d1%82 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba+%d0%b3%d0%b5%d1%80%d0%bc%d0%b5%d1%82%d0%b8%d1%87%d0%bd%d1%8b%d0%b5+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b 1
+%d0%97%d0%90%d0%9e+%c2%ab%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0%c2%bb 1
+gidrodinamika.ru 1
+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9+%d1%81%d0%b0%d0%b9%d1%82+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%ea%ee%ec%ef%e0%ed%e8%ff+%c3%e8%e4%f0%ee%e4%e8%ed%e0%ec%e8%ea%e0 1
+%d0%a2%d0%a3+1915-010-23042805+-2003 1
+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%be%d0%b1%d0%b5%d0%b6%d0%bd%d1%8b%d0%b9+%d0%bd%d0%b0%d1%81%d0%be%d1%81+%d1%81+%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%bd%d0%be%d0%b9+%d0%bc%d1%83%d1%84%d1%82%d0%be%d0%b9+%d0%93%d0%94%d0%9c 1
+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b+%d0%b3%d0%b4%d0%bc+%d0%bd%d0%be%d0%b2%d0%be%d1%81%d1%82%d0%b8 1
+%d0%97%d0%90%d0%9e+%c2%ab%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0%c2%bb+%d0%b8%d0%bd%d0%bd 1
+%d0%93%d0%98%d0%94%d0%a0%d0%9e%d0%94%d0%98%d0%9d%d0%90%d0%9c%d0%98%d0%9a%d0%90+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9+%d1%81%d0%b0%d0%b9%d1%82 1
+%d0%97%d0%90%d0%9e+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 1
+%d0%93%d0%94%d0%9c%d0%9f6 1
+%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%b6%d0%b8%d0%b4%d0%ba%d0%be%d1%81%d1%82%d0%b8 1
+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b+%d0%b3%d0%b4%d0%bc 1
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 1
+%d0%a2%d0%a3+23042805 1
+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%9c%d0%b8%d0%bd%d1%81%d0%ba 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 46
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 43
+%d0%97%d0%90%d0%9e 17
+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 17
+%d0%b7%d0%b0%d0%be 16
+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 15
+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b 7
+%d0%b1%d0%b5%d0%bb%d0%b0%d1%80%d1%83%d1%81%d1%8c 6
+%d0%bd%d0%b0%d1%81%d0%be%d1%81 5
+%d0%93%d0%98%d0%94%d0%a0%d0%9e%d0%94%d0%98%d0%9d%d0%90%d0%9c%d0%98%d0%9a%d0%90 4
+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9 4
+%d0%b3%d0%b4%d0%bc 3
+%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%b2%d0%be%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d1%8c 3
+rlv 3
+%d1%81%d0%b0%d0%b9%d1%82 3
+%d0%b3%d0%b4%d0%bc%d0%bf 3
+%d0%9c%d0%98%d0%9d%d0%a1%d0%9a 2
+%a7%a4%a7%da%a7%d5%a7%e2%a7%e0%a7%d5%a7%da%a7%df%a7%d1%a7%de%a7%da%a7%dc%a7%d1 2
+%d0%93%d0%94%d0%9c15-091 2
+%d0%a2%d0%a3 2
+%c2%ab%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0%c2%bb 2
+%d0%9d%d0%b0%d1%81%d0%be%d1%81 2
+%d0%93%d0%94%d0%9c 1
+%d0%93%d0%98%d0%a0%d0%9e%d0%94%d0%98%d0%9d%d0%90%d0%9c%d0%98%d0%9a%d0%90 1
+%d1%81%d0%b7%d0%b0%d0%be 1
+gidrodinamika 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8 1
+%ea%ee%ec%ef%e0%ed%e8%ff 1
+%d0%bd%d0%be%d0%b2%d0%be%d1%81%d1%82%d0%b8 1
+%d1%81%d0%bf%d0%b1%d1%84%d1%82%d1%83 1
+gidrodinamika.ru 1
+1915-010-23042805 1
+%d0%bc%d1%83%d1%84%d1%82%d0%be%d0%b9 1
+%d1%81 1
+%d0%9c%d0%b8%d0%bd%d1%81%d0%ba 1
+%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%c3%e8%e4%f0%ee%e4%e8%ed%e0%ec%e8%ea%e0 1
+-2003 1
+%d0%b3%d0%b5%d1%80%d0%bc%d0%b5%d1%82%d0%b8%d1%87%d0%bd%d1%8b%d0%b5 1
+%d0%bd%d0%b0 1
+%d0%93%d0%94%d0%9c%d0%9f6 1
+%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%bd%d0%be%d0%b9 1
+%d0%b8%d0%bd%d0%bd 1
+%d1%80%d0%b0%d1%81%d1%88%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%ba%d0%b0 1
+%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%be%d0%b1%d0%b5%d0%b6%d0%bd%d1%8b%d0%b9 1
+%d0%b6%d0%b8%d0%b4%d0%ba%d0%be%d1%81%d1%82%d0%b8 1
+23042805 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+301 9 2196
+404 3414 51400
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 747
+/\xd0\x9f\xd1\x80\xd0\xbe\xd0\xb4\xd1\x83\xd0\xba\xd1\x86\xd0\xb8\xd1\x8f 1 -
+/files/files/characteristics/har/gdmp2-e-50-50-a-3,2-18,5-y2-har.pdf 1 -
+/javascript:chgImg(-1) 3 -
+/\xf1\xf1\xfb\xeb\xea\xe0 2 -
+/gorizontalnie/133 3 -
+/files/files/characteristics/gab/gdm4-081-e-10-80-k-11-u2-gab.pdf 1 -
+/xmlrpc.php 1 -
+/files/files/characteristics/har/gdmp7-e-50-50-a-3,2-22-y2-har.pdf 1 -
+/\xc3\x82\xc3\xa5\xc3\xb1\xc3\xad\xc3\xa0 2 -
+/files/files/page/197/ 1 -
+/plus/mytag_js.php 1 http://www.gidrodinamika.ru/plus/mytag_js.php
+/catalog/gor/\xc41-01//gdmd1-01-gab.pdf 1 -
+/files/files/page/177/ 1 -
+/files/files/page/56/gdm8-04-e-130-70-a-37-u2-gab.pdf 1 -
+/ckeditor/editor/ 2 -
+/vertikalnie/gorizontalnie/237 2 -
+/files/files/characteristics/har/gdm13-041-e-100-70-a-22-y2-har.pdf 1 -
+/files/files/characteristics/har/gdm12-e-72-60-a-15-y2-har.pdf 1 -
+/files/files/characteristics/gab/gdm5-01-e-60-110-a-37-u2-gab.pdf 2 -
+/css/fonts/mtcorsva.ttf 60 http://www.gidrodinamika.ru/record.php
+/content/fckeditor/editor/ 1 -
+/%d0%9e%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b0 1 -
+/files/files/page/94/ 1 -
+/files/files/characteristics/har/gdm21-01-e-10-440-a-45-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/106 3 -
+/files/files/page/89/ 1 -
+/vertikalnie/gorizontalnie/121 2 -
+/files/files/page/167/ 1 -
+//wp-login.php 4 -
+/files/files/page/241/ 1 -
+/files/files/characteristics/har/gdm8-07-e-100-200-a-132-y2-har.pdf 1 -
+/files/files/page/166/ 1 -
+/\xc3\x87\xc3\xa0\xc3\xaa\xc3\xa0\xc3\xa7 2 -
+/administrator/ 4 http://gidrodinamika.ru/administrator/
+/files/files/characteristics/har/gdmp7-06-e-50-90-3.7-30-y2-har.pdf 1 -
+/files/files/characteristics/gab/gdmp5-e-31,5-63-a-3,2-15-u2-gab.pdf 1 -
+/gorizontalnie/179 1 -
+/files/files/characteristics/gab/gdm12-01-e-60-50-k-22-u2-gab.pdf 1 -
+/wp-content/plugins/showbiz/js/showbiz_admin.js 1 -
+/files/files/page/234/ 2 -
+/\xc2\xe5\xf1\xed\xe0 2 -
+/vertikalnie/gorizontalnie/218 4 -
+/files/files/characteristics/har/gdm19-e-30-70-a-22-y2-har.pdf 2 -
+/files/files/page/163/ 1 -
+/modules/system/system.base.css 2 -
+/files/files/characteristics/har/gdm19-020-e-40-60-a-11-y2-har.pdf 1 -
+/%C3%91%C2%81%C3%91%C2%81%C3%91%E2%80%B9%C3%90%C2%BB%C3%90%C2%BA%C3%90%C2%B0%20vk.com 1 -
+/vertikalnie/gorizontalnie/112 2 -
+/gorizontalnie/146 4 -
+/files/files/characteristics/har/gdm10-12-e-200-150-a-75-y2-har.pdf 1 -
+/gorizontalnie/198 3 -
+/\xd0\xa1\xd0\xb2\xd1\x8f\xd0\xb7\xd1\x8c%20\xd0\xb8%20\xd0\xba\xd0\xbe\xd0\xbd\xd1\x81\xd1\x83\xd0\xbb\xd1\x8c\xd1\x82\xd0\xb0\xd1\x86\xd0\xb8\xd1\x8f 1 -
+/files/files/page/219/ 1 -
+/files/files/page/149/ 1 -
+/incs/fckeditor/editor/ 1 -
+/files/files/characteristics/har/gdm7-09-e-20-30-a-5,5-y2-har.pdf 1 -
+/user/login/ 2 -
+/%C3%90%C5%A1%C3%90%C2%BE%C3%90%C2%BD%C3%91%E2%80%9A%C3%90%C2%B0%C3%90%C2%BA%C3%91%E2%80%9A%C3%91%E2%80%B9 1 -
+/files/files/page/242/ 1 -
+/files/files/characteristics/har/gdm10-13-e-180-780-a-400-y2-har.pdf 1 -
+/\xd0\x9a\xd0\xbe\xd0\xbd\xd1\x82\xd0\xb0\xd0\xba\xd1\x82\xd1\x8b 1 -
+/files/files/characteristics/har/gdm2-07-e-360-70-a-132-y2-har.pdf 1 -
+/files/files/page/98/ 1 -
+/wp-admin/images/wordpress-logo.png 2 -
+/files/files/page/212/ 2 -
+/order.html/wp-login.php 1 -
+/gorizontalnie/130 1 -
+/files/files/characteristics/har/gdm14-01-E-50-125-a-37-y2-har.pdf 1 -
+/gorizontalnie/183 1 -
+/files/files/characteristics/har/gdmp21-021-e-16-160-a-3,7-18,5-y2-har.pdf 1 -
+/files/files/characteristics/har/gdm13-031-E-50-55-A-18,5-y2-har.pdf 1 -
+/\xd0\x93\xd0\xbe\xd1\x80\xd0\xb8\xd0\xb7\xd0\xbe\xd0\xbd\xd1\x82\xd0\xb0\xd0\xbb\xd1\x8c\xd0\xbd\xd1\x8b\xd0\xb5%20\xd0\xbd\xd0\xb0\xd1\x81\xd1\x81\xd0\xbe\xd1\x81\xd1\x8b 1 -
+/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D0%BE%D0%B3%D1%80%D1%83%D0%B6%D0%BD%D1%8B%D0%B5 4 http://gidrodinamika.ru/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D0%BE%D0%B3%D1%80%D1%83%D0%B6%D0%BD%D1%8B%D0%B5
+/files/files/characteristics/har/gdmp7-03-e-50-130-a-3,2-37-y2-har.pdf 2 -
+/files/files/characteristics/har/gdm5-e-65-140-a-37-y2-har.pdf 1 -
+/%D0%97%D0%B0%D0%BA%D0%B0%D0%B7 70 -
+/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8 70 -
+/files/files/page/155/ 1 -
+/\xd0\xa2\xd0\xb5\xd1\x85.%20\xd0\xbf\xd0\xbe\xd0\xb4\xd0\xb4\xd0\xb5\xd1\x80\xd0\xb6\xd0\xba\xd0\xb0 1 -
+/gorizontalnie/186 2 -
+/files/files/page/225/ 1 -
+/files/files/page/217/ 1 -
+/files/files/page/103/ 1 -
+/files/files/characteristics/har/gdm13-02-e-50-18-a-7,5-y2-har.pdf 1 -
+/gorizontalnie/177 2 -
+/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B 80 -
+/gorizontalnie/161 4 -
+/files/files/characteristics/har/gdm8-046-e-110-55-a-22-y2-har.pdf 1 -
+/asdqee 1 http://gidrodinamika.ru/asdqee
+/chgImg(1) 2 -
+/catalog/gor/\xc41-02//gdmd1-02-obv.pdf 1 -
+/%C3%90%C5%B8%C3%90%C2%BE%C3%90%C2%BB%C3%91%C6%92%C3%90%C2%BF%C3%90%C2%BE%C3%90%C2%B3%C3%91%E2%82%AC%C3%91%C6%92%C3%90%C2%B6%C3%90%C2%BD%C3%91%E2%80%B9%C3%90%C2%B5%20%C3%90%C2%BD%C3%90%C2%B0%C3%91%C2%81%C3%90%C2%BE%C3%91%C2%81%C3%91%E2%80%B9 1 -
+/gorizontalnie/201 1 -
+/wp-content/plugins/dzs-zoomsounds/ 1 -
+/catalog/vertikalnie/93 2 -
+/wp-admin/ 2 -
+/files/files/page/96/ 1 -
+/-1 2 http://www.gidrodinamika.ru/
+/img/next-bullet.png 1 http://www.gidrodinamika.ru/css/style.css
+/files/files/page/229/ 1 -
+/%C4%EE%F1%F2%E8%E6%E5%ED%E8%FF 8 http://gidrodinamika.ru/
+/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F 73 -
+/%CF%EE%EB%F3%EF%EE%E3%F0%F3%E6%ED%FB%E5%20%ED%E0%F1%EE%F1%FB 8 http://gidrodinamika.ru/
+/files/files/page/139/ 1 -
+/img/over.png 1 http://www.gidrodinamika.ru/css/style.css
+/%D0%94%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F 73 -
+/files/files/characteristics/gab/gdmp8-e-10-320-a-3,7-30-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdm21-032-e-60-320-a-132-y2-har.pdf 1 -
+/files/files/page/183/ 1 -
+/files/files/page/193/ 1 -
+/files/files/characteristics/har/gdm5-02-e-60-110-a-45-y2-har.pdf 1 -
+/%D2%E5%F5.%20%EF%EE%E4%E4%E5%F0%E6%EA%E0 9 http://gidrodinamika.ru/
+/vertikalnie 18 -
+/backup.zip 2 -
+/files/files/page/172/ 1 -
+/common/editor/fckeditor/editor/ 1 -
+/files/files/page/59/gdm9-05-e-40-450-a-132-u2-gab.pdf 1 -
+/files/files/page/93/gdmp-obv.pdf 1 -
+/files/files/characteristics/gab/gdm14-02-e-30-250-a-45-u2-gab.pdf 1 -
+/files/files/page/136/ 1 -
+/files/files/characteristics/har/gdmp14-01-e-40-200-a-2-55-y2-har.pdf 1 -
+/files/files/page/214/ 1 -
+/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C 4 http://gidrodinamika.ru/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C
+/files/files/page/116/ 1 -
+/catalog/gor/\xc41-02//gdmd1-02-gab.pdf 1 -
+/%D0%9B%D0%B5%D1%82%D0%BE 72 -
+/vertikalnie/gorizontalnie/107 4 -
+/gorizontalnie/160 3 -
+/files/files/page/65/gdm13-01-e-100-70-a-37-u2-gab.pdf 3 -
+/%D1%E2%FF%E7%FC%20%E8%20%EA%EE%ED%F1%F3%EB%FC%F2%E0%F6%E8%FF 8 http://gidrodinamika.ru/
+/manager/media/style/MODxCarbon/images/misc/logo.png 2 -
+/manager/media/style/MODxCarbon/images/misc/login-logo.png 2 -
+/bitrix/themes/.default/images/auth_pict.gif 2 -
+/%CB%E5%F2%EE 11 http://gidrodinamika.ru/
+/files/files/page/218/ 1 -
+/%C3%90%E2%80%94%C3%90%C2%B0%C3%90%C2%BA%C3%90%C2%B0%C3%90%C2%B7 1 -
+/apple-touch-icon.png 1 -
+/files/files/characteristics/har/gdmp21-06-e-6-100-a-3,0-7,5-y2-har.pdf 1 -
+/templates/system/css/system.css 2 -
+/files/files/page/130/ 1 -
+/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%D1%81%D1%81%D0%BE%D1%81%D1%8B 70 -
+/%C3%90%C2%A2%C3%90%C2%B5%C3%91%E2%80%A6.%20%C3%90%C2%BF%C3%90%C2%BE%C3%90%C2%B4%C3%90%C2%B4%C3%90%C2%B5%C3%91%E2%82%AC%C3%90%C2%B6%C3%90%C2%BA%C3%90%C2%B0 1 -
+/\xc3\xeb\xe0\xe2\xed\xe0\xff 4 -
+/files/files/characteristics/har/gdm5-03-e-60-160-a-45-y2-har.pdf 2 -
+/files/files/characteristics/har/gdm15-03-e-100-32-a-18,5-y2-har.pdf 1 -
+/javascript:chgImg(1) 3 -
+/files/files/characteristics/gab/gdm9-06-e-50-220-a-55-u2-gab.pdf 1 -
+/about.html 2 -
+/modules/system/system.css 2 -
+/vertikalnie/gorizontalnie/230 1 -
+/gorizontalnie/143 1 -
+/order.html/admin.php 1 -
+/gorizontalnie/132 2 -
+/weblogin/editor/editor/ 1 -
+/files/files/page/131/ 1 -
+/files/files/page/216/ 1 -
+/admin/FCKeditor/editor/ 1 -
+/apple-touch-icon-precomposed.png 1 -
+/files/files/characteristics/gab/gdm13-041-e-100-70-a-22-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdm13-07-e-50-80-a-37-y2-har.pdf 3 -
+/onclick=%22this.href= 1 -
+/vertikalnie/gorizontalnie/219 2 -
+/\xc3\x83\xc3\xab\xc3\xa0\xc3\xa2\xc3\xad\xc3\xa0\xc3\xbf 2 -
+/installed 2 -
+/\xd0\x97\xd0\xb0\xd0\xba\xd0\xb0\xd0\xb7 1 -
+/fckeditor/editor/ 2 -
+/files/files/characteristics/gab/gdm21-0312-e-25-100-a-22-u2-gab.pdf 1 -
+/%CA%EE%ED%F2%E0%EA%F2%FB 6 http://gidrodinamika.ru/
+/manage/fckeditor/editor/ 1 -
+/files/files/characteristics/har/gdm13-011-e-120-50-a-37-y2-har.pdf 1 -
+/files/files/characteristics/har/gdm12-03-e-20-70-a-18,5-y2-har.pdf 1 -
+/gorizontalnie/205 4 -
+/files/files/page/113/ 1 -
+/\xc3\x8f\xc3\xb0\xc3\xa5\xc3\xa4\xc3\xb1\xc3\xb2\xc3\xa0\xc3\xa2\xc3\xa8\xc3\xb2\xc3\xa5\xc3\xab\xc3\xa8 2 -
+/files/files/characteristics/gab/gdm5-07-e-75-180-a-37-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdmp5-e-31,5-63-a-3,2-15-y2-har.pdf 7 -
+/gorizontalnie/159 2 -
+/vertikalnie/gorizontalnie/111 4 -
+/\xc3\x8f\xc3\xae\xc3\xb7\xc3\xb2\xc3\xa0 2 -
+/files/files/page/126/ 1 -
+/%C3%90%C5%93%C3%90%C2%B0%C3%91%E2%82%AC%C3%90%C2%BA%C3%90%C2%B5%C3%91%E2%80%9A%C3%90%C2%B8%C3%90%C2%BD%C3%90%C2%B3 1 -
+/vertikalnie/gorizontalnie/239 2 -
+/\xd0\x91\xd0\xbb\xd0\xb0\xd0\xbd\xd0\xba 1 -
+/files/files/characteristics/har/gdm10-02-e-250-400-a-400-y2-har.pdf 1 -
+/\xd0\x94\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8\xd0\xb6\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f 1 -
+/files/files/characteristics/obv/gdm9-06-e-50-220-a-55-u2-obv.pdf 1 -
+/files/files/page/125/ 1 -
+/%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE 2 -
+/catalog/gor/14-012/gdm14-012-har.pdf&sa=U&ved=0ahUKEwjT6-jLjaLJAhWB33IKHfNSDncQFggTMAA&usg=AFQjCNFrjgeBGo8OzfRmeGsw_MiAx8NBZA 1 -
+/files/files/page/133/ 1 -
+/gorizontalnie/185 2 -
+/gorizontalnie/162 3 -
+/manager/templates/default/css/login-min.css 2 -
+/catalog/gor/14-012/gdm14-012-har.pdf&sa=U&ved=0CBMQFjAAahUKEwjK3Ljs0_3IAhXhD3IKHbJDChk&usg=AFQjCNFrjgeBGo8OzfRmeGsw_MiAx8NBZA 1 -
+/vertikalnie/gorizontalnie/231 2 -
+/\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f 1 -
+/gorizontalnie/138 2 -
+/manager/media/script/mootools/mootools.js 2 -
+/media/images/li.gif 2 -
+/vertikalnie/gorizontalnie/115 4 -
+/files/files/characteristics/har/gdm10-04-e-220-600-a-500-y2-har.pdf 1 -
+/%d0%9d%d0%be%d0%b2%d0%be%d1%81%d1%82%d0%b8 1 -
+/gorizontalnie/192 2 -
+/files/files/characteristics/gab/gdmp21-032-e-60-320-a-2,7-132-u2-gab.pdf 1 -
+/vertikalnie/gorizontalnie/224 1 -
+/files/files/page/203/ 1 -
+/files/files/characteristics/har/gdm12-04-e-60-50-a-18,5-y2-har.pdf 1 -
+/files/files/page/117/ 1 -
+/images/jdownloads/screenshots/ 1 -
+/\xd0\x9f\xd0\xbe\xd1\x87\xd1\x82\xd0\xb0 1 -
+/bitrix/js/main/core/core.css 2 -
+/files/files/characteristics/gab/gdm10-05-e-150-700-k-315-u2-gab.pdf 1 -
+/chgImg(-1) 2 -
+/images/cms/admin/mac/common/butterfly.png 2 -
+/%C3%87%C3%A0%C3%AF%C3%A0%C3%B1%C3%AD%C3%BB%C3%A5%20%C3%B7%C3%A0%C3%B1%C3%B2%C3%A8 2 -
+/gorizontalnie/167 3 -
+/www.mail@gidrodinamika.ru 16 -
+/editors/FCKeditor/editor/ 1 -
+/%D0%92%20%D0%BC%D0%B8%D1%80%D0%B5 1 -
+/get.php/media/dhl/info.php 1 -
+/files/files/page/195/ 1 -
+/\xc3\x8e\xc3\xb1\xc3\xa5\xc3\xad\xc3\xbc 2 -
+/gorizontalnie/204 2 -
+/files/files/page/100/ 1 -
+/files/files/characteristics/obv/gdm7-01-e-15-40-a-5,5-u2-obv.pdf 1 -
+/files/files/characteristics/har/gdmp7-09-e-50-80-a-3,0-22-y2-har.pdf 3 -
+/gorizontalnie/180 1 -
+/files/files/page/61/ 1 -
+/files/files/page/48/ 1 -
+/manager/templates/default/images/restyle/headers.jpg 2 -
+/files/files/characteristics/har/gdm4-07-e-10-90-a-15-y2-har.pdf 1 -
+/gorizontalnie/155 3 -
+/\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb\xe8 2 -
+/\xc7\xe0\xea\xe0 2 -
+/get.php/media/dhl/.htaccess 1 -
+/files/files/characteristics/gab/gdm10-08-e-150-850-a-500-u2-gab.pdf 2 -
+/files/files/page/93/gdmp3-e-25-50-a-2,7-11-y2-har.pdf 1 -
+/%d0%a1%d0%b2%d1%8f%d0%b7%d1%8c%20%d0%b8%20%d0%ba%d0%be%d0%bd%d1%81%d1%83%d0%bb%d1%8c%d1%82%d0%b0%d1%86%d0%b8%d1%8f 1 -
+/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F 81 -
+/vertikalnie/gorizontalnie/101 2 -
+/files/files/page/120/ 1 -
+/files/files/page/165/ 1 -
+/files/files/characteristics/har/gdm8-10-e-140-40-a-30-y2-har.pdf 1 -
+/%d0%97%d0%b0%d0%ba%d0%b0%d0%b7 1 -
+/catalog/vertikalnie/96 1 -
+/%d0%92%d0%b5%d1%81%d0%bd%d0%b0 1 -
+/files/files/page/188/ 1 -
+/files/files/page/192/ 1 -
+/\xce\xf1\xe5\xed 2 -
+/order.html 26 -
+/gorizontalnie/131 2 -
+/files/files/characteristics/har/gdm14-016-e-60-205-a-90-y2-har.pdf 1 -
+/styles/skins/mac/design/css/style.css 2 -
+/%d0%9e%20%d0%ba%d0%be%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d0%b8 1 -
+/%D0%97%D0%B0%D0%BF%D0%B0%D1%81%D0%BD%D1%8B%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%B8 67 -
+/%C3%90%E2%80%98%C3%90%C2%BB%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%BA 2 -
+/%D0%97%D0%B0%D0%BF%D0%B0%D1%81%D0%BD%D1%8B%D0%B5 4 http://gidrodinamika.ru/%D0%97%D0%B0%D0%BF%D0%B0%D1%81%D0%BD%D1%8B%D0%B5
+/files/files/page/146/ 2 -
+/gorizontalnie/172 3 -
+/\xcd\xee\xe2\xee\xf1\xf2\xe8 2 -
+/files/files/characteristics/gab/gdm7-06-e-45-30-a-5,5-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdm8-04-e-130-70-a-37-y2-har.pdf 1 -
+/files/files/characteristics/har/gdm7-06-e-45-30-a-5,5-y2-har.pdf 1 -
+/files/files/page/106/ 1 -
+/files/files/characteristics/har/gdm8-045-e-50-80-a-18,5-y2-har.pdf 1 -
+/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0 70 -
+/files/files/characteristics/har/gdm4-02-e-10-50-a-11-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/126 1 -
+/_cmseditor/editor/ 1 -
+/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D0%BE%D0%B3%D1%80%D1%83%D0%B6%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%D1%81%D0%BE%D1%81%D1%8B 66 -
+/files/files/characteristics/har/gdm10-01-e-200-850-a-630-y2-har.pdf 2 -
+/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5 4 http://gidrodinamika.ru/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5
+/gorizontalnie/190 2 -
+/files/files/page/91/ 1 -
+/gorizontalnie/127 1 -
+/files/files/page/237/ 1 -
+/\xcf\xee\xf7\xf2\xe0 2 -
+/files/files/page/95/ 2 -
+/files/files/characteristics/har/gdmp7-05-e-25-32-a-3,7-11-y2-har.pdf 2 -
+/files/files/characteristics/obv/gdm7-09-e-20-30-a-5,5-u2-obv.pdf 1 -
+/files/files/page/142/ 1 -
+/files/files/page/185/ 1 -
+/backup.class.php 2 -
+/files/files/page/189/ 1 -
+/files/files/characteristics/har/gdmp21-032-e-60-320-a-2,7-132-y2-har.pdf 1 -
+/files/files/page/231/ 1 -
+/%D0%A2%D0%B5%D1%85.%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0 79 -
+/contacts 5 -
+/vertikalnie/gorizontalnie/238 1 -
+/files/files/characteristics/gab/gdm2-03-e-700-120-a-400-u2-gab.pdf 2 -
+/gorizontalnie/166 3 -
+/catalog/vertikalnie/98 4 -
+/img/over-video.png 1 http://www.gidrodinamika.ru/css/style.css
+/files/files/page/159/ 1 -
+/\xc3\x84\xc3\xae\xc3\xb1\xc3\xb2\xc3\xa8\xc3\xa6\xc3\xa5\xc3\xad\xc3\xa8\xc3\xbf 2 -
+/%CC%E0%F0%EA%E5%F2%E8%ED%E3 9 http://gidrodinamika.ru/
+/vertikalnie/gorizontalnie/232 3 -
+/gorizontalnie/178 2 -
+/files/files/characteristics/gab/gdm13-09-e-40-70-k-11-u2-gab.pdf 1 -
+/files/files/page/181/ 1 -
+/files/files/characteristics/obv/gdm5-07-e-75-180-a-37-u2-obv.pdf 1 -
+/files/files/page/194/ 1 -
+/files/files/characteristics/gab/gdm5-04-e-115-170-a-55-u2-gab.pdf 1 -
+/include/FCKeditor/editor/ 1 -
+/gorizontalnie/137 3 -
+/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed 2 -
+/wp-content/ 2 -
+/%C3%EE%F0%E8%E7%EE%ED%F2%E0%EB%FC%ED%FB%E5%20%ED%E0%F1%F1%EE%F1%FB 9 http://gidrodinamika.ru/
+/files/files/characteristics/har/gdmd2-e-500-70-a-110-y2-har.pdf 1 -
+/%D0%A2%D0%B5%D1%85 1 -
+/gorizontalnie/203 1 -
+/1 2 http://www.gidrodinamika.ru/
+/files/files/characteristics/gab/gdmp6-01-e-25-50-a-3,7-18,5-u2-gab.pdf 2 -
+/%D0%92%D0%B5%D1%81%D0%BD%D0%B0 75 -
+/cache.php 2 -
+/files/files/characteristics/obv/gdm10-05-e-150-700-k-315-u2-obv.pdf 1 -
+/gorizontalnie/170 3 -
+/files/files/page/107/ 1 -
+/files/files/page/238/ 1 -
+/\xc3\x8c\xc3\xa0\xc3\xb0\xc3\xaa\xc3\xa5\xc3\xb2\xc3\xa8\xc3\xad\xc3\xa3 2 -
+/vertikalnie/gorizontalnie/225 2 -
+/files/files/characteristics/har/gdm14-018-e-65-120-a-45-y2-har.pdf 1 -
+/files/files/characteristics/har/gdmp14-05-e-50-150-a-3,2-55-y2-har.pdf 1 -
+/files/files/page/119/ 1 -
+/onclick=this.href= 2 http://www.gidrodinamika.ru/
+/files/files/characteristics/har/gdm15-011-e-210-80-a-75-y2-har.pdf 1 -
+/gorizontalnie/144 3 -
+/%D0%9E%D1%81%D0%B5%D0%BD%D1%8C 69 -
+/gorizontalnie/168 2 -
+/files/files/page/190/ 1 -
+/files/files/characteristics/gab/gdm12-03-e-20-70-a-18,5-u2-gab.pdf 1 -
+/catalog/gor/5-11/gdm5-11-gab.pdf 1 -
+/files/files/characteristics/har/gdm21-e-15-750-a-160-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/110 4 -
+/catalog/vertikalnie/206 4 -
+/gorizontalnie/139 2 -
+/gorizontalnie/188 3 -
+/%F1%F1%FB%EB%EA%E0%20vk.com 9 -
+/\xd0\x9b\xd0\xb8\xd1\x86\xd0\xb5\xd0\xbd\xd0\xb7\xd0\xb8\xd0\xb8 1 -
+/common/fckeditor/editor/ 1 -
+/\xcb\xe5\xf2\xee 4 -
+/files/files/page/91/gdmp2-e-50-50-a-3,2-18,5-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdm15-091-e-500-100-a-200-y2-har.pdf 1 -
+/\xc3\xee\xf0\xe8\xe7\xee\xed\xf2\xe0\xeb\xfc\xed\xfb\xe5 2 -
+/products 4 -
+/files/files/characteristics/har/gdm7-07-e-8-20-a-2,2-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/215 3 -
+/files/files/characteristics/har/gdm15-012-e-160-160-a-90-y2-har.pdf 1 -
+/%CA%EE%EC%EF%E0%ED%E8%FF 9 -
+/gorizontalnie/153 2 -
+/files/files/characteristics/har/gdmd1-01-e-260-90-a-75-y2-har.pdf 1 -
+/%D0%92%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8 1 -
+/files/files/characteristics/har/gdm21-06-e-6-110-a-11-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/108 2 -
+/files/files/page/239/ 1 -
+/files/files/characteristics/har/gdmp13-e-25-50-a-2,7-18,5-y2-har.pdf 2 -
+/gorizontalnie/156 2 -
+/catalog/vertikalnie/91 3 -
+/files/files/page/101/ 1 -
+/bitrix/themes/.default/adminstyles.css 2 -
+/files/files/characteristics/har/gdmp8-03-e-10-480-a-2,7-55-y2-har.pdf 1 -
+/gorizontalnie/197 2 -
+/%C2%E5%F1%ED%E0 11 -
+/admin/js/fckeditor/editor/ 1 -
+/img/dummies/dummy-post-img01.jpg 1 -
+/\xce\xe1\xf0\xe0\xf2\xed 2 -
+/files/files/characteristics/har/gdm13-014-e-90-50-a-15-y2-har.pdf 1 -
+/gorizontalnie/171 2 -
+/order.html/administrator/index.php 1 -
+/files/files/page/205/ 1 -
+/files/files/page/124/ 1 -
+/files/files/page/91/gdmp2-e-50-50-a-3,2-18,5-y2-har.pdf 2 -
+/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8 70 -
+/files/files/page/178/ 1 -
+/assets/modules/evogallery/js/uploadify/uploadify.php 1 -
+/%C3%90%E2%80%99%C3%90%C2%B5%C3%91%C2%81%C3%90%C2%BD%C3%90%C2%B0 1 -
+/%C7%E0%EF%E0%F1%ED%FB%E5%20%F7%E0%F1%F2%E8 15 -
+/controls/fckeditor/editor/ 1 -
+/files/files/page/55/ 1 -
+/vertikalnie/gorizontalnie/102 2 -
+//admin/ 1 -
+/wp-admin/css/wp-admin.css 2 -
+/files/files/characteristics/har/gdmp16-e-400-90-a-5,2-160-y2-har.pdf 1 -
+/\xd0\x9e\xd1\x81\xd0\xb5\xd0\xbd\xd1\x8c 1 -
+/catalog/vertikalnie/gorizontalnie/97 2 -
+/vertikalnie/gorizontalnie/125 2 -
+/htmleditor/editor/ 1 -
+/files/files/page/222/ 1 -
+/files/files/page/63/ 1 -
+/admin.php 14 -
+/img/quotes-close.png 1 http://www.gidrodinamika.ru/css/style.css
+/files/files/characteristics/har/gdm15-014-e-180-100-a-55-y2-har.pdf 1 -
+/fcksddc/editor/ 1 -
+/img/bullet.png 1 http://www.gidrodinamika.ru/css/style.css
+/files/files/characteristics/har/gdm10-042-a-150-750-a-500-y2-har.pdf 1 -
+/files/files/page/179/ 1 -
+/files/files/characteristics/har/gdm7-e-8-32-a-5,5-y2-har.pdf 1 -
+/\xc3\x8f\xc3\xb0\xc3\xae\xc3\xa4\xc3\xb3\xc3\xaa\xc3\xb6\xc3\xa8\xc3\xbf 2 -
+/vertikalnie/gorizontalnie/233 4 -
+/gorizontalnie/173 3 -
+/files/files/characteristics/har/gdm15-02-e-200-250-a-200-y2-har.pdf 2 -
+/\xca\xee\xec\xef\xe0\xed 2 -
+/%C3%8E%C3%A1%C3%B0%C3%A0%C3%B2%C3%AD%C3%A0%C3%BF%20%C3%B1%C3%A2%C3%BF%C3%A7%C3%BC 2 -
+/media/css/page-contact.css 2 -
+/files/files/page/174/ 1 -
+/gorizontalnie/165 4 -
+/gorizontalnie/157 2 -
+/files/files/page/169/ 1 -
+/\xce\xf1\xe5\xed\xfc 2 -
+/gorizontalnie/200 1 -
+/%d0%9a%d0%be%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d1%8f 1 -
+/files/files/characteristics/har/gdm8-042-e-60-80-a-30-y2-har.pdf 1 -
+/files/files/page/228/ 1 -
+/node/ 2 -
+/files/files/page/226/ 1 -
+/%C2%E5%F0%ED%F3%F2%FC%F1%FF%20%EE%E1%F0%E0%F2%ED%EE 3 -
+/files/files/characteristics/har/gdm10-041-e-220-600-a-500-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/222 2 -
+/files/files/page/200/ 1 -
+/vertikalnie/gorizontalnie/217 4 -
+/files/files/characteristics/gab/gdm21-0311-e-20-250-a-30-u2-gab.pdf 1 -
+/files/files/page/145/ 1 -
+/%C7%E8%EC%E0 8 -
+/%CB%E8%F6%E5%ED%E7%E8%E8 9 -
+/%D0%9C%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3 73 -
+/\xc3\x8b\xc3\xa5\xc3\xb2\xc3\xae 2 -
+/files/files/characteristics/har/gdm21-03-e-20-200-a-37-u2-har.pdf 1 -
+/netcat/admin/skins/default/css/style.css 2 -
+/files/files/characteristics/gab/gdm10-06-e-180-350-a-315-u2-gab.pdf 1 -
+/files/files/page/151/ 1 -
+/files/files/characteristics/har/gdmp10-e-200-100-a-3,7-90-y2-har.pdf 1 -
+/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F 4 http://gidrodinamika.ru/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F
+/wp-login.php 28 -
+/files/files/page/99/ 1 -
+/\xcd\xee\xe2\xee\xf1\xf2 2 -
+/\xd0\x9f\xd1\x80\xd0\xb5\xd0\xb4\xd1\x81\xd1\x82\xd0\xb0\xd0\xb2\xd0\xb8\xd1\x82\xd0\xb5\xd0\xbb\xd0\xb8 1 -
+/files/files/characteristics/gab/gdm10-01-e-200-850-a-630-u2-gab.pdf 1 -
+/vertikalnie/gorizontalnie/116 2 -
+/\xd0\x9a\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x8f 1 -
+/files/files/characteristics/obv/gdm8-03-e-100-820-a-500-u2-obv.pdf 1 -
+/files/files/page/157/ 1 -
+/files/files/page/108/ 2 -
+/gorizontalnie/141 4 -
+/%d0%a2%d0%b5%d1%85.%20%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%ba%d0%b0 1 -
+/%C3%8E%20%C3%AA%C3%AE%C3%AC%C3%AF%C3%A0%C3%AD%C3%A8%C3%A8 2 -
+/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 4 -
+/gorizontalnie/149 2 -
+/files/files/characteristics/gab/gdmp21-04-e-16-400-a-2,7-55-u2-gab.pdf 1 -
+/gorizontalnie/187 2 -
+/img/over-flash.png 1 http://www.gidrodinamika.ru/css/style.css
+/%D0%9E 4 http://gidrodinamika.ru/%D0%9E
+/license.php 7 -
+/gorizontalnie/169 2 -
+/\xce\xe1\xeb\xee\xe6\xea\xe0 2 -
+/files/files/characteristics/har/gdm8-052-e-230-135-a-132-y2-har.pdf 1 -
+/\xd0\x9d\xd0\xbe\xd0\xb2\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8 1 -
+/files/files/page/156/ 1 -
+/\xc3\x8d\xc3\xae\xc3\xa2\xc3\xae\xc3\xb1\xc3\xb2\xc3\xa8 2 -
+/files/files/characteristics/har/gdm15-01-e-220-114-a-90-y2-har.pdf 3 -
+/\xd0\x9e\xd0\xb1\xd0\xbb\xd0\xbe\xd0\xb6\xd0\xba\xd0\xb0 1 -
+/gorizontalnie/136 3 -
+/users/registrate/ 2 -
+/files/files/page/143/ 1 -
+/\xc3\x8b\xc3\xa8\xc3\xb6\xc3\xa5\xc3\xad\xc3\xa7\xc3\xa8\xc3\xa8 2 -
+/vertikalnie/gorizontalnie/228 2 -
+/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8 2 -
+/files/files/page/224/ 1 -
+/vertikalnie/gorizontalnie/122 3 -
+/files/files/characteristics/har/gdm2-03-e-700-120-a-400-y2-har.pdf 1 -
+/\xca\xee\xec\xef\xe0\xed\xe8\xff 2 -
+/about 3 -
+/media/system/js/mootools.js 2 -
+/files/files/characteristics/gab/gdm4-08-e-10-80-k-11-u2-gab.pdf 1 -
+/%C3%83%C3%AE%C3%B0%C3%A8%C3%A7%C3%AE%C3%AD%C3%B2%C3%A0%C3%AB%C3%BC%C3%AD%C3%BB%C3%A5%20%C3%AD%C3%A0%C3%B1%C3%B1%C3%AE%C3%B1%C3%BB 2 -
+/\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed 2 -
+/vertikalnie/gorizontalnie/109 1 -
+/files/files/page/176/ 1 -
+/files/files/characteristics/obv/gdm14-017-e-35-120-k-30-u2-obv.pdf 1 -
+/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F 90 -
+/user/password/ 2 -
+/files/files/characteristics/har/gdmp21-02-e-16-320-a-3,2-30-y2-har.pdf 1 -
+/files/files/characteristics/har/gdm8-03-e-100-820-a-500-y2-har.pdf 1 -
+/manager/ 2 -
+/%C3%91%C3%A2%C3%BF%C3%A7%C3%BC%20%C3%A8%20%C3%AA%C3%AE%C3%AD%C3%B1%C3%B3%C3%AB%C3%BC%C3%B2%C3%A0%C3%B6%C3%A8%C3%BF 2 -
+/vertikalnie/gorizontalnie/103 2 -
+/%D0%92%D0%B5%D1%80%D0%BD%D1%83%D1%82%D1%8C%D1%81%D1%8F%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%BE 61 -
+/files/files/page/134/ 1 -
+/gorizontalnie/135 3 -
+/files/files/page/132/ 1 -
+/produce.html 1 -
+/history.back() 2 -
+/gorizontalnie/151 4 -
+/%C3%82%C3%A5%C3%B0%C3%AD%C3%B3%C3%B2%C3%BC%C3%B1%C3%BF%20%C3%AE%C3%A1%C3%B0%C3%A0%C3%B2%C3%AD%C3%AE 2 -
+/files/files/page/161/ 1 -
+/\xd2\xe5 2 -
+/netcat/admin/ 2 -
+/%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20vk.com 69 -
+/catalog/gor/5-11/gdm5-11-obv.pdf 1 -
+/files/files/characteristics/har/gdm8-031-e-90-300-a-90-y2-har.pdf 2 -
+/vertikalnie/gorizontalnie/223 2 -
+/files/files/page/115/ 1 -
+/catalog/gor/5-11/gdm5-11-har.pdf 1 -
+/%CE%F1%E5%ED%FC 7 http://gidrodinamika.ru/
+/\xd1\x81\xd1\x81\xd1\x8b\xd0\xbb\xd0\xba\xd0\xb0%20vk.com 1 -
+/files/files/page/105/ 1 -
+/gorizontalnie/154 2 -
+/vertikalnie/gorizontalnie/234 4 -
+/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 4 -
+/%C3%EB%E0%E2%ED%E0%FF 7 http://gidrodinamika.ru/
+/files/files/characteristics/har/gdm10-09-e-200-160-a-132-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/124 2 -
+/%d0%94%d0%be%d1%81%d1%82%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f 1 -
+/manager/templates/default/images/style/modx-logo-header.png 2 -
+/files/files/characteristics/gab/gdm13-014-e-90-50-a-15-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdmp15-e-50-50-a-3,0-15-y2-har.pdf 1 -
+/gorizontalnie/199 3 -
+/files/files/page/206/gdmp6-01-e-25-50-a-3,7-18,5-u2-gab.pdf 1 -
+/javascript:history.back() 2 -
+/files/files/characteristics/har/gdm13-08-e-120-70-a-18,5-y2-har.pdf 1 -
+/gorizontalnie/191 3 -
+/\xd0\x9e\xd0\xb1\xd1\x80\xd0\xb0\xd1\x82\xd0\xbd\xd0\xb0\xd1\x8f%20\xd1\x81\xd0\xb2\xd1\x8f\xd0\xb7\xd1\x8c 1 -
+/files/files/characteristics/gab/gdm8-10-e-100-45-k-18,5-u2-gab.pdf 3 -
+/\xd1\xe2\xff\xe7\xfc 2 -
+/files/files/page/1/ 1 -
+/\xc3\x8e\xc3\xa1\xc3\xab\xc3\xae\xc3\xa6\xc3\xaa\xc3\xa0 2 -
+/files/files/page/240/ 1 -
+/\xd0\x97\xd0\xb0\xd0\xbf\xd0\xb0\xd1\x81\xd0\xbd\xd1\x8b\xd0\xb5%20\xd1\x87\xd0\xb0\xd1\x81\xd1\x82\xd0\xb8 1 -
+/files/files/characteristics/har/gdmp8-01-e-12-640-a-3,7-30-y2-har.pdf 1 -
+/files/files/characteristics/har/gdm10-06-e-180-350-a-315-y2-har.pdf 1 -
+/files/files/characteristics/har/gdm14-015-e-60-250-a-90-y2-har.pdf 1 -
+/\xc3\x8a\xc3\xae\xc3\xac\xc3\xaf\xc3\xa0\xc3\xad\xc3\xa8\xc3\xbf 2 -
+/gorizontalnie 15 -
+/users/forget/ 2 -
+/files/files/characteristics/har/gdm21-031-e-25-280-a-45-y2-har.pdf 1 -
+/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8 1 -
+/catalog/gor/\xc41-02//gdmd1-02-har.pdf 1 -
+/files/files/characteristics/har/gdm8-01-e-125-520-a-315-y2-har.pdf 1 -
+/pump.html 1 -
+/%D0%91%D0%BB%D0%B0%D0%BD%D0%BA 93 -
+/%CE%E1%F0%E0%F2%ED%E0%FF%20%F1%E2%FF%E7%FC 9 -
+/catalog/vertikalnie/gorizontalnie/211 2 -
+/gorizontalnie/194 1 -
+/files/files/page/164/ 1 -
+/gorizontalnie/142 1 -
+/wp-content/plugins/gravityforms/js/gravityforms.js 2 -
+/\xc3\x87\xc3\xa8\xc3\xac\xc3\xa0 2 -
+/dzbwcms/inc/editor/fckeditor/editor/ 1 -
+/files/files/characteristics/har/gdm14-06-e-40-90-a-18,5-y2-har.pdf 1 -
+/en/ 1 -
+/files/files/characteristics/har/gdm10-11-e-200-930-a-630-y2-har.pdf 1 -
+/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F 67 -
+/vertikalnie/gorizontalnie/117 2 -
+/%CE%20%EA%EE%EC%EF%E0%ED%E8%E8 9 http://gidrodinamika.ru/
+/vertikalnie/gorizontalnie/227 2 -
+/%CE%E1%EB%EE%E6%EA%E0 7 -
+/files/files/page/114/ 2 -
+/%CF%F0%EE%E4%F3%EA%F6%E8%FF 9 -
+/editor/fck_vxgm/editor/ 1 -
+/<!DOCTYPE 2 -
+/files/files/characteristics/har/gdm21-0312-a-25-100-a-22-y2-har.pdf 3 -
+/files/files/characteristics/har/gdm3-e-180-180-a-132-y2-har.pdf 1 -
+/catalog/gor/\xc41-01//gdmd1-01-obv.pdf 1 -
+/files/files/page/121/ 1 -
+/manager/media/style/MODxCarbon/style.css 2 -
+/files/files/page/68/ 1 -
+/\xc1\xeb\xe0\xed\xea 2 -
+/files/files/page/162/ 1 -
+/files/files/characteristics/obv/gdm21-04-e-20-900-a-75-u2-obv.pdf 1 -
+/gorizontalnie/182 1 -
+/files/files/page/110/ 1 -
+/\xd0\x97\xd0\xb8\xd0\xbc\xd0\xb0 1 -
+/\xd0\x9c\xd0\xb0\xd1\x80\xd0\xba\xd0\xb5\xd1\x82\xd0\xb8\xd0\xbd\xd0\xb3 1 -
+/files/files/characteristics/gab/gdm14-015-e-60-250-a-90-u2-gab.pdf 1 -
+/%D0%9E%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8 63 -
+/%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5 1 -
+/admin/content/sitetree/ 2 -
+/vk.com 5 http://gidrodinamika.ru
+/vertikalnie/gorizontalnie/235 2 -
+/files/files/characteristics/gab/gdm4-07-e-10-90-a-15-u2-gab.pdf 1 -
+/\xd0\x9b\xd0\xb5\xd1\x82\xd0\xbe 1 -
+/files/files/characteristics/obv/gdmp-obv.pdf 1 -
+/files/files/characteristics/gab/gdm14-018-e-65-120-a-45-u2-gab.pdf 1 -
+/%C3%90%C5%BE%20%C3%90%C2%BA%C3%90%C2%BE%C3%90%C2%BC%C3%90%C2%BF%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%B8%C3%90%C2%B8 1 -
+/files/files/page/55/gdm8-03-e-100-820-a-500-u2-gab.pdf 1 -
+/vertikalnie/gorizontalnie/118 2 -
+/\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed\xe3 2 -
+/gorizontalnie/189 1 -
+/vertikalnie/gorizontalnie/123 2 -
+/%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0 3 http://gidrodinamika.ru/%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0
+/files/files/characteristics/obv/gdm14-012-e-30-100-a-18,5-u2-obv.pdf 1 -
+/%D0%97%D0%B8%D0%BC%D0%B0 69 -
+/files/files/characteristics/obv/gdm13-09-e-40-70-k-11-u2-obv.pdf 1 -
+/kfckeditor/editor/ 1 -
+/files/files/page/204/ 2 -
+/files/files/characteristics/gab/gdmp3-e-25-50-a-2,7-11-u2-gab.pdf 2 -
+/files/files/page/109/ 1 -
+/files/files/page/123/ 1 -
+/js/fckeditor/editor/ 1 -
+/files/files/page/153/ 1 -
+/vertikalnie/gorizontalnie/104 2 -
+/%C3%8F%C3%AE%C3%AB%C3%B3%C3%AF%C3%AE%C3%A3%C3%B0%C3%B3%C3%A6%C3%AD%C3%BB%C3%A5%20%C3%AD%C3%A0%C3%B1%C3%AE%C3%B1%C3%BB 2 -
+/alqeka.txt 1 http://www.gidrodinamika.ru/alqeka.txt
+/onclick= 2 -
+/gorizontalnie/147 2 -
+/files/files/ 2 -
+/gorizontalnie/202 2 -
+/vertikalnie/gorizontalnie/114 2 -
+/catalog/gor/\xc41-01//gdmd1-01-har.pdf 1 -
+/gorizontalnie/176 3 -
+/\xc3\x8a\xc3\xae\xc3\xad\xc3\xb2\xc3\xa0\xc3\xaa\xc3\xb2\xc3\xbb 2 -
+/files/files/characteristics/har/gdm14-012-e-30-100-a-18,5-y2-har.pdf 1 -
+/files/files/page/220/ 1 -
+/files/files/page/236/ 1 -
+/files/files/characteristics/har/gdm5-04-e-115-170-a-55-y2-har.pdf 1 -
+/files/files/characteristics/har/gdmp3-e-25-50-a-2,7-11-y2-har.pdf 1 -
+/%CF%F0%E5%E4%F1%F2%E0%E2%E8%F2%E5%EB%E8 6 http://gidrodinamika.ru/
+/netcat/admin/skins/default/css/login.css 2 -
+/%C1%EB%E0%ED%EA 8 http://gidrodinamika.ru/
+/gorizontalnie/195 1 -
+/plus/fckeditor/editor/ 1 -
+/files/files/page/122/ 1 -
+/\xc7\xe0\xea\xe0\xe7 2 -
+/files/files/page/215/ 1 -
+/files/files/page/223/ 1 -
+/\xcf\xee\xeb\xf3\xef\xee\xe3\xf0\xf3\xe6\xed\xfb 2 -
+/gorizontalnie/150 3 -
+/catalog/vertikalnie/gorizontalnie/212 1 -
+/files/files/characteristics/har/gdm4-011-e-15-120-a-11-y2-har.pdf 1 -
+/%D0%9F%D0%BE%D1%87%D1%82%D0%B0 77 -
+/\xce\xe1\xeb\xee\xe6\xea 2 -
+/%C3%90%C2%A1%C3%90%C2%B2%C3%91%C2%8F%C3%90%C2%B7%C3%91%C5%92%20%C3%90%C2%B8%20%C3%90%C2%BA%C3%90%C2%BE%C3%90%C2%BD%C3%91%C2%81%C3%91%C6%92%C3%90%C2%BB%C3%91%C5%92%C3%91%E2%80%9A%C3%90%C2%B0%C3%91%E2%80%A0%C3%90%C2%B8%C3%91%C2%8F 1 -
+/files/files/page/58/ 1 -
+/files/files/page/160/ 1 -
+/gorizontalnie/196 2 -
+/files/files/characteristics/har/gdmp8-e-10-320-a-3,7-30-y2-har.pdf 1 -
+/files/files/page/232/ 1 -
+/files/files/page/211/ 1 -
+/files/%20%20files/characteristics/gab/gdm21-e-15-750-a-160-u2-gab.pdf 2 -
+/%C3%90%E2%80%9C%C3%90%C2%BE%C3%91%E2%82%AC%C3%90%C2%B8%C3%90%C2%B7%C3%90%C2%BE%C3%90%C2%BD%C3%91%E2%80%9A%C3%90%C2%B0%C3%90%C2%BB%C3%91%C5%92%C3%90%C2%BD%C3%91%E2%80%B9%C3%90%C2%B5%20%C3%90%C2%BD%C3%90%C2%B0%C3%91%C2%81%C3%91%C2%81%C3%90%C2%BE%C3%91%C2%81 1 -
+/\xd0\x92\xd0\xb5\xd1\x81\xd0\xbd\xd0\xb0 1 -
+/vertikalnie/gorizontalnie/220 3 -
+/2014 1 -
+/gorizontalnie/158 3 -
+/reestr/reestr-id128032.php 1 http://gidrodinamika.ru/reestr/reestr-id128032.php
+/vertikalnie/gorizontalnie/240 2 -
+/files/files/characteristics/har/gdm5-07-e-75-180-a-37-y2-har.pdf 2 -
+/%CD%EE%E2%EE%F1%F2%E8 7 http://gidrodinamika.ru/
+/gorizontalnie/164 2 -
+/files/files/page/230/ 1 -
+/files/files/page/147/ 1 -
+/administrator/index.php 19 -
+/\xc2\xe5\xf1\xed 2 -
+/\xd0\x9e%20\xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xb0\xd0\xbd\xd0\xb8\xd0\xb8 1 -
+/files/files/page/144/ 1 -
+/%C3%B1%C3%B1%C3%BB%C3%AB%C3%AA%C3%A0%20vk.com 2 -
+/catalog/vertikalnie/gorizontalnie/94 2 -
+/gorizontalnie/134 2 -
+/files/files/page/173/ 1 -
+/%D0%A2%D0%B5%D1%85. 3 http://gidrodinamika.ru/%D0%A2%D0%B5%D1%85.
+/files/files/characteristics/obv/gdm4-01-e-10-100-k-18,5-u2-obv.pdf 1 -
+/files/files/characteristics/har/gdm10-08-e-150-850-a-500-y2-har.pdf 2 -
+/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B2%D1%8F%D0%B7%D1%8C 70 -
+/files/files/characteristics/har/gdmp8-04-e-130-60-a-3,2-45-y2-har.pdf 1 -
+/files/files/page/128/ 1 -
+/bitrix/admin/ 4 http://www.gidrodinamika.ru/bitrix/admin/
+//xmlrpc.php 4 -
+/files/files/characteristics/har/gdmp6-01-e-25-50-a-3,7-18,5-y2-har.pdf 1 -
+/files/files/page/227/ 1 -
+/gorizontalnie/181 3 -
+/vertikalnie/gorizontalnie/120 2 -
+/\xc3\x81\xc3\xab\xc3\xa0\xc3\xad\xc3\xaa 2 -
+/files/files/page/47/ 1 -
+/files/files/characteristics/gab/gdm10-042-a-150-750-a-500-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdmd3-e-1250-40-a-200-y2-har.pdf 1 -
+/files/files/characteristics/gab/gdm9-05-e-40-450-a-132-u2-gab.pdf 1 -
+/files/files/characteristics/gab/gdmp21-06-e-6-100-a-3,0-7,5-u2-gab.pdf 1 -
+/gorizontalnie/148 3 -
+/files/files/characteristics/har/gdm9-06-e-50-220-a-55-y2-har.pdf 2 -
+/files/files/page/154/ 2 -
+/gorizontalnie/129 1 -
+/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D1%8B 1 -
+/%CF%EE%F7%F2%E0 10 -
+/files/files/characteristics/har/gdm14-02-e-30-250-a-45-y2-har.pdf 3 -
+/files/files/page/201/ 1 -
+/vertikalnie/gorizontalnie/236 2 -
+/files/files/page/171/ 1 -
+/catalog/vertikalnie/gorizontalnie/214 3 -
+/files/files/characteristics/har/gdm8-051-e-100-150-a-55-y2-har.pdf 1 -
+/\xc7\xe8\xec\xe0 4 -
+/vertikalnie/gorizontalnie/119 3 -
+/vertikalnie/gorizontalnie/216 3 -
+/files/files/page/98/gdmp5-e-31,5-63-a-3,2-15-y2-har.pdf 2 -
+/files/files/page/206/ 1 -
+/gorizontalnie/152 1 -
+/files/files/characteristics/obv/gdm2-07-e-360-70-a-132-u2-obv.pdf 2 -
+/gorizontalnie/174 1 -
+/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed\xe8\xff 2 -
+/\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb 2 -
+/files/files/page/199/ 1 -
+/files/files/page/68/gdm15-01-e-220-114-a-90-u2-gab.pdf 1 -
+/\xc1\xeb\xe0\xed 2 -
+/gorizontalnie/175 1 -
+/catalog/vertikalnie/gorizontalnie/92 4 -
+/%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D0%B8 82 -
+/%C3%90%E2%80%BA%C3%90%C2%B5%C3%91%E2%80%9A%C3%90%C2%BE 1 -
+/catalog/vertikalnie/gorizontalnie/213 2 -
+/files/files/page/221/ 1 -
+/files/files/page/206/gdmp6-01-e-25-50-a-3,7-18,5-y2-har.pdf 1 -
+/files/files/page/182/ 1 -
+/files/files/characteristics/har/gdmp14-04-e-20-80-a-2,3-15-y2-har.pdf 2 -
+/utility/convert/index.php 1 http://www.gidrodinamika.ru/utility/convert/index.php
+/files/files/characteristics/har/gdm7-03-e-6-150-a-7,5-y2-har.pdf 1 -
+/files/files/characteristics/obv/gdm21-0311-e-20-250-a-30-u2-obv.pdf 1 -
+/%C3%92%C3%A5%C3%B5.%20%C3%AF%C3%AE%C3%A4%C3%A4%C3%A5%C3%B0%C3%A6%C3%AA%C3%A0 2 -
+/gorizontalnie/193 4 -
+/files/files/characteristics/gab/gdmp14-04-e-20-80-k-2,3-15-u2-gab.pdf 1 -
+/\xcf\xee\xf7\xf2 2 -
+/\xc7\xe0\xef\xe0\xf1\xed\xfb\xe5 2 -
+/vertikalnie/gorizontalnie/105 1 -
+/netcat/admin/skins/default/img/logo.png 2 -
+/files/files/characteristics/har/gdm21-04-e-20-900-a-75-y2-har.pdf 1 -
+/\xd0\x9f\xd0\xbe\xd0\xbb\xd1\x83\xd0\xbf\xd0\xbe\xd0\xb3\xd1\x80\xd1\x83\xd0\xb6\xd0\xbd\xd1\x8b\xd0\xb5%20\xd0\xbd\xd0\xb0\xd1\x81\xd0\xbe\xd1\x81\xd1\x8b 1 -
+/files/files/page/140/ 1 -
+/vertikalnie/gorizontalnie/229 1 -
+/vertikalnie/gorizontalnie/221 3 -
+/files/files/characteristics/har/gdm7-01-e-15-40-a-5,5-u2-har.pdf 1 -
+/vertikalnie/gorizontalnie/113 2 -
+/files/files/page/93/gdmp3-e-25-50-a-2,7-11-u2-gab.pdf 1 -
+/%C3%90%C2%9D%C3%90%C2%BE%C3%90%C2%B2%C3%90%C2%BE%C3%91%C2%81%C3%91%E2%80%9A%C3%90%C2%B8 1 -
+/\xc2\xe5\xf0\xed\xf3\xf2\xfc\xf1\xff 2 -
+/%C7%E0%EA%E0%E7 7 -
+/gorizontalnie/145 1 -
+/files/files/characteristics/har/gdm7-02-e-5-175-a-11-y2-har.pdf 1 -
+/files/files/page/198/ 1 -
+/files/files/page/235/ 1 -
+/gorizontalnie/163 1 -
+/gorizontalnie/184 1 -
+/files/files/characteristics/obv/gdm4-08-e-10-80-k-11-u2-obv.pdf 1 -
+/%C3%90%C5%B8%C3%90%C2%BE%C3%91%E2%80%A1%C3%91%E2%80%9A%C3%90%C2%B0 1 -
+/editor/ 1 -
+/files/files/page/233/ 1 -
+/files/files/page/112/ 1 -
+/%d0%93%d0%be%d1%80%d0%b8%d0%b7%d0%be%d0%bd%d1%82%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5%20%d0%bd%d0%b0%d1%81%d1%81%d0%be%d1%81%d1%8b 1 -
+/%C3%90%E2%80%94%C3%90%C2%B8%C3%90%C2%BC%C3%90%C2%B0 1 -
+/%C3%90%E2%80%9D%C3%90%C2%BE%C3%91%C2%81%C3%91%E2%80%9A%C3%90%C2%B8%C3%90%C2%B6%C3%90%C2%B5%C3%90%C2%BD%C3%90%C2%B8%C3%91%C2%8F 3 -
+/files/files/page/127/ 1 -
+/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 4 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 717
+175.198.148.195 277 277 2294599 20151113133627
+62.173.139.105 170 280 121893108 20151118122410
+85.109.128.212 123 123 7030226 20151121163125
+93.93.72.98 86 87 19991201 20151123134650
+89.169.221.46 80 144 11007986 20151118035126
+85.237.33.167 77 78 19914561 20151130170827
+106.185.52.228 66 66 273537 20151118065745
+46.118.119.48 57 57 472473 20151130072329
+91.144.176.133 53 53 187553 20151127120051
+81.90.13.31 50 125 79331870 20151130155221
+178.137.89.181 48 48 397872 20151130030153
+37.115.191.181 47 47 389583 20151130191537
+178.137.161.6 44 44 364716 20151121133118
+178.137.94.14 44 44 364716 20151121130806
+46.118.152.18 40 40 331560 20151121104936
+85.234.39.198 36 419 65051888 20151130110509
+80.94.174.95 36 36 117218 20151109091827
+213.184.249.183 33 33 101177 20151127112938
+37.115.154.109 33 33 273537 20151123013728
+213.87.148.117 33 33 59326 20151127154325
+178.137.91.140 32 32 265248 20151114080551
+199.19.249.196 30 31 20149571 20151123134612
+178.121.242.252 30 30 84416 20151123121528
+178.137.82.178 29 29 240381 20151114061800
+37.113.129.36 28 28 91842 20151125062418
+185.46.148.230 0 36 39429226 
+91.211.55.46 7 7 35819 20151101140122
+188.120.229.69 1 1 8289 20151115100213
+108.62.56.66 1 1 2725 20151109024658
+31.173.242.56 1 1 2537 20151117120905
+88.208.23.73 2 4 39437979 20151112001310
+176.37.35.150 1 1 15871 20151130232232
+37.204.73.52 1 1 2537 20151109151537
+213.87.249.144 0 1 19714613 
+212.98.191.17 2 2 4942 20151127103652
+46.238.15.136 1 1 2537 20151127151333
+195.19.171.123 3 3 4832 20151102093752
+151.252.109.198 22 23 195847 20151106092018
+109.197.112.3 2 2 4942 20151117232530
+109.188.68.46 2 2 4942 20151103113102
+178.140.84.197 0 1 29399 
+202.46.50.91 1 1 2537 20151124124432
+185.26.182.27 1 1 2537 20151123141712
+178.137.94.166 4 4 33156 20151104015441
+45.55.232.76 5 5 13871 20151130014824
+5.167.105.209 1 1 2537 20151123103942
+66.102.9.82 4 4 10148 20151122180844
+207.182.140.210 1 1 2537 20151114131050
+195.222.75.170 11 11 29977 20151116105042
+85.140.79.156 1 1 2537 20151122135906
+212.233.114.250 0 30 39429226 
+80.93.49.174 2 2 0 20151127064215
+77.240.152.42 2 2 29216 20151112145808
+37.17.38.60 1 1 2537 20151125103453
+109.202.2.190 4 4 13578 20151125060225
+180.76.15.159 1 1 2537 20151123201024
+83.149.9.136 1 1 2537 20151102062822
+92.50.131.158 1 2 227380 20151125100511
+85.26.234.91 1 1 2537 20151123201858
+188.187.0.83 2 2 7540 20151110164239
+178.121.225.113 1 1 2537 20151127143324
+84.51.80.70 0 1 135262 
+188.242.188.106 1 1 6752 20151108000419
+89.251.155.181 1 1 2537 20151119190814
+213.85.40.198 6 6 26154 20151120170822
+82.209.214.3 1 1 6946 20151103104341
+37.215.35.92 13 13 54699 20151106104926
+178.19.251.110 1 1 8289 20151115235328
+178.126.83.95 1 1 2405 20151116105126
+91.76.204.35 1 1 2537 20151130171552
+178.64.161.122 1 1 7612 20151127143437
+86.57.146.178 2 2 4942 20151105151153
+91.215.153.17 2 2 5074 20151116111234
+81.177.127.18 1 1 2537 20151116011933
+37.115.184.26 19 19 157491 20151105011453
+109.63.214.215 1 1 8289 20151102131020
+91.149.187.23 2 2 4942 20151124103419
+45.55.133.229 1 1 2537 20151123231038
+147.30.69.29 1 1 2537 20151121160736
+220.181.108.155 1 1 2537 20151104214124
+123.125.71.107 1 1 2537 20151104224237
+217.119.19.74 8 8 29083 20151116115642
+62.33.212.87 1 1 2537 20151124144501
+95.68.243.82 2 2 4942 20151124160254
+93.174.243.230 13 36 257061738 20151125090019
+202.46.55.150 1 1 2537 20151118002929
+123.125.71.82 1 1 2537 20151104213947
+109.105.171.32 0 30 39465066 
+93.85.17.173 3 40 39440384 20151120163556
+89.208.147.138 4 4 33156 20151126190959
+202.46.57.28 1 1 2537 20151121234054
+178.47.33.138 0 1 19714613 
+81.218.140.112 1 1 8289 20151105221603
+178.124.158.222 6 6 14897 20151117101650
+5.255.253.4 3 3 7611 20151130193742
+37.113.128.56 2 2 7940 20151102113658
+91.76.22.138 3 3 7347 20151125164714
+178.121.194.75 1 1 2537 20151104124450
+5.166.68.29 0 1 127146 
+192.210.228.82 2 2 5074 20151126140111
+78.106.53.180 0 2 254292 
+5.101.222.218 1 1 2537 20151120043801
+23.29.134.4 1 1 2537 20151130221814
+94.19.206.191 1 1 2537 20151114122454
+149.154.64.5 1 1 8289 20151130091654
+37.215.94.61 1 1 2537 20151107172449
+142.4.218.236 6 6 49007 20151114014410
+80.89.192.55 1 1 2537 20151106172852
+95.165.195.42 3 3 80543 20151102112915
+93.76.162.218 1 1 2537 20151107215339
+195.19.51.92 6 6 20026 20151102134238
+212.76.178.198 2 2 15235 20151130154851
+77.222.103.126 1 1 2537 20151120113742
+92.255.180.147 6 47 39490387 20151106154909
+188.254.58.66 7 7 19801 20151123091725
+81.211.88.186 6 11 78789502 20151124111305
+123.125.71.40 1 1 2537 20151104183555
+85.21.107.31 18 20 39818486 20151118125704
+46.53.203.247 2 2 10144 20151106113137
+188.186.181.80 1 1 6752 20151102090401
+77.233.182.154 0 1193 38978355 
+180.76.15.160 1 1 2537 20151123194601
+50.7.138.141 1 1 8289 20151107142822
+77.47.217.77 1 1 2537 20151103052839
+82.209.219.134 2 2 15235 20151123092629
+37.140.189.245 1 1 2537 20151126215726
+178.121.253.200 9 9 28669 20151101225428
+123.125.71.32 1 1 8289 20151104193747
+176.60.44.141 1 1 2537 20151122040933
+195.160.220.85 1 1 2537 20151120050219
+212.44.150.238 1 1 2537 20151124091536
+82.158.119.93 1 1 2537 20151104024732
+147.30.177.44 1 1 2537 20151116181731
+188.255.52.39 0 1 146103 
+77.37.222.53 1 1 6937 20151101184650
+198.50.131.46 5 5 13871 20151116000235
+46.216.172.236 5 5 14887 20151117141619
+180.76.15.33 1 1 2537 20151123185107
+37.212.209.188 5 5 18966 20151104125800
+176.117.127.177 3 3 11158 20151120093556
+212.38.104.56 6 1210 39268237 20151102141131
+195.88.126.110 1 1 2537 20151118160627
+213.184.251.29 19 19 49559 20151103171448
+5.197.148.167 1 1 2537 20151101103705
+78.81.64.116 0 1 123806 
+89.222.224.13 1 1 2537 20151105094411
+185.57.29.241 1 1 2537 20151113064203
+79.98.52.27 1 1 8289 20151103104337
+85.140.79.145 0 1 146172 
+195.5.134.139 4 4 35069 20151118164449
+93.188.22.154 2 2 4942 20151102095242
+78.158.11.226 2 2 15235 20151129150643
+178.19.251.85 5 5 16325 20151130202831
+62.169.42.43 1 1 2537 20151103135925
+95.167.113.86 0 24 258676645 
+93.125.3.223 15 36 20816061 20151112120947
+213.87.241.63 0 3 230196 
+83.246.140.85 1 1 5003 20151124125637
+31.173.180.38 6 6 14924 20151118134123
+217.66.157.40 1 1 5900 20151104192117
+178.124.194.58 4 4 13873 20151105100910
+188.32.179.211 1 1 2537 20151110181310
+78.140.15.244 7 7 34811 20151110143933
+37.192.53.162 1 1 2537 20151103155520
+46.216.168.106 12 12 35034 20151102133846
+82.215.84.58 2 2 4942 20151116104515
+220.181.108.152 1 1 2537 20151104194409
+37.215.101.69 1 1 2537 20151128133000
+37.215.158.255 2 2 4942 20151123170628
+84.201.230.36 1 1 2405 20151112114404
+89.28.24.190 1 1 8289 20151112143153
+94.243.191.34 8 52 39496724 20151119000516
+79.213.29.203 2 2 6170 20151117194842
+180.76.15.136 1 1 2537 20151119044352
+178.125.3.37 1 1 2537 20151105134458
+52.31.1.75 1 1 8289 20151116215801
+92.244.236.76 1 1 8289 20151124014114
+213.184.244.94 7 7 23326 20151123114248
+212.46.229.118 2 2 4942 20151113085159
+51.254.129.249 1 1 8289 20151104114615
+185.26.182.33 1 1 2464 20151111084208
+79.98.91.10 3 3 11158 20151103114831
+213.210.112.2 12 13 19753682 20151126154409
+188.227.44.245 0 1 130840 
+82.147.83.178 2 2 4942 20151130150147
+61.63.252.154 1 1 2537 20151101210740
+37.230.221.40 8 8 33156 20151128075119
+85.253.105.204 1 1 2537 20151115210812
+82.209.248.226 3 3 7347 20151110104623
+109.188.124.9 3 3 7479 20151110145944
+83.69.30.113 2 2 4942 20151118170712
+37.110.210.215 2 2 5074 20151114100039
+195.50.30.204 1 1 2537 20151122225220
+54.155.209.251 1 1 2537 20151130172734
+89.41.72.197 0 5 730860 
+90.151.199.231 1 1 2537 20151111164339
+141.0.8.142 1 1 2464 20151111084012
+213.108.32.94 1 1 6752 20151125104523
+104.33.97.119 1 1 8289 20151107134531
+220.181.108.143 1 1 2537 20151110014244
+46.73.175.17 1 1 2739 20151112124718
+178.124.193.64 2 2 4942 20151109095930
+31.177.83.242 1 1 8289 20151127150746
+176.9.103.166 1 1 2537 20151118224653
+178.168.208.5 26 90 41580434 20151112102918
+176.195.201.209 1 1 8289 20151103035115
+84.201.236.49 19 19 51192 20151103151016
+31.3.233.115 1 1 2537 20151119122152
+195.218.183.191 1 1 2537 20151130085056
+180.76.15.6 1 1 2537 20151123201024
+69.58.178.58 4 4 32429 20151115124334
+5.45.255.116 1 1 5874 20151101221618
+59.84.221.155 2 2 18518 20151103045235
+52.0.89.236 1 1 8289 20151115022050
+86.159.163.205 1 1 247 20151115120656
+94.25.125.46 1 1 2537 20151119051552
+176.74.14.90 4 4 14948 20151103172116
+62.134.204.132 2 2 4942 20151107104402
+213.183.106.50 1 1 5900 20151128144745
+87.244.19.54 1 1 2537 20151122111509
+82.145.216.53 6 6 20022 20151105204947
+185.92.73.100 1 1 2537 20151107144634
+178.123.28.42 1 1 7228 20151102192901
+194.114.133.131 6 6 49007 20151119103927
+217.10.38.139 2 2 4942 20151116012810
+46.216.62.204 12 12 43954 20151103183655
+109.252.254.146 16 17 76068 20151125110025
+77.50.238.97 1 1 2537 20151123172446
+65.55.217.54 1 1 2537 20151130080225
+212.45.6.186 1 1 5900 20151125125206
+46.4.94.226 3 3 7538 20151112154201
+213.87.144.242 1 1 2537 20151129132959
+176.14.130.219 0 1 135262 
+91.200.233.71 1 1 2537 20151130123542
+93.125.106.133 2 2 4942 20151120143922
+178.121.108.107 1 1 2537 20151126014125
+180.76.15.163 1 1 2537 20151112115915
+199.91.135.165 3 3 81755 20151123134614
+213.33.168.122 1 1 2537 20151112164931
+88.208.22.36 1 1 5003 20151126044020
+5.35.111.143 1 1 5874 20151110181310
+144.76.79.74 2 2 40320 20151116053810
+93.92.114.199 3 3 11290 20151119124102
+95.79.236.242 1 1 8289 20151117214200
+91.229.117.195 1 1 2537 20151117121204
+91.207.30.3 2 3 19722553 20151104141925
+46.0.18.209 3 4 19728369 20151118040124
+220.181.108.186 3 3 13363 20151113094254
+80.83.16.95 2 2 11619 20151120093710
+104.236.110.155 5 5 13871 20151110101421
+123.125.71.34 1 1 8289 20151104183556
+85.170.193.28 1 1 2537 20151126060829
+94.242.206.66 1 1 2537 20151102201938
+185.77.129.162 1 1 2537 20151130215934
+109.188.126.14 2 2 4942 20151109114407
+104.236.81.82 5 5 13871 20151122061909
+180.153.214.176 1 1 8289 20151103093055
+89.109.236.249 6 6 150127 20151117111055
+188.163.77.5 1 1 8289 20151122050904
+46.146.243.191 3 4 138310 20151120143401
+62.117.69.162 5 58 46612112 20151110170431
+77.244.75.6 1 1 5003 20151127153500
+89.232.118.169 3 3 7479 20151109210024
+80.254.53.2 2 1162 38279988 20151120175908
+69.30.200.42 1 1 2537 20151104023909
+123.125.71.84 2 2 16578 20151104224550
+37.44.127.34 12 12 47529 20151104122055
+62.75.234.228 1 1 8289 20151130081208
+91.216.121.69 6 6 44362 20151119090119
+194.190.74.110 2 2 6024 20151123235822
+178.238.20.6 2 2 7540 20151104142236
+204.79.180.97 1 1 2537 20151113005449
+79.111.129.0 2 2 4942 20151104120605
+93.85.3.148 1 1 2537 20151111123529
+174.139.94.77 3 3 11290 20151123091947
+198.46.246.102 1 1 2537 20151106030722
+93.85.136.108 2 2 4942 20151104132530
+111.13.102.6 1 1 2537 20151112110229
+88.81.32.244 1 1 2571 20151103074611
+80.249.82.182 6 8 39445281 20151111084222
+90.154.127.25 2 2 6024 20151110132217
+195.16.111.183 1 1 2537 20151110064000
+109.194.33.162 5 5 12289 20151126114623
+91.193.88.245 0 4318 38760886 
+78.37.69.42 3 3 12983 20151110142554
+195.14.65.157 8 8 29502 20151105125833
+178.170.250.194 6 66 39491233 20151117131634
+82.142.169.162 13 13 51994 20151126095245
+213.221.41.6 5 5 76337 20151123201311
+176.110.133.4 0 1 144746 
+37.115.185.30 1 1 8289 20151129052056
+95.134.48.158 2 2 5074 20151101065209
+180.76.15.17 2 2 5074 20151123194601
+213.33.143.210 4 107 26533425 20151113104325
+120.1.170.197 7 7 25974 20151120064008
+89.223.65.63 8 8 29097 20151102103522
+104.45.18.178 2 2 13892 20151111105139
+95.221.251.118 1 1 5874 20151110152636
+80.254.53.82 2 2 4942 20151110143742
+195.239.235.66 13 73 39473599 20151111133309
+95.56.215.131 1 1 2537 20151130170545
+213.87.241.195 0 2 2743788 
+46.216.189.170 1 1 2537 20151122132625
+81.7.15.115 1 1 2537 20151105085225
+107.178.194.65 2 2 5074 20151108124002
+109.227.105.15 2 3 19723366 20151111164244
+176.59.5.125 1 1 2537 20151120103937
+93.159.230.90 2 2 5074 20151125183748
+185.57.75.25 1 1 2537 20151113140009
+40.124.51.52 1 1 8289 20151113011301
+202.46.56.183 1 1 2537 20151117003608
+88.198.140.4 1 1 2537 20151121050856
+46.191.34.202 2 2 5144 20151113130809
+46.235.70.126 1 1 2537 20151121072247
+81.211.127.194 1 1 2537 20151127111309
+5.44.173.41 1 1 8289 20151126175800
+86.57.222.24 2 2 4942 20151119110110
+46.4.13.145 8 8 64858 20151117105503
+37.45.203.78 1 1 2537 20151115135705
+95.143.24.57 0 1 146172 
+86.57.218.12 1 1 8289 20151113131515
+92.246.199.194 12 15 252538 20151111130222
+95.27.0.66 1 1 2739 20151127152227
+46.37.218.60 22 76 39506124 20151122210324
+178.91.19.31 1 1 2537 20151112114535
+212.98.178.107 3 3 7479 20151118100147
+194.85.152.154 4 4 9884 20151102113617
+95.24.32.131 2 2 16578 20151119174742
+112.64.235.87 1 1 8289 20151119133702
+84.18.101.254 1 1 5900 20151125091619
+46.28.102.67 2 2 4942 20151123095433
+81.1.157.161 8 8 27436 20151112093518
+95.172.32.254 2 188 31964292 20151102101527
+87.252.225.101 2 2 7540 20151113021429
+85.140.45.93 2 2 6170 20151105111641
+178.121.79.41 1 1 3633 20151126090558
+95.171.228.72 15 15 140551 20151105094043
+188.143.167.52 1 1 5003 20151103143816
+46.242.79.199 0 1 105791 
+85.93.89.74 4 4 11334 20151118043922
+176.193.132.187 4 4 12082 20151125234131
+103.58.97.12 3 3 7611 20151104101750
+90.154.67.199 5 5 14887 20151118130215
+194.186.136.238 5 5 12553 20151118135644
+178.140.123.116 1 1 3487 20151101173517
+180.76.15.144 1 1 2537 20151118053829
+195.144.247.105 1 1 2537 20151102155433
+84.51.114.193 0 1 133499 
+109.234.156.66 16 16 40592 20151122070307
+85.113.38.2 3 3 9945 20151109102231
+142.4.218.201 2 2 5074 20151128031113
+78.129.181.48 2 2 5074 20151117005627
+91.213.169.8 2 2 4942 20151118174638
+31.177.83.38 2 2 16578 20151130163640
+193.34.164.210 1 1 8289 20151119144503
+180.153.206.25 1 1 8289 20151103133001
+87.252.225.12 2 2 7540 20151121171459
+79.175.70.251 1 1 2537 20151112203850
+185.44.77.181 1 1 8289 20151106172928
+109.167.218.237 5 63 39452418 20151127110652
+176.194.32.171 1 1 2571 20151101175747
+5.141.213.6 4 4 18656 20151117113050
+178.212.111.36 1 1 2537 20151101235935
+46.216.30.175 1 1 2537 20151103233336
+93.84.190.232 5 5 19098 20151116103334
+81.4.126.124 2 2 4942 20151103005547
+86.57.178.90 4 4 9884 20151130103506
+45.79.91.172 1 1 0 20151126225959
+95.221.97.194 0 3 378224 
+93.84.4.249 1 1 2537 20151105121652
+95.24.59.97 1 1 2537 20151112123139
+193.201.225.101 3 3 24867 20151116113024
+83.219.30.9 17 27 39734598 20151112125117
+80.254.111.16 2 2 9509 20151103124948
+81.211.38.114 6 9 333401 20151106080514
+66.102.9.74 6 6 15222 20151117180911
+194.186.93.67 2 2 4942 20151124095237
+81.182.240.253 7 7 24533 20151104130602
+109.124.66.26 2 2 8753 20151102174619
+195.50.31.218 2 2 5074 20151101182508
+212.57.106.34 1 1 2537 20151112125308
+176.9.135.163 1 1 8289 20151105120356
+89.175.179.251 7 32 39453687 20151120181406
+128.70.41.255 1 1 5329 20151124172410
+81.222.87.51 5 5 14887 20151102155727
+146.247.1.164 0 1 118612 
+87.244.136.37 1 1 2537 20151104221356
+91.105.184.137 1 1 8289 20151123151957
+193.1.160.17 2 2 5074 20151111214412
+77.108.127.226 2 2 4942 20151105140003
+193.93.52.136 1 1 7612 20151123164821
+217.66.76.162 0 1 180001 
+89.179.87.210 1 1 2537 20151111155310
+46.53.218.29 3 3 9945 20151130123845
+176.118.154.206 3 3 14156 20151102163143
+141.0.9.62 8 9 19744288 20151110172012
+158.69.27.74 1 1 8289 20151104055823
+217.151.131.76 1 1 2537 20151112153240
+95.171.228.73 9 9 83010 20151105094555
+78.106.154.75 4 4 10016 20151119105458
+95.153.132.114 4 4 11911 20151104145108
+37.204.153.219 1 1 2314 20151103073825
+69.50.216.246 4 4 10148 20151113205840
+95.28.166.112 0 1 146103 
+109.173.98.23 1 1 8289 20151128075552
+217.116.152.200 3 3 7347 20151126095956
+85.113.48.203 3 3 8523 20151127134619
+217.174.232.11 1 1 2537 20151106063745
+5.9.151.10 2 2 40320 20151116054257
+78.60.179.29 4 4 16220 20151110164119
+123.125.71.79 1 1 2537 20151103023910
+178.137.82.133 28 28 232092 20151114171610
+88.216.175.145 2 2 6024 20151112134521
+194.44.128.142 6 6 15222 20151125225712
+23.92.26.73 2 2 16578 20151108051021
+93.84.142.55 11 11 42833 20151109130018
+46.53.200.236 4 4 10016 20151119111324
+83.146.112.66 8 9 19744641 20151123145828
+178.137.81.238 1 1 16374 20151103051419
+78.25.123.19 1 1 2537 20151121195301
+176.193.163.69 0 1 105791 
+46.73.152.188 1 1 5874 20151109193920
+188.124.34.59 2 2 4942 20151111192947
+94.181.180.194 5 5 41445 20151127034523
+31.148.254.179 1 1 8289 20151121173448
+62.75.140.234 1 1 8289 20151130081158
+91.221.124.29 1 1 2739 20151111142722
+128.75.66.100 1 1 2537 20151109193920
+134.17.24.209 0 1 147541 
+178.121.193.35 3 3 7479 20151111163759
+94.181.40.70 1 1 8289 20151129201346
+93.125.109.175 4 4 14948 20151124120557
+176.9.139.227 3 3 7611 20151127084338
+93.85.11.156 7 7 27759 20151126151710
+89.254.217.254 1 1 2537 20151113104008
+180.76.15.22 1 1 2537 20151123185107
+213.184.226.134 2 2 4942 20151124094444
+188.242.62.179 2 2 16578 20151109193704
+2.93.59.26 2 2 8753 20151104142116
+86.57.235.216 4 4 35051 20151124111421
+178.216.123.50 24 3522 115968272 20151120121407
+148.251.238.253 3 3 9945 20151112101124
+95.140.145.45 3 3 9945 20151103103615
+80.242.88.8 1 1 2537 20151116122723
+37.204.67.163 0 1 134506 
+217.30.255.158 27 27 98041 20151113094609
+193.106.203.20 1 1 2537 20151129221255
+62.183.39.131 3 3 8517 20151117135648
+188.72.76.3 7 46 33662659 20151103131242
+195.50.25.102 4 4 12482 20151102154039
+95.220.153.117 0 1 132099 
+46.53.218.206 3 3 11468 20151130231130
+95.128.243.9 1 1 2537 20151127095034
+5.18.135.77 1 1 6216 20151124064657
+80.252.25.72 0 1 146103 
+178.122.101.70 2 2 5276 20151110124443
+217.118.93.187 1 1 2537 20151123145646
+85.140.5.209 5 5 18857 20151120085156
+95.26.247.32 1 1 2739 20151110181311
+101.226.66.174 1 1 8289 20151105133012
+195.154.146.225 2 2 5074 20151105095409
+213.136.64.63 3 3 19115 20151129144709
+89.218.172.26 7 7 19829 20151116102226
+108.171.211.74 8 8 10148 20151113205839
+94.41.194.147 1 1 2537 20151102094919
+178.19.251.23 2 2 16578 20151107122940
+85.236.171.82 7 7 25974 20151110133246
+79.165.174.181 0 1 129186 
+192.99.39.235 4 4 33156 20151123020230
+136.169.243.197 1 1 8289 20151102055913
+31.163.36.151 2 2 5074 20151130142715
+89.189.119.237 1 1 2739 20151128171042
+81.20.204.162 9 9 33916 20151123173045
+37.29.74.189 1 1 2537 20151124074301
+176.62.71.106 6 196 32245922 20151102141020
+195.154.194.59 2 2 16578 20151107074645
+5.1.83.233 1 1 8289 20151102175627
+95.130.87.70 3 3 29466 20151103143038
+93.80.97.238 0 1 129186 
+86.57.254.172 11 11 27288 20151124094019
+89.249.52.10 1 1 2537 20151102112709
+82.209.203.66 2 2 4942 20151102162555
+80.249.82.21 6 6 18282 20151118144545
+178.209.109.6 0 1 146103 
+93.85.21.66 7 7 22295 20151109121651
+98.203.95.221 1 1 2537 20151122010311
+213.80.133.34 15 15 49725 20151106153444
+83.220.237.112 1 1 2537 20151130153653
+93.85.59.247 2 2 4942 20151124101557
+46.48.121.106 4 4 16327 20151113102439
+194.54.187.11 0 3 381438 
+86.62.119.74 3 3 7479 20151123113945
+185.19.23.179 1 1 2537 20151103163037
+109.86.1.43 26 26 58559 20151105190133
+59.153.112.177 1 1 2537 20151113072548
+66.102.9.92 1 1 2537 20151115174140
+37.150.160.194 3 3 8575 20151126141032
+46.0.207.133 5 5 19652 20151130173018
+178.123.21.69 1 1 8289 20151130233849
+180.76.15.13 1 1 2537 20151123203520
+94.113.77.144 23 23 74586 20151117144011
+23.244.22.208 1 1 2537 20151103004425
+46.48.88.174 5 6 241917 20151118121348
+45.55.134.8 1 1 2537 20151116184753
+45.55.229.93 5 5 13871 20151116194724
+178.126.72.227 1 1 2537 20151116104722
+37.44.69.212 2 2 4942 20151118132759
+188.40.125.145 2 2 5074 20151125225649
+87.252.225.24 8 8 28682 20151106202506
+93.84.15.65 1 1 8289 20151103123809
+193.58.255.22 2 2 4942 20151130173646
+46.48.15.211 11 12 156304 20151127100642
+83.220.236.218 1 1 59366 20151104212705
+94.24.244.42 17 17 56503 20151123154145
+109.73.11.132 6 7 164740 20151123111019
+5.34.48.168 1 1 3487 20151118144221
+194.150.255.25 0 1 127146 
+212.19.2.129 1 1 2537 20151108122630
+5.18.156.51 1 1 8289 20151124080015
+80.249.85.247 10 10 31074 20151113134324
+194.226.8.51 1 1 2537 20151112140120
+92.79.166.252 2 2 4942 20151123130019
+109.169.132.196 1 1 2537 20151128141243
+37.110.130.85 1 1 5874 20151111215838
+62.192.252.59 1 1 2537 20151109203812
+94.199.180.70 1 1 8289 20151105120439
+67.55.84.212 2 2 8289 20151120050812
+217.151.130.120 3 4 17283 20151109143352
+95.141.28.122 1 1 8289 20151123204345
+31.184.197.41 0 1 136360 
+176.59.193.116 1 1 2537 20151101112140
+95.68.245.216 11 186 31274965 20151124133641
+37.17.115.99 4 4 9884 20151116133156
+119.147.146.193 1 1 2537 20151113133719
+117.212.175.9 2 2 4942 20151107102923
+212.20.57.74 11 11 238857 20151126105237
+46.16.228.150 0 3 254292 
+37.45.114.32 2 2 5074 20151108155215
+46.146.240.91 3 4 145155 20151111135319
+78.25.122.227 7 13 59432909 20151123204846
+188.227.18.153 1 1 2537 20151103100536
+95.28.41.0 8 68 39498668 20151101212841
+195.190.97.42 1 2 19720487 20151126075424
+93.85.93.190 4 4 9884 20151110142006
+91.149.157.142 1 1 8289 20151105120513
+81.5.79.15 2 2 16578 20151110000211
+192.99.9.164 2 2 5074 20151117051919
+213.197.141.246 23 23 74697 20151126113802
+87.229.162.130 1 1 7612 20151110114835
+123.125.71.25 1 1 2537 20151104193746
+86.57.152.69 2 2 4942 20151118092921
+176.36.52.108 1 1 2405 20151106160450
+61.135.190.105 2 2 5074 20151105170617
+92.243.98.123 0 1 115098 
+52.18.231.192 1 1 8289 20151111042744
+180.76.15.161 1 1 2537 20151123194601
+178.45.146.149 1 1 2537 20151113133659
+176.74.14.170 3 4 154620 20151125091401
+95.25.151.125 1 1 2314 20151101175359
+178.121.102.75 1 1 3633 20151108211107
+93.171.160.189 7 7 22703 20151108234640
+64.74.215.113 4 4 0 20151129112334
+91.221.60.217 9 9 27237 20151119134959
+46.188.81.141 0 1 105791 
+136.169.159.197 7 7 24319 20151120074404
+188.162.53.68 4 4 16167 20151102102446
+91.79.14.175 1 1 8289 20151113111509
+86.62.115.71 17 17 44037 20151120161020
+86.57.249.244 1 1 2537 20151123090906
+194.150.179.2 2 2 15235 20151102110127
+89.67.140.65 10 10 40718 20151118185411
+194.158.203.14 5 5 16336 20151119150944
+37.145.85.48 0 1 129186 
+94.140.205.219 1 1 2537 20151119095341
+93.125.39.23 23 23 55476 20151130093804
+134.17.30.107 8 8 83365 20151130115253
+178.168.180.86 1 1 2537 20151124135742
+95.26.112.215 0 1 29399 
+52.30.50.91 1 1 8289 20151116193108
+217.21.33.155 12 12 41963 20151118175318
+94.233.166.124 2 2 12081 20151111155621
+188.162.65.7 1 1 2537 20151107114943
+95.221.229.94 1 1 5874 20151127152229
+46.53.160.238 6 6 14958 20151125094715
+41.0.90.16 1 1 2537 20151110134902
+45.55.135.225 1 1 2537 20151108150756
+93.125.111.89 6 6 51647 20151109085813
+212.76.180.134 2 2 25724 20151116124333
+212.232.76.106 5 5 17105 20151113114349
+31.173.85.12 1 1 2537 20151128062219
+176.36.41.63 1 1 2537 20151127094856
+185.30.88.48 1 1 2537 20151105193839
+120.137.146.195 3 3 27777 20151111203215
+93.171.205.23 6 6 16408 20151113181548
+194.8.128.150 5 5 14494 20151111160057
+178.168.180.77 1 1 2537 20151129214744
+217.198.10.101 2 2 7408 20151117151644
+107.178.194.125 1 1 2537 20151107152944
+65.55.218.169 1 1 2537 20151130083105
+148.251.132.121 6 6 15222 20151129191842
+93.85.19.176 8 8 28347 20151127135854
+213.180.206.250 0 1 122686 
+176.8.244.238 18 18 149202 20151130051106
+212.44.144.2 9 9 32119 20151112143531
+217.15.133.29 2 2 6024 20151118101901
+87.228.70.61 6 6 20470 20151122123325
+82.149.198.138 4 4 9884 20151126152225
+31.204.102.143 1 1 2537 20151103173513
+89.189.156.253 9 9 212492 20151123130220
+84.204.40.115 2 2 67655 20151120112046
+85.140.159.142 1 1 2537 20151117045225
+86.57.175.124 5 5 37416 20151123162702
+149.202.98.161 1 1 2537 20151107175131
+77.50.98.187 1 1 10752 20151108182859
+5.61.11.34 3 4 206638 20151125092236
+217.151.131.29 1 1 5003 20151126151519
+188.162.236.16 1 1 2537 20151114115004
+82.209.216.90 7 7 24761 20151116112024
+212.57.179.22 1 1 5874 20151112112526
+117.78.13.18 1 1 2537 20151129193329
+176.59.199.224 1 1 2537 20151101101130
+212.112.126.212 1 1 2537 20151101092807
+78.25.123.134 7 7 32385 20151126105046
+195.91.234.1 3 3 10345 20151106192305
+46.119.123.33 12 12 99468 20151104073234
+37.29.74.136 0 1 127146 
+178.141.215.11 1 1 2537 20151116181535
+189.168.78.127 1 1 2537 20151120223609
+37.44.90.21 1 1 2537 20151127022307
+37.146.127.113 2 2 5074 20151122172410
+123.125.71.72 1 1 2537 20151103013738
+82.145.223.77 13 13 34838 20151108192534
+101.226.33.220 1 1 8289 20151101132929
+194.44.126.98 1 1 2537 20151124152055
+37.17.115.140 3 3 7347 20151119153041
+89.31.118.92 0 1 127146 
+180.76.15.7 1 1 2537 20151113055215
+66.249.81.183 0 1 146172 
+78.25.121.230 1 1 5403 20151124200703
+83.99.133.67 1 1 2537 20151122195820
+94.76.76.144 3 3 7479 20151116151424
+52.17.211.49 1 1 8289 20151117123846
+217.66.158.115 1 1 2537 20151116111936
+94.159.7.82 20 21 19785447 20151127134619
+176.77.107.57 0 1 105791 
+37.17.39.108 2 2 4942 20151116131026
+107.150.42.186 1 1 2537 20151105202114
+178.172.226.157 1 1 2537 20151116163934
+128.180.58.186 2 2 4942 20151117185221
+188.32.66.110 0 1 135262 
+217.118.81.229 1 1 2537 20151111120858
+46.242.119.88 1 1 5874 20151112125741
+82.193.155.241 24 84 39528231 20151111203449
+94.181.204.59 2 2 8753 20151120215957
+31.202.241.227 1 1 8289 20151121162505
+213.251.182.115 11 11 601343 20151116211708
+5.77.178.230 1 1 2537 20151114171022
+46.53.182.159 5 5 12685 20151101210154
+95.26.138.96 1 1 2537 20151101174528
+185.42.180.26 6 6 18637 20151123140422
+176.124.188.213 1 1 2537 20151102115849
+89.110.14.133 2 3 14712 20151109231114
+83.139.140.103 2 2 7540 20151124214859
+109.195.50.79 3 6 320663 20151106143548
+185.68.155.113 2 2 4942 20151123181621
+92.242.19.230 13 13 34950 20151127061758
+89.175.25.162 2 2 4942 20151105164815
+178.125.221.53 1 1 2537 20151104163028
+92.50.154.130 12 12 29297 20151126143808
+123.125.71.112 1 1 8289 20151103023911
+192.162.192.72 5 5 21022 20151127144804
+95.174.114.242 1 1 2537 20151105214905
+176.14.96.91 0 1 132099 
+85.140.79.115 1 1 2537 20151130100644
+46.36.153.253 1 1 7612 20151116185643
+91.219.65.58 1 1 8289 20151127160113
+180.76.15.158 1 1 2537 20151108234800
+94.198.1.87 0 1 128398 
+220.181.108.180 1 1 8289 20151104194410
+46.39.55.65 1 1 8289 20151103134415
+95.221.232.75 0 1 135262 
+95.28.6.192 1 1 2739 20151128210552
+66.249.93.219 1 1 2537 20151119173814
+176.9.43.195 2 2 40320 20151116053402
+77.37.232.46 1 1 5874 20151128210553
+212.5.161.214 1 1 5329 20151119114444
+93.84.41.63 9 9 27167 20151126120058
+80.254.49.94 2 2 8289 20151119233729
+183.246.79.112 1 1 2537 20151104052647
+81.1.180.238 2 2 7540 20151103100300
+212.103.97.156 1 1 3487 20151117202928
+82.146.38.251 1 1 2537 20151112104801
+5.164.223.238 1 1 8289 20151117095735
+46.109.193.227 3 3 13756 20151106125952
+128.69.183.189 1 1 8289 20151110161947
+212.24.145.210 6 6 23701 20151112182107
+194.186.26.150 2 2 4942 20151119073236
+109.163.234.5 1 1 2537 20151102113926
+79.143.73.248 4 4 9752 20151106142549
+212.98.189.214 2 2 7540 20151130104348
+93.85.175.73 4 4 13622 20151113141315
+83.220.238.27 1 1 5874 20151110102643
+193.194.100.163 17 17 67748 20151116162850
+45.55.229.98 5 5 13871 20151126014908
+199.91.135.163 1 1 6946 20151118174639
+176.195.124.175 0 1 146172 
+67.55.87.68 1 1 0 20151111095751
+109.194.1.149 1 1 2537 20151106141037
+217.118.93.165 1 1 2537 20151124120743
+180.76.15.14 1 1 2537 20151123203520
+212.248.42.50 2 2 4942 20151105160728
+46.48.84.61 2 2 8753 20151117164341
+77.70.38.195 2 2 8289 20151130115955
+176.97.116.171 3 3 7611 20151125112500
+82.145.211.109 3 3 13756 20151116123616
+46.53.177.115 1 1 2537 20151110122735
+37.112.36.53 1 1 2739 20151109193921
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20151101 56 59 59704607 25
+20151102 132 141 268215029 44
+20151103 177 183 108701547 51
+20151104 90 92 79354964 42
+20151105 121 125 40633795 38
+20151106 260 273 108862325 31
+20151107 34 35 236185 20
+20151108 46 47 232915 20
+20151109 233 240 79932646 43
+20151110 227 239 289340802 42
+20151111 131 138 119975195 36
+20151112 144 174 303711890 46
+20151113 290 299 114969961 40
+20151114 35 35 243372 16
+20151115 43 48 20532822 18
+20151116 134 138 558103183 48
+20151117 139 150 157370657 44
+20151118 245 313 90963825 40
+20151119 106 112 99647827 41
+20151120 108 113 233656431 30
+20151121 161 161 7293369 20
+20151122 60 61 59407320 21
+20151123 221 227 119007911 58
+20151124 69 79 181526488 37
+20151125 102 110 21165365 32
+20151126 145 146 59922035 32
+20151127 110 118 118253095 42
+20151128 26 29 592687 14
+20151129 32 34 475396 16
+20151130 93 95 44916497 42
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 7
+5mn-15mn 37
+30s-2mn 95
+2mn-5mn 49
+0s-30s 793
+15mn-30mn 28
+30mn-1h 20
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 136
+/ 1386 7092539 831 530
+/products.php 823 14000215 62 154
+/contact.php 314 890478 31 149
+/index.php 252 950303 38 59
+/honnor.php 242 664373 6 18
+/about.php 202 1176191 13 47
+/news.php 122 865044 25 33
+/record.php 88 361712 16 20
+/blank.php 32 159381 1 9
+/search_page.php 15 38171 0 0
+/honnor_single.php 14 8441 0 1
+/#top/<!DOCTYPE/<!DOCTYPE/index.php 6 49734 0 0
+/#top/<!DOCTYPE/index.php 6 49734 0 0
+/#top/index.php 6 49734 0 0
+/#top/<!DOCTYPE/#top/index.php 6 49734 0 0
+/#top/#top/index.php 6 49734 0 0
+/. 5 12685 0 2
+/#top/<!DOCTYPE/<!DOCTYPE/ 4 33156 0 0
+/#top/<!DOCTYPE/ 4 33156 0 0
+/#top/ 4 33156 0 0
+/#top/<!DOCTYPE/#top/ 4 33156 0 0
+/#top/#top/ 4 33156 0 0
+/blank_rtf_generator.php 3 31732 0 0
+/catalog/ 2 394 2 0
+/#top/<!DOCTYPE/#top/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 2 16578 0 0
+/#top/<!DOCTYPE/\xca\xee\xec\xef\xe0\xed 2 16578 0 0
+/#top/\xc1\xeb\xe0\xed 2 16578 0 0
+/#top/\xc7\xe8\xec\xe0 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xcf\xee\xeb\xf3\xef\xee\xe3\xf0\xf3\xe6\xed\xfb 2 16578 0 0
+/#top/<!DOCTYPE/\xce\xf1\xe5\xed 2 16578 0 0
+/#top/<!DOCTYPE/\xd1\xe2\xff\xe7\xfc 2 16578 0 0
+/#top/\xc7\xe0\xea\xe0 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xcd\xee\xe2\xee\xf1\xf2 2 16578 0 0
+/#top/\xd2\xe5 2 16578 0 0
+/#top/<!DOCTYPE/#top/onclick= 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xf1\xf1\xfb\xeb\xea\xe0 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed 2 16578 0 0
+/#top/\xce\xe1\xeb\xee\xe6\xea 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xc3\xeb\xe0\xe2\xed\xe0\xff 2 16578 0 0
+/#top/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 2 16578 0 0
+/#top/<!DOCTYPE/\xc1\xeb\xe0\xed 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xce\xf1\xe5\xed 2 16578 0 2
+/#top/<!DOCTYPE/<!DOCTYPE/\xce\xf1\xe5\xed 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed 2 16578 0 0
+/#top/<!DOCTYPE/\xce\xe1\xeb\xee\xe6\xea 2 16578 0 0
+/#top/#top/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb 2 16578 0 0
+/#top/<!DOCTYPE/\xcf\xee\xeb\xf3\xef\xee\xe3\xf0\xf3\xe6\xed\xfb 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/<!DOCTYPE 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xcf\xee\xeb\xf3\xef\xee\xe3\xf0\xf3\xe6\xed\xfb 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 2 16578 0 0
+/#top/\xcb\xe5\xf2\xee 2 16578 0 0
+/#top/#top/\xcd\xee\xe2\xee\xf1\xf2 2 16578 0 0
+/#top/#top/\xce\xe1\xeb\xee\xe6\xea 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xd2\xe5 2 16578 0 0
+/#top/<!DOCTYPE/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed 2 16578 0 0
+/#top/#top/\xc7\xe0\xea\xe0 2 16578 0 0
+/#top/#top/\xc2\xe5\xf1\xed 2 16578 0 0
+/#top/\xcf\xee\xf7\xf2 2 16578 0 0
+/#top/<!DOCTYPE/\xc7\xe8\xec\xe0 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xca\xee\xec\xef\xe0\xed 2 16578 0 0
+/#top/\xf1\xf1\xfb\xeb\xea\xe0 2 16578 0 0
+/#top/<!DOCTYPE/#top/<!DOCTYPE 2 16578 0 0
+/#top/<!DOCTYPE/\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb 2 16578 0 0
+/#top/\xce\xe1\xf0\xe0\xf2\xed 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xcd\xee\xe2\xee\xf1\xf2 2 16578 0 0
+/#top/\xca\xee\xec\xef\xe0\xed 2 16578 0 0
+/#top/#top/<!DOCTYPE 2 16578 0 0
+/#top/#top/onclick= 2 16578 0 0
+/#top/\xcf\xee\xeb\xf3\xef\xee\xe3\xf0\xf3\xe6\xed\xfb 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xce\xe1\xf0\xe0\xf2\xed 1 8289 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc7\xe0\xea\xe0 2 16578 0 0
+/#top/#top/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed 2 16578 0 0
+/#top/<!DOCTYPE/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xcb\xe5\xf2\xee 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc7\xe0\xef\xe0\xf1\xed\xfb\xe5 2 16578 0 0
+/#top/<!DOCTYPE/\xc3\xee\xf0\xe8\xe7\xee\xed\xf2\xe0\xeb\xfc\xed\xfb\xe5 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/onclick= 2 16578 0 0
+/#top/#top/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xc3\xee\xf0\xe8\xe7\xee\xed\xf2\xe0\xeb\xfc\xed\xfb\xe5 2 16578 0 0
+/#top/\xc3\xeb\xe0\xe2\xed\xe0\xff 2 16578 0 0
+/#top/#top/\xce\xf1\xe5\xed 2 16578 0 0
+/#top/<!DOCTYPE/\xd2\xe5 2 16578 0 0
+// 1 2537 1 1
+/#top/<!DOCTYPE/<!DOCTYPE/\xcf\xee\xf7\xf2 2 16578 0 0
+/#top/#top/\xcf\xee\xeb\xf3\xef\xee\xe3\xf0\xf3\xe6\xed\xfb 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc3\xee\xf0\xe8\xe7\xee\xed\xf2\xe0\xeb\xfc\xed\xfb\xe5 2 16578 0 0
+/index.php/admin/ 2 16578 1 2
+/#top/<!DOCTYPE/\xcb\xe5\xf2\xee 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc3\xeb\xe0\xe2\xed\xe0\xff 2 16578 0 0
+/#top/#top/\xcb\xe5\xf2\xee 2 16578 0 0
+/#top/\xc7\xe0\xef\xe0\xf1\xed\xfb\xe5 2 16578 0 0
+/#top/<!DOCTYPE/onclick= 2 16578 0 0
+/#top/\xce\xf1\xe5\xed 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xcb\xe5\xf2\xee 2 16578 0 0
+/#top/<!DOCTYPE/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc7\xe8\xec\xe0 2 16578 0 0
+/#top/\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed 2 16578 0 0
+/#top/#top/\xc3\xeb\xe0\xe2\xed\xe0\xff 2 16578 0 0
+/#top/\xc3\xee\xf0\xe8\xe7\xee\xed\xf2\xe0\xeb\xfc\xed\xfb\xe5 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xc7\xe0\xea\xe0 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xd1\xe2\xff\xe7\xfc 2 16578 0 0
+/#top/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 2 16578 0 0
+/#top/\xd1\xe2\xff\xe7\xfc 2 16578 0 0
+/#top/<!DOCTYPE/\xf1\xf1\xfb\xeb\xea\xe0 2 16578 0 0
+/#top/#top/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 2 16578 0 0
+/#top/\xc2\xe5\xf1\xed 2 16578 0 0
+/#top/#top/\xc3\xee\xf0\xe8\xe7\xee\xed\xf2\xe0\xeb\xfc\xed\xfb\xe5 2 16578 0 0
+/#top/onclick= 2 16578 0 0
+/#top/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed 2 16578 0 0
+/#top/<!DOCTYPE/\xcf\xee\xf7\xf2 2 16578 0 0
+/#top/<!DOCTYPE/\xc2\xe5\xf1\xed 2 16578 0 0
+//index.php/admin/ 1 8289 1 1
+/#top/<!DOCTYPE/\xc7\xe0\xea\xe0 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 2 16578 0 0
+/#top/<!DOCTYPE/\xce\xe1\xf0\xe0\xf2\xed 2 16578 0 0
+/catalog/vert/14/ 1 247 1 1
+/#top/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 2 16578 0 0
+/#top/\xcd\xee\xe2\xee\xf1\xf2 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xce\xe1\xeb\xee\xe6\xea 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xc2\xe5\xf1\xed 2 16578 0 0
+/#top/<!DOCTYPE/\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed 2 16578 0 0
+/#top/<!DOCTYPE/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xce\xe1\xeb\xee\xe6\xea 2 16578 0 0
+/#top/<!DOCTYPE/\xcd\xee\xe2\xee\xf1\xf2 2 16578 0 0
+/#top/\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb 2 16578 0 0
+/#top/<!DOCTYPE 2 16578 0 0
+/#top/<!DOCTYPE/\xc3\xeb\xe0\xe2\xed\xe0\xff 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc2\xe5\xf1\xed 2 16578 0 0
+/#top/<!DOCTYPE/#top/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 2 16578 0 0
+/#top/<!DOCTYPE/\xc7\xe0\xef\xe0\xf1\xed\xfb\xe5 2 16578 0 0
+/#top/<!DOCTYPE/<!DOCTYPE/\xc1\xeb\xe0\xed 2 16578 0 0
+END_SIDER

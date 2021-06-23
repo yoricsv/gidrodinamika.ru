@@ -1,0 +1,111 @@
+@charset "windows-1251";
+/* CSS Document */
+@import url('reset.css');
+img{border:0px;}
+/* --------------------------------------HACKS ------------------------------------------------------------*/
+.clear{clear:both; height:1px;}
+.inv{ display:none;}
+/*---------------------------------- PARAGRAPH AND BULLETS FIX --------------------------------------------*/
+.cols ul,
+.single ul,
+.post ul,
+.contact-left ul,
+.contact-right ul{
+	list-style-type:disc;
+	margin-left:20px;
+}
+.cols ol,
+.single ol,
+.post ol,
+.contact-left ol,
+.contact-right ol{
+	list-style-type:decimal;
+	margin-left:20px;
+}
+/* GENERAL ------------------------------------------------------------------------------------------------*/
+body {
+	background:#333333 repeat-x top center;
+	color:#666666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:1;
+}
+div#single_image{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+}
+p.section-title{
+	color:#665d4e;
+	display:block;
+	margin-bottom:18px;
+	overflow:hidden;
+}
+p.section-title span.title{
+	border-right:1px solid #665d4e;
+	display:block;
+	float:left;
+	font-size:36px;
+	margin:20px 15px 0 150px;/* Связано с MARGIN свойствами (p.section-title span.desc) */
+	padding-right:15px;
+}
+p.section-title span.desc{
+	color:#800000;
+	display:block;
+	float:left;
+	font-size:24px;
+	line-height:1.5em;
+	margin:23px 0 0 0;/* отступы задаюстя по часовой стрелке 4-мя цыфрами первое значение СВЕРХУ и так до СЛЕВА */
+}
+.custom{
+	font-weight:bolder;
+	word-spacing:.3em;
+}
+/* MAIN ------------------------------------------------------------------------------------------------------*/
+div#main{
+	min-height:1500px;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+}
+div#silde{
+	height:1387px;/* ПРАВИТЬ ОБЛАСТЬ В КОТОРУЮ БУДЕТ ВПИСАНА КАРТИНКА высоту области (БЫЛО 380px)*/
+	overflow:hidden;
+	position:relative;
+	width:960px;/* ПРАВИТЬ ОБЛАСТЬ В КОТОРУЮ БУДЕТ ВПИСАНА КАРТИНКА ширину области */
+}
+div#slide ul#hon_sin_img{/*настройка картинки*/
+	height:1344px;/* ПРАВИТЬ высоту картинки (БЫЛО 337px) (не оказывает влияния на размер картинки) */
+	left:5px;/*отскуп слева до картинки */
+	position:relative;
+	top:18px;/*отступ СВУЕРХУ картинки*/
+	width:950px;/* ПРАВИТЬ ширину картинки (не оказывает влияния на размер картинки)*/
+}
+div#slide ul#hon_sin_img li img{/*настройка картинки*/
+	height:1344px;/* ПРАВИТЬ высоту картинки (БЫЛО 337px) (Влияет на размер картинки) */
+	width:950px;/* ПРАВИТЬ ширину картинки (Влияет на размер картинки)*/
+}
+div#slide form#prev input{
+	left:1px;
+	position:fixed;
+	top:280px;
+	z-index:20;
+}
+div#slide form#next input{
+	background: url(../img/next-slide.png);
+	position:fixed;
+	right:1px;
+	top:280px;
+	z-index:21;
+}
+div#slide span{/* рамка вокруг картинки */
+	border-radius:8px;/*НАСТРОЙКА РАМКИ*/
+	border: #999 solid 5px;/*НАСТРОЙКА РАМКИ*/
+	display:block;/*отдельный блок*/
+	height:1342px;/*вписать высоту (БЫЛО 335px)*/
+	left:0px;/*Убираем левый отступ*/
+	position:absolute;/*элемент не влияет на другие элементы*/
+	top:90px;/*отступ сверху до края рамки*/
+	width:950px;/*вписать ширину*/
+	z-index:10;/*настройка положения над картинкой*/
+}

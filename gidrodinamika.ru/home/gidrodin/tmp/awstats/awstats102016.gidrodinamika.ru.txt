@@ -1,0 +1,2240 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201610 will be lost/reset.
+# Last config file used to build this data file was /home/gidrodin/tmp/awstats/awstats.gidrodinamika.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2013                
+POS_TIME 2695                
+POS_VISITOR 49318               
+POS_DAY 82023               
+POS_DOMAIN 3586                
+POS_LOGIN 4656                
+POS_ROBOT 4811                
+POS_WORMS 5597                
+POS_EMAILSENDER 5728                
+POS_EMAILRECEIVER 5871                
+POS_SESSION 82887               
+POS_SIDER 83101               
+POS_FILETYPES 6006                
+POS_DOWNLOADS 6133                
+POS_OS 6181                
+POS_BROWSER 6580                
+POS_SCREENSIZE 10034               
+POS_UNKNOWNREFERER 10108               
+POS_UNKNOWNREFERERBROWSER 11702               
+POS_ORIGIN 12866               
+POS_SEREFERRALS 13016               
+POS_PAGEREFS 13243               
+POS_SEARCHWORDS 22789               
+POS_KEYWORDS 24711               
+POS_MISC 2359                
+POS_ERRORS 25752               
+POS_CLUSTER 4512                
+POS_SIDER_404 25865               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20161101000952 497 107073 8995492963582
+FirstTime 20161001001844
+LastTime 20161031234320
+LastUpdate 20161101015012 497 0 496 0 0
+TotalVisits 1678                
+TotalUnique 848                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 848                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+AddToFavourites 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 74 74 181165 227 266 242062
+1 38 38 184416 272 310 236408
+2 52 52 250058 151 187 203204
+3 63 63 216507 212 252 320398
+4 62 62 236378 153 188 231385
+5 52 52 205213 133 172 216592
+6 71 71 383156 143 178 270795
+7 86 86 322534 141 178 264064
+8 191 191 1241050 188 225 196502
+9 260 260 978371 139 173 216589
+10 220 220 900076 149 188 203321
+11 283 283 1101401 117 158 172679
+12 301 301 1253145 106 137 128994
+13 248 248 1265527 196 223 274719
+14 264 264 1061638 149 192 267242
+15 266 266 993542 144 192 190401
+16 210 210 711612 148 223 190971
+17 175 175 713569 83 169 158498
+18 154 154 509642 170 219 299156
+19 137 137 992629 118 139 129197
+20 71 71 219527 101 137 203003
+21 68 68 355402 124 155 303520
+22 102 102 473044 126 165 206006
+23 70 70 233109 168 210 291081
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 63
+ru 1717 1717 5308877
+by 689 689 2538863
+ua 327 327 2500357
+us 243 243 1189848
+gb 79 79 514703
+md 57 57 1006580
+cz 46 46 217372
+az 38 38 111469
+de 38 38 151186
+tm 34 34 101293
+kr 28 28 116127
+uz 25 25 85923
+fr 15 15 107079
+kz 15 15 62161
+ca 13 13 79456
+eu 11 11 32345
+pl 9 9 40089
+it 8 8 27405
+ro 8 8 35348
+cn 8 8 43698
+ch 8 8 26664
+in 7 7 58023
+no 6 6 20108
+ph 6 6 38098
+ee 6 6 22733
+ng 1 1 8289
+ar 2 2 16578
+nz 1 1 8289
+ba 2 2 16578
+at 2 2 9850
+rs 1 1 8289
+ie 5 5 40718
+es 2 2 16578
+lt 3 3 23524
+gr 1 1 8289
+cy 3 3 10077
+dk 2 2 10826
+lv 4 4 13485
+bg 2 2 10826
+pt 1 1 8289
+ae 2 2 5074
+my 1 1 8289
+mk 4 4 33156
+ma 1 1 8289
+hu 3 3 24867
+id 2 2 16578
+tn 2 2 16578
+pk 1 1 8289
+il 4 4 33156
+za 1 1 8289
+hr 1 1 8289
+kg 1 1 2537
+sn 1 1 8289
+me 1 1 2537
+nl 5 5 41445
+bd 1 1 8289
+tr 4 4 25332
+vn 1 1 8289
+sa 2 2 16578
+ge 1 1 2537
+eg 1 1 8289
+dz 1 1 8289
+br 4 4 33156
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 17
+bot[\s_+:,\.\;\/\\-] 1299 2537939 20161031235159 406
+robot 482 684067 20161031233119 133
+googlebot 459 1222809 20161031215048 55
+unknown 117 2040 20161031205401 117
+spider 68 111320 20161031230018 30
+slurp 57 48647 20161030111844 33
+crawl 33 137498 20161028224207 7
+ia_archiver 25 302260 20161026145720 9
+no_user_agent 17 110294 20161026083027 3
+[\s_+:,\.\;\/\\-]bot 12 25245 20161015193955 3
+msnbot\-media 11 24372 20161031004312 0
+curl 7 49734 20161021082445 0
+php 2 101706 20161010212730 0
+discovery 2 16578 20161025141721 0
+google[_+\s]web[_+\s]preview 1 2537 20161025105016 0
+ruby\/ 1 2537 20161024183523 0
+googlebot\-image 1 2537 20161021060233 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+html 1828 6754024 0 0
+Unknown 4 10148 0 0
+php 1686 8218539 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 24
+wince 10 10
+win8.1 194 194
+win2003 107 107
+win8 34 34
+win95 11 11
+winnt 331 331
+macosx6 5 5
+Unknown 60 60
+macosx9 8 8
+ios_ipad 7 7
+linux 81 81
+win7 1403 1403
+winlong 72 72
+ios_iphone 50 50
+linuxubuntu 4 4
+linuxandroid 128 128
+macosx 36 36
+macosx7 6 6
+win2000 24 24
+java 39 39
+win2008 68 68
+winunknown 307 307
+winme 3 3
+winxp 530 530
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 171
+firefox31.0 1 1
+opera12.18 4 4
+chrome25.0.1364.45 2 2
+msie6.00 76 76
+opera23.0.1522.75 51 51
+opera36.0.2130.80 34 34
+chrome41.0.2228.0 3 3
+safari8.0.4 13 13
+chrome37.0.2062.120 3 3
+safari9.0 13 13
+chrome51.0.2704.103 8 8
+safari 11 11
+msie3.00 77 77
+firefox35.0 1 1
+firefox3.6.28 1 1
+firefox14.0.1 4 4
+msie5.00 83 83
+chrome42.0.2311.135 8 8
+chrome49.0.2623.105 3 3
+firefox47.0 6 6
+chrome18.0.1025.166 1 1
+firefox3.6.8 4 4
+android 14 14
+chrome49.0.2623.75 39 39
+chrome54.0.2840.59 13 13
+firefox44.0 18 18
+chrome53.0.2785.97 1 1
+firefox24.0 2 2
+chrome50.0.2661.89 1 1
+firefox26.0 1 1
+chrome47.0.2526.106 3 3
+chrome35.0.1916.114 2 2
+safari8.0 2 2
+chrome9.0.597.107 1 1
+firefox3.5.2 19 19
+chrome51.0.2704.106 4 4
+opera6.01 2 2
+chrome42.0.2311.152 3 3
+opera40.0.2308.81 80 80
+firefox4.0 2 2
+chrome47.0.2526.111 41 41
+chrome28.0.1500.94 1 1
+opera9.0 16 16
+chrome27.0.1453 3 3
+chrome12.0.742.112 1 1
+chrome2.0.172.30 14 14
+msie7.0 19 19
+iphone 2 2
+netscape0.91 8 8
+safari8.0.6 2 2
+opera26.0.1656.60 2 2
+chrome48.0.2564.109 26 26
+chrome45.0.2454.93 4 4
+safari10.0 33 33
+lynx 2 2
+chrome27.0.1453.94 1 1
+firefox41.0 1 1
+chrome35.0.1916.153 1 1
+chrome51.0.2704.79 33 33
+firefox36.0 5 5
+msie5.5 23 23
+opera12.16 6 6
+firefox28.0 5 5
+firefox37.0 1 1
+chrome49.0.2623.112 159 159
+chrome28.0.1500.95 5 5
+chrome48.0.2564.97 8 8
+chrome54.0.2840.68 3 3
+firefox18.0 2 2
+chrome35.0.1916.141 3 3
+firefox29.0 1 1
+msie4.00 80 80
+netscape4.76 4 4
+safari9.0.3 2 2
+chrome21.0.1180.89 1 1
+chrome33.0.0.0 5 5
+firefox43.0 31 31
+chrome43.0.2357.124 1 1
+chrome53.0.2785.143 681 681
+chrome48.0.2564.103 8 8
+chrome52.0.2743.116 113 113
+safari7.0 1 1
+msie6.0 174 174
+firefox39.0 2 2
+opera9.00 7 7
+chrome50.0.2661.102 7 7
+chrome34.0.1847.131 7 7
+msie7.00 71 71
+chrome50.0.2661.240 3 3
+opera7.11 5 5
+opera40.0.2308.90 24 24
+opera37.0.2178.43 2 2
+netscape5.0 3 3
+chrome31.0.1650.57 2 2
+msie2.00 79 79
+chrome45.0.2454.101 1 1
+chrome45.0.2454.94 2 2
+chrome44.0.2403.130 1 1
+chrome52.0.2743.98 6 6
+chrome38.0.2125.122 1 1
+msie3.02 10 10
+chrome44.0.2403.133 1 1
+chrome5.0.375.99 4 4
+msie5.0 6 6
+chrome17.0.1025.133 1 1
+chrome47.0.2526.80 8 8
+firefox46.0 1 1
+wget 1 1
+safari4.0.5 1 1
+chrome46.0.2490.71 2 2
+chrome46.0.2490.76 1 1
+firefox48.0 18 18
+firefox45.0 6 6
+msie9.0 29 29
+chrome26.0.1410.63 5 5
+chrome34.0.1847.137 2 2
+chrome48.0.2564.82 1 1
+msie10.0 27 27
+firefox23.0 1 1
+chrome46.0.2490.86 4 4
+chrome47.0.2526.83 3 3
+opera35.0.2066.37 2 2
+iceweasel 4 4
+safari5.1 2 2
+chrome53.0.2785.113 4 4
+opera40.0.2308.62 13 13
+chrome46.0.2486.0 1 1
+opera12.12 1 1
+opera8.01 8 8
+chrome33.0.1750.152 1 1
+opera12.15 2 2
+chrome54.0.2840.71 135 135
+opera35.0.2066.92 1 1
+chrome38.0.2125.104 3 3
+opera34.0.2036.50 2 2
+opera37.0.2192.105088 7 7
+opera7.54 9 9
+opera12.00 1 1
+opera36.0.2130.32 1 1
+firefox3.0.8 2 2
+firefox5.0 1 1
+opera20.0.1396.72047 1 1
+msie11.0 143 143
+Unknown 89 89
+chrome47.0.2526.73 6 6
+chrome18.0.1025.308 3 3
+chrome48.0.2564.116 9 9
+mozilla 15 15
+firefox38.0 19 19
+chrome51.0.2704.81 7 7
+chrome30.0.0.0 4 4
+chrome28.0.1500.71 1 1
+chrome53.0.2785.116 138 138
+chrome43.0.2357.81 4 4
+safari7.0.3 2 2
+firefox25.0 26 26
+firefox49.0 153 153
+firefox42.0 2 2
+chrome31.0.1650.63 4 4
+firefox40.1 66 66
+chrome40.0.2214.115 3 3
+msie8.0 23 23
+chrome53.0.2785.124 55 55
+firefox3.6 4 4
+chrome38.0.2125.102 4 4
+chrome34.0.1847.116 1 1
+chrome49.0.2623.87 6 6
+chrome53.8.2785.90 1 1
+chrome36.0.1985.135 1 1
+chrome22.0.1229.94 3 3
+opera41.0.2353.46 24 24
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 24
+Opera/9.80_(S60;_SymbOS;_Opera_Mobi/SYB-1204232255;_U;_ru)_Presto/2.10.254_Version/12.00 20161028111456
+Riddler_(http://riddler.io/about) 20161015180259
+Lynx/2.8.5rel.1_libwww-FM/2.15FC_SSL-MM/1.4.1c_OpenSSL/0.9.7e-dev 20161004131003
+ltx71_-_(http://ltx71.com/) 20161031205537
+M 20161013013028
+iskanie_(_http://www.iskanie.com) 20161011075323
+Mozilla/5.0_(compatible;_Dataprovider/6.101;__https://www.dataprovider.com/) 20161003014521
+Go-http-client/1.1 20161031214059
+Opera/9.80_(Android;_Opera_Mini/7.5.33361/37.9031;_U;_ru)_Presto/2.12.423_Version/12.16 20161025203320
+Mozilla/5.0_(compatible;_DomainAppender_/1.0;__http://www.profound.net/domainappender) 20161018170608
+asdfasf 20161004112716
+agrofish{${eval(chr(100).chr(105).chr(101).chr(40).chr(39).chr(49).chr(55).chr(73).chr(53).chr(51).chr(48).chr(86).chr(65).chr(117).chr(52).chr(39).chr(41).chr(59))}} 20161010212728
+testitest_(test@testitest.com) 20161019070021
+testitest_(test@boogle.com) 20161019134558
+nutch-1.4/Nutch-1.4 20161017151358
+agrofish_eval(chr(100).chr(105).chr(101).chr(40).chr(39).chr(49).chr(55).chr(73).chr(53).chr(51).chr(48).chr(86).chr(65).chr(117).chr(52).chr(39).chr(41).chr(59)); 20161010212729
+Python-urllib/2.7 20161008222610
+sadfasdfsadf 20161021015327
+Ruby 20161004121231
+Mozilla/5.0_(compatible;_SiteExplorer/1.0b;__http://siteexplorer.info/) 20161006184305
+weqrqwer 20161004064524
+BoogleBot2_(https://www.boogle.com;_test@boogle.com) 20161025024825
+python-requests/2.10.0 20161003174810
+BoogleBot2 20161021051251
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 21
+Riddler_(http://riddler.io/about) 20161015180259
+ltx71_-_(http://ltx71.com/) 20161031205537
+Microsoft_Office_Excel_2013 20161017123811
+Java/1.6.0_04 20161013085909
+python-requests/2.7.0_CPython/2.7.10_Linux/3.2.0-4-amd64 20161026235300
+Go-http-client/1.1 20161031214059
+iskanie_(_http://www.iskanie.com) 20161011075323
+M 20161013013028
+testitest_(test@boogle.com) 20161019134558
+testitest_(test@testitest.com) 20161019070021
+agrofish{${eval(chr(100).chr(105).chr(101).chr(40).chr(39).chr(49).chr(55).chr(73).chr(53).chr(51).chr(48).chr(86).chr(65).chr(117).chr(52).chr(39).chr(41).chr(59))}} 20161010212728
+asdfasf 20161004112716
+Ruby 20161004121231
+sadfasdfsadf 20161021015327
+agrofish_eval(chr(100).chr(105).chr(101).chr(40).chr(39).chr(49).chr(55).chr(73).chr(53).chr(51).chr(48).chr(86).chr(65).chr(117).chr(52).chr(39).chr(41).chr(59)); 20161010212729
+Python-urllib/2.7 20161008222610
+nutch-1.4/Nutch-1.4 20161017151358
+BoogleBot2_(https://www.boogle.com;_test@boogle.com) 20161025024825
+weqrqwer 20161004064524
+BoogleBot2 20161021051251
+python-requests/2.10.0 20161003174810
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 533 533
+From1 14 14
+From2 455 455
+From3 996 996
+From4 1520 1520
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 7
+yandex 111 111
+rambler 4 4
+google 324 324
+mailru 5 5
+yahoo 6 6
+search 2 2
+bing 3 3
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 230
+http://cigarsonline.ru 67 67
+http://www.pcvexpo.ru/ru-RU/home/exhibitors/list/exposition/exhibitorview.aspx 55 55
+http://artbereg.ru 50 50
+https://voyage-luxe.ru 36 36
+http://scanmarine.ru 31 31
+http://my-drinks.org.ua 29 29
+http://voyage-luxe.ru 23 23
+http://www.fezminsk.by/residenty/predpriyatiya-sez-minsk/ 20 20
+http://nicefly.fr 20 20
+http://yandex.by/clck/jsredir 18 18
+http://aviav.ru 17 17
+http://gidrodinamika.belorussia.su 15 15
+http://zav.minsk.gov.by/economics/industry 14 14
+http://flymoscow.ru 12 12
+http://afashion.xyz 11 11
+http://www.4istoshop.com/dlja-detej/podguzniki/ 9 9
+http://fezminsk.by/residenty/predpriyatiya-sez-minsk/ 9 9
+http://xn--80aayflfdwd.xn--p1ai 9 9
+http://idc.com.ua 8 8
+http://aviav.ru.com 8 8
+http://aviav.org 8 8
+http://xn--80aafb2a.xn--p1ai 8 8
+http://locator.by 7 7
+http://mail.ru 7 7
+http://kinocccp.net 6 6
+https://serebrus.ru/category/detskoe-serebro/ 1 1
+http://meds-online24.com 3 3
+http://balkanfarma.ru 3 3
+http://dividendo.ru/volzhskiy-orgsintez/ 1 1
+http://www.dinoel.ru/shop/jubki-optom 1 1
+http://orsonet.ru 3 3
+https://www.youtube.com/channel/UCkGn3k7mRSTu3CmqafPg4qg 1 1
+http://larutti.ru 3 3
+http://legat.by 1 1
+http://xn--80aaafbn2bc2ahdfrfkln6l.xn--p1ai 2 2
+http://eropornosex.ru 5 5
+http://game-strit.online/2016/09/06/the-flash-examining-all-the-secrets-in-the-new-trailer/ 1 1
+http://game-strit.online/2016/09/06/star-wars-rebels-season-2-the-dark-2/ 1 1
+http://apkshka.com/745-md-music-119.html 1 1
+http://www.istmira.ru 1 1
+http://vadimkravtcov.ru 3 3
+http://asupro.com/gps-gsm/standards-rfid/identify-issues-problems-rfid-technology.html 1 1
+http://www.itservicesthatworkforyou.com 3 3
+http://autonavigator.moscow/v-rezultate-avarii-na-trasse-kazan-shemordan-pogibli-8-chelovek/ 1 1
+http://shinikiev.com.ua 3 3
+http://xn----7sbifcamovvfggw9d.xn--p1ai/v-mire/vozroslo-chislo-jertv-vzryvov-v-ankare.html 1 1
+https://gantbpm.ru/prince/ 1 1
+http://film-online-kino.com/sitemap.xml 5 5
+http://pizda.lol 3 3
+http://10.20.6.7/ncifirm.nsf/view/89BBB7671BAAC52EC32574F000492AB9 1 1
+http://xn----7sbifcamovvfggw9d.xn--p1ai/v-zelenograde/zelenograd-novy-j-torgovy-j-tsentr.html 1 1
+http://info.ertelecom.ru 1 1
+http://www.mebmis.ru/detskaya 1 1
+https://www.youtube.com/watch 5 5
+http://kursy-ege.ru 3 3
+http://apkshka.com/6321-huawei_mediapad_10_fhd.html 1 1
+http://apkshka.com/9359-lenovo_lemon_3_k32c36.html 1 1
+http://uytmaster.ru/top/santech 3 3
+http://limtu.ifmo.ru 3 3
+http://neftegas.info/catalog/nasosy-kompressory-truboprovodnaya-armatura/ 1 1
+http://sovetogorod.ru 3 3
+http://moliperta.y0.pl 3 3
+http://www.pcvexpo.ru/en-GB/home/exhibitors/list/exposition/exhibitorview.aspx 2 2
+http://avto-oligarh.ru/gruzoperevozki/3-t/valdaj-prom-furgon-4-m 1 1
+http://www.mosrif.ru 5 5
+http://almata.xkaz.org 3 3
+http://apkshka.com/4040-angry-world-war-2.html 1 1
+http://www.rpma.org.ru/10-members-menu-ru.html 2 2
+https://nicejet.fr 3 3
+http://www.yandex.by/clck/jsredir 3 3
+http://xn----7sbifcamovvfggw9d.xn--p1ai/meditsina/rospotrebnadzor-ob-yavil-o-nachale-e-pidsezona-po-grippu.html 1 1
+http://indiakino.net 2 2
+http://hostx.ru 1 1
+http://cheap-pills-norx.com 3 3
+http://oficow.proxy1.pro 5 5
+http://avtoshkola.ru 1 1
+https://gantbpm.ru/proekty/iso-9001/ 1 1
+http://asupro.com/building/documents/gost-50775.html 1 1
+http://dividendo.ru/88-perspektivy-akciy-fosagro-v-2016-2018-gg.html 1 1
+http://w-journal.ru 2 2
+https://www.provisov.net 2 2
+http://dengi.fr 2 2
+http://mobplayer.net 2 2
+http://pharmacyincity.com 5 5
+http://aviav.co 1 1
+http://gotomontenegro.net 3 3
+http://buynorxx.com 3 3
+https://wmchange.money 6 6
+http://www.elektir.ru 6 6
+http://australia-opening-times.com 3 3
+https://gantbpm.ru/news/tag/akcionernyj/ 1 1
+http://autonavigator.moscow/vtoraya-stadiya-odichaniya-ken-blok-pokazal-svoj-novyj-mustang/ 1 1
+http://oslo.ru 4 4
+http://moyinterer.ru 2 2
+http://www.bettergames.ru/management.php 2 2
+http://www.bioscorp.ru 3 3
+http://mobplayer.net 3 3
+http://energobelarus.by/company/nasosnoe_oborudovanie/gidrodinamika_zao/ 3 3
+https://serebrus.ru/category/stolovoe-serebro/ 1 1
+http://www.virial.ru/about/partners/ 1 1
+http://oboz.by 6 6
+http://ru-dety.ru 3 3
+http://petrovka-online.com 3 3
+http://www.uzel.org/url.php 1 1
+http://scanmarine.fr 4 4
+http://kinogo-2016-net.ru/filmy-2016-online/ 2 2
+http://compnetuca.c0.pl 3 3
+http://isistaylorporn.info 3 3
+http://medicines-choice.com 3 3
+http://stairliftsarea.com 3 3
+https://notarius.fr 1 1
+http://light.ifmo.ru 6 6
+http://phototravel.pl 3 3
+https://gantbpm.ru/proekty/realizaciya-proekta-organizacii/ 1 1
+http://esywemyfov.proxy1.pro 5 5
+http://life-instyle.com 3 3
+http://meduza-consult.ru 3 3
+http://kinogo-2016-net.ru/filmy-2017-online/ 1 1
+http://ugufen.x-proxy.pro 5 5
+http://meduza-consult.ru 6 6
+http://fezminsk.by/residenty/reestr-rezidentov-sez-minsk/ 6 6
+http://kinogo-2016-net.ru 2 2
+http://www.ledis.top/18-v-salone-krasoty-eteriya-odessa-soxranyayut-krasotu.html 3 3
+http://heatpower.ru 3 3
+http://sarf3omlat.com 3 3
+http://akiqa.x-proxy.pro 5 5
+http://cpabegins.ru 2 2
+http://zaporizhia.mistr-x.org 3 3
+http://portal.kv.lc/projects/clients/275787/ 1 1
+http://www.avtolombard-krasnodar.com 3 3
+http://uvona.prosocks.click 3 3
+https://gantbpm.ru/news/category/upravlenie-proektami/ 1 1
+http://game-strit.online/2016/09/06/destiny-house-of-wolves-trials-of-osiris-rewind-theater/ 1 1
+http://xn--24-glceagatoq7c2a6ioc.xn--p1ai 2 2
+http://xn--80ajbshivpvn2i.xn--p1ai 3 3
+http://ivihiquki.prosocks.click 3 3
+https://monacofrance.fr 1 1
+http://telegraf.by/2016/08/42/329397-ribii-jir 3 3
+http://avtoshkola.ru 1 1
+http://xn--80aaomkdl5amcy.xn--p1ai 5 5
+http://voloomoney.com/buy/kupit-gold-wow/ 2 2
+http://autonavigator.moscow/v-pyatnicu-pirelli-protestiruet-novye-shiny/ 1 1
+https://serebrus.ru/category/podarki-po-professiyam/ 2 2
+http://game-strit.online/2016/09/06/mass-effect-4-dreams-beyond-imagination/ 1 1
+http://komputers-best.ru 3 3
+http://socksprox.link 3 3
+http://reccalure.c0.pl 5 5
+http://enita.socksmix.xyz 3 3
+https://serebrus.ru/category/detskoe-serebro/pogremushki-serebrjanye/ 1 1
+http://iqyri.socksmix.xyz 3 3
+http://kollesa.ru 3 3
+https://serebrus.ru/category/izdelija-iz-bronzy/ 1 1
+https://www.spokiy.com 1 1
+http://posobie-na-rebenka.ru 1 1
+http://asupro.com/gps-gsm/system/nuances-initial-phases-intro-rfid-system.html 1 1
+http://moyinterer.ru/gostinye 1 1
+http://www.fezminsk.by/residenty/reestr-rezidentov-sez-minsk/ 2 2
+http://gotomontenegro.net 3 3
+http://www.bettergames.ru/walkthrough.php 1 1
+http://kinogo-2016-net.ru/skoro-v-kino/ 1 1
+http://becirpotog.c0.pl 3 3
+http://hundejo.com 1 1
+http://pk-services.ru 2 2
+http://www.veloturist.org.ua 3 3
+http://lvov.mistr-x.org 3 3
+http://burger-imperia.com 2 2
+http://avto-oligarh.ru/gruzoperevozki/3-t/valdaj-termos-4-m 1 1
+http://dengi-pod-zalog-nedvizhimosti.ru 3 3
+http://btvn.ru 5 5
+http://nicejet.fr 2 2
+http://autonavigator.moscow/rezina-s-perchikom-testiruem-sportivnye-shiny-conti-sportcontact-6/ 1 1
+https://serebrus.ru/category/dorogie-podarki/ 1 1
+http://www.mebmis.ru 1 1
+https://www.websolution.com.ua 1 1
+http://kinogo-2016-net.ru/serialy/ 2 2
+http://www.fezminsk.by/en/residenty/predpriyatiya-sez-minsk/ 1 1
+https://www.spokiy.com 4 4
+https://gantbpm.ru/proekty/biznes-plan-uslugi/ 1 1
+https://serebrus.ru/category/stolovye-nabory-iz-serebra/ 1 1
+http://edad.prosocks.click 3 3
+http://autolombard-krasnodar.ru 6 6
+http://scanmarine.ru.com 3 3
+http://efytu.prosocks.click 3 3
+http://kater.fr 1 1
+http://taxi-v-eisk.ru 6 6
+http://www.infopumps.org/index.php 2 2
+http://iqbazar.ru 3 3
+http://aviav.info 6 6
+https://gantbpm.ru/news/novye-proekty-povysyat-dobychu-nefti-kompanii-gazprom-na-6/ 1 1
+https://7fon.ru 3 3
+http://ultramart.biz 3 3
+http://mydc.net 3 3
+https://gantbpm.ru/proekty/menedzhment-kachestva/ 1 1
+http://crepterlove.y0.pl 3 3
+http://rpma.org.ru/10-members-menu-ru.html 1 1
+http://iqytala.x-proxy.pro 3 3
+http://exrurbicon.y0.pl 3 3
+http://writed.net 3 3
+http://apkshka.com/4277-planets-defense.html 1 1
+http://arenanews.com.ua/zdorove/4701-kosmetologicheskiy-salon-eteriya-na-rishelevskoy-30.html 3 3
+http://www.mebmis.ru/dlya-dachi 2 2
+http://xn----7sbifcamovvfggw9d.xn--p1ai/v-zelenograde/prigorodnye-marshruty-zelenograda-budut-obsluzhivat-novye-avtobusy-2.html 1 1
+https://gantbpm.ru/primavera-grafiki/ 1 1
+http://dividendo.ru/dividendnye-istorii-kompaniy.html 1 1
+http://crm.tradeicsbel.by/crm/lead/show/1014/ 1 1
+http://gidrodinamika-1.pulscen.by 1 1
+http://apkshka.com/1512-clouds-sheep-10.html 1 1
+http://uslugi-detektiva.kz 5 5
+http://realmonte.net 5 5
+http://phototravel.pl 1 1
+http://ajytiw.x-proxy.pro 5 5
+http://minsk.varps.ru/search 1 1
+http://www.seeingmeerkat.com 3 3
+http://www.agrovodcom.ru/reference/gidrodinamika.php 1 1
+http://pc-services.ru 6 6
+http://doxyporno.com 6 6
+http://scanmarine.biz 2 2
+http://dnepropetrovsk.mistr-x.org 1 1
+http://aptekaline.ru/dzhenerik_viagra.html 3 3
+http://game-strit.online/2016/09/06/feel-the-power-gaming-music-mix/ 1 1
+http://xn--b1ag5cfn.xn--p1ai 3 3
+http://www.amt-k.ru 3 3
+http://wingate.me 3 3
+http://x-musics.com 4 4
+http://game-strit.online/2016/09/03/fallout-4s-new-dlc-honors-fan-who-passed-away/ 1 1
+http://xn----7sbifcamovvfggw9d.xn--p1ai/biznes/novoe-zdanie-v-17-m-mikrorajone-otdadut-shkole-1194.html 1 1
+https://gantbpm.ru/metodologiya-modelirovaniya-sobytij/ 1 1
+http://xn----7sbbagbq7bd5aheftfllo4m.xn--p1ai 6 6
+http://search3.fvpimageviewer.com/search/web 1 1
+http://www.obolon.org.ua 3 3
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 19
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 4
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 2
+rlv 2
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 1
+%d0%97%d0%90%d0%9e+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%b1%d0%b5%d0%bb%d0%b0%d1%80%d1%83%d1%81%d1%8c 1
+%d0%bd%d0%b0%d1%81%d0%be%d1%81+%d0%b3%d0%b4%d0%bc+8 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%be%d1%84%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9+%d1%81%d0%b0%d0%b9%d1%82 1
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 1
+%d0%b3%d0%b4%d0%bc+8+%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%be 1
+gidrodinamika.ru 1
+%d0%bd%d0%b0%d1%81%d0%be%d1%81+%d0%b3%d0%b4%d0%bc+10-04+%d0%b5-220%2f600+%d0%be%d0%b1%d0%be%d0%b7%d0%bd%d0%b0%d1%87%d0%b5%d0%bd%d0%b8%d0%b5 1
+%d0%93%d0%94%d0%9c+7.40+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d0%bd%d1%8b%d0%b9+%d0%b0%d0%b3%d1%80%d0%b5%d0%b3%d0%b0%d1%82 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%b1%d0%b5%d0%bb%d0%be%d1%80%d1%83%d1%81%d1%8c 1
+%d0%be%d0%be%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%d0%bd%d0%b0%d1%81%d0%be%d1%81+%d0%b3%d0%b4%d0%bc 1
+www.gidrodinamika-dv.ru 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%bb%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 26
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 13
+%d0%b3%d0%b4%d0%bc 4
+%d0%b7%d0%b0%d0%be 3
+%d0%bd%d0%b0%d1%81%d0%be%d1%81 3
+%d0%bc%d0%b8%d0%bd%d1%81%d0%ba 2
+8 2
+rlv 2
+%d0%be%d1%84%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9 1
+%d0%be%d0%b1%d0%be%d0%b7%d0%bd%d0%b0%d1%87%d0%b5%d0%bd%d0%b8%d0%b5 1
+%d1%81%d0%b0%d0%b9%d1%82 1
+%d0%93%d0%94%d0%9c 1
+%d0%b0%d0%b3%d1%80%d0%b5%d0%b3%d0%b0%d1%82 1
+%d0%be%d0%be%d0%be 1
+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b 1
+gidrodinamika.ru 1
+%d0%97%d0%90%d0%9e 1
+%d0%b1%d0%b5%d0%bb%d0%b0%d1%80%d1%83%d1%81%d1%8c 1
+10-04 1
+%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%be 1
+%d0%bd%d0%b0%d1%81%d0%be%d1%81%d0%bd%d1%8b%d0%b9 1
+%d0%b1%d0%b5%d0%bb%d0%be%d1%80%d1%83%d1%81%d1%8c 1
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%bb%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+www.gidrodinamika-dv.ru 1
+%d0%93%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+7.40 1
+%d0%b5-220%2f600 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+206 2 5074
+301 5 1233
+404 2035 28360
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 498
+//\xc3\xeb\xe0\xe2\xed\xe0\xff 1 -
+/member/ 2 -
+/bitrix/admin 2 -
+/%d0%90%d1%80%d1%85%d0%b8%d0%b2%d1%8b 1 -
+/%C3%8E%C3%B1%C3%A5%C3%AD%C3%BC 1 -
+/\xcf\xee\xf7\xf2\xe0 1 -
+/admin.php 11 -
+/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0 35 -
+/editor/fckeditor/ 1 -
+/files/files/characteristics/obv/gdm8-041-e-130-85-k-30-u2-obv.pdf 1 -
+//aghacker.php 1 -
+//modules/attributewizardpro/file_upload.php 1 -
+//\xc2\xe5\xf1\xed\xe0 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp 1 -
+/aska.cgi 2 -
+/\xca\xee\xec\xef\xe0\xed\xe8\xff 1 -
+/wp-includes/js/wp-util.js 1 -
+/\xc1\xeb\xe0\xed\xea 2 -
+//\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed\xe3 1 -
+/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%D1%81%D1%81%D0%BE%D1%81%D1%8B 39 -
+/gorizontalnie/200 1 -
+//wp-login.php 2 -
+/%D0%9E%D1%81%D0%B5%D0%BD%D1%8C 35 -
+/files/files/characteristics/har/gdmp8-e-10-320-a-3,7-30-y2-har.pdf 1 -
+/fck/ 1 -
+/public_html/admin/2d91w7.txt 1 -
+/img/quotes-close.png 1 http://www.gidrodinamika.ru/css/style.css
+/files/files/characteristics/gab/gdm7-03-e-6-150-a-7,5-u2-gab.pdf 1 -
+//modules/cartabandonmentpro/uploads/gasshop.php.png 1 -
+/ckeditor/ 1 -
+/home.php 2 -
+/vfsroot/2d91w7.txt 1 -
+/%d0%9f%d0%be%d0%bb%d1%83%d0%bf%d0%be%d0%b3%d1%80%d1%83%d0%b6%d0%bd%d1%8b%d0%b5%20%d0%bd%d0%b0%d1%81%d0%be%d1%81%d1%8b 1 -
+/files/files/characteristics/gab/gdm15-02-e-200-250-a-200-u2-gab.pdf 1 -
+/jquery/2d91w7.txt 1 -
+/includes/fckeditor/editor/filemanager/upload/asp/upload.asp 1 -
+///2d91w7.txt 1 -
+/files/files/characteristics/obv/gdm19-04-e-25-80-k-11-u2-obv.pdf 1 -
+/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D1%8B 2 -
+/img/over.png 1 http://www.gidrodinamika.ru/css/style.css
+/sysadmin/fckeditor/ 1 -
+/vertikalnie/gorizontalnie/225 2 -
+/gorizontalnie/144 1 -
+/%D0%97%D0%B8%D0%BC%D0%B0 33 -
+/backup/wp-admin/setup-config.php 1 -
+/administrator 2 -
+//\xce\xe1\xeb\xee\xe6\xea\xe0 1 -
+/files/files/characteristics/gab/gdm10-041-e-220-600-a-500-u2-gab.pdf 1 -
+/includes/fckeditor/editor/filemanager/connectors/php/upload.php 1 -
+/upload/FCKeditor/ 1 -
+/files/files/page/222/ 1 -
+/files/files/page/168/ 1 -
+/wp/wp-admin/setup-config.php 1 -
+/FCKeditor/editor/filemanager/connectors/php/connector.php 1 -
+//modules/videostab/uploads/gasshop.php.png 1 -
+//modules/advancedslider/uploads/gasshop.php.png 1 -
+/fckeditor/editor/filemanager/connectors/asp/connector.asp 1 -
+/files/files/characteristics/har/gdmp5-e-31,5-63-a-3,2-15-y2-har.pdf 1 -
+/files/files/characteristics/har/gdmp7-03-e-50-130-a-3,2-37-y2-har.pdf 2 -
+/files/files/characteristics/gab/gdm7-05-e-8-60-k-4-u2-gab.pdf 1 -
+/catalog/vertikalnie/96 2 -
+/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F 35 -
+/wp-content/plugins/dzs-zoomsounds/admin/admin.js 2 -
+/files/files/page/161/ 1 -
+/gorizontalnie/195 1 -
+/public_html/langs/ru/2d91w7.txt 1 -
+/%C3%83%C3%AE%C3%B0%C3%A8%C3%A7%C3%AE%C3%AD%C3%B2%C3%A0%C3%AB%C3%BC%C3%AD%C3%BB%C3%A5%20%C3%AD%C3%A0%C3%B1%C3%B1%C3%AE%C3%B1%C3%BB 3 http://www.gidrodinamika.ru/
+/admin/fckeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+/mail/.Drafts/new/2d91w7.txt 1 -
+/%CA%EE%ED%F2%E0%EA%F2%FB 10 -
+/files/files/characteristics/har/gdmp21-021-e-16-160-a-3,7-18,5-y2-har.pdf 1 -
+/files/files/page/184/ 1 -
+/ckeditor/ckfinder/core/connector/asp/connector.asp 1 -
+/files/files/characteristics/gab/gdm21-032-e-60-320-a-132-u2-gab.pdf 1 -
+/gor/ 1 -
+/\xca\xe0\xf2\xe5\xe3\xee\xf0\xe8\xe8 1 -
+/includes/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/jax_guestbook.php 2 -
+/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 1 -
+/images/upload/FCKeditor/ 1 -
+/%d0%97%d0%b0%d0%bf%d0%b0%d1%81%d0%bd%d1%8b%d0%b5%20%d1%87%d0%b0%d1%81%d1%82%d0%b8 1 -
+/mail/.Trash/new/2d91w7.txt 1 -
+/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8 4 -
+/.cphorde/vfsroot/2d91w7.txt 1 -
+/wp-admin/admin-ajax.php 4 -
+/mobile/ 2 -
+/img/over-flash.png 1 http://www.gidrodinamika.ru/css/style.css
+/%c3%eb%e0%e2%ed%e0%ff 1 http://gidrodinamika.ru
+/manager 2 -
+//\xcf\xee\xf7\xf2\xe0 1 -
+/%CE%F1%E5%ED%FC 12 -
+/vertikalnie/gorizontalnie/104 1 -
+/files/files/characteristics/har/gdmp8-01-e-12-640-a-3,7-30-y2-har.pdf 3 -
+/files/files/characteristics/gab/gdmp7-09-e-50-80-A-3.0-22-u2-gab.pdf 1 -
+/files/files/characteristics/obv/gdmd3-e-1250-40-a-200-u2-obv.pdf 1 -
+/files/files/characteristics/gab/gdm13-031-e-50-55-A-18,5-u2-gab.pdf 1 -
+/jscript/2d91w7.txt 1 -
+/includes/fckeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+/admin/FCKeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/blog/robots.txt 1 -
+//\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 1 -
+/files/files/ 1 -
+/files/files/page/196/ 1 -
+/files/files/page/61/ 1 -
+/news//wp-admin/setup-config.php 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/\xd0\xe0\xe7\xf0\xe0\xe1\xee\xf2\xea\xe8 1 -
+/catalog/vertikalnie/206 1 -
+/upload/fckediter/ 1 -
+/files/files/page/58/gdm9-04-e-60-480-a-160-u2-gab.pdf 1 -
+/yapgb.php 2 -
+/assets/dashboard/js/elrte-1.3/elfinder/elfinder.html 1 -
+/admin/FCKeditor/editor/filemanager/connectors/php/connector.php 1 -
+/swfobject/2d91w7.txt 1 -
+/js/fckeditor/ 1 -
+/gorizontalnie 12 -
+/%CB%E8%F6%E5%ED%E7%E8%E8 8 http://gidrodinamika.ru/
+/catalog/vertikalnie/gorizontalnie/214 1 -
+/wordpress/wp-admin/setup-config.php 1 -
+/fckeditor/editor/filemanager/connectors/php/connector.php 1 -
+/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8 5 -
+/img/over-video.png 1 http://www.gidrodinamika.ru/css/style.css
+/FCKeditor/editor/filemanager/upload/php/upload.php 1 -
+/gorizontalnie/167 1 -
+/%D2%E5%F5.%20%EF%EE%E4%E4%E5%F0%E6%EA%E0 11 -
+/catalog/vertikalnie/gorizontalnie/97 1 -
+/%D0%97%D0%B0%D0%BA%D0%B0%D0%B7 38 -
+/files/files/characteristics/har/gdm7-01-e-15-40-a-5,5-u2-har.pdf 1 -
+/wp-content/plugins/showbiz/temp/update_extract/NULLpOint7r__bndfu.php 1 -
+/vertikalnie/gorizontalnie/239 1 -
+/catalog/vertikalnie/98 1 -
+/administrator/index.php 6 -
+/%D0%9B%D0%B5%D1%82%D0%BE 34 -
+/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/gorizontalnie/176 1 -
+/vertikalnie/gorizontalnie/236 2 -
+/%D0%9E_%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8 1 -
+/includes/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp 1 -
+/img/bullet.png 1 http://www.gidrodinamika.ru/css/style.css
+/\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb\xe8 1 -
+/wp-content/plugins/revslider/temp/update_extract/NULLpOint7r__fxaum.php 1 -
+/\xc3\xeb\xe0\xe2\xed\xe0\xff 1 -
+/gorizontalnie/173 1 -
+/gorizontalnie/199 1 -
+/\xd0\xe0\xe7\xed\xee\xe5 1 -
+/J%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8 1 -
+/%C3%90%C5%A1%C3%90%C2%B0%C3%91%E2%80%9A%C3%90%C2%B5%C3%90%C2%B3%C3%90%C2%BE%C3%91%E2%82%AC%C3%90%C2%B8%C3%90%C2%B8 2 -
+/admin/fckeditor/editor/filemanager/connectors/asp/upload.asp 1 -
+/includes/fckeditor/editor/filemanager/connectors/asp/connector.asp 1 -
+/admin/fckeditor/editor/filemanager/connectors/php/upload.php 1 -
+//\xce\xf1\xe5\xed\xfc 1 -
+/%CE%20%EA%EE%EC%EF%E0%ED%E8%E8 11 http://gidrodinamika.ru/
+/sbb.cgi 2 -
+/%D0%97%D0%B0%D0%BF%D0%B0%D1%81%D0%BD%D1%8B%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%B8 34 -
+/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/mail/2d91w7.txt 2 -
+//\xd0\xe0\xe7\xed\xee\xe5 1 -
+/fckimg/ 1 -
+/files/files/characteristics/gab/gdmp6-01-e-25-50-a-3,7-18,5-u2-gab.pdf 1 -
+/mail/new/2d91w7.txt 1 -
+/mail/cur/2d91w7.txt 1 -
+/files/files/page/180/ 1 -
+/%D0%91%D0%BB%D0%B0%D0%BD%D0%BA 41 -
+/sunbbs.cgi 2 -
+/admin/fckeditor/editor/filemanager/connectors/asp/connector.asp 1 -
+/vertikalnie/gorizontalnie/238 1 -
+/files/files/characteristics/gab/gdm5-02-e-60-110-a-45-u2-gab.pdf 1 -
+/blog/wordpress/wp-admin/setup-config.php 1 -
+/FCKeditor/ 1 -
+/common/js/elfinder-2.0-rc1/elfinder.html 1 -
+/gorizontalnie/181 2 -
+//\xc7\xe8\xec\xe0 1 -
+/%C1%EB%E0%ED%EA 11 http://gidrodinamika.ru/
+/mail/.Sent/new/2d91w7.txt 1 -
+/wordpress/wordpress/wp-admin/setup-config.php 1 -
+/inc/fckeditor/ 1 -
+/%C3%8A%C3%AE%C3%AD%C3%B2%C3%A0%C3%AA%C3%B2%C3%BB 1 -
+/files/files/characteristics/har/gdm7-04-e-6-35-%C3%90%C5%A1-5,5-y2-har.pdf 1 -
+/gorizontalnie/171 1 -
+/files/files/characteristics/har/gdm15-01-e-220-114-a-90-y2-har.pdf 1 -
+/vertikalnie/gorizontalnie/126 1 -
+/%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5 2 -
+/wp/ 1 -
+//\xc7\xe0\xea\xe0\xe7 1 -
+/contacts 11 -
+/mail/.Trash/2d91w7.txt 1 -
+/vertikalnie/gorizontalnie/122 2 -
+/%C3%90%E2%80%99%20%C3%90%C2%BC%C3%90%C2%B8%C3%91%E2%82%AC%C3%90%C2%B5 1 -
+/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 2 -
+/admin/2d91w7.txt 1 -
+/%D0%9E%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8 1 -
+//www.mail@gidrodinamika.ru 1 -
+/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B2%D1%8F%D0%B7%D1%8C 37 -
+/vertikalnie/gorizontalnie/240 1 -
+/yabb.pl 2 -
+/files/files/characteristics/obv/gdm5-04-e-115-170-a-55-u2-obv.pdf 1 -
+/gorizontalnie/160 1 -
+/%CA%EE%ED%F2%E0%EA%F2%FB\"%20onclick=\"this.href='contact.php 5 -
+/admin/fckeditor/editor/filemanager/upload/aspx/upload.aspx 1 -
+/includes/fckeditor/editor/filemanager/connectors/php/connector.php 1 -
+/%CB%E5%F2%EE 10 -
+/\xce\xf1\xe5\xed\xfc 2 -
+/%CC%E0%F0%EA%E5%F2%E8%ED%E3 8 http://gidrodinamika.ru/
+/2d91w7.txt 28 -
+/products 4 -
+/\xcd\xee\xe2\xee\xf1\xf2\xe8 1 -
+//\xd0\xe0\xe7\xf0\xe0\xe1\xee\xf2\xea\xe8 1 -
+/%C4%EE%F1%F2%E8%E6%E5%ED%E8%FF 9 http://gidrodinamika.ru/
+/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F 37 -
+/css/fonts/mtcorsva.ttf 15 http://www.gidrodinamika.ru/
+/%CF%F0%E5%E4%F1%F2%E0%E2%E8%F2%E5%EB%E8 9 http://gidrodinamika.ru/
+/.Drafts/2d91w7.txt 1 -
+/mail/.Drafts/cur/2d91w7.txt 1 -
+/%d0%9a%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b 1 -
+/files/files/characteristics/gab/gdm9-04-e-60-480-a-160-u2-gab.pdf 1 -
+//modules/jro_homepageadvertise/uploadimage.php 1 -
+/%C3%90%E2%80%98%C3%90%C2%BB%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%BA 1 -
+/fckeditor/ 1 -
+/gorizontalnie/205 1 -
+/gorizontalnie/140 1 -
+/%D0%9F%D0%BE%D1%87%D1%82%D0%B0 35 -
+/includes/fckeditor/editor/filemanager/upload/aspx/upload.aspx 1 -
+/modules.php 2 -
+/vertikalnie/gorizontalnie/226 2 -
+/public_html/jscript/jquery/2d91w7.txt 1 -
+/default.asp 2 -
+/mail/.Trash/cur/2d91w7.txt 1 -
+/%C3%8D%C3%AE%C3%A2%C3%AE%C3%B1%C3%B2%C3%A8 4 http://www.gidrodinamika.ru/
+/gorizontalnie/161 1 -
+/apple-touch-icon.png 8 -
+/vertikalnie/gorizontalnie/105 1 -
+/order.html 4 -
+/mail/.Sent/2d91w7.txt 1 -
+/%D0%9C%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3 32 -
+/files/files/characteristics/obv/gdm5-10-e-70-140-k-30-u2-obv.pdf 1 -
+/gorizontalnie/190 1 -
+/files/files/characteristics/obv/gdm13-012-e-13-55-a-18,5-u2-obv.pdf 2 -
+/admin/fckeditor/ 1 -
+/admin/FCKeditor/editor/filemanager/connectors/php/upload.php 1 -
+//\xcd\xee\xe2\xee\xf1\xf2\xe8 1 -
+/files/files/characteristics/obv/gdmp-obv.pdf 1 -
+//modules/homepageadvertise2/uploadimage.php 1 -
+/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8 35 -
+/perl5/lib/perl5/2d91w7.txt 1 -
+/browserconfig.xml 1 -
+/files/files/characteristics/har/gdmp21-06-e-6-100-a-3,0-7,5-y2-har.pdf 1 -
+/public_ftp/2d91w7.txt 2 -
+//login.php 2 -
+/gorizontalnie/132 1 -
+/license.php 1 http://gidrodinamika.ru/license.php
+/fckeditor/editor/filemanager/upload/aspx/upload.aspx 1 -
+//modules/columnadverts/uploadimage.php 1 -
+/%CF%EE%F7%F2%E0 7 http://gidrodinamika.ru/
+/excursions/js/plugins/elfinder2.0/elfinder.html 1 -
+/vertikalnie/gorizontalnie/217 1 -
+/new/2d91w7.txt 4 -
+/%D0%92%D0%B5%D1%80%D0%BD%D1%83%D1%82%D1%8C%D1%81%D1%8F%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%BE 29 -
+/%C3%90%C5%BE%C3%90%C2%B1%C3%91%E2%82%AC%C3%90%C2%B0%C3%91%E2%80%9A%C3%90%C2%BD%C3%90%C2%B0%C3%91%C2%8F%20%C3%91%C2%81%C3%90%C2%B2%C3%91%C2%8F%C3%90%C2%B7%C3%91%C5%92 1 -
+/%CE%E1%F0%E0%F2%ED%E0%FF%20%F1%E2%FF%E7%FC 9 http://gidrodinamika.ru/
+/gorizontalnie/201 1 -
+/%D0%92%20%D0%BC%D0%B8%D1%80%D0%B5 2 -
+/admin/fckeditor/editor/filemanager/connectors/aspx/upload.aspx 1 -
+/%d0%9e%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b0 1 -
+/files/files/characteristics/har/gdm10-01-e-200-850-a-630-y2-har.pdf 2 -
+/book.php 2 -
+/files/files/characteristics/gab/gdmp7-04-e-12,5-32-a-3,2-5,5-u2-gab.pdf 1 -
+/%D0%9E%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8 39 -
+/%F1%F1%FB%EB%EA%E0%20vk.com 11 http://gidrodinamika.ru/
+/common/fckeditor/ 1 -
+/files/files/characteristics/har/gdm2-07-e-360-70-a-132-y2-har.pdf 1 -
+/%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE 2 -
+/files/files/characteristics/gab/gdmp8-03-E-10-480-a-2,7-55-u2-gab.pdf 1 -
+/gorizontalnie/191 1 -
+/assets/b845e0c8/elfinder/elfinder.html 1 -
+/editorold/ 1 -
+/YaBB.pl 2 -
+/catalog/vertikalnie/gorizontalnie/92 1 -
+/files/files/characteristics/har/gdm13-014-e-90-50-a-15-y2-har.pdf 1 -
+/%D0%A2%D0%B5%D1%85.%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0 40 -
+/fckeditor/editor/filemanager/connectors/asp/upload.asp 1 -
+//\xc1\xeb\xe0\xed\xea 1 -
+/files/files/characteristics/har/gdm21-036-e-40-180-a-37-y2-har.pdf 1 -
+/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 1 -
+/mail/.Drafts/2d91w7.txt 1 -
+//modules/cartabandonmentpro/upload.php 1 -
+/language/en-GB/en-GB.xml 2 -
+/%D0%92%D0%B5%D1%81%D0%BD%D0%B0 33 -
+//modules/videostab/ajax_videostab.php 1 -
+/files/files/characteristics/gab/gdmp21-06-e-6-100-a-3,0-7,5-u2-gab.pdf 1 -
+/perl5/2d91w7.txt 3 -
+/vertikalnie/gorizontalnie/234 1 -
+/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F 39 -
+/%d0%9b%d0%b8%d1%86%d0%b5%d0%bd%d0%b7%d0%b8%d0%b8 1 -
+/administrator/ 4 -
+/includes/fckeditor/ 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/ckeditor/ckfinder/core/connector/aspx/connector.aspx 1 -
+/.cphorde/2d91w7.txt 2 -
+/%CE%E1%EB%EE%E6%EA%E0 10 http://gidrodinamika.ru/
+/wp-content/plugins/revslider/temp/update_extract/NULLpOint7r__ftwrz.php 1 -
+/images/upload/fckediter/ 1 -
+/lib/2d91w7.txt 1 -
+/kcfinder/browse.php 1 -
+/files/files/characteristics/gab/gdmp14-04-e-20-80-k-2,3-15-u2-gab.pdf 2 -
+//\xc0\xf0\xf5\xe8\xe2\xfb 1 -
+/system/fckeditor/ 1 -
+/feed2js/magpie_debug.php 1 http://gidrodinamika.ru/feed2js/magpie_debug.php
+/apple-touch-icon-120x120-precomposed.png 1 -
+/www.mail@gidrodinamika.ru 10 http://www.gidrodinamika.ru/contact.php
+/admin/uploadify/uploadify.swf 1 -
+/panel 2 -
+/files/files/page/238/ 1 -
+/vertikalnie 7 -
+/files/files/characteristics/har/gdm19-e-30-70-a-22-y2-har.pdf 1 -
+/FCKeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+//modules/attributewizardpro/file_uploads/gasshop.php.png 1 -
+/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed\xe8\xff 1 -
+/files/files/characteristics/har/gdmp7-01-e-50-80-a-3.0%2030-y2-har.pdf 1 -
+/\xcf\xf0\xee\xe8\xe7\xe2\xee\xe4\xf1\xf2\xe2\xee 1 -
+/%CA%EE%EC%EF%E0%ED%E8%FF 10 http://gidrodinamika.ru/
+/files/files/characteristics/har/gdmp14-02-e-20-110-%D0%9A-3,7-22-y2-har.pdf 1 -
+/scripts/fckeditor/ 1 -
+/fckeditor/editor/filemanager/connectors/php/upload.php 1 -
+/album.cgi 2 -
+/catalog/vertikalnie/gorizontalnie/213 1 -
+/editor1/ 1 -
+/perl5/lib/2d91w7.txt 1 -
+/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D0%BE%D0%B3%D1%80%D1%83%D0%B6%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%D1%81%D0%BE%D1%81%D1%8B 34 -
+/admin/FCKeditor/editor/filemanager/upload/php/upload.php 1 -
+///www.mail@gidrodinamika.ru 1 -
+/user 2 -
+/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B 39 -
+/fckeditor/editor/filemanager/connectors/aspx/upload.aspx 1 -
+/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp 1 -
+/files/files/characteristics/gab/gdm7-07-e-8-20-a-2,2-u2-gab.pdf 1 -
+/%C3%90%C2%9D%C3%90%C2%BE%C3%90%C2%B2%C3%90%C2%BE%C3%91%C2%81%C3%91%E2%80%9A%C3%90%C2%B8 1 -
+/%C3%90%C2%90%C3%91%E2%82%AC%C3%91%E2%80%A6%C3%90%C2%B8%C3%90%C2%B2%C3%91%E2%80%B9 1 -
+/files/files/characteristics/har/gdmp14-05-e-50-150-a-3,2-55-y2-har.pdf 1 -
+/admin/fckeditor/editor/filemanager/upload/asp/upload.asp 1 -
+/wordpress/ 1 -
+/files/files/characteristics/gab/gdm19-e-30-70-k-22-u2-gab.pdf 1 -
+/vertikalnie/gorizontalnie/228 1 -
+//\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 1 -
+/vertikalnie/gorizontalnie/115 1 -
+/files/files/characteristics/gab/gdmp21-04-e-16-400-a-2,7-55-u2-gab.pdf 1 -
+/wp-login.php 174 -
+/%C3%90%C2%A0%C3%90%C2%B0%C3%90%C2%B7%C3%91%E2%82%AC%C3%90%C2%B0%C3%90%C2%B1%C3%90%C2%BE%C3%91%E2%80%9A%C3%90%C2%BA%C3%90%C2%B8 1 -
+/includes/FCKeditor/editor/filemanager/connectors/php/connector.php 1 -
+/sitemap.xml 3 -
+/%C7%E8%EC%E0 11 http://gidrodinamika.ru/
+//modules/homepageadvertise/uploadimage.php 1 -
+/files/files/characteristics/obv/gdm8-10-e-100-45-k-18,5-u2-obv.pdf 1 -
+//\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed\xe8\xff 1 -
+//modules/soopamobile/uploadimage.php 1 -
+/files/files/characteristics/har/gdm21-0311-e-20-250-a-30-u2-har.pdf 1 -
+//\xca\xee\xed\xf2\xe0\xea\xf2\xfb 1 -
+/.Trash/2d91w7.txt 1 -
+/meta/2d91w7.txt 1 -
+/gorizontalnie/147 1 -
+/langs/2d91w7.txt 1 -
+/%C3%8F%C3%AE%C3%AB%C3%B3%C3%AF%C3%AE%C3%A3%C3%B0%C3%B3%C3%A6%C3%AD%C3%BB%C3%A5%20%C3%AD%C3%A0%C3%B1%C3%AE%C3%B1%C3%BB 3 http://www.gidrodinamika.ru/
+/FCKeditor/editor/filemanager/connectors/php/upload.php 1 -
+/fckeditor/editor/filemanager/upload/asp/upload.asp 1 -
+/.Sent/2d91w7.txt 1 -
+/%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D0%B8 39 -
+/%d1%e2%ff%e7%fc%20%e8%20%ea%ee%ed%f1%f3%eb%fc%f2%e0%f6%e8%ff 1 http://gidrodinamika.ru
+//2014 1 -
+/admin/index.php 1 -
+/includes/FCKeditor/editor/filemanager/connectors/php/upload.php 1 -
+/files/files/characteristics/gab/gdm2-03-e-700-120-a-400-u2-gab.pdf 2 -
+/includes/fckeditor/editor/filemanager/connectors/aspx/upload.aspx 1 -
+/include/fckeditor/ 1 -
+/'\"` 1 http://www.google.com/'\"`
+/ckeditor/ckfinder/core/connector/php/connector.php 1 -
+/vertikalnie/gorizontalnie/124 1 -
+/FCKeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/vendor/mihaildev/yii2-elfinder/assets/elfinder.html 1 -
+/files/files/characteristics/har/gdm8-041-e-130-85-%D0%9A-30-y2-har.pdf 1 -
+/blog/ 2 -
+/public_html/jscript/swfobject/2d91w7.txt 1 -
+/guestbook 2 -
+//\xcb\xe5\xf2\xee 1 -
+/fckeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+/img/next-bullet.png 1 http://www.gidrodinamika.ru/css/style.css
+/vertikalnie/gorizontalnie/125 1 -
+/gorizontalnie/165 1 -
+/%d0%9a%d0%be%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d1%8f 1 -
+/files/files/characteristics/obv/gdm7-04-e-6-35-k-5,5-u2-obv.pdf 1 -
+/gorizontalnie/187 1 -
+/gorizontalnie/193 1 -
+/files/files/characteristics/har/gdm13-09-e-40-70-%3f-11-y2-har.pdf 1 -
+/images/upload/fckimg/ 1 -
+//\xca\xe0\xf2\xe5\xe3\xee\xf0\xe8\xe8 1 -
+/wp-content/plugins/mailpress/mp-includes/action.php 1 -
+/files/files/characteristics/gab/gdm14-032-e-55-70-k-22-u2-gab.pdf 2 -
+//modules/advancedslider/ajax_advancedsliderUpload.php 1 -
+/%C2%20%EC%E8%F0%E5 2 -
+/includes/fckeditor/editor/filemanager/upload/php/upload.php 1 -
+/mail/.Sent/cur/2d91w7.txt 1 -
+/%C3%90%E2%80%94%C3%90%C2%B8%C3%90%C2%BC%C3%90%C2%B0 1 -
+/%C7%E0%EF%E0%F1%ED%FB%E5%20%F7%E0%F1%F2%E8 11 http://gidrodinamika.ru/
+/files/files/characteristics/har/gdmp14-01-e-40-200-a-2-55-y2-har.pdf 1 -
+/files/files/page/221/ 1 -
+/fckeditor/editor/filemanager/upload/php/upload.php 1 -
+/cgi-bin/2d91w7.txt 1 -
+//modules/productpageadverts/uploadimage.php 1 -
+//\xc2\xfb\xf1\xf2\xe0\xe2\xea\xe8 1 -
+/files/files/page/239/ 1 -
+/en/ 1 -
+/files/files/characteristics/obv/gdm4-07-e-10-90-a-15-u2-obv.pdf 1 -
+//modules/attributewizardpro.OLD/file_upload.php 1 -
+/cur/2d91w7.txt 4 -
+/%C3%92%C3%A5%C3%B5.%C3%AF%C3%AE%C3%A4%C3%A4%C3%A5%C3%B0%C3%A6%C3%AA%C3%A0 1 -
+/\xcb\xe5\xf2\xee 2 -
+/vertikalnie/gorizontalnie/219 2 -
+/%C3%83%C3%AE%C3%B0%C3%A8%C3%A7%C3%AE%C3%AD%C3%B2%C3%A0%C3%AB%C3%BC%C3%AD%C3%BB%C3%A5%C3%AD%C3%A0%C3%B1%C3%B1%C3%AE%C3%B1%C3%BB 1 -
+/gorizontalnie/179 1 -
+/YaBB.cgi 2 -
+/%d0%93%d0%be%d1%80%d0%b8%d0%b7%d0%be%d0%bd%d1%82%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5%20%d0%bd%d0%b0%d1%81%d1%81%d0%be%d1%81%d1%8b 1 -
+/vertikalnie/gorizontalnie/237 1 -
+/apple-touch-icon-precomposed.png 6 -
+/vertikalnie/gorizontalnie/123 1 -
+/includes/FCKeditor/editor/filemanager/upload/php/upload.php 1 -
+/gorizontalnie/159 1 -
+/popup-pomo.php 1 -
+/files/files/characteristics/gab/gdm4-011-e-15-120-a-11-u2-gab.pdf 1 -
+/gorizontalnie/145 1 -
+/vertikalnie/gorizontalnie/223 2 -
+/%D1%E2%FF%E7%FC%20%E8%20%EA%EE%ED%F1%F3%EB%FC%F2%E0%F6%E8%FF 11 http://gidrodinamika.ru/
+/\xce\xe1\xeb\xee\xe6\xea\xe0 1 -
+/%C7%E0%EA%E0%E7 10 http://gidrodinamika.ru/
+//modules/simpleslideshow/uploadimage.php 1 -
+/.cphorde/meta/2d91w7.txt 1 -
+/files/files/characteristics/gab/gdmp14-e-31,5-63-a-3,2-15-u2-gab.pdf 1 -
+//modules/attributewizardpro.OLD/file_uploads/gasshop.php 1 -
+/public_html/jscript/2d91w7.txt 1 -
+/admin/fckeditor/editor/filemanager/upload/php/upload.php 1 -
+/%CD%EE%E2%EE%F1%F2%E8 8 http://gidrodinamika.ru/
+/files/files/characteristics/har/gdmp14-04-e-20-80-a-2,3-15-y2-har.pdf 2 -
+/editor/ 1 -
+/files/files/characteristics/har/gdm13-01-e-100-70-a-37-u2-har.pdf 1 -
+/vertikalnie/gorizontalnie/216 1 -
+/gorizontalnie/196 1 -
+/vertikalnie/gorizontalnie/107 1 -
+//\xca\xee\xec\xef\xe0\xed\xe8\xff 1 -
+/vk.com 4 http://gidrodinamika.ru
+/catalog/gor/5-01/gdm5-01-har.pdf.pdf 2 -
+/files/files/characteristics/obv/gdm10-02-e-250-400-a-400-u2-obv.pdf 1 -
+/blog/wp-admin/setup-config.php 1 -
+/%d0%94%d0%be%d1%81%d1%82%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f 1 -
+/%C3%8F%C3%B0%C3%AE%C3%A4%C3%B3%C3%AA%C3%B6%C3%A8%C3%BF 4 http://www.gidrodinamika.ru/
+/gorizontalnie/175 2 -
+/includes/fckeditor/editor/filemanager/connectors/asp/upload.asp 1 -
+/vertikalnie/gorizontalnie/218 1 -
+/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F 34 -
+/apple-touch-icon-120x120.png 1 -
+/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8 38 -
+/%C3%EB%E0%E2%ED%E0%FF 10 http://gidrodinamika.ru/
+/files/files/characteristics/har/gdmp3-e-25-50-a-2,7-11-y2-har.pdf 1 -
+/public_html/2d91w7.txt 2 -
+/%C3%EE%F0%E8%E7%EE%ED%F2%E0%EB%FC%ED%FB%E5%20%ED%E0%F1%F1%EE%F1%FB 11 http://gidrodinamika.ru/
+/m/ 2 -
+/includes/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/vertikalnie/gorizontalnie/108 1 -
+/gorizontalnie/188 1 -
+/%D0%94%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F 36 -
+/\xc7\xe0\xea\xe0\xe7 2 -
+/public_html/cgi-bin/2d91w7.txt 1 -
+/\xc0\xf0\xf5\xe8\xe2\xfb 1 -
+/\xc7\xe8\xec\xe0 1 -
+/FCK/ 1 -
+/2014 2 -
+/admin/content/sitetree 2 -
+/vertikalnie/gorizontalnie/112 1 -
+/\xc2\xe5\xf1\xed\xe0 1 -
+//\xcf\xf0\xee\xe8\xe7\xe2\xee\xe4\xf1\xf2\xe2\xee 1 -
+/files/files/page/132/ 1 -
+/admin/fckeditor/editor/filemanager/connectors/php/connector.php 1 -
+//\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb\xe8 1 -
+/%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20vk.com 46 -
+/%CF%EE%EB%F3%EF%EE%E3%F0%F3%E6%ED%FB%E5%20%ED%E0%F1%EE%F1%FB 11 http://gidrodinamika.ru/
+/%CF%F0%EE%E4%F3%EA%F6%E8%FF 14 http://gidrodinamika.ru/
+/about 2 -
+/wp-content/plugins/showbiz/temp/update_extract/NULLpOint7r__vsywi.php 1 -
+/%D0%92%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8 3 -
+/files/files/characteristics/obv/gdm15-01-e-220-114-a-90-u2-obv.pdf 1 -
+/vertikalnie/gorizontalnie/233 1 -
+/%C3%8E%C3%AA%C3%AE%C3%AC%C3%AF%C3%A0%C3%AD%C3%A8%C3%A8 1 -
+/\xc2\xfb\xf1\xf2\xe0\xe2\xea\xe8 1 -
+/admin/fck/ 1 -
+/manage/fckeditor/ 1 -
+/\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed\xe3 2 -
+/ru/2d91w7.txt 1 -
+/%C2%E5%F0%ED%F3%F2%FC%F1%FF%20%EE%E1%F0%E0%F2%ED%EE 1 http://gidrodinamika.ru/index.php
+/gorizontalnie/194 1 -
+/gorizontalnie/170 1 -
+/%C2%E5%F1%ED%E0 9 http://gidrodinamika.ru/
+/public_html/langs/2d91w7.txt 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 848
+193.124.131.27 97 97 24867 20161031201024
+194.87.236.125 96 96 0 20161031223903
+185.158.113.14 84 84 0 20161031112218
+5.200.53.136 58 58 0 20161031200946
+188.227.17.49 55 55 0 20161031201704
+86.57.175.124 42 42 474207 20161017191351
+178.175.146.106 39 39 735267 20161013085909
+86.57.217.160 38 38 123236 20161025172041
+86.57.254.172 35 35 121677 20161031105055
+46.119.118.233 33 33 273537 20161031124859
+37.115.187.108 33 33 273537 20161024164849
+46.118.118.216 32 32 265248 20161024171603
+176.8.88.141 31 31 256959 20161031044301
+46.118.155.22 28 28 232092 20161024164300
+46.211.197.241 27 27 223803 20161027141151
+178.137.95.202 26 26 215514 20161031034434
+89.17.40.30 26 26 94726 20161024130223
+211.193.194.6 26 26 99549 20161013130344
+217.174.237.109 25 25 77284 20161017183628
+46.119.119.89 23 23 190647 20161030133601
+185.70.12.3 23 23 69479 20161019101453
+84.52.93.57 23 23 87022 20161027134459
+213.137.244.36 23 23 83425 20161021151353
+188.187.0.83 23 23 75520 20161017123818
+185.36.156.110 22 22 86027 20161031175156
+93.77.222.37 1 1 4063 20161013231338
+91.245.80.71 1 1 8289 20161011180845
+46.53.179.34 4 4 10218 20161006202024
+178.124.164.162 5 5 16278 20161024151557
+52.57.156.30 1 1 2405 20161017103914
+136.243.156.70 3 3 7611 20161031214059
+52.198.189.180 1 1 8289 20161018170608
+37.49.226.232 1 1 8289 20161011174616
+5.39.76.158 1 1 2537 20161002083518
+31.134.144.45 3 3 11291 20161017144714
+46.158.22.168 2 2 4942 20161004103338
+93.84.18.248 2 2 4942 20161031131251
+85.109.189.104 1 1 2537 20161021125158
+188.127.123.244 1 1 8289 20161007120649
+37.17.114.96 1 1 2537 20161013141835
+46.150.95.63 1 1 8289 20161005005302
+37.113.30.238 1 1 15871 20161010172113
+81.88.212.110 2 2 4942 20161031135629
+178.124.151.150 4 4 14816 20161006131520
+181.91.221.133 1 1 8289 20161023092343
+62.92.60.72 6 6 20108 20161019174637
+117.78.13.58 1 1 2537 20161017151358
+85.26.164.170 3 3 9945 20161003162734
+93.170.185.181 2 2 7540 20161002164126
+176.195.104.163 1 1 2537 20161012133711
+84.94.90.197 3 3 24867 20161026173809
+78.25.122.92 1 1 2537 20161006122402
+37.44.123.250 2 2 4942 20161011122053
+52.198.191.141 1 1 8289 20161018115012
+85.26.235.169 6 6 24561 20161019103917
+178.123.242.1 1 1 8289 20161015134436
+89.237.21.224 2 2 4942 20161018075018
+94.181.139.94 1 1 15871 20161004123036
+84.18.101.254 1 1 7594 20161018134635
+93.85.40.120 2 2 4942 20161004153640
+193.41.79.18 2 2 4942 20161015192704
+87.249.27.122 3 3 7019 20161005162407
+109.63.248.152 1 1 2537 20161016124010
+31.173.16.172 11 11 43495 20161020171051
+54.162.218.128 1 1 2537 20161004064524
+162.245.83.3 18 18 45666 20161030202234
+136.243.16.208 1 1 0 20161031002943
+87.252.225.35 1 1 2537 20161030184624
+46.216.245.179 10 10 32667 20161017191116
+198.8.80.187 5 5 41445 20161031075702
+93.85.27.121 1 1 2537 20161026142131
+81.4.241.119 1 1 2537 20161026123115
+128.70.165.17 1 1 2537 20161004195815
+66.102.9.30 7 7 17759 20161031133058
+192.162.115.54 1 1 8289 20161015002446
+178.172.206.140 2 2 4942 20161019150932
+83.220.237.102 1 1 2537 20161024142905
+178.238.20.6 6 6 20986 20161026124730
+87.117.20.39 6 6 25449 20161011162939
+93.85.131.73 3 3 7347 20161012164807
+46.216.216.196 2 2 4942 20161017093019
+217.196.213.175 7 7 25203 20161019164949
+93.84.27.80 3 3 7479 20161014134942
+95.220.188.17 1 1 5003 20161006223810
+212.156.137.106 1 1 8289 20161003164808
+217.69.133.169 2 2 5074 20161030063705
+46.216.172.122 2 2 4942 20161027143201
+95.27.191.201 1 1 5404 20161006161129
+49.148.165.70 1 1 8289 20161017223954
+130.193.64.97 1 1 6736 20161009201412
+83.32.252.210 1 1 8289 20161024200206
+46.109.161.205 1 1 5874 20161017153748
+101.98.139.16 1 1 8289 20161016050709
+95.71.146.84 4 4 16832 20161010163302
+77.74.74.174 2 2 6170 20161013071856
+199.91.135.163 1 1 8289 20161004150037
+87.76.11.46 5 5 16170 20161024083033
+178.121.141.28 2 2 4942 20161018151423
+194.87.232.32 5 5 0 20161014124151
+217.116.152.200 2 2 4942 20161024092118
+45.55.155.171 3 3 24867 20161022204804
+124.50.59.229 1 1 8289 20161028082704
+178.95.196.158 4 4 15087 20161031234320
+31.173.85.55 1 1 2537 20161031042911
+46.32.178.170 20 20 63601 20161021182113
+37.133.58.5 1 1 8289 20161013194926
+93.159.233.150 17 17 50949 20161031154246
+86.57.236.225 3 3 7479 20161026121153
+123.125.67.165 1 1 2537 20161005231543
+198.8.80.36 5 5 41445 20161028043931
+31.184.224.143 1 1 8289 20161010064125
+37.215.82.26 3 3 7611 20161005110734
+31.3.233.115 1 1 2537 20161010212503
+37.212.22.205 4 4 16176 20161028171219
+37.29.88.254 1 1 2537 20161010163130
+83.221.190.17 2 2 9999 20161019173302
+188.162.228.48 1 1 2537 20161028043956
+178.27.183.181 1 1 2537 20161026002249
+217.66.156.206 1 1 6736 20161019102327
+144.76.64.79 1 1 2537 20161015180259
+80.89.137.30 1 1 5884 20161027122951
+178.140.175.116 4 4 18749 20161025095246
+93.85.169.208 1 1 2537 20161010085809
+49.149.143.235 1 1 8289 20161018075147
+109.173.125.248 2 2 16578 20161030200825
+78.36.63.58 1 1 2537 20161004130804
+74.59.128.93 1 1 8289 20161014114517
+66.249.93.211 4 4 10148 20161028100705
+5.197.252.81 4 4 9884 20161030193119
+109.252.17.43 5 5 15890 20161031143840
+134.249.159.113 1 1 2537 20161019034516
+109.252.36.85 1 1 5003 20161026233039
+213.184.241.226 2 2 4942 20161019110831
+46.138.24.223 9 9 36447 20161028164613
+89.109.236.249 6 6 118747 20161003120908
+93.91.113.112 3 3 23524 20161025142905
+66.249.93.213 8 8 20296 20161027112248
+45.55.133.247 1 1 2537 20161029003530
+88.102.28.250 6 6 17420 20161008015019
+93.84.18.252 3 3 11164 20161014102835
+193.194.100.164 20 20 72314 20161011151418
+46.242.81.202 1 1 5404 20161018134808
+109.86.72.163 1 1 8289 20161013200026
+59.90.89.83 1 1 8289 20161026195901
+91.122.206.182 5 5 21974 20161026100344
+185.9.84.75 2 2 4942 20161020150409
+95.108.225.197 1 1 2537 20161014221455
+92.255.164.102 2 2 8565 20161018154055
+179.183.105.216 1 1 8289 20161020052514
+67.231.243.85 1 1 8289 20161005171218
+31.13.144.36 1 1 2537 20161001090628
+212.11.131.220 6 6 16651 20161003093830
+83.220.238.20 2 2 6767 20161007152516
+113.240.250.156 1 1 8289 20161007123256
+77.40.116.149 1 1 2537 20161022221458
+31.181.155.205 1 1 2537 20161007163049
+212.116.125.35 1 1 2537 20161024152736
+217.71.238.26 3 3 13757 20161003112035
+94.242.20.25 2 2 4942 20161026211510
+197.0.65.56 2 2 16578 20161006144908
+109.86.72.210 2 2 16578 20161025005123
+163.172.8.3 2 2 5074 20161031073632
+86.57.217.210 6 6 19890 20161018145947
+213.87.249.47 10 10 27559 20161004140544
+91.235.244.171 10 10 31033 20161024120934
+62.24.181.134 6 6 107974 20161012124136
+91.244.244.24 5 5 16233 20161003120556
+93.85.47.122 2 2 7540 20161019084713
+5.3.210.207 1 1 7690 20161015155747
+66.102.9.148 4 4 14005 20161019082722
+95.79.99.22 14 14 308409 20161021133944
+83.110.236.251 1 1 2537 20161030153332
+89.236.194.114 14 14 52867 20161031155432
+82.21.83.196 1 1 8289 20161025194120
+191.249.228.248 1 1 8289 20161015183310
+178.120.101.197 1 1 2537 20161018124210
+185.59.141.106 3 3 9945 20161024115355
+95.78.171.12 2 2 7540 20161004082650
+87.6.45.186 8 8 27405 20161017124631
+95.213.218.61 2 2 6170 20161026155106
+31.132.183.109 14 14 39673 20161010105853
+195.189.111.20 1 1 2537 20161003080427
+62.231.21.147 8 8 25991 20161025114028
+188.162.36.190 1 1 2537 20161026055133
+195.208.164.210 5 5 17485 20161019140549
+163.172.14.55 4 4 10148 20161027233348
+176.195.108.218 1 1 5404 20161004060856
+85.119.75.190 3 3 13757 20161031145235
+37.57.59.86 1 1 2537 20161028104329
+195.91.245.209 1 1 2537 20161028112808
+82.194.6.33 2 2 7540 20161024173259
+217.66.157.42 1 1 2537 20161024131233
+36.88.51.138 1 1 8289 20161030225659
+78.47.94.184 5 5 41445 20161027133802
+82.145.221.86 1 1 5874 20161025203320
+213.221.61.14 2 2 7540 20161017114909
+194.87.235.198 2 2 0 20161031221431
+109.205.249.62 3 3 13345 20161002185123
+91.227.148.7 1 1 2537 20161025135229
+188.32.22.92 1 1 5874 20161005083836
+66.102.8.212 3 3 7611 20161020111404
+66.102.9.22 1 1 2537 20161024154107
+85.106.96.125 1 1 6217 20161020135013
+177.222.251.128 1 1 8289 20161008003401
+178.137.167.230 18 18 149202 20161024141220
+178.35.203.189 2 2 6024 20161010203029
+46.216.216.247 2 2 4942 20161021115136
+37.44.90.62 3 3 9945 20161026121634
+185.58.92.103 1 1 8289 20161027165516
+213.221.41.6 4 4 69400 20161007153114
+178.44.106.141 1 1 2537 20161031142017
+197.211.57.101 1 1 8289 20161006042531
+213.87.147.81 1 1 2537 20161019103940
+82.209.203.61 2 2 6170 20161012144211
+91.149.191.96 2 2 4942 20161028100934
+37.17.17.28 5 5 13739 20161004131555
+94.159.7.82 9 9 31494 20161025104352
+185.50.138.90 20 20 79931 20161013093646
+66.102.9.28 8 8 20296 20161027063407
+81.162.54.230 3 3 12984 20161025162321
+192.162.96.79 1 1 8289 20161022140514
+188.32.71.228 1 1 254 20161010192951
+85.132.44.120 5 5 12685 20161031151718
+93.116.191.14 1 1 2537 20161006184858
+94.127.178.81 2 2 4942 20161019095311
+5.248.253.78 6 6 49734 20161031173446
+212.98.173.185 2 2 4942 20161010165042
+69.84.207.246 2 2 16578 20161015233555
+86.49.7.7 1 1 2537 20161016121009
+79.136.194.47 20 20 77866 20161027131429
+94.75.155.185 2 2 8629 20161028181556
+194.135.162.59 1 1 2537 20161030170743
+147.32.126.13 1 1 2537 20161005203032
+62.24.181.135 3 3 32071 20161012134924
+91.190.87.254 2 2 7540 20161005095816
+94.181.180.174 2 2 4942 20161004094452
+81.162.0.158 1 1 2537 20161026185331
+212.15.99.22 1 1 2537 20161025122805
+187.86.69.99 1 1 8289 20161013173906
+77.222.111.79 1 1 2537 20161011143228
+185.2.188.89 3 3 24867 20161011174124
+5.3.242.7 2 2 5074 20161007134303
+69.58.178.57 4 4 32429 20161020065525
+148.251.134.163 1 1 2537 20161010162743
+188.113.206.248 1 1 6736 20161028111456
+23.101.61.176 1 1 6946 20161003145919
+46.42.161.11 1 1 5874 20161013022317
+31.181.36.173 1 1 5003 20161018171047
+66.102.9.152 8 8 29302 20161030085445
+176.99.227.119 1 1 254 20161004004211
+212.67.114.182 14 14 44038 20161012134854
+167.114.172.224 6 6 49007 20161003014527
+46.216.216.209 1 1 2537 20161017193035
+109.248.154.53 1 1 2537 20161009124402
+84.253.26.158 8 8 26664 20161028121212
+90.154.65.73 1 1 2537 20161016200515
+83.166.112.24 4 4 9884 20161018101309
+176.195.121.152 1 1 2537 20161015150907
+87.251.168.59 11 11 35022 20161028112022
+178.35.207.140 1 1 2537 20161020000313
+194.154.69.11 4 4 10016 20161027093826
+109.86.71.185 2 2 16578 20161012063947
+85.235.46.98 1 1 2537 20161024074312
+5.227.137.133 1 1 2537 20161010124112
+213.184.251.153 15 15 54091 20161026144506
+46.53.184.174 4 4 14857 20161018103806
+80.249.82.228 3 3 7479 20161028115549
+185.28.193.98 1 1 2537 20161030042122
+124.107.69.175 1 1 8289 20161013165444
+45.32.131.61 1 1 8289 20161007043312
+89.221.60.130 2 2 7540 20161019154604
+46.170.126.170 4 4 10148 20161010091139
+5.251.32.227 1 1 2537 20161017193133
+37.44.77.57 1 1 2405 20161027094129
+93.90.86.222 2 2 8754 20161010133007
+91.121.193.159 1 1 8289 20161004112231
+1.9.103.158 1 1 8289 20161024023240
+108.61.122.50 20 20 165780 20161024175456
+31.173.104.184 1 1 2537 20161027135127
+194.33.81.10 3 3 9945 20161026090029
+104.250.159.42 2 2 5074 20161003174544
+91.144.142.200 3 3 7479 20161028140002
+104.45.18.178 2 2 16578 20161028121038
+83.157.224.69 1 1 8289 20161003114205
+95.72.31.106 1 1 2537 20161006174338
+93.171.161.158 1 1 2537 20161007162836
+94.25.172.155 3 3 8634 20161006162948
+93.85.181.161 9 9 28669 20161010151549
+198.50.132.10 1 1 8289 20161003121004
+93.186.54.90 13 13 54992 20161012192604
+81.4.205.13 1 1 2537 20161031201620
+46.53.179.187 2 2 4942 20161003173341
+178.218.208.194 1 1 2537 20161011124758
+92.42.0.18 17 17 53950 20161025114811
+62.221.75.114 14 14 259269 20161030191007
+109.60.70.152 1 1 8289 20161031062246
+213.157.34.59 2 2 7540 20161021113634
+176.112.234.32 2 2 7540 20161017200423
+212.48.41.210 1 1 2537 20161005144516
+77.75.2.10 1 1 2537 20161025110834
+83.246.140.85 15 15 37150 20161004125057
+183.253.130.128 1 1 8289 20161027223444
+80.82.64.102 1 1 8289 20161026144938
+46.56.80.40 3 3 12241 20161025093945
+85.237.58.66 5 5 12289 20161012163859
+45.32.130.87 1 1 8289 20161018051448
+104.236.236.26 5 5 13871 20161014220936
+84.201.234.230 1 1 2537 20161014122042
+78.85.22.206 1 1 5312 20161003121715
+212.98.182.107 3 3 7479 20161028113926
+95.72.157.33 1 1 2537 20161006215838
+212.116.110.166 1 1 2537 20161011163823
+37.29.40.104 1 1 2537 20161028073454
+173.234.157.12 1 1 8289 20161008152145
+178.124.171.109 2 2 8754 20161025145412
+192.154.104.114 2 2 5074 20161005182440
+176.9.59.53 9 9 28585 20161025155656
+27.34.244.29 1 1 8289 20161028221638
+176.197.237.122 4 4 10016 20161018042801
+79.137.223.57 1 1 8289 20161007015738
+178.170.208.16 8 8 22498 20161018094759
+109.226.199.225 2 2 5001 20161017062338
+14.186.63.107 1 1 8289 20161006115111
+93.116.50.86 1 1 2537 20161026122940
+66.102.9.19 1 1 2537 20161025115657
+82.209.217.120 8 8 19768 20161024123251
+5.3.237.123 1 1 2537 20161013052809
+84.201.236.36 2 2 4942 20161026113637
+41.248.136.195 1 1 8289 20161004133230
+79.140.159.21 1 1 2537 20161024063829
+54.172.81.194 1 1 2537 20161019070021
+144.76.175.75 3 3 7611 20161019062724
+87.241.233.194 3 3 7479 20161006102936
+93.85.54.202 5 5 12455 20161019092108
+62.117.69.162 6 6 16253 20161028144909
+195.43.135.126 1 1 7594 20161021102804
+195.222.84.227 6 6 19890 20161011144220
+45.55.133.227 1 1 2537 20161021080405
+82.209.246.102 8 8 33576 20161003115223
+64.74.215.113 2 2 0 20161023061455
+185.111.233.40 1 1 8289 20161028063954
+37.17.51.132 3 3 9945 20161007103625
+86.57.255.35 11 11 34231 20161021140741
+176.50.155.175 1 1 8289 20161015071728
+185.7.213.12 1 1 8289 20161018041314
+213.87.248.198 1 1 6736 20161020045601
+195.211.100.82 2 2 4942 20161017124141
+94.25.171.30 6 6 21013 20161025154601
+92.37.131.162 1 1 2537 20161006093045
+95.31.228.193 8 8 26951 20161019185306
+213.219.72.77 4 4 17791 20161026112006
+168.1.99.218 6 6 49734 20161003092226
+85.140.7.0 2 2 4942 20161002153729
+213.206.34.187 1 1 2537 20161026145625
+95.79.95.48 1 1 8289 20161026002951
+91.192.66.138 1 1 2537 20161011194145
+91.78.200.12 19 19 55634 20161021122956
+207.182.140.210 1 1 2537 20161013013028
+90.154.74.119 1 1 2537 20161012185409
+46.53.194.124 1 1 8289 20161028134728
+217.69.201.242 3 3 7347 20161017163141
+95.27.184.174 4 4 13696 20161009171139
+83.142.166.36 2 2 4942 20161010141224
+89.248.233.2 6 6 20718 20161011102305
+213.230.94.174 1 1 2537 20161005073037
+185.118.51.210 6 6 180642 20161019121219
+85.113.142.20 3 3 10684 20161010171935
+176.123.1.123 1 1 2537 20161007214232
+178.206.59.102 1 1 8289 20161021171611
+46.46.145.70 3 3 8575 20161028155725
+176.226.157.123 3 3 12944 20161008145534
+95.107.40.135 4 4 13473 20161020125506
+37.44.67.45 2 2 4942 20161026134057
+208.43.225.85 2 2 5074 20161006184305
+176.9.139.227 4 4 10148 20161021131246
+37.190.61.212 1 1 2537 20161011162245
+79.124.59.202 1 1 2537 20161002021301
+92.255.236.193 2 2 5074 20161026101734
+85.15.66.128 1 1 2537 20161031040756
+82.209.203.104 2 2 4942 20161007104120
+95.221.230.196 1 1 254 20161009014355
+93.84.198.108 4 4 12482 20161024164700
+213.208.177.30 3 3 7347 20161004173755
+176.42.36.99 1 1 8289 20161018004425
+77.220.194.8 1 1 2537 20161022103326
+52.29.26.11 3 3 9813 20161013084304
+178.121.243.30 2 2 4942 20161013075241
+104.200.153.83 6 6 49734 20161018142520
+195.242.80.33 1 1 8289 20161017114658
+86.57.200.100 2 2 4942 20161011103251
+87.224.197.115 1 1 2537 20161027082924
+80.94.224.184 2 2 4942 20161018154104
+87.103.234.27 1 1 2537 20161024151355
+109.63.209.132 1 1 5874 20161025192710
+77.234.75.50 1 1 8289 20161015182424
+109.234.156.66 4 4 10148 20161030055352
+5.164.221.226 1 1 2537 20161013185621
+37.17.114.82 1 1 2537 20161017090808
+176.213.157.3 1 1 15871 20161018102011
+95.141.27.97 2 2 9850 20161008020236
+86.57.248.124 3 3 7479 20161026132517
+213.208.177.98 9 9 28345 20161028161509
+94.124.199.103 5 5 27902 20161028124859
+46.216.174.67 2 2 4942 20161024101129
+93.159.230.89 1 1 2537 20161016230241
+13.92.113.81 1 1 8289 20161026005125
+95.163.107.74 1 1 2791 20161005191823
+37.110.210.212 1 1 2537 20161002174159
+195.222.65.76 19 19 66306 20161014124338
+128.68.14.103 1 1 2537 20161004012347
+46.146.204.251 1 1 15871 20161025072446
+94.19.143.18 3 3 8338 20161030125841
+93.170.253.40 11 11 91179 20161020094744
+91.189.112.7 5 5 41445 20161022130057
+217.76.44.189 2 2 4942 20161020154930
+89.221.61.46 6 6 22642 20161017111638
+91.202.77.95 1 1 5874 20161018185036
+46.53.162.168 3 3 9945 20161028093844
+145.255.181.194 1 1 2537 20161021190147
+85.236.171.82 8 8 26758 20161025131647
+109.63.238.254 2 2 4942 20161026164734
+83.149.44.150 1 1 2537 20161006163521
+194.158.202.9 4 4 36412 20161007142055
+35.160.206.102 1 1 2537 20161020111404
+46.53.206.230 2 2 4942 20161031092810
+93.85.42.136 2 2 4942 20161028101808
+95.28.26.13 1 1 2537 20161017235830
+46.53.217.135 5 5 16101 20161026094323
+91.210.146.234 1 1 2537 20161020005055
+213.87.241.181 4 4 18551 20161020065052
+83.217.27.128 1 1 2537 20161016175643
+5.9.39.133 1 1 8289 20161008055256
+95.56.153.102 4 4 17947 20161013170252
+54.159.105.152 1 1 2537 20161019134558
+93.188.37.233 1 1 8289 20161023172855
+92.241.250.196 5 5 123578 20161010212730
+62.149.1.74 1 1 2537 20161018205229
+80.243.4.242 11 11 23141 20161013182134
+173.208.136.114 1 1 8289 20161020124912
+104.238.180.234 1 1 8289 20161012150214
+82.146.56.192 2 2 16578 20161027144444
+31.173.80.143 1 1 2537 20161006043511
+83.220.239.194 3 3 11159 20161016225706
+93.84.3.120 2 2 4942 20161021142055
+37.212.182.143 1 1 2537 20161009091448
+62.168.247.37 2 2 4942 20161028101257
+92.49.234.206 1 1 2537 20161001135250
+188.32.178.199 1 1 2537 20161023001831
+168.1.23.110 3 3 24867 20161016034441
+31.173.180.38 9 9 26412 20161024153754
+95.221.208.105 1 1 2537 20161021092332
+178.206.3.49 1 1 8289 20161001114634
+93.188.47.77 5 5 24565 20161021155055
+92.13.123.94 1 1 8289 20161007101637
+178.168.252.132 1 1 5874 20161005145329
+185.79.100.75 1 1 8289 20161017081725
+93.171.161.175 2 2 5074 20161017215703
+212.98.182.87 2 2 4942 20161019151526
+180.191.135.107 1 1 8289 20161016214010
+31.181.168.171 1 1 5003 20161013135047
+188.92.108.174 7 7 26107 20161031105436
+178.169.87.21 1 1 2537 20161005173831
+89.135.76.65 1 1 8289 20161031095433
+61.247.55.227 1 1 8289 20161024205423
+213.184.248.17 6 6 17424 20161027150615
+93.159.230.90 1 1 2537 20161002113306
+93.85.159.255 1 1 2537 20161024114040
+37.212.44.102 3 3 11159 20161006110459
+188.254.32.130 3 3 9945 20161028140557
+37.106.176.139 1 1 8289 20161021220309
+37.204.200.136 1 1 2537 20161003175036
+109.163.234.8 1 1 2537 20161030125805
+62.210.94.38 7 7 58023 20161026011439
+37.115.205.117 1 1 8289 20161020140747
+217.119.19.74 3 3 10224 20161031090351
+195.133.48.156 9 9 0 20161023073306
+95.67.47.82 3 3 52869 20161010131527
+194.186.136.238 4 4 13782 20161014165556
+213.85.2.230 14 14 38451 20161031114733
+195.239.81.68 2 2 5892 20161024110402
+83.89.58.220 1 1 8289 20161019135904
+90.154.196.224 1 1 8289 20161003152718
+62.232.104.181 2 2 8188 20161022093740
+85.132.78.34 3 3 7611 20161024132150
+185.118.164.220 1 1 2537 20161031144709
+91.206.200.169 1 1 8289 20161023114722
+31.173.80.203 1 1 2537 20161021131548
+178.141.80.136 3 3 10077 20161026103736
+203.177.15.170 2 2 4942 20161018135942
+178.212.227.74 1 1 2537 20161005192522
+109.93.162.251 1 1 8289 20161007202843
+93.125.83.216 6 6 22404 20161007091426
+89.179.127.61 1 1 2537 20161026054117
+109.105.59.48 2 2 16578 20161030194840
+61.1.147.71 1 1 8289 20161005125656
+213.184.245.173 7 7 16835 20161028084738
+89.175.179.251 1 1 2537 20161012131159
+54.189.192.240 1 1 2537 20161012110403
+194.87.238.222 17 17 0 20161022180048
+217.69.204.238 2 2 4942 20161017172356
+176.195.143.229 1 1 5874 20161009002217
+176.74.221.22 8 8 28462 20161005170637
+91.233.176.4 1 1 8289 20161013011214
+5.141.192.231 1 1 8289 20161011090723
+134.249.65.218 13 13 107757 20161006102910
+5.164.205.189 1 1 8289 20161027030647
+89.19.199.136 4 4 13944 20161021232756
+95.47.61.74 1 1 2537 20161030145501
+37.212.241.195 2 2 4942 20161010103601
+93.170.80.26 2 2 4942 20161025155456
+37.187.78.196 1 1 8289 20161027002634
+93.183.71.10 1 1 2537 20161020084525
+95.72.131.20 1 1 2537 20161017135428
+85.140.5.154 7 7 23603 20161011193109
+212.98.163.124 2 2 15235 20161026124137
+95.85.96.80 3 3 9511 20161013123513
+46.28.53.172 18 18 149202 20161010025744
+178.121.230.247 2 2 4942 20161031173602
+41.33.129.100 1 1 8289 20161027134112
+107.181.66.137 1 1 8289 20161014113916
+52.3.127.144 3 3 7645 20161031205537
+110.235.130.134 1 1 8289 20161008163324
+83.167.82.28 11 11 39803 20161019155355
+93.85.54.214 18 18 55200 20161019113813
+95.85.96.74 1 1 2537 20161018065657
+83.220.238.213 3 3 8561 20161025161114
+195.133.201.82 21 21 0 20161031224459
+178.121.222.88 6 6 21854 20161013191426
+5.136.138.176 2 2 7540 20161026075918
+31.181.243.121 7 7 33364 20161009230050
+5.53.17.35 1 1 2537 20161025134340
+195.94.238.50 3 3 7479 20161006140555
+93.189.30.108 2 2 9850 20161003035322
+91.214.70.162 4 4 30031 20161011120309
+188.162.242.155 1 1 2537 20161028063722
+85.115.54.202 1 1 5003 20161013100426
+78.158.11.226 2 2 15235 20161004131003
+8.37.235.167 1 1 2537 20161019211246
+2.50.182.223 1 1 2537 20161003165128
+52.198.179.156 1 1 8289 20161018160358
+46.121.157.93 1 1 8289 20161027155419
+93.77.197.35 1 1 2537 20161023134459
+94.29.124.250 1 1 2537 20161019085025
+109.229.231.3 3 3 7479 20161005094938
+93.85.20.36 2 2 4942 20161018170100
+109.184.188.162 7 7 22427 20161005091806
+66.249.93.212 5 5 12685 20161015104544
+5.3.208.45 1 1 8289 20161026055414
+94.181.172.72 1 1 15871 20161003020135
+93.125.84.179 3 3 7611 20161012112056
+37.44.92.202 4 4 10016 20161031115527
+87.252.225.173 2 2 5074 20161026174826
+94.25.229.6 1 1 2537 20161028201650
+83.71.247.36 4 4 32429 20161025144207
+2.91.111.65 1 1 8289 20161028190510
+58.59.9.244 1 1 8289 20161026230556
+91.235.71.225 1 1 2537 20161018133859
+52.169.73.59 1 1 2537 20161003174810
+217.151.131.105 1 1 18107 20161004152226
+128.71.206.245 1 1 2537 20161010202106
+95.221.230.64 1 1 5404 20161009220730
+93.80.43.38 1 1 2537 20161009025714
+5.251.194.127 1 1 2537 20161018085830
+92.255.226.17 2 2 4942 20161026131846
+86.57.156.80 1 1 2537 20161006115243
+92.50.133.106 4 4 15096 20161004101753
+93.85.144.50 2 2 4942 20161006111759
+109.188.126.119 1 1 5874 20161023173205
+52.32.154.86 1 1 2537 20161016200126
+103.49.202.17 1 1 8289 20161003233130
+94.60.150.162 1 1 8289 20161011220846
+46.28.102.100 11 11 33591 20161031185127
+50.117.28.57 1 1 0 20161025153225
+195.151.217.162 14 14 51231 20161024133102
+134.17.27.56 5 5 18699 20161014100545
+93.125.26.163 5 5 12553 20161019130843
+109.110.156.69 1 1 8289 20161031172207
+85.117.115.46 2 2 4942 20161005133500
+37.44.74.57 1 1 2405 20161025160847
+185.135.149.213 1 1 2537 20161028073257
+213.7.231.224 3 3 10077 20161006143219
+95.171.228.73 3 3 23524 20161025141727
+178.154.10.14 1 1 2537 20161028083654
+66.102.6.204 1 1 2537 20161024130304
+173.208.90.70 1 1 2537 20161011225043
+188.165.206.188 1 1 2537 20161013042234
+217.107.125.15 2 2 6024 20161008225622
+93.125.39.23 22 22 53086 20161031170549
+31.173.85.22 1 1 2537 20161013195648
+52.90.241.238 5 5 13871 20161021015327
+89.36.165.48 2 2 4942 20161007085706
+195.50.26.169 2 2 5074 20161013113412
+52.57.197.168 1 1 2405 20161018140605
+178.120.184.7 2 2 7941 20161018195433
+46.133.247.221 1 1 2537 20161023150319
+122.173.131.80 1 1 8289 20161029005043
+213.165.68.252 1 1 2537 20161001164338
+94.177.149.219 1 1 8289 20161021235553
+52.212.236.36 1 1 2537 20161026085350
+188.242.1.242 2 2 4942 20161016145113
+91.192.190.55 6 6 18581 20161005134532
+78.140.202.198 2 2 4942 20161013124842
+5.197.97.70 2 2 5074 20161020015738
+109.86.72.191 2 2 16578 20161011121246
+37.17.114.86 2 2 6465 20161013120453
+89.72.254.11 1 1 8289 20161021220824
+46.187.21.48 2 2 5001 20161007181403
+46.53.178.160 1 1 2537 20161024144353
+5.18.68.171 1 1 2537 20161018184714
+104.236.110.18 5 5 13871 20161005123826
+95.90.254.9 1 1 8289 20161027161712
+217.151.131.31 1 1 15871 20161020094711
+176.195.117.118 1 1 2537 20161020102807
+213.183.106.41 3 3 7479 20161019055733
+51.39.127.43 9 9 55953 20161004121231
+217.151.65.98 3 3 14158 20161014110553
+37.45.26.11 4 4 17791 20161012170546
+213.251.249.192 1 1 2537 20161024135415
+109.127.14.177 1 1 2537 20161005150753
+52.198.188.70 1 1 8289 20161018140511
+212.13.96.230 7 7 17231 20161005145334
+104.236.52.23 6 6 16408 20161024180655
+66.102.9.26 4 4 10148 20161017113245
+81.28.163.177 3 3 11159 20161026103934
+103.255.6.251 1 1 8289 20161011194619
+128.70.105.58 1 1 2537 20161025160841
+31.173.84.14 6 6 17710 20161003153750
+46.109.179.150 1 1 2537 20161002113111
+31.132.178.83 3 3 7479 20161020105642
+89.218.8.238 1 1 2537 20161013115405
+52.207.209.9 5 5 13871 20161025024825
+198.50.131.46 5 5 13871 20161011075323
+217.118.79.35 5 5 23638 20161019181803
+5.9.150.246 1 1 2537 20161031192127
+81.163.131.57 2 2 13892 20161014183828
+193.92.188.170 1 1 8289 20161023152601
+2.98.4.227 1 1 8289 20161004144445
+176.59.67.143 1 1 2537 20161024210611
+46.229.170.197 2 2 16578 20161030170944
+109.63.242.145 1 1 2537 20161002151830
+85.235.205.90 2 2 6024 20161021160125
+86.57.170.202 1 1 2537 20161031111112
+89.218.250.202 2 2 15235 20161010140129
+46.188.34.67 1 1 2537 20161009183248
+128.68.139.56 1 1 2739 20161003223737
+172.245.24.114 1 1 6736 20161001233230
+83.220.239.19 2 2 2537 20161019104815
+46.37.148.68 1 1 2537 20161027164743
+80.66.158.2 1 1 6217 20161031002036
+84.39.244.90 1 1 2405 20161028105534
+31.173.84.46 4 4 12614 20161025121712
+217.118.79.26 1 1 5874 20161019121530
+46.216.6.27 10 10 35451 20161028151407
+195.144.255.60 4 4 15882 20161014092709
+178.124.158.27 3 3 9945 20161018170721
+89.221.59.235 4 4 13696 20161007112955
+109.173.29.69 2 2 7540 20161026164055
+104.131.31.176 1 1 2537 20161001001844
+181.47.64.113 1 1 8289 20161031022936
+87.252.227.178 4 4 14175 20161010145047
+45.42.241.253 1 1 8289 20161008124733
+134.17.184.212 3 3 7611 20161007111424
+178.124.206.90 2 2 4942 20161012104447
+93.84.53.32 2 2 8754 20161017150110
+93.85.169.25 13 13 48329 20161006102959
+37.110.210.68 2 2 5074 20161002160025
+5.61.10.98 4 4 10016 20161031173959
+85.26.233.172 1 1 6736 20161015135119
+93.84.178.217 2 2 7540 20161017232930
+37.230.201.22 1 1 5874 20161011134002
+93.78.151.158 1 1 5003 20161009211553
+94.180.173.245 1 1 5874 20161003051029
+217.118.95.114 6 6 16256 20161031095622
+213.184.248.250 4 4 17791 20161019155546
+94.100.10.224 1 1 2537 20161011134257
+83.220.239.73 1 1 2537 20161007153150
+178.125.211.58 5 5 21165 20161018132431
+46.216.216.203 1 1 2537 20161018000902
+178.124.182.195 9 9 30694 20161031083048
+90.154.124.175 4 4 14111 20161011164202
+54.197.209.117 1 1 2537 20161021051251
+93.85.172.226 2 2 5074 20161025122200
+59.88.81.233 1 1 8289 20161009085622
+176.65.112.167 2 2 8631 20161023232259
+45.55.133.240 1 1 2537 20161007014513
+93.188.22.154 5 5 17353 20161020154133
+178.205.161.206 1 1 2537 20161030142938
+81.90.13.31 1 1 2537 20161031110422
+37.215.146.8 2 2 6024 20161030110142
+77.40.117.163 3 3 10254 20161022230318
+38.100.21.65 2 2 15517 20161015141729
+88.201.184.153 2 2 5074 20161017232542
+217.174.237.21 4 4 9424 20161020212042
+172.98.67.31 9 9 74601 20161013064018
+45.55.134.22 1 1 2537 20161013233543
+176.59.210.93 1 1 2537 20161007175859
+109.172.15.12 3 3 11159 20161026132624
+68.39.214.207 1 1 8289 20161029002229
+128.72.7.232 1 1 2739 20161003052211
+46.216.168.170 3 3 9945 20161019211358
+5.141.8.147 1 1 8289 20161012123958
+51.254.152.246 1 1 8289 20161028131657
+93.125.83.44 17 17 49231 20161013100226
+46.147.96.205 1 1 2537 20161024085213
+37.72.72.234 2 2 8631 20161012031759
+41.82.193.117 1 1 8289 20161028200100
+104.155.116.223 2 2 5074 20161020160439
+79.175.2.72 1 1 2537 20161020230006
+188.226.112.44 2 2 4942 20161024114215
+87.252.225.193 1 1 2537 20161030182747
+94.159.17.225 17 17 59479 20161019143230
+91.223.242.11 13 13 61506 20161005122321
+86.57.154.234 12 12 28992 20161024161313
+195.95.253.179 7 7 22579 20161031124536
+185.129.148.216 1 1 0 20161026235300
+46.201.180.72 3 3 8345 20161024220551
+37.57.96.104 1 1 2537 20161031124432
+217.79.191.112 1 1 8289 20161010064115
+51.39.22.254 1 1 8289 20161030122217
+104.197.165.140 1 1 8289 20161009083121
+89.31.111.253 2 2 4942 20161014150835
+125.135.248.250 1 1 8289 20161016092258
+5.32.182.124 1 1 8289 20161012172352
+213.39.224.103 1 1 8289 20161021182146
+104.236.110.194 5 5 13871 20161020051447
+31.192.23.153 1 1 2537 20161008112927
+94.199.111.18 2 2 4942 20161013192751
+79.175.15.17 2 2 6170 20161019161108
+46.53.184.18 2 2 7540 20161017103747
+46.175.16.191 1 1 8289 20161003220550
+94.125.52.70 3 3 11574 20161013034746
+82.145.220.169 2 2 4942 20161020161120
+213.230.67.44 1 1 2537 20161011135014
+46.8.146.147 1 1 2537 20161003095531
+93.84.21.99 3 3 11468 20161018213122
+104.199.130.40 1 1 6217 20161028023238
+89.79.194.53 2 2 5074 20161009194310
+37.113.102.49 16 16 39496 20161003200234
+178.186.223.58 1 1 2537 20161007081712
+66.102.9.150 1 1 2537 20161008163038
+178.161.176.4 2 2 16578 20161025095604
+93.190.224.99 4 4 19562 20161024150930
+81.211.56.126 2 2 4851 20161025084124
+193.34.160.72 1 1 6217 20161014175551
+188.113.207.64 2 2 6024 20161027093547
+82.209.236.236 20 20 69556 20161027085913
+37.110.210.248 1 1 2537 20161001172320
+82.209.223.182 2 2 4942 20161019112302
+46.235.152.84 11 11 32345 20161004150312
+37.21.196.135 1 1 2537 20161011192834
+85.140.2.143 4 4 9424 20161010162448
+80.249.92.177 6 6 14562 20161003161038
+66.249.93.19 1 1 2537 20161023112213
+85.26.186.66 2 2 4942 20161006131720
+46.146.141.0 1 1 2537 20161026131116
+80.237.152.26 3 3 9945 20161021144038
+5.189.19.200 3 3 9172 20161030140250
+5.43.242.68 1 1 8289 20161011204300
+151.188.105.187 1 1 2537 20161024171242
+82.145.220.251 5 5 18694 20161019173025
+89.28.193.50 12 12 39516 20161025085713
+185.50.0.115 5 5 14887 20161006104312
+80.252.20.67 1 1 2537 20161003122738
+62.122.102.171 2 2 4942 20161024121549
+212.98.187.218 2 2 4942 20161018111251
+109.73.11.132 11 11 43614 20161028100929
+95.85.96.72 1 1 2537 20161022103039
+82.145.220.37 1 1 2537 20161025000946
+193.231.40.44 1 1 8289 20161022125215
+85.140.79.105 1 1 2537 20161007074611
+212.248.29.196 2 2 4942 20161027104615
+5.44.169.188 1 1 2537 20161002174049
+89.235.174.156 3 3 11166 20161025151501
+213.87.147.56 3 3 9945 20161025090530
+86.62.81.168 3 3 10254 20161025173827
+54.148.212.88 1 1 2537 20161006105535
+213.5.217.48 1 1 5003 20161020095319
+185.47.62.92 1 1 8289 20161008222610
+178.121.248.240 3 3 11159 20161003212335
+54.236.88.117 1 1 2537 20161027031546
+90.150.82.9 6 6 102715 20161028105423
+104.200.151.57 3 3 24867 20161014121710
+94.253.15.74 3 3 11291 20161024083850
+46.48.121.106 22 22 86632 20161019090917
+83.171.102.39 16 16 57283 20161010161654
+80.94.236.201 5 5 15252 20161011134137
+144.76.236.183 1 1 0 20161002061924
+85.140.0.143 1 1 2537 20161026131455
+83.239.0.118 12 12 34316 20161014154805
+46.216.216.2 1 1 2537 20161017142106
+195.13.160.139 1 1 2537 20161011122813
+194.44.166.24 1 1 2537 20161013143520
+176.59.137.10 3 3 7611 20161006091612
+95.165.140.216 2 2 4942 20161013152450
+93.77.129.99 15 15 0 20161030173918
+31.31.96.88 1 1 2537 20161017183645
+62.152.75.42 2 2 8754 20161019144441
+188.32.131.133 1 1 254 20161002080834
+178.137.164.171 2 2 16578 20161006134357
+89.22.60.221 1 1 2537 20161012185103
+93.84.29.197 2 2 7540 20161019152927
+213.193.39.28 1 1 8289 20161022203453
+109.124.95.146 2 2 4942 20161020105341
+145.255.190.80 1 1 2537 20161009164736
+145.132.22.239 1 1 8289 20161015215538
+105.107.138.22 1 1 8289 20161012133318
+93.84.6.236 1 1 2537 20161002214110
+82.97.198.166 2 2 8754 20161031153847
+93.85.174.171 3 3 7347 20161012165247
+77.51.30.222 1 1 2537 20161026134128
+86.107.166.47 1 1 6217 20161027223138
+212.98.171.24 12 12 37748 20161028091542
+52.91.172.217 1 1 2537 20161004112716
+178.121.220.178 2 2 4942 20161027074316
+85.140.78.28 1 1 2537 20161027115844
+212.98.173.30 6 6 22356 20161011180108
+212.119.190.106 3 3 12387 20161024155428
+78.26.162.19 1 1 2537 20161004073005
+195.154.146.225 1 1 2537 20161022113948
+199.19.249.196 6 6 57563 20161004150312
+192.154.106.74 1 1 2537 20161024121336
+192.157.230.206 1 1 8289 20161019154100
+46.53.188.6 14 14 42131 20161031112533
+178.124.175.254 1 1 8289 20161004094226
+45.42.165.39 1 1 8289 20161013094840
+45.65.8.10 1 1 8289 20161022093247
+82.145.220.36 2 2 6170 20161027162030
+188.244.44.169 7 7 31784 20161027084224
+85.26.199.108 8 8 30237 20161031102903
+89.234.68.103 1 1 8289 20161023050207
+185.25.123.170 1 1 8289 20161028144335
+115.217.21.20 3 3 13757 20161010045434
+194.87.236.152 7 7 0 20161015183313
+95.56.216.173 2 2 8754 20161020091751
+91.218.100.162 1 1 2537 20161028193008
+87.254.150.247 1 1 2537 20161031181936
+95.65.29.73 3 3 9507 20161018152932
+81.1.155.97 1 1 8289 20161007233609
+95.68.245.240 1 1 2537 20161011153001
+85.115.53.180 1 1 5003 20161010172058
+128.68.33.134 1 1 5874 20161010154946
+213.32.22.168 1 1 2537 20161025102703
+95.215.137.67 4 4 19562 20161012205754
+81.23.5.84 3 3 7479 20161010172012
+213.87.241.151 1 1 2537 20161023084449
+212.98.182.102 4 4 12350 20161007125100
+178.124.193.224 1 1 2537 20161020113933
+176.59.68.148 1 1 2537 20161027131945
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20161001 16 16 85055 13
+20161002 24 24 87144 17
+20161003 162 162 717115 52
+20161004 123 123 518871 49
+20161005 96 96 362853 43
+20161006 96 96 341012 48
+20161007 109 109 459216 49
+20161008 42 42 201737 25
+20161009 26 26 107205 17
+20161010 121 121 581894 51
+20161011 103 103 423711 54
+20161012 106 106 475232 45
+20161013 174 174 1210409 52
+20161014 120 120 400177 42
+20161015 39 39 120099 35
+20161016 44 44 83594 39
+20161017 189 189 901127 70
+20161018 157 157 596259 94
+20161019 253 253 978645 94
+20161020 154 154 533872 89
+20161021 156 156 815690 77
+20161022 75 75 274045 56
+20161023 81 81 481306 51
+20161024 157 157 562513 81
+20161025 181 181 745628 75
+20161026 141 141 576686 75
+20161027 121 121 459147 68
+20161028 192 192 866854 80
+20161029 3 3 19115 3
+20161030 71 71 370818 49
+20161031 186 186 625682 85
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 6
+30mn-1h 14
+5mn-15mn 38
+30s-2mn 116
+2mn-5mn 54
+0s-30s 1424
+15mn-30mn 26
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 31
+/ 1815 6735062 1420 1088
+/products.php 443 2910038 64 147
+/contact.php 382 980317 49 206
+/index.php 272 865494 66 78
+/about.php 196 1027898 20 71
+/honnor.php 124 523844 0 12
+/news.php 121 588193 19 27
+/record.php 74 350235 29 30
+/blank.php 36 176301 2 10
+/search_page.php 7 294632 1 1
+//index.php 5 29941 1 2
+//contact.php 5 30189 0 0
+/catalog/gor/4-082(old)/ 4 1016 4 4
+/. 4 10148 0 0
+//record.php 2 13874 0 0
+/index.php/component/users/ 2 5074 0 0
+/catalog/gor/ 2 1304 1 0
+//blank.php 2 24474 0 0
+/blank_rtf_generator.php 2 10982 0 0
+//about.php 2 25776 0 0
+//honnor_single.php 2 2474 0 1
+//blank_rtf_generator.php 2 596 0 0
+//news.php 2 25724 0 0
+//search_page.php 2 186684 0 0
+// 2 10826 1 0
+/catalog/gor/5-13/ 1 246 0 1
+/honnor_single.php 1 1237 0 0
+/catalog/gor/9-043/ 1 249 0 0
+//products.php 2 118732 0 0
+/catalog/gor/9-04/ 1 247 1 0
+//honnor.php 2 30904 0 0
+END_SIDER

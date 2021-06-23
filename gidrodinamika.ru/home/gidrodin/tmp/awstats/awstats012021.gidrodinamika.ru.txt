@@ -1,0 +1,2184 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202101 will be lost/reset.
+# Last config file used to build this data file was /home/gidrodin/tmp/awstats/awstats.gidrodinamika.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2013                
+POS_TIME 2692                
+POS_VISITOR 59616               
+POS_DAY 83706               
+POS_DOMAIN 3561                
+POS_LOGIN 4391                
+POS_ROBOT 4546                
+POS_WORMS 5497                
+POS_EMAILSENDER 5628                
+POS_EMAILRECEIVER 5771                
+POS_SESSION 84560               
+POS_SIDER 84772               
+POS_FILETYPES 5906                
+POS_DOWNLOADS 6028                
+POS_OS 6076                
+POS_BROWSER 6446                
+POS_SCREENSIZE 9939                
+POS_UNKNOWNREFERER 10013               
+POS_UNKNOWNREFERERBROWSER 11140               
+POS_ORIGIN 11530               
+POS_SEREFERRALS 11680               
+POS_PAGEREFS 11970               
+POS_SEARCHWORDS 40101               
+POS_KEYWORDS 40927               
+POS_MISC 2356                
+POS_ERRORS 41498               
+POS_CLUSTER 4247                
+POS_SIDER_404 41595               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20210201005530 60 10388 14280516277200
+FirstTime 20210101011741
+LastTime 20210131231909
+LastUpdate 20210201151423 60 0 59 0 0
+TotalVisits 1771                
+TotalUnique 604                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 605                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+AddToFavourites 0 0 0
+TotalMisc 0 0 0
+QuickTimeSupport 0 0 0
+JavascriptDisabled 0 0 0
+JavaEnabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 76 76 342071 120 122 635713
+1 175 175 415679 50 54 301840
+2 260 260 511394 128 130 332071
+3 208 208 400828 98 103 759415
+4 29 30 301272 48 50 369207
+5 65 65 1265810 120 130 384597
+6 43 43 541932 111 114 605108
+7 64 64 1248405 94 99 750511
+8 60 60 797207 82 86 842925
+9 90 90 1271180 98 104 1163121
+10 103 103 1600556 79 85 1005390
+11 112 112 1554509 81 84 632665
+12 135 135 1764146 179 186 1263000
+13 122 122 1850543 75 76 712901
+14 117 117 1566403 130 135 1238723
+15 139 139 1094654 195 197 1178914
+16 99 99 865560 63 70 819128
+17 188 188 709170 73 79 546312
+18 164 164 524514 150 169 704796
+19 63 63 584862 126 144 754896
+20 62 62 295096 65 71 368241
+21 53 53 257759 75 77 562730
+22 41 41 397983 87 92 757383
+23 38 38 310083 59 61 407550
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 44
+ru 1305 1305 11215819
+by 342 342 4393022
+sa 259 259 39333
+us 162 163 1617890
+ua 83 83 375654
+in 61 61 81273
+ip 50 50 545498
+uz 49 49 0
+cn 37 37 385489
+gb 34 34 377192
+de 28 28 259196
+ca 12 12 117019
+cz 10 10 160067
+lt 10 10 102970
+eu 7 7 120254
+se 7 7 70939
+gr 6 6 107934
+sn 5 5 133260
+at 4 4 32116
+id 3 3 26543
+pl 3 3 28999
+sc 3 3 31455
+il 2 2 18514
+md 2 2 18514
+tr 2 2 20970
+lv 1 1 8029
+ls 1 1 10485
+it 1 1 8029
+th 1 1 7217
+co 1 1 10485
+tw 1 1 10485
+vn 1 1 8029
+ee 1 1 10485
+br 1 1 8029
+nz 1 1 8029
+si 1 1 10485
+cl 1 1 10485
+ir 1 1 10485
+kz 1 1 10485
+ae 1 1 10485
+hu 1 1 10485
+nl 2 2 18514
+bg 1 1 10485
+fr 1 1 10485
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 22
+bingbot/ 524 8237216 20210131225858 0
+YandexBot/ 406 3562059 20210131233313 0
+Googlebot/ 171 1917960 20210131034021 0
+bot[\s_+:,\.\;\/\\-] 126 1419259 20210131203544 0
+Mail\.RU_Bot/ 122 1054102 20210131014050 0
+360Spider 29 304065 20210131135202 0
+baidu 14 146790 20210131205946 0
+no_user_agent 12 83880 20210131070156 0
+(firefox/)([0-9]\.|[0-1][0]\.) 8 77726 20210130060516 0
+oBot/ 7 63859 20210129034030 0
+robot 4 38863 20210113023424 0
+Applebot/ 4 40101 20210122060702 0
+crawl 3 31455 20210128041651 0
+YandexMetrika/ 3 31455 20210126151405 0
+link 2 20970 20210131103647 0
+CCBot/ 2 20970 20210123202705 0
+curl 1 0 20210131172252 0
+Konqueror/ 1 10485 20210115073252 0
+DuckDuckGo\-Favicons\-Bot/ 1 10485 20210109190902 0
+yandex 1 14457 20210125093234 0
+Baiduspider/ 1 0 20210117153108 0
+Wget/ 1 10485 20210113054735 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+js 1 14457 0 0
+php 912 14496507 0 0
+html 1594 5960652 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 22
+win2003 127 127
+Unknown 61 61
+win10 582 582
+ios_iphone 20 20
+winxp 46 46
+winnt 8 8
+linuxandroid 110 110
+macosx8 1 1
+win2000 2 2
+linux 47 47
+macosx11 10 10
+macosx9 2 2
+winlong 133 133
+winme 1 1
+win8.1 113 113
+win2008 123 123
+win7 420 419
+macosx 44 44
+win8 6 6
+winunknown 644 644
+macosx10 3 3
+macosx12 4 4
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 166
+chrome46.0.2490.71 1 1
+edge13 1 1
+chrome86.0.4240.185 3 3
+msie5.0 5 5
+msie6.00 167 167
+chrome88.0.4324.96 17 17
+chrome88.0.4324.104 29 29
+opera71.0.3770.228 3 3
+opera11.61 1 1
+chrome83.0.4103.106 9 9
+chrome81.0.4044.129 1 1
+msie8.0 2 2
+firefox71.0 6 6
+chrome68.0.3440.106 5 5
+chrome83.0.4093.3 2 2
+firefox81.0 5 5
+chrome78.0.3904.87 15 15
+chrome80.0.3987.163 3 3
+firefox31.0 3 3
+chrome72.0.3626.121 1 1
+chrome26.0.1410.65 1 1
+android 4 4
+safari10.0 1 1
+msie9.0 28 27
+chrome42.0.9551.1471 1 1
+safari13.1 2 2
+firefox72.0 3 3
+chrome49.0.2623.112 4 4
+chrome87.0.4280.67 1 1
+chrome86.0.4240.183 1 1
+chrome35.0.1916.47 2 2
+mozilla 37 37
+chrome86.0.4240.198 16 16
+chrome83.0.4103.24 2 2
+msie7.0 5 5
+safari13.1.2 3 3
+chrome75.0.3770.142 5 5
+firefox54.0 10 10
+chrome60.0.3112.113 1 1
+chrome68.0.3440.25 4 4
+chrome71.0.3578.141 2 2
+chrome59.0.3071.115 1 1
+chrome41.0.2228.0 1 1
+opera73.0.3856.344 17 17
+chrome4.1.249.1036 1 1
+chrome58.0.3029.110 5 5
+firefox41.0 3 3
+chrome83.0.4089.0 3 3
+msie2.0 3 3
+firefox82.0 7 7
+opera71.0.3770.148 1 1
+chrome83.0.4103.61 36 36
+chrome63.0.3239.111 2 2
+firefox53.0 6 6
+opera8.00 3 3
+chrome80.0.3987.121 4 4
+firefox45.0 2 2
+msie11.0 28 28
+chrome83.0.4103.14 2 2
+safari 4 4
+chrome87.0.4280.66 4 4
+chrome55.0.2883.87 6 6
+chrome88.0.4324.93 16 16
+chrome65.0.3325.181 2 2
+firefox59.0 1 1
+Unknown 17 17
+chrome57.0.2987.108 1 1
+chrome80.0.3987.132 1 1
+chrome83.0.4102.0 6 6
+chrome38.0.2125.102 1 1
+chrome80.0.3987.116 9 9
+chrome45.0.2454.94 1 1
+opera61.2.3076.56749 2 2
+chrome28.0.1467.0 1 1
+chrome72.0.3626.109 1 1
+chrome71.0.3578.98 5 5
+chrome19.0.1084.5409 2 2
+chrome49.0.2623.75 1 1
+chrome75.0.3770.100 19 19
+firefox35.0 1 1
+firefox 1 1
+chrome78.0.3904.108 5 5
+chrome74.0.3729.169 2 2
+opera72.0.3815.400 2 2
+msie4.00 164 164
+safari12.1.2 1 1
+chrome84.0.4147.125 2 2
+chrome83.0.4096.0 5 5
+chrome84.0.4147.89 1 1
+chrome52.0.2743.116 1 1
+firefox50.0 6 6
+chrome84.0.4147.105 8 8
+firefox22.0 1 1
+chrome85.0.4183.102 10 10
+chrome83.0.4098.0 6 6
+firefox79.0 1 1
+opera69.0.3686.7 1 1
+firefox33.0 1 1
+chrome65.0.3298.4 3 3
+chrome85.0.4183.81 1 1
+chrome67.0.3396.79 2 2
+firefox83.0 13 13
+firefox73.0 14 14
+chrome83.0.4086.0 6 6
+chrome74.0.3724.8 1 1
+firefox36.0 1 1
+opera73.0.3856.329 6 6
+firefox78.0 23 23
+firefox68.0 5 5
+firefox77.0 6 6
+firefox70.0 4 4
+chrome87.0.4280.101 12 12
+chrome43.0.2376.69 2 2
+chrome83.0.4103.34 4 4
+chrome37.0.2049.0 1 1
+chrome81.0.4044.138 15 15
+opera71.0.3770.198 1 1
+firefox80.0 2 2
+chrome36 1 1
+chrome50.0.2661.102 10 10
+chrome87.0.4280.88 159 159
+chrome83.0.4103.44 2 2
+chrome71.0.3578.99 1 1
+chrome66.0.3359.181 7 7
+chrome34.0.1847.116 6 6
+safari9.0 3 3
+chrome86.0.4240.114 2 2
+firefox28.0 1 1
+chrome73.0.3683.103 1 1
+chrome87.0.4280.141 411 411
+chrome83.0.4100.3 1 1
+chrome34.0.1847.132 1 1
+chrome79.0.3945.130 1 1
+chrome66.0.3359.139 4 4
+safari14.0.1 5 5
+msie7.00 157 157
+chrome67.0.3396.87 7 7
+chrome55.0.2883.95 2 2
+chrome80.0.3987.106 1 1
+chrome55.0.2891.73 1 1
+msie2.00 168 168
+chrome83.0.4099.2 2 2
+sage 1 1
+opera73.0.3856.284 4 4
+chrome40.0.2214.93 1 1
+chrome79.0.3945.88 6 6
+chrome66.0.3359.117 1 1
+firefox84.0 42 42
+msie5.00 178 178
+chrome72.0.3626.119 5 5
+msie6.0 31 31
+chrome40.0.2214.115 1 1
+chrome77.0.3835.0 1 1
+chrome79.0.3945.116 1 1
+opera9.64 3 3
+opera53.0.2907.99 1 1
+netscape5.0 23 23
+chrome83.0.4103.0 6 6
+opera72.0.3815.186 1 1
+firefox52.0 5 5
+chrome85.0.4183.83 4 4
+chrome53.0.2785.34 1 1
+safari14.0.2 3 3
+msie3.00 181 181
+chrome86.0.4240.193 3 3
+chrome87.0.4280.60 72 72
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 19
+Mozilla/5.0_(compatible;_evc-batch/2.0) 20210131140203
+Re-re_Studio_(_http://vip0.ru/) 20210131193058
+Viber 20210128170805
+index_(_http://www.nic.ru) 20210117064908
+Mozilla/5.0_zgrab/0.x 20210131184059
+Mozilla/5.0_Firefox/35.0 20210105204841
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20210128030825
+Python/3.8_aiohttp/3.5.4 20210131065619
+Mozilla/5.0_(compatible;_WebDataStats/1.0_;__https://webdatastats.com/policy.html) 20210125184540
+\ 20210129122009
+Mozilla/5.0_(compatible;_BackupLand/1.0;_https://go.backupland.com/;_Domain_check_for_viruses;) 20210131031351
+Mozilla/5.0_AppleWebKit/537.36_(KHTML,_like_Gecko)_Chrome/55.0.2883.95_Safari/537.36 20210128075410
+Mozilla/5.0_(compatible;_Dataprovider.com) 20210109033845
+Mozilla/5.0_(compatible;_VSAgent/2.0) 20210126030329
+WhatsApp/2.21.11.3_i 20210128170851
+Mozilla/5.0_(compatible;_ips-agent) 20210115024142
+axios/0.21.1 20210128185339
+Go-http-client/1.1 20210130191832
+Mozilla/5.0_(compatible;_NetcraftSurveyAgent/1.0;__info@netcraft.com) 20210129173914
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 9
+Re-re_Studio_(_http://vip0.ru/) 20210131193058
+WhatsApp/2.21.11.3_i 20210128170851
+Viber 20210128170805
+index_(_http://www.nic.ru) 20210117064908
+axios/0.21.1 20210128185339
+Microsoft_Office_Excel_2014 20210105111722
+Go-http-client/1.1 20210130191832
+\ 20210129122009
+Python/3.8_aiohttp/3.5.4 20210131065619
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 493 494
+From1 22 22
+From2 263 263
+From3 1098 1098
+From4 630 630
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 10
+rambler 1 1
+yandexua 1 1
+www_google_com 109 109
+yandex 17 17
+www_google_by 2 2
+yandexru 124 124
+bing 2 2
+google_com 2 2
+rr 4 4
+www_google_ru 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 620
+https://sg.shuct.net/cache/Google/en/gidrodinamika.ru 27 27
+http://mettgepu.tk 18 18
+https://dontimes.news 11 11
+https://www.tsekhovik.com.ua/pamyatniki/pamyatniki-iz-mramora.html 10 10
+https://gooool365.org 9 9
+https://poltava.sq.com.ua 8 8
+https://www.yoga-books.ru 8 8
+https://dlpsoftware.ru 8 8
+https://forvard42.ru 8 8
+http://pupilby.net 8 8
+http://makrab.news 8 8
+https://texoled.com 8 8
+http://znamenitosti.info 8 8
+https://foiz.ru 6 6
+https://alkozakaz.pw 6 6
+https://pamjatnik.com.ua/pamjatniki-korostishev 6 6
+https://www.drive2.ru/o/Evakyatorkh 6 6
+https://realty-konsult.ru 5 5
+https://ritual.net.ua/uslugi/pokhorony.html 5 5
+https://otoplenie-pro.com/ekspluataciya-kotlov/ 5 5
+https://carivka.com.ua 5 5
+https://thezabor.ru 5 5
+https://inspina.ru 4 4
+http://findclan.org/ads/enlister/3640 4 4
+http://dab-info.ru 4 4
+https://aplaster.ru/mehanizirovannaya-shtukaturka/ 1 1
+https://sochi.dienai.ru 1 1
+https://hololenses.ru 2 2
+http://advoka-t.ru/obman-banka 1 1
+https://www.black-buttons.com/nozhnitcy-portnovskie 1 1
+https://generals-cncrts.blog/54-strategija-age-of-mythology-extended-edition.html 1 1
+https://tbox.kz/technika/ 1 1
+https://postroitbanju.ru 2 2
+http://kosmet.by/catalog/uhod-za-telom 1 1
+https://tvoya-podrujka.com/den-rozhdeniya/podarok-devochke-na-dr.html 1 1
+https://pddmos.ru/pdd-online/ 1 1
+https://znaki-zodiaki.ru 3 3
+https://kak-pochemy.ru/chem-otmyt-super-kley-ot-ruk/ 1 1
+https://sdelai-zabor.ru/montazh/ 1 1
+https://simonswindows.com 2 2
+https://generals-igracomp.ru/strategy-generaly/ 1 1
+http://teledays.net 3 3
+https://enresurs24.ru 1 1
+https://vkladovke.com.ua 2 2
+https://veb-whatsapp.ru/whatsapp-na-computer-2/ 1 1
+https://pulkevich.ru/biznesy-v-amerike-nabirayushchie-populyarnost 1 1
+http://darknet.gs 1 1
+https://clinic-ultra.ru/lechenie-narkomanii/testirovanie/ 1 1
+https://advpalata.ru 3 3
+https://kupime.kz 1 1
+https://polotsk-portal.ru/proisshestviya/ 1 1
+https://dnisolutions.com.ua/oborudovanie/formovochnye-mashiny-i-presa/ 2 2
+https://newssome.ru 3 3
+https://veb-whatsapp.ru/whatsapp-aifon-iphone/ 1 1
+https://aromagolik.kz/muzhskoy-parfyum/ 3 3
+http://advoka-t.ru/yuridicheskoye-soprovozhdeniye-sdelok 1 1
+https://digestinvest.ru/investicii 1 1
+https://novikel.com/oborydovanie 2 2
+https://carivka.com.ua/hotels.html 1 1
+https://tver.dienai.ru 1 1
+https://pko-rts.ru/production 1 1
+https://metaphysican.com/sad-ogorod/dacha/ 1 1
+https://saryarkatour.kz 2 2
+https://dontimes.news/donbass/dnr/donetsk/ 1 1
+https://pddmos.ru/kolomenskaya-autoschool/ 1 1
+https://dezcenternsk.ru 1 1
+http://mfwwdc.wzhek.com/blog/60877276/view/ 1 1
+https://corpmebli.ru/improve/143-raznovidnosti-musornyh-konteynerov-dlya-kuhni.html 1 1
+https://generals-cncrts.blog/34-tematichnaja-podborka-kart-generals-contra.html 1 1
+https://uzvo.ru 2 2
+https://otzhimaniya.ru 1 1
+https://lemurmedia.ru/sport/ 1 1
+https://velesritual.com.ua/transport.html 3 3
+https://gdz-polinkin.ru 1 1
+https://propansionaty.ru 3 3
+https://erikaretouch.com 1 1
+https://lanet.help/ru/ 3 3
+http://gubernya63.ru/Lichnost-v-istorii/gubernskie-predvoditeli-dvorjanstva/ 1 1
+https://kompleksnoe-zdorovie.ru 3 3
+https://narkolog-madeira.ru 2 2
+https://gdz-polinkin.ru/rabochaya-tetrad-po-okruzhayushhemu-miru-dlya-3-klassa-avtor-pleshakov/ 1 1
+https://tbox.kz/phone/xiaomi/ 1 1
+http://www.trygym.ru/varenoe-bystroe-pohudenie 1 1
+https://zakon-i.ru 2 2
+https://lodki-pvh.com.ua 3 3
+https://priliv.com.ua 3 3
+https://tvoya-podrujka.com/den-rozhdeniya/podarok-babushke-na-dr.html 1 1
+https://veb-whatsapp.ru/status-online-whatsapp-web/ 1 1
+https://trubymaster.ru 3 3
+https://zelands.ru/transerfing-realnosti-stupen-i-prostranstvo-variantov/ 1 1
+https://novikel.com/yslygi-mediciny-i-kosmetologii 1 1
+https://velesritual.com.ua/cargo200.html 1 1
+https://kupime.kz/moda-i-stil/odezhda/zhenskaya-odezhda/ 1 1
+https://sekret.me 1 1
+https://chocolategid.ru/recepty 1 1
+https://krutiminst.ru 2 2
+https://mastera.org.ua/master-stiralnyh-mashin/ 1 1
+https://meinung.de 1 1
+http://parsinfo.ru 1 1
+http://ekobatarei.ru 2 2
+https://onlikassa.ru 3 3
+https://toyota-cars.info 1 1
+https://corpmebli.ru/instrykciya-dlya-nachinaushix/ 1 1
+http://cyclone.kiev.ua/portfolio/sofievka.php 1 1
+https://kak-pochemy.ru 1 1
+http://asupro.com 1 1
+http://hololenses.ru 2 2
+https://restvannaspb.ru/service/restoration-bath-bulk-acrylic/ 1 1
+https://zelands.ru/zhrica-itfat/ 2 2
+https://idolstore.net 3 3
+https://veb-whatsapp.ru/dva-whatsapp-na-smartfone/ 1 1
+http://tv-express.ru/zhkh 1 1
+https://konica.kz/product/minolta-bizhub-pro-1100/ 1 1
+https://obiavo.su 3 3
+https://autorazborka.kiev.ua 3 3
+https://aromagolik.kz 1 1
+https://xn--80aea1cgpdh6f.xn--p1ai/katalog/hyundai-h-1-grand-starex 1 1
+https://pko-rts.ru/production/izgotovlenie-pruzhin 2 2
+https://ulyanovsk.dienai.ru 1 1
+https://star-cats.com 1 1
+https://generals-igracomp.ru/33-karty-dlya-igry-campc-generals-zero-hour.html 1 1
+http://gubernya63.ru/culture/literatura/ 1 1
+https://ecg.ua 2 2
+http://firstsmi.ru 4 4
+https://gdz-polinkin.ru/russkij-yazyk-uchebnik-2-klass-kanakina-goretskij-chast-1-2/ 1 1
+https://generals-cncrts.blog/28-kompjuternaja-strategija-armor-clash-3.html 1 1
+https://voltik.kz 2 2
+https://zvometall.ru/catalog/gnutiy-shveller/ 3 3
+https://aplaster.ru/polusuhaya-styazhka-pola/ivanteevka/ 1 1
+https://restvannaspb.ru/service/restoration-bath-acrylic-liner/ 1 1
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d0%b5%d0%ba%d0%be%d0%bd%d0%be%d0%bc%d1%96%d1%87%d0%bd%d0%b0-%d1%82%d0%b5%d0%be%d1%80%d1%96%d1%8f/ 1 1
+https://pro-internetmarketing.ru/coaching 2 2
+https://tvoya-podrujka.com/den-rozhdeniya/podarok-svekru-na-dr.html 1 1
+https://cleaningservices.kiev.ua 3 3
+https://generals-cncrts.blog/41-kompjuternaja-igra-sudden-strike-4.html 1 1
+https://clinic-ultra.ru/lechenie-narkomanii/spice/ 1 1
+https://fabzone.ru 1 1
+https://pulkevich.ru/kakie-zakony-reguliruyut-predprinimatelskuyu-deyatelnost-v-rossii 3 3
+https://alkozakaz24.xyz 1 1
+https://qwertysh.ru 1 1
+https://dnisolutions.com.ua/oborudovanie/proizvodstvennye-linii/ 1 1
+https://metaphysican.com 1 1
+https://ak-magnat.ru 1 1
+https://recirkulatoru.ru/brands/sobr/ 3 3
+https://met-avia.ru 1 1
+https://prjadko.com.ua/ritualnie_uslugi.html 1 1
+http://cyclone.kiev.ua/portfolio/rakovka.php 1 1
+https://velesritual.com.ua/funeral.html 3 3
+https://chocolategid.ru/kakao-maslo-v-poroshke 1 1
+https://mastera.org.ua/Jelektrik/ 2 2
+https://turvpolshu.ru 1 1
+http://nlpsychology.kz 1 1
+https://otravleniya-yadi.ru/otravleniya 1 1
+http://clickprk.com/ALkm 2 2
+https://resurs-2012.ru/zakazat-diplomnuyu-rabotu 3 3
+https://betonmospro.ru/dostavka/beton-v-luhoviczah/ 1 1
+https://met-avia.ru/categories/aviatsionnye-stremyanki/ 1 1
+https://www.komplaens-audit.top 4 4
+https://xn--80aea1cgpdh6f.xn--p1ai/katalog 1 1
+https://www.black-buttons.com/pygovicu/zhenskie 1 1
+https://met77.ru 1 1
+https://surgut.dienai.ru 1 1
+https://rfserials.online 4 4
+https://toyota-cars.info 4 4
+https://metaphysican.com/zhiznennyie-istorii/ 1 1
+http://pallcare.ru 3 3
+https://pansionat-seasons.ru 2 2
+http://www.webviki.ru/www.gidrodinamika.ru 3 3
+https://www.xn----7sbkgnercp0argnfc6jpa.kiev.ua/krematsiya-v-kieve.html 1 1
+https://clinic-ultra.ru/lechenie-narkomanii/priznaki-upotrebleniya/ 1 1
+https://invoice36.ru 1 1
+https://xn--80aea1cgpdh6f.xn--p1ai/katalog/renault-logan 1 1
+https://fonarikitop.ru/kakie-led-lampy-luchshe-dlya-avto/ 1 1
+https://corpmebli.ru/masteram/97-zhidkie-gvozdi-primenenie-dlya-zhidkih-gvozdey-instruktsiya.html 1 1
+http://lesorubles.ru/category/drevesnye-i-kustarnikovye-porody/ 1 1
+https://waysi.ru 1 1
+https://android-1.ru 1 1
+https://7ooo.ru 1 1
+https://fonarikitop.ru/batareyki-kakie-luchshe-dlya-fonarika/ 1 1
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d0%b5%d0%ba%d0%be%d0%bd%d0%be%d0%bc%d1%96%d0%ba%d0%b0-%d0%bf%d1%96%d0%b4%d0%bf%d1%80%d0%b8%d1%94%d0%bc%d1%81%d1%82%d0%b2%d0%b0/ 1 1
+https://mastera.org.ua/santehnik/ 1 1
+https://inzuro.ru/osago/na-9-mesyacev/ 1 1
+https://hotkitchenspb.ru/%D1%81%D1%8D%D0%BD%D0%B4%D0%B2%D0%B8%D1%87%D0%B8 1 1
+https://autovteme.ru/31-top-4-komponentnye-dinamiki-v-avto.html 1 1
+https://www.bankprofit.ru/snizhenie-ipotechnyh-stavok 1 1
+http://lookover.ru 2 2
+https://gdz-polinkin.ru/matematika-3-klass-uchebnik-chast-1-i-2-avtor-moro-m-i/ 2 2
+https://gamebattlegrounds.ru 4 4
+https://pulkevich.ru/26-eko-biznes-idei-so-vsego-mira 1 1
+https://aromagolik.kz 2 2
+https://www.black-buttons.com/metallofyrnityra/ramki-peretyajki 1 1
+https://reshu-gdz.ru/category/2-klass 1 1
+https://avtovykup-24.ru 1 1
+https://proverka-pasporta.ru 2 2
+https://sdelai-zabor.ru/drugie-ograzhdeniya/ 1 1
+https://tidenstudio.com 2 2
+https://bodrus.com/uslugi/tam_uslugi 1 1
+https://idolstore.net/brands/ 1 1
+https://tbox.kz/cartridge/ 1 1
+https://recirkulatoru.ru 1 1
+https://clinic-ultra.ru 1 1
+https://prjadko.com.ua/kremacija.html 3 3
+https://tbox.kz/phone/samsung/ 1 1
+https://zvometall.ru/catalog/ 1 1
+http://pr.ua/catalog/news/113 1 1
+https://urok-otvet.ru 1 1
+https://www.remontradiatorov.com 3 3
+http://www.rpma.org.ru 3 3
+https://vapp.group 2 2
+http://maf.ug 1 1
+https://1001desert.com 3 3
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d1%81%d1%82%d0%b0%d1%82%d0%b8%d1%81%d1%82%d0%b8%d0%ba%d0%b0/ 1 1
+http://advoka-t.ru 1 1
+https://autovteme.ru/top-benzinovie-cars 1 1
+https://law-enc.net 1 1
+https://chocolategid.ru/belyy-molochnyy-shokolad 1 1
+https://metaphysican.com/dom/interer/ 1 1
+http://crm.aleksstroy.by 1 1
+https://corpmebli.ru/instrykciya-dlya-nachinaushix/78-ustanovka-mebelnyh-petel.html 2 2
+https://damoney.ru 1 1
+https://fonarikitop.ru/luchshie-svetodiodnye-lampy-h7-dlya-blizhnego-sveta/ 2 2
+https://kak-pochemy.ru/top-4-poderzhannyh-avto-s-malym-byudzhetom/ 1 1
+https://dc-carcredit.ru/category/ruchnoj-instrument 1 1
+https://generals-igracomp.ru/36-cnc-generals-zero-hour-reborn-the-last-stand.html 1 1
+https://pravosovetnic.ru 1 1
+https://kak-pochemy.ru/vysokooplachivaemaya-rabota-v-moskve-dlya-muzhchin/ 1 1
+https://www.prjadko.kiev.ua/ritualnye-uslugi/mezhdunarodnye-ritualnye-perevozki.html 2 2
+https://fandbox.ru 1 1
+https://pro-internetmarketing.ru/experiments 1 1
+https://samgarant.tiu.ru 3 3
+https://polotsk-portal.ru/main/ 1 1
+https://tbox.kz/audiovideo/action-camera/ 1 1
+https://www.prjadko.kiev.ua/ritualnye-uslugi/ritualnye-perevozki.html 1 1
+https://kitay-pro.ru/category/na-zametku 2 2
+https://fonarikitop.ru/luchshie-velosipednye-fonari/ 1 1
+https://bymosque.ru 4 4
+https://lemurmedia.ru/medicina/ 3 3
+https://betonmospro.ru/dostavka/beton-v-ramenskom/ 1 1
+https://recirkulatoru.ru/catalog/retsirkulyator/ 1 1
+https://uzvo.ru/stroitel_stvo_fundamenta_pod_vesy/ 1 1
+https://pishestroy.ru/category/nedvizhimost-v-moskve/ 1 1
+https://blog-invest.online 2 2
+https://kursk.dienai.ru 1 1
+https://big-data.dev 1 1
+http://tv-express.ru/razmecshenie-reklamy 1 1
+https://autovteme.ru/molodejnie-cars 1 1
+https://cool-answers.ru/165-samye-deshevye-avtomobili-v-rossii.html 1 1
+https://generals-igracomp.ru/matchi-igrokov-generaly/ 1 1
+https://veb-whatsapp.ru 2 2
+https://help-insects.ru 3 3
+https://generals-igracomp.ru/7-zapusk-generals-zero-hour-na-windows-10-8-7.html 1 1
+https://generals-cncrts.blog/101-novie-karty-generals-zero-hour.html 1 1
+https://autovteme.ru/67-chem-otlichaetsja-maslo-5w30-ot-5w40.html 1 1
+http://helpklop.ru 2 2
+https://alfa-helping.ru/azon-vhod-v-alfa-bank 1 1
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d1%84%d0%b8%d0%bd%d0%b0%d0%bd%d1%81%d1%8b/ 1 1
+https://forumprestige.ru/production/skotch 2 2
+https://www.xn----7sbkgnercp0argnfc6jpa.kiev.ua/perevozka-umershikh.html 1 1
+https://konica.kz/product/bizhub-185/ 2 2
+https://coffeetee.ru 1 1
+https://dnisolutions.com.ua/oborudovanie/svarochnye-resheniya/ 1 1
+https://www.xn----7sbkgnercp0argnfc6jpa.kiev.ua 2 2
+https://urok-otvet.ru/category/gumanitarnye-voprosy/ 3 3
+https://kak-pochemy.ru/luchshie-sinteticheskie-motornye-masla/ 1 1
+https://urok-otvet.ru/category/jekonomicheskie-voprosy/ 2 2
+http://www.trygym.ru/begovaya-dorozhka-swat 1 1
+https://ritual.net.ua 2 2
+https://polotsk-portal.ru 3 3
+https://banyaprofi.ru/dveri-i-okna 1 1
+https://znaki-zodiaki.ru 1 1
+https://banyaprofi.ru/uteplenie 1 1
+https://clinic-ultra.ru/lechenie-narkomanii/ 1 1
+https://freelancehack.ru 1 1
+https://tvoya-podrujka.com/8-marta/idei-podarkov-na-8-marta-svoimi-rukami.html 1 1
+https://zvometall.ru/plazmennaya-rezka-metalla/ 2 2
+https://lanet-climat.com.ua/ru/services/vstanovlennia-ventyliatsiinoho-obladnannia/ 1 1
+https://mymedsklad.ru/med-tehnika/ 1 1
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d0%b2%d0%b5%d1%82%d0%b5%d1%80%d0%b8%d0%bd%d0%b0%d1%80%d0%bd%d0%b0%d1%8f-%d1%84%d0%b0%d1%80%d0%bc%d0%b0%d0%ba%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f/ 1 1
+https://www.remontradiatorov.com 1 1
+https://89966077778.xyz 2 2
+https://zvometall.ru/catalog/traversy/ 1 1
+https://cool-answers.ru/110-avto-dlja-devushek-nadezhnyj-luchshij-bjudzhetnyj-nedorogoj.html 1 1
+https://sdelai-zabor.ru/perila-i-ograzhdeniya-lestnicy/ 1 1
+https://ri.dp.ua 3 3
+https://idolstore.net/movies/transformers/ 1 1
+https://alfa-helping.ru/vklady-v-alfa-banke 1 1
+https://belgorod.dienai.ru 1 1
+https://www.black-buttons.com/knopki/zaklepki 1 1
+http://gubernya63.ru/history/mif/ 1 1
+https://apple-tree.com.ua 1 1
+http://gubernya63.ru/Lichnost-v-istorii/samara/ 1 1
+https://xn--24-6kcuxbmpuw7i.xn--p1ai 1 1
+https://otravleniya-yadi.ru/otravleniya/ximicheskie-otravleniya/otravlenie-gazami-i-parami 2 2
+https://propansionaty.ru 1 1
+https://mastera.org.ua 2 2
+https://club.exchange 1 1
+https://pro-internetmarketing.ru/news/budni-seo-specialista 1 1
+https://autovteme.ru/33-top-4-sinteticheskie-masla-5w30.html 1 1
+http://cyclone.kiev.ua/bitumnaya-cherepica.php 1 1
+https://vauto.pro 4 4
+https://generals-cncrts.blog/67-strategija-starcraft-ii-wings-of-liberty.html 1 1
+https://hololenses.ru 1 1
+https://veb-whatsapp.ru/scan-code-whatsapp/ 1 1
+https://kak-pochemy.ru/snils-kak-vyglyadit/ 1 1
+https://fonarikitop.ru/category/avtomobilnye/ 1 1
+https://velesritual.com.ua 1 1
+https://lanet-climat.com.ua/ru/services/ 1 1
+https://vetamed.ru 4 4
+https://needmana.com 3 3
+http://lesorubles.ru 1 1
+https://awtolub.ru 4 4
+https://banyaprofi.ru/bannye-pechi 1 1
+https://pro-internetmarketing.ru/uslugi 1 1
+https://ares.by/consulting/career/ 1 1
+https://7ooo.ru 1 1
+https://resurs-2012.ru/zakazat-perevod 1 1
+https://komputers-best.ru 2 2
+https://sportsfan.ru 3 3
+https://mebel-trade.su 3 3
+http://part.gov.by 1 1
+https://reshu-gdz.ru/tag/geografiya 1 1
+https://lanet-climat.com.ua/ru/services/vstanovlennia-teplovykh-nasosiv/ 1 1
+https://recirkulatoru.ru/blog/poleznye-stati/ 2 2
+https://cool-answers.ru/top-luchshih-tovarov-dlya-avto-s-aliekspress.html 1 1
+http://kosmet.by/catalog/kosmetika-dlya-muzhchin 1 1
+https://xn--80aea1cgpdh6f.xn--p1ai/katalog/datsun-on-do 2 2
+https://pishestroy.ru 1 1
+https://vse-pro-bmw.info 2 2
+https://booktube.ru 1 1
+https://cool-answers.ru/334-gde-rabotat-v-moskve-chtoby-horosho-zarabatyvat.html 1 1
+https://loancards.online 2 2
+https://coronaviruswiki.ru/karta-rasprostraneniya-koronavirusa-covid-19-po-miru/ 2 2
+https://nissan-auto.in 3 3
+https://autovteme.ru/16-top-4-luchshie-motornye-masla-5w50.html 1 1
+https://lanet-climat.com.ua/ru/services/montazh-kondytsionera/ 1 1
+https://openoblokah.ru 1 1
+http://pr.ua/catalog/news/102 1 1
+https://generals-cncrts.blog/81-command-amp-conquer-generals-zero-hour-polnaja-versija.html 1 1
+https://konica.kz/delivery/ 1 1
+https://otoplenie-pro.com/deshevo-i-effektivno/ 1 1
+https://xn--80aea1cgpdh6f.xn--p1ai/katalog/rent-lada-vesta 1 1
+http://advoka-t.ru/broker-sotfx-i-pochemu-emu-nelzya-doveryat 1 1
+https://gdz-polinkin.ru/rabochaya-tetrad-okruzhayushhemu-miru-2-klass-pleshakov/ 2 2
+https://tvoidrug.com 1 1
+https://mhp.ooo 1 1
+https://hotkitchenspb.ru/%D1%81%D0%B5%D1%82_%D0%BC%D0%B5%D0%BD%D1%8E 1 1
+http://zvometall.ru 1 1
+https://window-10.ru 2 2
+https://uzvo.ru/catalog/dozatory_dlya_fasovki/dozatory_dm-10-50/ 1 1
+https://news54.ru 4 4
+https://clinic-ultra.ru/lechenie-narkomanii/ubod/ 1 1
+https://tor.gs 1 1
+https://zelands.ru/vzlom-tehnogennoj-sistemy/ 3 3
+https://www.stroysmi.ru 3 3
+https://chocolategid.ru/shokoladno-smetannyj-tort-5-receptov 2 2
+https://alfa-helping.ru 2 2
+https://digestinvest.ru/investicii/akcii 2 2
+https://kitay-pro.ru 1 1
+https://lanet-climat.com.ua/ru/services/vstanovlennia-rekuperatora-prana/ 1 1
+https://aplaster.ru/ruchnaya-styazhka-pola/ 1 1
+https://idolstore.net/cartoons/adventure-time/ 1 1
+https://vk.com/marina_volkova_l 1 1
+http://tv-express.ru/utro-m 1 1
+https://malinaexpert.ru 3 3
+https://met-avia.ru/categories/passazhirskie-trapy/ 1 1
+https://pro-internetmarketing.ru/news/besplatnye-seminary 1 1
+https://digestinvest.ru/investidei/zpify 1 1
+https://clinicgarant.ru 3 3
+https://chistayrabota.ru 2 2
+http://tv-express.ru/kriminal 3 3
+http://advoka-t.ru/bankovskie-spory 1 1
+https://tula.dienai.ru 1 1
+https://betonmospro.ru/dostavka/beton-v-pokrove/ 1 1
+https://ruspoll.ru 2 2
+https://coffeetee.ru 3 3
+https://pko-rts.ru/production/izgotovlenie-izdelii-iz-poliuretana 3 3
+https://restvannaspb.ru/service/additional-services/ 1 1
+https://fonarikitop.ru/nalobnyy-fonar-vysokoy-moschnosti/ 1 1
+https://kitay-pro.ru/category/zhurnal-zdorove 2 2
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d0%b7%d0%b5%d0%bc%d0%bb%d0%b5%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%be-%d0%b8-%d0%ba%d0%b0%d0%b4%d0%b0%d1%81%d1%82%d1%80/ 1 1
+https://reshu-gdz.ru/math5vil.html 1 1
+https://reshu-gdz.ru/rus6lad.html 1 1
+https://lemurmedia.ru 3 3
+https://veb-whatsapp.ru/whatsapp-na-android-smartfon/ 2 2
+https://zelands.ru/principy-transerfinga/ 1 1
+https://maykop.dienai.ru 1 1
+https://www.bankprofit.ru 1 1
+https://yamoscow.ru 2 2
+https://coronaviruswiki.ru 1 1
+https://pddmos.ru/realizations/ 1 1
+https://www.velodepo.ru/proizvoditeli-velosipedov.php 1 1
+https://www.gudzik.kiev.ua/shtornaya-fyrnityra/bahroma 1 1
+https://dontimes.news/dobryie-novosti/ 1 1
+https://cool-answers.ru/316-kak-ochistit-mebel-v-domashnih-uslovijah.html 1 1
+https://qubolos.ru 3 3
+https://zaokotak.ru 3 3
+https://deart-13.ru 3 3
+http://givingbeauty.ru 1 1
+https://hotkitchenspb.ru 1 1
+https://bystik.net 2 2
+http://rxyth.yqpc.net/view/60877276/profile/ 1 1
+https://dontimes.news/sujeti/koronavirus-v-ldnr/ 1 1
+http://kosmet.by/catalog/detyam 1 1
+https://gidroprochistka52.ru 3 3
+https://betonmospro.ru/dostavka/beton-v-pavlovskom-posade/ 1 1
+https://gdz-polinkin.ru/okruzhayushhij-mir-dlya-1-klassa-rabochaya-tetrad/ 2 2
+https://ares.by/consulting/kadrovyy_audit/ 1 1
+https://kak-pochemy.ru/top-4-podderzhannyh-avto-dlya-novichka/ 1 1
+https://resurs-2012.ru 2 2
+https://yaroslavl.dienai.ru 1 1
+https://forumprestige.ru/production/gofrotara 1 1
+http://lesorubles.ru/category/obzor-benzomotornyx-pil/ 1 1
+https://xn--80aea1cgpdh6f.xn--p1ai/katalog/skoda-fabia 1 1
+https://restvannaspb.ru/catalog/ 2 2
+https://pro-internetmarketing.ru/responses 1 1
+http://gubernya63.ru/culture/theaters/ 1 1
+https://konica.kz/product/konica-minolta-accuriopress-c6100/ 1 1
+https://tranzit-rtk.ru 1 1
+https://kitay-pro.ru/category/zozh 1 1
+https://ssoft.su 3 3
+https://aplaster.ru/mehanizirovannaya-shtukaturka/dolgoprudnyj/ 1 1
+https://fonarikitop.ru 2 2
+https://idolstore.net/marvel-comics/avengers/ 1 1
+https://krym-stopalko.ru 2 2
+http://biorent.ru 3 3
+https://alfa-helping.ru/zarplatnye-karty-ot-alfa-banka-keshbek-na-ostatok 1 1
+https://kirov.dienai.ru 1 1
+https://digestinvest.ru/investidei/kriptovalyuta 1 1
+https://idolstore.net/dc-universe/the-flash/ 1 1
+https://fonarikitop.ru/fonar-dlya-rybalki-s-ostrogoy/ 1 1
+https://cool-answers.ru/kak-zavesti-mashinu-s-avtozapuska.html 1 1
+https://betonmospro.ru/dostavka/beton-v-rumyanczevo/ 1 1
+https://digestinvest.ru/zarabotok 2 2
+https://betonmospro.ru/dostavka/beton-v-gorkah/ 1 1
+https://in-vk.com 3 3
+https://pulkevich.ru/vygodnye-investitsii-bez-riska 1 1
+https://porno-home365.com 3 3
+https://lemurmedia.ru/metall/ 2 2
+https://dnisolutions.com.ua/oborudovanie/stanki-plazmennoj-rezki/ 1 1
+https://express-zaem.ru 3 3
+http://kosmet.by/catalog/all-products 1 1
+https://pro-internetmarketing.ru/kak-stat-partnerom 1 1
+https://aplaster.ru/mehanizirovannaya-styazhka-pola/ 1 1
+http://kosmet.by 2 2
+https://piteika.com 3 3
+https://veb-whatsapp.ru/kak-sdelat-videozvonok-web-whatsapp/ 1 1
+https://beepway.ru/transfer/vityazevo-aeroport/taman 1 1
+https://zelands.ru/knigi-o-transerfinge/ 2 2
+https://diaval.ru 1 1
+https://pddmos.ru 1 1
+https://tvoya-podrujka.com/pasxa/delaem-roditelyam-podarki-na-pasxu-svoimi-rukami.html 2 2
+https://dtp-avarii.ru 1 1
+https://www.gudzik.kiev.ua/sitemap 2 2
+https://uadiplomy.com 2 2
+https://idolstore.net/games/hotline-miami/ 1 1
+https://pro-internetmarketing.ru/voprosy-i-otvety 1 1
+https://www.zlatvrata.ru 4 4
+http://rupolitshow.ru 1 1
+https://reshu-gdz.ru 2 2
+https://generals-igracomp.ru/6-strategy-command-and-conquer-generals-allversion.html 1 1
+https://restvannaspb.ru 3 3
+https://mymedsklad.ru/tovary-dlja-zdorovja-i-krasoty/ 1 1
+https://domsoveti.ru 4 4
+https://ritual.net.ua/uslugi/krematsiya.html 1 1
+https://inzuro.ru/osago/skoda/octavia/ 1 1
+https://pishestroy.ru/category/novosti/ 2 2
+http://advoka-t.ru/sostavleniye-pravovykh-dokumentov 1 1
+https://gdz-polinkin.ru/russkij-yazyk-6-klass-baranov/ 1 1
+https://dontimes.news/sujeti/peregovory-v-minske/ 1 1
+https://betonmospro.ru/dostavka/beton-v-krasnoj-pahre/ 1 1
+https://polotsk-portal.ru/politika/ 1 1
+https://generals-igracomp.ru/16-voennye-strategii-na-pk.html 1 1
+https://murmansk.dienai.ru 1 1
+https://resurs-2012.ru/zakazat-otchet-po-praktike 2 2
+https://tbox.kz/phone/huawei/ 1 1
+https://krymmedtrans.ru 2 2
+https://corpmebli.ru/obshee/99-mini-komod.html 1 1
+https://generals-cncrts.blog/89-novye-maps-dlja-generals-zero-hour.html 1 1
+https://dc-carcredit.ru 1 1
+https://sciartel.ru 1 1
+https://www.gruz200.com.ua 4 4
+https://dapsi.com.ua/g61675226-salyuty-fejerverki 1 1
+https://ryazan.dienai.ru 1 1
+https://pddmos.ru/bratislavscaya-autoschool/ 2 2
+https://generals-igracomp.ru/strategy-generaly/maps-generaly-contra/ 1 1
+https://generals-cncrts.blog/rts-rpg-survival-development-economic/ 1 1
+https://corpmebli.ru/kuhnya-svoimi-rukami/126-gde-raspolozhit-moyku-na-kuhne.html 1 1
+https://beepway.ru/transfer/yuzhnaya-ozereevka 1 1
+https://pamjatnik.com.ua/ritualnaja-productsia/exclusive-memorial 1 1
+http://pr.ua/catalog/news/104 1 1
+http://tokshow.online 1 1
+https://dc-carcredit.ru/category/elektroinstrumenty 1 1
+http://kosmet.by/catalog/parfyumeriya 1 1
+https://kak-pochemy.ru/top-8-avtotovarov-iz-kitaya-c-aliexpress/ 1 1
+https://met-avia.ru/categories/servisnoe-oborudovanie/ 2 2
+https://fabcred.ru 1 1
+https://spb-pansion.ru 3 3
+http://telik.online 1 1
+http://pr.ua/catalog/news/115 1 1
+https://www.prjadko.kiev.ua/ritualnye-uslugi.html 1 1
+https://hotkitchenspb.ru/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80%D1%8B 1 1
+https://alfa-helping.ru/avtokredit-ot-alfa-banka-kalkulyator-zayavka-online 2 2
+https://all-my-services.com 4 4
+https://lawsexp.com 4 4
+https://autovteme.ru/90-rejting-sinteticheskih-motornyh-masel.html 1 1
+https://polotsk-portal.ru/sport/ 1 1
+https://elkivastane.kz 2 2
+https://redmetsplav.ru 2 2
+https://begeton.com 1 1
+https://otoplenie-pro.com/oborudovanie-i-avtomatika/ 2 2
+https://forumprestige.ru/production/gofrokarton 1 1
+https://lanet-climat.com.ua/ru/services/profilaktyka-kondytsionera/ 1 1
+https://noutboouk.ru 2 2
+https://priliv-new.com.ua 2 2
+https://mymedsklad.ru/oborudovanie-kislorodnoe/ 1 1
+https://www.black-buttons.com/pygovicu/myzhskie 1 1
+https://resurs-2012.ru/zakazat-kontrolnuyu-rabotu 1 1
+https://betonmospro.ru/dostavka/beton-v-shhapovo/ 1 1
+https://puzanet.net 1 1
+http://kosmet.by/catalog/uhod-za-volosami 1 1
+https://mosad.online 1 1
+https://woplan.net 3 3
+https://pipeplast.com.ua 4 4
+https://uproshenka.online 3 3
+https://novikel.com/tovary-dlya-krasoty 2 2
+https://laminat-profi33.ru 1 1
+https://ivanovo.dienai.ru 1 1
+https://trefenhotel.ru 3 3
+https://inspina.ru 1 1
+https://adrenalinebot.ru 1 1
+https://idolstore.net/pop-culture/ 1 1
+https://ares.by/vacancies/ 3 3
+https://thatsomerset.com 1 1
+https://xn--80aea1cgpdh6f.xn--p1ai/arenda-s-vykupom 1 1
+http://cyclone.kiev.ua/portfolio/vasilkovskaya.php 1 1
+https://www.svoimi-rukamy.com 1 1
+https://idolstore.net/tv-amp-series/star-trek/ 1 1
+https://interjer-plus.ru 2 2
+https://zelands.ru/o-chjom-ne-skazala-tafti/ 1 1
+https://rg-gaming.ru 4 4
+https://zvometall.ru/catalog/metallokonstruktsii/ 1 1
+https://tbox.kz/audiovideo 1 1
+https://magicbowls.ru 1 1
+https://inzuro.ru/osago/ivanovskaya/ 1 1
+http://pr.ua/catalog/news/95 1 1
+https://pamjatnik.com.ua/ritualnaja-productsia/elite-memorial 1 1
+https://structum.ua 2 2
+https://spektr-clinic.ru 3 3
+https://rest-zaim.ru 3 3
+https://get-driver.ru 1 1
+https://chocolategid.ru/interesnoe 2 2
+https://vyrashhivanie-iz-semyan.ru 3 3
+https://sochi.melanikalab.ru 3 3
+https://banyaprofi.ru/steny 1 1
+https://ares.by/services/ 1 1
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d0%b0%d0%bd%d0%b3%d0%bb%d0%b8%d0%b9%d1%81%d0%ba%d0%b8%d0%b9-%d1%8f%d0%b7%d1%8b%d0%ba/ 1 1
+https://xn----8sbnvfrsgc5d5a.xn--p1ai/category/%d0%b8%d0%bd%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%86%d0%b8%d0%be%d0%bd%d0%bd%d1%8b%d0%b5-%d1%82%d0%b5%d1%85%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d0%b8/ 1 1
+https://hotkitchenspb.ru/%D0%B1%D1%80%D1%83%D1%81%D0%BA%D0%B5%D1%82%D1%8B 1 1
+https://ua-jerelia.com 1 1
+http://tv-express.ru/list 2 2
+https://autovteme.ru/19-top-4-avtomobilja-na-8-mest.html 1 1
+https://uzvo.ru/catalog/konveyernye_vesy/ 1 1
+https://aromagolik.kz/zhenskiy-parfyum/ 2 2
+http://carders.pk 1 1
+https://pskov.dienai.ru 1 1
+https://kozhnye.ru 3 3
+https://betonmospro.ru/dostavka/beton-v-burczevo/ 1 1
+https://dontimes.news/bez-politiki/ 1 1
+https://pro-internetmarketing.ru/sergey-kovalev 1 1
+https://ohitalia.ru 4 4
+https://restvannaspb.ru/service/restoration-shower/ 2 2
+https://xn--80aea1cgpdh6f.xn--p1ai/katalog/rent-kio-rio 2 2
+https://www.bnkomi.ru/data/relize/117640/ 1 1
+https://zvometall.ru/rezka-listovogo-metalla/ 1 1
+https://corpmebli.ru/furn-articles/62-idei-biznesa.html 1 1
+https://shoustar.com 2 2
+https://pishestroy.ru/category/nedvizhimost-za-granicej/ 4 4
+https://dnisolutions.com.ua 1 1
+https://konica.kz/product/remontprintera/ 1 1
+https://reshu-gdz.ru/uchrus4kan.html 1 1
+http://webrabota.cf 1 1
+https://crypto-mining.club/en/software/xmrig-v6-2-2-cpu-gpu-miner-randomx-kawpow-cryptonight-astrobwt-and-argon2/ 1 1
+https://www.komplaens-audit.top/ru/sitemap/ 1 1
+https://novikel.com/biodobavki-medicinskie-tovary 2 2
+https://asbh.ru 3 3
+https://cpstest.me 1 1
+https://aplaster.ru/polusuhaya-styazhka-pola/dolgoprudnyj/ 2 2
+https://betonmospro.ru/czena-na-beton/ 1 1
+https://carivka.com.ua/restoran.html 2 2
+https://pravosovetnic.ru/bankruptcyofindividuals 1 1
+https://k-ti.ru 3 3
+https://digestinvest.ru/investicii/etf-fondy 1 1
+http://advoka-t.ru/sudebnye-pristavy-prishli-domoy-ch1 1 1
+https://betonmospro.ru/arenda-avtobetononasosa/ 1 1
+https://metaphysican.com/moda/trendyi/ 1 1
+https://clinic-ultra.ru/lechenie-igromanii/ 1 1
+http://firstsmi.ru 1 1
+https://mymedsklad.ru 1 1
+https://tri-ieroglifa.ru 2 2
+https://corpmebli.ru/obshee/101-detskaya-krovatka-s-komodom.html 1 1
+https://reshu-gdz.ru/uchrus3kan.html 1 1
+https://pro-internetmarketing.ru/seo-slovar 1 1
+https://generals-cncrts.blog/15-analogichnye-igry-generals-zh.html 1 1
+https://mymedsklad.ru/medicinskaja-mebel/ 2 2
+https://cool-answers.ru/nikneymy-dlya-parney-kakoy-vybrat.html 1 1
+https://centraltv.net 4 4
+https://www.yrielt.com.ua 1 1
+https://dietabez.ru 2 2
+https://mastera.org.ua/Holodilshhik/ 2 2
+https://uzvo.ru/catalog/dozatory_dlya_fasovki/dozatory_elektron_dr14-50_vesovye_avtomaticheskie_s_rotornym_pitatelem/ 1 1
+https://lbuckshee.com 1 1
+https://magnitogorsk.dienai.ru 1 1
+https://konica.kz/product/konica-minolta-bizhub-c258/ 2 2
+https://tvoya-podrujka.com/novyj-god/uchitelyu-n-novyj-god.html 1 1
+https://cool-answers.ru/310-pokupka-kvartiry-na-vtorichnom-rynke.html 1 1
+https://itech.co.ua 1 1
+https://magicbowls.ru/besplanye-izobrazheniya-foto-poyushchih-chash-reative-commons 1 1
+https://urok-otvet.ru/category/voprosy-iz-shkolnoj-programmy/ 2 2
+https://www.tsekhovik.com.ua 3 3
+https://mistymag.ru 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 6
+%d0%b7%d0%b0%d0%b9%d0%bc+%d0%be%d0%bd%d0%bb%d0%b0%d0%b9%d0%bd 7
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9+%d1%81%d0%b0%d0%b9%d1%82 2
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d0%bd%d0%b0%d1%81%d0%be%d1%81+%d0%b3%d0%b4%d0%bc13 1
+%d0%be%d0%b0%d0%be+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0+%d1%81%d0%b0%d0%bc%d0%b0%d1%80%d0%b0 1
+%d0%b7%d0%b0%d0%be+%d0%b3%d0%b8%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%d0%b3%d0%b4%d0%bc+19-020-%d0%b5-40%2f60-%d0%ba18.5 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 13
+%d0%b7%d0%b0%d0%b9%d0%bc 7
+%d0%be%d0%bd%d0%bb%d0%b0%d0%b9%d0%bd 7
+%d0%b3%d0%b8%d0%b4%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 4
+%d0%b7%d0%b0%d0%be 3
+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9 2
+%d1%81%d0%b0%d0%b9%d1%82 2
+%d0%bd%d0%b0%d1%81%d0%be%d1%81 1
+19-020-%d0%b5-40%2f60-%d0%ba18.5 1
+%d0%b3%d0%b4%d0%bc 1
+%d0%b3%d0%b8%d1%80%d0%be%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d0%b0 1
+%d1%81%d0%b0%d0%bc%d0%b0%d1%80%d0%b0 1
+%d0%b3%d0%b4%d0%bc13 1
+%d0%be%d0%b0%d0%be 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+301 3 495
+404 1072 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 376
+/club/ 1 -
+/%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5 3 -
+/files/files/characteristics/har/gdmp7-04-e-12,5-32-a-3,2-5,5-y2-har.pdf 1 -
+/bc/ 2 http://gidrodinamika.ru/bc/
+/files/files/characteristics/gab/gdmp21-023-e-25-140-k-3,2-37-u2-gab.pdf 1 -
+/website/wp-includes/wlwmanifest.xml 1 -
+/\xca\xee\xec\xef\xe0\xed\xe8\xff 1 -
+/vertikalnie/gorizontalnie/125 1 -
+/tinymce/jscripts/tiny_mce/plugins/ajaxfilemanager/ajaxfilemanager.php 1 GIDRODINAMIKA.RU/tinymce/jscripts/tiny_mce/plugins/ajaxfilemanager/ajaxfilemanager.php
+/%C3%8E%C3%B1%C3%A5%C3%AD%C3%BC 5 -
+/engine/classes/js/dle_js.js 2 http://gidrodinamika.ru/engine/classes/js/dle_js.js
+/catalog/gor/5-01/gdm5-01-har.pdf.pdf 2 -
+/manage/kindeditor/php/upload_json.php 1 -
+/\xcd\xee\xe2\xee\xf1\xf2\xe8 1 -
+/contact.phpabout.php 1 -
+/img/over-flash.png 1 http://www.gidrodinamika.ru/css/style.css
+/vertikalnie/gorizontalnie/111 1 -
+/js/kindeditor/asp.net/upload_json.ashx 1 -
+/files/files/characteristics/gab/gdmp7-04-e-12,5-32-a-3,2-5,5-u2-gab.pdf 1 -
+/contact.phpindex.php 1 -
+/\xd2\xe5\xf5. 1 -
+/login 2 http://gidrodinamika.ru/login
+/keditor/php/upload_json.php 1 -
+/%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D0%B8 7 -
+/administrator 4 -
+/%C3%87%C3%A0%C3%AA%C3%A0%C3%A7 2 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/resource/js/corelang.js 2 http://gidrodinamika.ru/resource/js/corelang.js
+/vertikalnie/gorizontalnie/229 3 -
+/gorizontalnie/157 1 -
+/%C3%8F%C3%AE%C3%B7%C3%B2%C3%A0 2 -
+/onclick= 1 -
+/kindeditor/asp/upload_json.asp 1 -
+/\xc7\xe8\xec\xe0 1 -
+/files/files/characteristics/gab/gdm7-05-e-8-60-k-4-u2-gab.pdf 1 -
+/%C7%E0%EF%E0%F1%ED%FB%E5%20%F7%E0%F1%F2%E8 6 -
+/files/files/characteristics/gab/gdmp7-05-e-25-32-a-3,7-11-u2-gab.pdf 1 -
+/%CE%E1%F0%E0%F2%ED%E0%FF%20%F1%E2%FF%E7%FC 8 -
+/\xcf\xf0\xe5\xe4\xf1\xf2\xe0\xe2\xe8\xf2\xe5\xeb\xe8 1 -
+/\xce\xe1\xf0\xe0\xf2\xed\xe0\xff 1 -
+/files/%20%20files/characteristics/gab/gdm8-04-e-130-70-a-37-u2-gab.pdf 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/contact.phpnews.php 1 -
+/stats/cgi-bin/awstats.pl 2 -
+/vertikalnie/gorizontalnie/217 2 -
+/forum/ 1 -
+/adm/css/errors.css 2 http://gidrodinamika.ru/adm/css/errors.css
+/vstats/ 10 -
+/keditor/asp/upload_json.asp 1 -
+/ads.txt 7 -
+/skins/simpla_blue/style.css 2 http://gidrodinamika.ru/skins/simpla_blue/style.css
+/%CE%F1%E5%ED%FC 6 -
+/catalog/vertikalnie/206 1 -
+/%C3%87%C3%A8%C3%AC%C3%A0 7 -
+/%C7%E8%EC%E0 6 -
+/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F 13 -
+/kindeditor/asp.net/upload_json.ashx 1 -
+/vertikalnie/gorizontalnie/106 1 -
+/%C3%8C%C3%A0%C3%B0%C3%AA%C3%A5%C3%B2%C3%A8%C3%AD%C3%A3 1 -
+/\xce\xe1\xeb\xee\xe6\xea\xe0 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/admin/cms/login/ 2 http://gidrodinamika.ru/admin/cms/login/
+/gorizontalnie/129 2 -
+/%CE%20%EA%EE%EC%EF%E0%ED%E8%E8 7 -
+/mscms/ 2 http://gidrodinamika.ru/mscms/
+/wp-login.php 1 -
+/files/files/characteristics/gab/gdm15-02-e-200-250-a-200-y2-gab.pdf 1 -
+/%C3%81%C3%AB%C3%A0%C3%AD%C3%AA 3 -
+/files/files/characteristics/har/gdm15-014-e-180-100-a-55-y2-har.pdf%20%20 1 -
+/%CB%E5%F2%EE 6 -
+/statics/js/kindeditor/php/upload_json.php 1 -
+/files/%20%20files/characteristics/obv/gdm4-081-e-10-80-k-11-u2-obv.pdf 1 -
+/mail 1 -
+/%C2%E5%F0%ED%F3%F2%FC%F1%FF%20%EE%E1%F0%E0%F2%ED%EE 1 -
+/img/spring/bg.gif 1 http://www.gidrodinamika.ru/css/style.css
+/gorizontalnie/168 1 -
+/%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE 4 -
+/%D0%97%D0%B8%D0%BC%D0%B0 7 -
+/gorizontalnie/161 1 -
+/wp/wp-includes/wlwmanifest.xml 1 -
+/Public/kindeditor/asp.net/upload_json.ashx 1 -
+/vertikalnie/gorizontalnie/218 1 -
+/%C3%8A%C3%AE%C3%AD%C3%B2%C3%A0%C3%AA%C3%B2%C3%BB 4 -
+/img/next-bullet.png 1 http://www.gidrodinamika.ru/css/style.css
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/contact.phpblank.php 1 -
+/%D0%97%D0%B0%D0%BA%D0%B0%D0%B7 11 -
+/manage/kindeditor/asp.net/upload_json.ashx 1 -
+/files/files/characteristics/gab/gdmp21-06-e-6-100-a-3,0-7,5-u2-gab.pdf 1 -
+/%D0%94%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F 9 -
+/catalog/gor/5-11/gdm5-11-gab.pdf 2 -
+/statics/js/kindeditor/asp/upload_json.asp 1 -
+/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D0%BE%D0%B3%D1%80%D1%83%D0%B6%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%D1%81%D0%BE%D1%81%D1%8B 15 -
+/admin 2 http://gidrodinamika.ru/admin
+/scripts/admin/popup.js 2 http://gidrodinamika.ru/scripts/admin/popup.js
+/admin/login.php 2 http://gidrodinamika.ru/admin/login.php
+/atom.xml 1 -
+/%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20vk.com 9 -
+/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F 17 -
+/blog/wp-includes/wlwmanifest.xml 1 -
+/%C3%84%C3%AE%C3%B1%C3%B2%C3%A8%C3%A6%C3%A5%C3%AD%C3%A8%C3%BF 3 -
+/vertikalnie/gorizontalnie/117 2 -
+/vertikalnie/gorizontalnie/233 1 -
+/%C4%EE%F1%F2%E8%E6%E5%ED%E8%FF 6 -
+/catalog/gor/5-11/gdm5-11-har.pdf 1 -
+/contact.php%EF%BF%BD%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/\xc2\xe5\xf1\xed\xe0 1 -
+/js/kindeditor/php/upload_json.php 1 -
+/news/wp-includes/wlwmanifest.xml 1 -
+/files/files/characteristics/har/gdm9-06-e-50-220-a-55-y2-har.pdf 2 -
+/contacts 2 -
+/sitemap.xml 2 -
+/2014 4 -
+/Scripts/kindeditor/asp/upload_json.asp 1 -
+/files/files/characteristics/obv/gdmp-obv.pdf 3 -
+/files/files/characteristics/har/gdm7-04-e-6-35-%D0%9A-5,5-y2-har.pdf 3 -
+/%C3%EB%E0%E2%ED%E0%FF 6 -
+/favicon.png 7 -
+/\xca\xee\xed\xf2\xe0\xea\xf2\xfb 1 -
+/adminer.php 1 -
+/\xf1\xf1\xfb\xeb\xea\xe0 1 -
+/files/files/characteristics/obv/gdm3-e-180-180-a-132-u2-obv.pdf 1 -
+/vendor/phpunit/phpunit/LICENSE 1 -
+/%CF%F0%E5%E4%F1%F2%E0%E2%E8%F2%E5%EB%E8 6 -
+/this_file_should_not_exits 1 -
+/\xcf\xf0\xee\xe4\xf3\xea\xf6\xe8\xff 1 -
+/site/wp-includes/wlwmanifest.xml 1 -
+/editor/asp/upload_json.asp 1 -
+/vertikalnie/gorizontalnie/116 1 -
+/%C7%E0%EA%E0%E7 14 -
+/files/files/characteristics/gab/gdmd2-e-500-70-a-110-u2-gab.pdf 1 -
+/gorizontalnie/140 2 -
+/vertikalnie/gorizontalnie/114 2 -
+/kindeditor/php/upload_json.php 1 -
+/wp1/wp-includes/wlwmanifest.xml 1 -
+/files/files/characteristics/obv/gdm7-04-e-6-35-k-5,5-u2-obv.pdf 1 -
+/index.rdf 1 -
+/vertikalnie/gorizontalnie/118 1 -
+/rss.xml 1 -
+/webstat/ 10 -
+/contact.phpproducts.php 3 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/static/common.css 2 http://gidrodinamika.ru/static/common.css
+/wstat7/ 2 -
+/files/files/characteristics/gab/gdmp7-01-e-50-80-a-3,0-30-u2-gab.pdf 1 -
+/test/wp-includes/wlwmanifest.xml 1 -
+/index.atom 1 -
+/%CE%E1%EB%EE%E6%EA%E0 6 -
+/admin/kindeditor/php/upload_json.php 1 -
+/gorizontalnie/180 1 -
+/modules 2 http://gidrodinamika.ru/modules
+/admin/jzeditor/asp.net/upload_json.ashx 1 -
+/catalog/vertikalnie/93 2 -
+/vertikalnie/gorizontalnie/239 1 -
+/img/over-video.png 1 http://www.gidrodinamika.ru/css/style.css
+/community/ 2 -
+/Scripts/kindeditor/asp.net/upload_json.ashx 1 -
+/js/kindeditor/asp/upload_json.asp 1 -
+/netcat/admin/ 1 -
+/vertikalnie 6 http://go.mail.ru/search_images
+/manage/kindeditor/asp/upload_json.asp 1 -
+/icms 2 http://gidrodinamika.ru/icms
+/vertikalnie/gorizontalnie/227 1 -
+/Public/kindeditor/asp/upload_json.asp 1 -
+/\xc3\xee\xf0\xe8\xe7\xee\xed\xf2\xe0\xeb\xfc\xed\xfb\xe5 1 -
+/gorizontalnie/192 1 -
+/admin/kindeditor/asp.net/upload_json.ashx 1 -
+/files/files/characteristics/gab/gdmp21-022-e-30-150-k-3,2-30-u2-gab.pdf 2 -
+/files/files/characteristics/gab/gdm13-031-e-50-55-A-18,5-u2-gab.pdf 1 -
+/\xcb\xe8\xf6\xe5\xed\xe7\xe8\xe8 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/files/files/characteristics/gab/gdmp21-04-e-16-400-a-2,7-55-u2-gab.pdf 1 -
+/vertikalnie/gorizontalnie/222 1 -
+/gorizontalnie/131 1 -
+/%22%20onclick= 1 -
+/%C3%8A%C3%AE%C3%AC%C3%AF%C3%A0%C3%AD%C3%A8%C3%BF 2 -
+/forums/ 1 -
+/files/files/characteristics/gab/gdm3-e-180-180-a-132-u2-gab.pdf 1 -
+/gorizontalnie/141 1 -
+/about 2 -
+/%D0%97%D0%B0%D0%BF%D0%B0%D1%81%D0%BD%D1%8B%D0%B5%20%D1%87%D0%B0%D1%81%D1%82%D0%B8 7 -
+/contact.phpcontact.php 1 -
+/jzeditor/asp.net/upload_json.ashx 1 -
+/img/quotes-close.png 1 http://www.gidrodinamika.ru/css/style.css
+/%C3%EE%F0%E8%E7%EE%ED%F2%E0%EB%FC%ED%FB%E5%20%ED%E0%F1%F1%EE%F1%FB 8 -
+/files/http:/gd.fortima.by/files/files/characteristics/obv/gdm7-011-e-12-30-a-5,5-u2,5-obv.pdf 1 -
+/%CC%E0%F0%EA%E5%F2%E8%ED%E3 6 -
+/2018/wp-includes/wlwmanifest.xml 1 -
+/%C3%92%C3%A5%C3%B5.%20%C3%AF%C3%AE%C3%A4%C3%A4%C3%A5%C3%B0%C3%A6%C3%AA%C3%A0 1 -
+/wp-includes/wlwmanifest.xml 1 -
+/\xc3\xeb\xe0\xe2\xed\xe0\xff 1 -
+/%C3%87%C3%A0%C3%AF%C3%A0%C3%B1%C3%AD%C3%BB%C3%A5%20%C3%B7%C3%A0%C3%B1%C3%B2%C3%A8 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/files/files/characteristics/gab/gdm4-01-e-10-100-k-18,5-u2-gab.pdf 1 -
+/files/files/characteristics/gab/gdm5-e-65-140-a-37-u2-gab.pdf 1 -
+/gorizontalnie/151 2 -
+/img/bullet.png 1 http://www.gidrodinamika.ru/css/style.css
+/2019/wp-includes/wlwmanifest.xml 1 -
+/gorizontalnie/158 1 -
+/gorizontalnie/191 1 -
+/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D1%8B 3 -
+/editor/php/upload_json.php 1 -
+/humans.txt 5 -
+/%D0%92%D0%B5%D1%81%D0%BD%D0%B0 10 -
+/%C3%8F%C3%B0%C3%AE%C3%A4%C3%B3%C3%AA%C3%B6%C3%A8%C3%BF 4 -
+/%D0%9E%D1%81%D0%B5%D0%BD%D1%8C 10 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/etm/indy.css 2 http://gidrodinamika.ru/etm/indy.css
+/admin/editor/php/upload_json.php 1 -
+/catalog/gor/%C41-01/gdmd1-01-har.png 1 -
+/gorizontalnie/145 1 -
+/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%D1%81%D1%81%D0%BE%D1%81%D1%8B 16 -
+/feed 1 -
+/files/%20%20files/characteristics/obv/gdm13-014-e-90-50-a-15-u2-obv.pdf 1 -
+/\xcc\xe0\xf0\xea\xe5\xf2\xe8\xed\xe3 1 -
+/%CD%EE%E2%EE%F1%F2%E8 4 -
+/%D1%E2%FF%E7%FC%20%E8%20%EA%EE%ED%F1%F3%EB%FC%F2%E0%F6%E8%FF 6 -
+/files/files/characteristics/gab/gdm12-e-72-60-a-15-u2-gab.pdf 1 -
+/static/cartreminder.js 2 http://gidrodinamika.ru/static/cartreminder.js
+/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8 6 -
+/media/wp-includes/wlwmanifest.xml 1 -
+/adm/ 2 http://gidrodinamika.ru/adm/
+/%D0%9E%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8 23 -
+/admin/jzeditor/asp/upload_json.asp 1 -
+/wordpress/wp-includes/wlwmanifest.xml 1 -
+/%F1%F1%FB%EB%EA%E0%20vk.com 6 -
+/netcat/ 2 http://gidrodinamika.ru/netcat/
+/admin/jzeditor/php/upload_json.php 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD.%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/gorizontalnie/183 1 -
+/vertikalnie/gorizontalnie/230 1 -
+/%C3%8F%C3%B0%C3%A5%C3%A4%C3%B1%C3%B2%C3%A0%C3%A2%C3%A8%C3%B2%C3%A5%C3%AB%C3%A8 1 -
+/\xc1\xeb\xe0\xed\xea 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/jzeditor/php/upload_json.php 1 -
+/\xcb\xe5\xf2\xee 1 -
+/%CF%EE%F7%F2%E0 5 -
+/files/files/characteristics/obv/gdm21-e-15-750-a-160-u2-obv.pdf 1 -
+/admin/view/javascript/common.js 2 http://gidrodinamika.ru/admin/view/javascript/common.js
+/files/files/characteristics/gab/gdm8-05-e-100-100-k-75-u2-gab.pdf 1 -
+/files/files/characteristics/har/gdm10-04-e-220-600-a-500-y2-har.pdf%20%20 1 -
+/sito/wp-includes/wlwmanifest.xml 1 -
+/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8 3 -
+/gorizontalnie/143 2 -
+/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F 9 -
+/edc_admin/Login/Style.css 2 http://gidrodinamika.ru/edc_admin/Login/Style.css
+/admin/editor/asp.net/upload_json.ashx 1 -
+/gorizontalnie/133 3 -
+/order.html 1 http://gidrodinamika.ru/order.html
+/catalog/vertikalnie/gorizontalnie/100 1 -
+/top 1 -
+/contact.phpmail@gidrodinamika.ru 1 -
+/jzeditor/asp/upload_json.asp 1 -
+/%C3%8B%C3%A5%C3%B2%C3%AE 5 -
+/vertikalnie/gorizontalnie/109 1 -
+/%D0%92%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8 3 -
+/css/fonts/mtcorsva.ttf 1 http://www.gidrodinamika.ru/css/style.css
+/%CB%E8%F6%E5%ED%E7%E8%E8 5 -
+/img/over.png 1 http://www.gidrodinamika.ru/css/style.css
+/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8 9 -
+/%C3%8B%C3%A8%C3%B6%C3%A5%C3%AD%C3%A7%C3%A8%C3%A8 3 -
+/catalog/vertikalnie/gorizontalnie/94 1 -
+/%CF%EE%EB%F3%EF%EE%E3%F0%F3%E6%ED%FB%E5%20%ED%E0%F1%EE%F1%FB 7 -
+/gorizontalnie/146 1 -
+/catalog/gor/%C41-01/gdmd1-01-gab.png 1 -
+/%D0%9C%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3 7 -
+/%C2%E5%F1%ED%E0 6 -
+/cms/admin/index.php 1 -
+/catalog/vertikalnie/98 3 -
+/img/spring/top-bg.png 1 http://www.gidrodinamika.ru/css/style.css
+/web/wp-includes/wlwmanifest.xml 1 -
+/a9bc224bd710f56d27affffddc764239b58c3faa0/shield.png 1 -
+/index.rss 1 -
+/feeds/ 1 -
+/sitemap.txt 19 -
+/vertikalnie/gorizontalnie/225 1 -
+/admin.php 2 http://gidrodinamika.ru/admin.php
+/%CA%EE%EC%EF%E0%ED%E8%FF 5 -
+/gorizontalnie/149 2 -
+/\xce\xf1\xe5\xed\xfc 1 -
+/cms/lang/ru_utf8/css/sbIndex.css 2 http://gidrodinamika.ru/cms/lang/ru_utf8/css/sbIndex.css
+/%D2%E5%F5.%20%EF%EE%E4%E4%E5%F0%E6%EA%E0 6 -
+/%CE%E1%F0%E0%F2%ED%E0%FF+%F1%E2%FF%E7%FC 4 http://gidrodinamika.ru/%CE%E1%F0%E0%F2%ED%E0%FF+%F1%E2%FF%E7%FC
+/%C3%83%C3%AE%C3%B0%C3%A8%C3%A7%C3%AE%C3%AD%C3%B2%C3%A0%C3%AB%C3%BC%C3%AD%C3%BB%C3%A5%20%C3%AD%C3%A0%C3%B1%C3%B1%C3%AE%C3%B1%C3%BB 7 -
+/awstats/cgi-bin/awstats.pl 2 -
+/index.xml 1 -
+/%D0%92%20%D0%BC%D0%B8%D1%80%D0%B5 3 -
+/ru/admin/login.html 2 http://gidrodinamika.ru/ru/admin/login.html
+/gorizontalnie/165 1 -
+/files/files/characteristics/obv/gdm5-e-65-140-a-37-u2-obv.pdf 2 -
+/admin/kindeditor/asp/upload_json.asp 1 -
+/browserconfig.xml 2 -
+/keditor/asp.net/upload_json.ashx 1 -
+/files/files/characteristics/gab/gdmp8-03-E-10-480-a-2,7-55-u2-gab.pdf 1 -
+/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B2%D1%8F%D0%B7%D1%8C 8 -
+/vertikalnie/gorizontalnie/237 1 -
+/wp2/wp-includes/wlwmanifest.xml 1 -
+/%D1%E2%FF%E7%FC+%E8+%EA%EE%ED%F1%F3%EB%FC%F2%E0%F6%E8%FF 4 http://gidrodinamika.ru/%D1%E2%FF%E7%FC+%E8+%EA%EE%ED%F1%F3%EB%FC%F2%E0%F6%E8%FF
+/modules/mod_stats.xml 2 http://gidrodinamika.ru/modules/mod_stats.xml
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20vk.com 1 -
+/manager 2 http://gidrodinamika.ru/manager
+/%C3%82%C3%A5%C3%B0%C3%AD%C3%B3%C3%B2%C3%BC%C3%B1%C3%BF%20%C3%AE%C3%A1%C3%B0%C3%A0%C3%B2%C3%AD%C3%AE 2 -
+/%C3%8E%20%C3%AA%C3%AE%C3%AC%C3%AF%C3%A0%C3%AD%C3%A8%C3%A8 4 -
+/shop/wp-includes/wlwmanifest.xml 1 -
+/webalizer/ 13 -
+/www.mail@gidrodinamika.ru 17 -
+/gorizontalnie 2 -
+/indy/indy.css 2 http://gidrodinamika.ru/indy/indy.css
+/cms/wp-includes/wlwmanifest.xml 1 -
+/blog/xmlrpc.php 1 -
+/%D0%91%D0%BB%D0%B0%D0%BD%D0%BA 12 -
+/statics/js/kindeditor/asp.net/upload_json.ashx 1 -
+/\xcf\xee\xf7\xf2\xe0 1 -
+/%D0%92%D0%B5%D1%80%D0%BD%D1%83%D1%82%D1%8C%D1%81%D1%8F%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%BE 8 http://www.gidrodinamika.ru/index.php
+/%C1%EB%E0%ED%EA 5 -
+/usage/ 9 -
+/\xce 1 -
+/js/admin.js 1 -
+/feed/ 1 -
+/files/files/characteristics/har/gdmp14-01-e-40-200-a-2-55-y2-har.pdf 1 -
+/gorizontalnie/204 1 -
+/%C3%8F%C3%AE%C3%AB%C3%B3%C3%AF%C3%AE%C3%A3%C3%B0%C3%B3%C3%A6%C3%AD%C3%BB%C3%A5%20%C3%AD%C3%A0%C3%B1%C3%AE%C3%B1%C3%BB 4 -
+/\xc4\xee\xf1\xf2\xe8\xe6\xe5\xed\xe8\xff 1 -
+/files/files/characteristics/obv/gdm7-05-e-8-60-k-4-u2-obv.pdf 1 -
+/catalog/vertikalnie/96 1 -
+/Public/kindeditor/php/upload_json.php 1 -
+/gor 1 -
+/\xd1\xe2\xff\xe7\xfc 1 -
+/gorizontalnie/147 2 -
+/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0 11 -
+/files/files/characteristics/gab/gdmp14-04-e-20-80-k-2,3-15-u2-gab.pdf 1 -
+/js/lang/ru_RU/translate.js 2 http://gidrodinamika.ru/js/lang/ru_RU/translate.js
+/gorizontalnie/137 2 -
+/%C3%83%C3%AB%C3%A0%C3%A2%C3%AD%C3%A0%C3%BF 5 -
+/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F 9 -
+/admin/public/kindeditor/php/upload_json.php 1 -
+/contact.php 35 http://gidrodinamika.ru/contact.php
+/_ignition/execute-solution 1 -
+/css/admin/layout.css 2 http://gidrodinamika.ru/css/admin/layout.css
+/admin/public/kindeditor/asp.net/upload_json.ashx 1 -
+/\xcf\xee\xeb\xf3\xef\xee\xe3\xf0\xf3\xe6\xed\xfb\xe5 1 -
+/vertikalnie/gorizontalnie/103 1 -
+/%D0%A2%D0%B5%D1%85.%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0 8 -
+/vk.com 1 -
+/contact.php%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%EF%BF%BD%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD 1 -
+/www.mail%40gidrodinamika.ru 1 http://www.gidrodinamika.ru/
+/catalog/gor/5-11/gdm5-11-obv.pdf 2 -
+/feeds 1 -
+/wp-content/plugins/ioptimization/IOptimize.php 1 www.google.com
+/admin/public/kindeditor/asp/upload_json.asp 1 -
+/admin/editor/asp/upload_json.asp 1 -
+/\xc7\xe0\xea\xe0\xe7 1 -
+/js/dd_belatedpng.js 4 -
+/vertikalnie/gorizontalnie/240 2 -
+/contact.phprecord.php 1 -
+/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B 37 -
+/%CA%EE%ED%F2%E0%EA%F2%FB 18 -
+/contact.phphonnor.php 1 -
+/admin/textolite.css 2 http://gidrodinamika.ru/admin/textolite.css
+/gorizontalnie/189 1 -
+/editor/asp.net/upload_json.ashx 1 -
+/%CF%F0%EE%E4%F3%EA%F6%E8%FF 7 -
+/catalog/vertikalnie/gorizontalnie/92 1 -
+/catalog/gor/5-011/gdm5-011-har.pdf.pdf 2 -
+/%D0%9B%D0%B5%D1%82%D0%BE 9 -
+/%C3%82%C3%A5%C3%B1%C3%AD%C3%A0 4 -
+/%C3%8E%C3%A1%C3%AB%C3%AE%C3%A6%C3%AA%C3%A0 7 -
+/Scripts/kindeditor/php/upload_json.php 1 -
+/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8 2 -
+/\xc7\xe0\xef\xe0\xf1\xed\xfb\xe5 1 -
+/products 1 http://go.mail.ru/search_images
+/%D0%9F%D0%BE%D1%87%D1%82%D0%B0 7 -
+/cms/ 2 http://gidrodinamika.ru/cms/
+/board/tools.php 1 -
+/gorizontalnie/166 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 605
+212.86.109.31 53 53 0 20210131184317
+85.209.89.216 52 52 0 20210131184106
+185.209.20.147 52 52 0 20210131183057
+45.132.107.248 52 52 0 20210131184141
+85.209.89.217 52 52 0 20210131183613
+85.209.89.224 52 52 0 20210131183731
+185.203.240.129 51 51 0 20210131184244
+194.67.207.94 51 51 0 20210131185440
+185.125.219.13 51 51 0 20210131185238
+185.241.52.68 49 49 0 20210131184128
+77.220.215.153 49 49 0 20210131184354
+185.224.132.45 49 49 0 20210131184811
+85.209.89.241 49 49 0 20210131184058
+85.209.89.205 49 49 0 20210131183652
+185.5.249.185 48 48 0 20210131185555
+194.67.207.9 48 48 0 20210131185316
+194.67.210.77 46 46 0 20210131185450
+193.124.188.83 44 44 0 20210131185858
+193.124.190.18 41 41 0 20210131190454
+193.124.188.188 41 41 0 20210131185958
+193.124.191.92 35 35 0 20210131190556
+89.17.52.118 33 33 549553 20210129120400
+5.1.51.47 22 22 449465 20210118123850
+217.67.179.190 20 20 616255 20210126051955
+94.41.35.132 20 20 297805 20210117052234
+77.41.152.50 1 1 10485 20210115154237
+2a00:1fa2:44ac:748e:cdda:cb4f:f043:26d8 1 1 19162 20210112145046
+195.78.39.188 3 3 85363 20210113162609
+196.242.114.74 1 1 10485 20210108214905
+185.33.202.195 7 7 330702 20210126073033
+54.193.28.187 10 10 49348 20210125081306
+161.35.124.51 1 1 10485 20210118052549
+135.148.33.71 1 1 8029 20210116180330
+185.49.108.253 2 2 17194 20210107060711
+80.95.44.211 1 1 10485 20210127194454
+176.64.17.149 2 2 18514 20210121112556
+95.152.56.54 2 2 20970 20210115012343
+171.22.253.66 1 1 8029 20210117144131
+95.65.81.152 1 1 8029 20210116143251
+156.96.117.54 2 2 20970 20210131153504
+82.209.232.62 6 6 59514 20210128124057
+88.205.235.2 2 2 38324 20210127054851
+175.44.42.145 1 1 10485 20210120215511
+178.122.126.2 3 3 70530 20210114122631
+109.195.14.207 6 6 161762 20210115135511
+38.145.96.99 1 1 10485 20210124155732
+159.224.194.143 4 4 43456 20210106173737
+88.205.233.59 1 1 8753 20210113091204
+18.223.2.230 1 1 10485 20210103181911
+37.212.95.238 2 2 16058 20210115103825
+87.252.246.190 2 2 24942 20210118130722
+217.151.131.92 6 6 119573 20210114101510
+46.56.241.254 8 8 188019 20210105111744
+193.112.248.186 5 5 52425 20210125035621
+213.166.69.250 1 1 10485 20210106012216
+46.53.138.1 2 2 18514 20210119143704
+184.75.209.42 2 2 15246 20210115052124
+2401:5f80:5001:3:2000::215 1 1 10485 20210108010721
+80.95.45.237 1 1 10485 20210114005222
+31.173.100.169 1 1 10485 20210114210114
+136.243.17.161 9 9 74717 20210121025056
+158.255.183.159 2 2 18514 20210131000916
+185.195.25.182 1 1 10485 20210119102915
+31.173.100.252 1 1 10485 20210102174728
+2a01:4f8:162:602e::2 1 1 10485 20210104010210
+107.189.10.37 1 1 8029 20210123233554
+104.244.72.246 1 1 8029 20210113024456
+128.70.246.163 1 1 10485 20210122123152
+185.255.133.240 1 1 10485 20210126155255
+159.203.171.13 1 1 10485 20210128010545
+37.214.45.34 2 2 18514 20210116143752
+141.98.84.29 1 1 10485 20210130110719
+77.94.223.235 1 1 8753 20210118044701
+5.183.92.235 1 1 10485 20210121034916
+173.231.58.194 11 11 115335 20210131173427
+178.124.206.90 11 11 124914 20210115142235
+217.151.131.107 1 1 10485 20210125084333
+85.249.172.243 1 1 10485 20210123024001
+136.169.201.250 9 9 236067 20210112082315
+46.39.229.149 2 2 10485 20210123063924
+2607:5300:60:7627:: 1 1 10485 20210102071355
+93.125.121.180 9 9 96776 20210113105013
+3.15.150.93 6 6 59833 20210131194914
+47.241.17.164 1 1 10485 20210125141100
+80.249.81.23 3 3 32971 20210111135340
+58.87.125.65 2 2 20970 20210118014533
+92.255.198.132 2 2 20970 20210119045246
+95.29.42.110 11 11 87507 20210117030003
+134.255.238.93 2 2 20970 20210117135348
+41.83.109.15 5 5 133260 20210125021009
+213.191.12.95 2 2 68450 20210127072721
+3.238.233.228 1 1 10485 20210103110343
+51.91.123.169 1 1 8029 20210124023247
+178.172.246.52 14 14 163254 20210120124637
+93.125.121.170 1 1 10485 20210126131724
+86.57.132.48 2 2 22486 20210129144819
+111.122.209.83 1 1 10485 20210128010546
+146.120.13.51 2 2 18514 20210111072846
+87.252.246.127 3 3 28999 20210114165537
+45.66.209.210 1 1 8029 20210115022454
+109.197.231.91 1 1 10485 20210119114316
+173.212.219.49 1 1 8029 20210112021432
+194.107.178.236 4 4 32116 20210129214019
+45.113.88.89 1 1 10485 20210114191134
+185.222.57.164 1 1 10485 20210110140154
+188.43.241.106 1 1 19162 20210108042351
+18.191.115.249 1 1 10485 20210101201617
+192.35.168.32 1 1 10485 20210131184059
+5.165.194.221 1 1 8742 20210108131633
+156.96.59.114 1 1 10485 20210128200447
+41.191.204.121 1 1 10485 20210128010545
+3.17.210.127 1 1 10485 20210127195405
+92.255.230.194 1 1 10485 20210125104245
+37.115.195.208 1 1 8029 20210112233459
+2a00:1fa1:c27a:d1dc:4073:4e5c:b819:c96f 1 1 8029 20210113082130
+188.186.4.125 2 2 36554 20210129191227
+13.66.139.82 0 1 14457 
+178.62.74.6 6 6 109769 20210104222818
+3.236.108.175 1 1 10485 20210105201200
+47.52.253.226 1 1 10485 20210108193407
+45.10.232.153 2 2 20970 20210122114202
+176.59.13.205 2 2 69013 20210107010908
+37.212.81.231 4 4 32116 20210122085635
+91.202.78.167 1 1 16926 20210120064850
+5.188.210.4 1 1 8029 20210130084927
+213.183.106.41 6 6 143752 20210118110225
+37.79.35.227 1 1 19162 20210128190933
+195.2.93.63 1 1 10485 20210126024936
+81.171.3.160 1 1 10485 20210120235548
+37.212.48.213 8 8 64232 20210128085846
+80.246.31.55 1 1 10485 20210119184450
+138.68.70.107 6 6 59833 20210104005253
+192.35.168.144 1 1 10485 20210131160510
+178.121.63.67 2 2 18514 20210121135115
+185.31.210.239 3 3 26543 20210121104244
+18.217.194.112 1 1 10485 20210111200952
+46.39.54.56 2 2 20970 20210113092128
+37.212.81.218 2 2 16058 20210115154027
+185.146.214.135 2 2 69175 20210107060711
+18.222.46.25 1 1 10485 20210118201449
+95.217.199.192 1 1 0 20210129230300
+86.57.158.230 2 2 18514 20210116113542
+18.188.114.30 1 1 10485 20210114202009
+178.120.38.138 5 5 47513 20210128123158
+5.62.60.31 1 1 10485 20210128200455
+5.183.92.236 2 2 20970 20210120170758
+44.234.191.228 1 1 10485 20210126043038
+37.215.46.63 1 1 14457 20210126105339
+176.59.210.65 5 5 46573 20210113094917
+5.159.119.23 1 1 19162 20210103023027
+83.171.254.159 1 1 8029 20210114161823
+2a02:c207:2011:9696::1 1 1 8029 20210101040738
+45.145.131.62 3 3 23275 20210114060950
+2a02:6b8:b010:506c::29 2 2 18514 20210113221619
+37.79.46.80 1 1 19162 20210124174142
+87.115.231.171 1 1 10485 20210128200447
+217.12.205.165 1 1 10485 20210105174053
+47.90.50.213 1 1 10485 20210123003614
+93.131.56.187 2 2 18514 20210103234839
+128.74.244.122 1 1 45588 20210111071353
+206.123.139.178 1 1 8029 20210110153245
+14.177.175.163 1 1 8029 20210106090444
+102.64.123.18 1 1 8029 20210101214839
+188.187.128.184 2 2 18514 20210118074841
+165.225.206.171 14 14 157766 20210113161530
+23.94.75.244 1 1 10485 20210123034917
+178.176.113.132 1 1 10485 20210125130901
+84.39.247.62 1 1 10485 20210130141649
+185.54.49.130 2 2 20970 20210131065619
+198.16.66.157 2 2 24955 20210121143619
+178.120.41.36 1 1 10485 20210114140735
+81.9.127.1 1 1 10485 20210127112142
+93.191.100.161 2 2 18514 20210113135546
+118.126.82.125 4 4 41940 20210125122537
+52.114.75.71 1 1 8029 20210114133436
+80.249.83.91 2 2 18514 20210118110647
+111.7.100.18 2 2 20970 20210105014958
+109.252.53.3 1 1 10485 20210120145505
+84.52.90.44 1 1 8739 20210112142858
+37.45.204.24 3 3 28595 20210102183657
+94.25.182.127 1 1 8714 20210120132521
+86.57.172.104 2 2 18514 20210128160715
+66.102.8.167 1 1 10485 20210130022040
+85.30.231.49 16 16 270457 20210126175732
+86.57.248.238 8 8 87529 20210126163816
+141.0.12.100 3 3 28999 20210114122406
+3.15.46.164 1 1 10485 20210117180522
+46.159.133.12 1 1 10485 20210125214240
+92.37.156.172 1 1 19162 20210131143054
+213.166.77.72 1 1 8029 20210115225324
+92.242.18.18 2 2 22486 20210121080508
+145.255.0.253 2 2 120842 20210125150404
+92.50.133.106 6 6 137592 20210126070639
+193.248.249.253 1 1 10485 20210128010547
+171.22.121.69 1 1 8029 20210127034030
+93.88.74.71 1 1 10485 20210115104809
+192.99.19.38 1 1 10485 20210119043956
+135.148.33.67 1 1 8029 20210128161952
+109.252.118.185 2 2 18514 20210113003001
+196.242.114.190 1 1 10485 20210130012854
+91.229.177.171 1 1 8029 20210113013235
+109.234.37.227 1 1 10485 20210129221915
+87.117.164.66 3 3 28999 20210125141338
+51.195.200.181 1 1 8029 20210112170013
+94.198.1.254 3 3 30515 20210125093213
+46.53.245.153 1 1 10485 20210114151035
+2a02:c207:2016:8090::1 1 1 10485 20210118135442
+185.195.26.178 1 1 10485 20210118215842
+37.214.74.231 1 1 10485 20210121210856
+5.157.52.89 1 1 10485 20210130012858
+94.25.169.26 1 1 11770 20210127142343
+193.150.95.79 2 2 56073 20210114122625
+82.145.221.128 2 2 18514 20210118233347
+141.8.142.1 1 1 0 20210122172653
+2a01:4f8:a0:806f::2 1 1 10485 20210128020355
+89.212.202.200 1 1 10485 20210128010545
+85.202.8.5 18 18 217819 20210113191534
+37.212.50.137 2 2 16058 20210111095143
+5.183.93.8 2 2 20970 20210122065420
+212.98.163.11 1 1 10485 20210111145933
+37.146.61.79 1 1 10485 20210108223844
+93.124.116.90 3 3 31455 20210106125810
+46.146.221.36 2 2 19202 20210116153657
+46.183.220.237 1 1 8029 20210128225024
+51.158.68.133 1 1 10485 20210123003457
+81.30.193.114 6 6 103501 20210128072730
+195.210.3.232 1 1 10485 20210128170914
+217.151.131.30 1 1 10485 20210113122939
+31.129.222.17 1 1 45588 20210127103441
+31.173.120.90 2 2 24942 20210111201213
+107.189.10.251 2 2 16058 20210115172310
+66.102.8.163 1 1 10485 20210130022037
+67.213.90.29 4 4 38863 20210112185418
+116.224.131.183 4 4 41940 20210130032623
+85.174.200.11 2 2 3432 20210129190038
+3.235.183.145 1 1 10485 20210110110835
+192.71.12.140 1 1 10485 20210109170025
+141.8.142.3 1 1 0 20210125093159
+3.239.43.0 1 1 10485 20210104201836
+82.209.235.123 1 1 10485 20210119134020
+95.152.55.190 1 1 10485 20210117135406
+86.57.171.38 3 3 35427 20210118090804
+164.215.52.134 1 1 8029 20210123210848
+37.214.49.69 4 4 86964 20210106100926
+91.190.80.3 5 5 51485 20210127111104
+37.214.47.182 1 1 14457 20210117183007
+2603:3005:6a01:500:aaa:10ff:fe11:1d05 1 1 10485 20210128010545
+93.171.200.70 3 3 85363 20210119154116
+185.120.90.149 14 14 256367 20210126051957
+188.40.92.81 1 1 10485 20210101045203
+93.125.121.97 3 3 30515 20210119134638
+80.98.196.73 1 1 10485 20210125040939
+2001:470:1:b95::7366 4 4 41940 20210131140203
+217.160.42.134 1 1 10485 20210129131009
+51.210.242.182 1 1 8029 20210116043025
+85.249.30.131 1 1 10485 20210102150048
+195.191.175.247 1 1 8029 20210118080057
+92.255.225.209 9 9 132500 20210127102514
+173.231.59.125 1 1 10485 20210117224843
+85.202.8.3 3 3 29191 20210111125835
+185.12.124.78 18 18 188730 20210131031351
+194.158.207.161 4 4 37028 20210122121824
+83.169.216.219 2 2 20970 20210128185247
+2a01:4f9:2b:2a04::2 2 2 20970 20210101132949
+51.77.150.147 1 1 8029 20210112021444
+158.255.3.138 4 4 18514 20210109203723
+145.255.21.217 2 2 16058 20210124174114
+198.98.49.178 1 1 8029 20210112170015
+178.124.189.142 9 9 95686 20210127164549
+86.57.159.54 5 5 47513 20210111124814
+91.221.109.101 1 1 10485 20210128193416
+18.210.28.147 1 1 10485 20210124110907
+46.185.117.92 6 6 62910 20210131231909
+113.128.104.214 1 1 10485 20210101130446
+37.215.16.135 5 5 51485 20210118231800
+46.147.96.95 10 10 160193 20210121171817
+54.237.152.195 3 3 31455 20210110123735
+213.222.224.238 6 6 62910 20210130154902
+85.209.151.187 4 4 31304 20210114165033
+37.113.175.244 1 1 8753 20210111231520
+64.246.165.170 1 1 10485 20210119232254
+18.217.170.196 1 1 10485 20210115202405
+176.59.199.252 1 1 19162 20210125132044
+176.214.131.101 1 1 8762 20210115055243
+93.100.155.80 1 1 10485 20210107195907
+91.122.213.86 2 2 20970 20210121135152
+145.255.21.84 1 1 8739 20210119181652
+116.203.60.116 1 1 10485 20210104190446
+2a01:4f8:231:a02::2 1 1 10485 20210113043848
+109.173.67.217 3 3 82907 20210116030316
+37.212.76.75 4 4 32116 20210114085932
+95.165.248.170 4 4 37028 20210119153727
+37.214.58.133 5 5 64341 20210113001811
+185.191.124.153 1 1 8029 20210127081447
+2.62.23.10 2 2 15262 20210107060711
+81.190.25.32 2 2 18514 20210105165505
+106.12.71.7 1 1 10485 20210104084527
+37.233.54.173 1 1 10485 20210128010547
+5.17.161.114 2 2 18514 20210128174616
+88.200.215.69 2 2 70906 20210128220715
+46.53.245.116 5 5 49969 20210114131008
+178.216.124.242 2 2 18514 20210114144613
+176.59.211.247 1 1 19162 20210120105124
+46.8.73.66 1 1 8762 20210122094603
+194.33.45.231 1 1 10485 20210101011741
+194.158.213.197 2 2 18514 20210113124355
+2a00:1fa1:c6a5:c126:3024:7871:e8b5:d566 1 1 8029 20210126073849
+185.86.93.34 1 1 10485 20210125184540
+93.84.182.156 2 2 24942 20210127164045
+178.121.42.52 3 3 39399 20210129180451
+178.120.84.92 4 4 43456 20210125103533
+178.172.192.85 4 4 140215 20210116112643
+82.209.216.73 2 2 20970 20210127135223
+69.175.89.170 1 1 10485 20210127170829
+94.41.7.13 10 10 179494 20210131131558
+183.4.53.219 1 1 10485 20210124031742
+80.67.214.2 1 1 8764 20210110050128
+34.251.149.164 1 1 10485 20210110104149
+220.134.194.168 1 1 10485 20210128010546
+123.123.219.53 2 2 20970 20210128075410
+178.124.209.107 5 5 53941 20210111150332
+94.50.28.206 1 1 10485 20210104113026
+193.169.52.39 1 1 10485 20210119153905
+3.239.206.155 1 1 10485 20210112030521
+45.91.92.130 1 1 10485 20210114120222
+81.88.222.206 1 1 10485 20210108131629
+192.35.168.112 1 1 10485 20210130151558
+178.124.193.185 5 5 55457 20210115134618
+100.10.11.17 1 1 10485 20210128010546
+45.74.23.226 1 1 10485 20210128200447
+2.59.241.174 1 1 10485 20210115103920
+220.181.77.162 4 4 41940 20210120040655
+106.75.246.84 3 3 31455 20210117170309
+199.244.88.132 2 2 20970 20210128031023
+162.142.125.39 1 1 10485 20210128030825
+5.44.172.92 1 1 10485 20210123121435
+2600:1f18:65b9:df03:a407:90bb:67a9:81dd 1 1 10485 20210123024203
+45.94.235.105 1 1 10485 20210108214904
+106.60.13.203 1 1 10485 20210124162640
+66.102.9.90 1 1 10485 20210115142619
+47.242.135.254 2 2 20970 20210107054111
+51.77.246.199 1 1 10485 20210109033845
+91.239.98.96 3 3 32971 20210129120302
+178.124.217.204 8 8 135868 20210119155944
+46.216.19.12 1 1 10485 20210117023909
+51.195.202.145 1 1 8029 20210108010724
+5.2.69.6 1 1 8029 20210113024519
+3.19.53.200 1 1 10485 20210108202300
+3.235.198.183 1 1 10485 20210112201921
+18.218.247.42 1 1 10485 20210106200844
+91.132.107.221 2 2 70906 20210122131047
+188.233.41.157 1 1 10485 20210110113644
+136.169.168.223 1 1 14457 20210103023020
+92.255.164.102 1 1 45588 20210120110757
+194.186.38.98 9 9 84541 20210120104902
+51.15.127.88 1 1 10485 20210119145135
+134.17.208.10 3 3 32971 20210118090949
+31.132.108.151 2 2 18514 20210115122255
+91.144.176.133 9 9 221646 20210125083430
+91.151.176.73 1 1 10485 20210126030329
+120.11.93.104 1 1 8029 20210127140818
+81.23.192.108 3 3 50385 20210118084504
+2a01:4f8:b0:7095::2 3 3 31455 20210111151757
+87.251.171.40 5 5 51485 20210111070051
+195.88.193.25 8 8 157492 20210127191801
+165.225.206.181 2 2 18514 20210113142735
+45.91.239.131 1 1 8029 20210112055712
+103.69.20.108 1 1 8029 20210121065406
+46.0.199.207 7 7 132846 20210118121738
+188.226.2.79 1 1 10485 20210130060515
+135.148.33.100 1 1 8029 20210123233618
+80.95.45.157 4 4 37028 20210113134139
+188.92.108.26 4 4 43456 20210111095415
+37.21.195.131 3 3 55547 20210112123815
+94.190.14.238 5 5 106844 20210118064839
+46.216.188.121 9 9 95881 20210128170851
+91.227.68.139 1 1 10485 20210101113949
+37.214.44.129 1 1 10485 20210120154922
+177.74.119.222 1 1 8029 20210121065425
+86.57.254.172 8 8 128904 20210129141320
+135.148.33.115 1 1 8029 20210112112236
+192.81.131.190 1 1 8029 20210107222049
+176.213.68.236 2 2 20970 20210128200617
+83.174.132.244 3 3 28999 20210127184357
+91.230.101.219 3 3 48663 20210118065743
+181.48.193.42 1 1 10485 20210128010545
+91.219.66.195 1 1 10485 20210121143806
+213.184.225.156 2 2 18514 20210126143554
+192.35.168.64 1 1 10485 20210130185416
+178.124.177.193 2 2 18514 20210121092247
+2a00:1fa1:86f4:1abf:11aa:8092:5528:968c 1 1 8029 20210120091650
+31.173.82.223 1 1 10485 20210124155839
+109.108.40.234 1 1 16926 20210112141850
+141.98.85.211 1 1 8029 20210123052350
+185.88.37.110 1 1 8029 20210115025059
+128.71.165.79 1 1 8592 20210104001617
+192.71.142.35 1 1 10485 20210130191832
+54.215.244.79 1 1 10485 20210125070911
+36.99.136.131 1 1 10485 20210105231504
+2a00:1fa2:44c8:f78d:d0b8:f966:b669:98b3 1 1 8739 20210113185854
+34.242.242.204 1 1 10485 20210107022522
+185.246.193.27 5 5 52425 20210130154848
+95.31.65.151 1 1 8758 20210104165636
+37.112.8.6 1 1 8776 20210102122424
+3.238.187.218 1 1 10485 20210112030128
+46.191.232.9 1 1 10485 20210124153017
+93.191.101.107 1 1 10485 20210125101808
+104.244.77.122 2 2 16058 20210105050547
+2a02:2168:a8db:3394:c825:1e39:e7b3:9f89 2 2 20970 20210126094539
+176.53.186.77 1 1 10485 20210121165557
+31.173.85.151 4 4 93392 20210122131219
+49.235.87.104 1 1 10485 20210128010546
+5.189.116.138 5 5 103478 20210115150519
+2a02:bf0:115:97eb:3a0f:5a2d:93d6:65a9 7 7 67543 20210102102429
+212.160.230.90 1 1 10485 20210128010544
+80.234.43.163 9 9 96837 20210119100447
+82.200.176.14 1 1 10485 20210128010606
+37.19.77.90 1 1 10485 20210127160107
+178.122.20.232 3 3 79794 20210114114704
+37.44.217.80 1 1 10485 20210118090333
+77.79.176.44 12 12 272360 20210105190203
+164.90.128.185 1 1 10485 20210129173914
+80.67.220.5 4 4 40163 20210118072318
+178.184.121.33 1 1 8029 20210107123750
+212.98.179.101 2 2 18514 20210126075937
+185.13.112.141 1 1 14457 20210118212305
+217.118.90.48 2 2 15330 20210121061141
+37.212.90.95 1 1 8029 20210129090126
+212.98.162.249 1 1 10485 20210112130448
+31.148.202.78 4 4 45705 20210114133537
+46.56.224.97 4 4 93392 20210114093632
+31.173.112.6 2 2 17528 20210115125343
+46.56.201.195 6 6 53941 20210104122313
+54.219.59.1 1 1 10485 20210125081257
+46.216.189.185 2 2 20970 20210117152209
+101.51.141.106 1 1 7217 20210116143256
+124.206.180.139 1 1 10485 20210105204841
+193.34.232.20 3 3 79794 20210126120036
+37.113.188.247 3 3 31455 20210105120347
+46.180.14.7 2 2 20970 20210101115743
+213.87.196.126 3 3 64102 20210115162653
+185.77.207.168 2 2 17362 20210114165036
+178.127.239.249 3 3 78935 20210125100916
+139.155.88.164 3 3 31455 20210123223436
+82.151.115.17 1 1 10485 20210127150750
+52.90.49.96 1 1 10485 20210119191340
+188.34.204.204 1 1 10485 20210128155252
+89.110.24.227 1 1 8751 20210128090016
+36.99.136.132 1 1 10485 20210105231122
+178.49.9.239 1 1 10485 20210106100729
+178.120.32.238 5 5 48130 20210124213837
+5.100.200.11 1 1 10485 20210105113658
+77.95.131.87 3 3 81391 20210129141748
+34.196.237.253 1 1 10485 20210128185339
+178.176.72.76 1 1 10485 20210117231732
+188.186.108.15 1 1 8762 20210110180022
+193.218.118.235 1 1 8029 20210109225744
+2a00:1fa1:865a:da75:5dab:25ce:17b5:b372 8 8 118785 20210125184614
+78.142.239.9 1 1 8029 20210101111924
+109.195.35.167 15 15 268856 20210126132727
+217.66.158.218 1 1 10485 20210122171054
+135.148.33.119 1 1 8029 20210128192340
+5.183.130.101 3 3 24087 20210107002438
+194.158.201.205 2 2 18514 20210120154109
+213.184.226.207 5 5 49029 20210128160240
+95.79.169.184 1 1 8742 20210110114620
+176.213.245.60 1 1 10485 20210113222115
+185.86.93.60 1 1 10485 20210112195724
+195.239.158.58 7 7 138365 20210126151929
+90.188.228.149 5 5 170820 20210129105851
+5.187.72.18 1 1 10485 20210117173624
+77.20.15.40 2 2 20970 20210104025218
+212.164.204.71 1 1 10485 20210117041007
+193.58.255.232 2 2 18514 20210121114956
+2001:6d0:ffc8:a0e9:: 1 1 10485 20210129122009
+178.172.160.61 4 4 32116 20210128060554
+2.58.12.217 1 1 8029 20210124183818
+62.245.112.161 1 1 10485 20210114114055
+80.83.237.120 3 3 78071 20210115194502
+46.185.127.176 3 3 31455 20210101162747
+178.121.38.250 2 2 18514 20210128123808
+170.106.109.160 6 6 62910 20210125230536
+37.17.64.242 5 5 49029 20210122142046
+81.222.186.131 5 5 41790 20210126152516
+192.36.71.133 1 1 10485 20210104105924
+31.173.80.80 1 1 10485 20210110122737
+109.124.238.111 2 2 25415 20210107060711
+46.216.188.47 4 4 41000 20210113112702
+34.240.85.196 1 1 10485 20210103105944
+176.59.16.223 2 2 69013 20210104115103
+136.169.233.180 6 6 70854 20210129101901
+194.158.207.163 2 2 18514 20210115124119
+178.124.192.243 1 1 10485 20210113174524
+91.200.226.209 2 2 18514 20210111153009
+78.188.37.162 1 1 10485 20210128010549
+94.130.131.80 1 1 10485 20210129084926
+5.188.45.39 2 2 20970 20210131193058
+175.44.42.130 1 1 10485 20210105130920
+3.231.228.248 1 1 10485 20210131110221
+188.130.243.58 2 2 33619 20210125144816
+91.213.44.192 1 1 8605 20210118154830
+102.64.122.81 1 1 8029 20210115125127
+193.218.118.135 2 2 16058 20210112081620
+3.249.250.149 1 1 10485 20210120071637
+3.139.77.162 1 1 10485 20210117110754
+185.236.66.198 1 1 10485 20210113145444
+216.19.223.171 1 1 10485 20210103032713
+93.85.180.53 2 2 20970 20210124132450
+194.28.147.126 3 3 64102 20210115134823
+163.172.110.238 1 1 10485 20210128220049
+94.181.78.112 1 1 23721 20210114093844
+134.17.6.91 1 1 10485 20210115094245
+188.163.109.153 2 2 16058 20210118074030
+37.204.158.158 1 1 10485 20210115231211
+90.150.82.205 1 1 8764 20210125131311
+109.111.143.175 1 1 10485 20210104051122
+109.194.244.248 3 3 31455 20210123072420
+37.17.54.172 5 5 170970 20210116092146
+36.99.136.134 1 1 10485 20210105231452
+5.44.169.3 2 2 24942 20210131172239
+203.160.58.194 1 1 10485 20210128171847
+85.187.121.186 1 1 10485 20210128010545
+192.71.30.89 1 1 10485 20210114222515
+83.149.37.160 1 1 10485 20210102041816
+5.100.192.66 1 1 10485 20210120134611
+3.250.235.124 2 2 20970 20210116072826
+104.236.49.149 1 1 10485 20210101014437
+168.235.198.213 1 1 21178 20210128055150
+195.206.39.146 1 1 21178 20210112070444
+87.252.232.10 2 2 24942 20210126152348
+37.214.75.51 2 2 20970 20210121201852
+92.62.129.191 10 10 102970 20210127153600
+188.233.25.128 1 1 19162 20210126052309
+82.146.47.210 2 2 20970 20210130050359
+178.124.185.25 1 1 10485 20210112112855
+212.66.63.90 2 2 16768 20210126151900
+45.84.83.31 1 1 10485 20210111065433
+5.45.82.205 1 1 10485 20210108145643
+52.211.234.231 2 2 19540 20210103034759
+93.124.48.45 1 1 10485 20210128222630
+196.244.4.120 1 1 10485 20210127212017
+188.115.137.96 1 1 8029 20210115112306
+191.101.250.113 1 1 10485 20210111014443
+178.62.91.140 1 1 10485 20210110190328
+37.214.51.97 2 2 20970 20210125124111
+3.134.82.146 1 1 10485 20210107202146
+45.87.2.128 2 2 16058 20210118183446
+46.56.246.118 2 2 18514 20210110111119
+85.208.85.69 1 1 8029 20210115122821
+18.205.96.38 1 1 10485 20210110181834
+192.71.23.211 1 1 10485 20210119161542
+89.113.143.93 3 3 89252 20210117005919
+178.154.253.85 1 1 10485 20210113103441
+47.242.151.73 1 1 10485 20210104062228
+2603:9001:ff00:5e:58b4:6548:6a6c:94b4 1 1 10485 20210128010545
+217.151.131.31 5 5 87298 20210126073029
+176.59.200.146 1 1 19162 20210125093821
+51.222.43.125 6 6 59833 20210109032059
+2a02:6b8:b010:7016::37 2 2 18514 20210113221917
+95.170.153.226 8 8 82000 20210119122112
+37.157.31.99 2 2 24942 20210127094059
+178.168.214.78 2 2 18514 20210112171545
+37.9.13.48 2 2 16058 20210126222451
+103.221.235.51 1 1 8029 20210114163010
+103.251.221.222 1 1 10485 20210128010546
+109.111.88.253 4 4 41713 20210118090202
+176.60.240.9 5 5 119761 20210129083731
+46.216.84.30 3 3 120466 20210113171130
+184.94.240.92 1 1 10485 20210124150204
+37.113.171.164 1 1 8742 20210102222607
+213.184.248.17 6 6 55542 20210114121420
+72.13.46.3 3 3 28186 20210115024142
+46.216.225.138 1 1 10485 20210115101539
+178.127.113.3 4 4 41940 20210113192059
+54.247.10.191 2 2 19540 20210105024937
+46.53.244.4 1 1 10485 20210111004925
+52.80.228.24 1 1 10485 20210106231037
+178.127.150.224 2 2 24942 20210126143012
+103.247.151.190 1 1 10485 20210127212022
+34.254.221.55 2 2 19540 20210101041424
+109.174.19.134 1 1 8029 20210110074113
+5.18.185.199 1 1 10485 20210102150638
+176.59.57.24 10 10 185426 20210122100309
+178.214.247.105 1 1 16926 20210128120519
+178.207.8.32 2 2 17524 20210126092900
+31.177.65.28 1 1 10485 20210117064908
+5.1.51.32 7 7 111941 20210128125402
+2a02:bf0:140f:b5d0:cdae:762f:175f:3cbc 1 1 10485 20210116174326
+192.35.168.128 2 2 20970 20210129183701
+37.230.136.163 3 3 43371 20210118114912
+151.80.148.185 1 1 8029 20210115224615
+3.250.68.80 1 1 10485 20210105022019
+92.255.197.126 1 1 10485 20210120114821
+80.250.86.194 1 1 10485 20210123091450
+2a01:4f8:173:1bc2::2 3 3 31455 20210115073256
+37.17.31.194 13 13 209513 20210114102012
+185.152.136.105 10 10 100514 20210122102002
+3.236.243.247 1 1 10485 20210113200758
+84.21.227.110 5 5 107849 20210122172643
+37.214.130.14 3 3 29191 20210120114748
+37.215.12.245 1 1 14457 20210121185529
+5.165.222.173 1 1 21178 20210129210301
+178.124.178.247 2 2 18514 20210129090346
+5.107.131.12 1 1 10485 20210130063610
+178.250.157.75 1 1 8029 20210102110633
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20210101 21 21 212903 17
+20210102 63 63 203109 55
+20210103 58 58 176523 56
+20210104 76 76 446211 60
+20210105 84 84 716823 60
+20210106 69 69 353730 53
+20210107 67 67 349083 60
+20210108 58 58 180267 57
+20210109 35 35 117831 27
+20210110 53 53 194689 50
+20210111 85 85 488973 61
+20210112 105 105 953426 75
+20210113 137 137 1235493 77
+20210114 114 114 994201 77
+20210115 141 141 1436031 83
+20210116 67 67 579684 54
+20210117 50 50 404342 39
+20210118 129 129 1252021 78
+20210119 80 80 700788 50
+20210120 69 69 522195 48
+20210121 81 81 650179 50
+20210122 82 82 633816 60
+20210123 63 63 236802 56
+20210124 37 37 275164 31
+20210125 94 94 981565 59
+20210126 138 138 2494373 50
+20210127 101 101 861228 68
+20210128 144 145 1372994 101
+20210129 85 85 884516 52
+20210130 48 48 196759 48
+20210131 72 72 365897 59
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 2
+5mn-15mn 23
+30mn-1h 11
+0s-30s 1649
+15mn-30mn 9
+30s-2mn 45
+2mn-5mn 32
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 12
+/ 1591 5955480 1504 1367
+/contact.php 330 2643971 110 213
+/products.php 251 7428823 59 90
+/index.php 145 1430633 45 33
+/about.php 127 1836039 19 37
+/news.php 43 701416 27 23
+/record.php 10 127010 6 5
+/search_page.php 3 279334 0 1
+/blank.php 2 32774 0 1
+/catalog/gor/21/ 2 3432 1 1
+/catalog/gor/9-041/ 1 1740 0 0
+/honnor.php 1 16507 0 0
+END_SIDER

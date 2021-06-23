@@ -1,0 +1,34 @@
+/* IE hacks */
+div#header img#logo{height:158px; left:0; position:absolute; top:25px; width:395px;}
+/* HOME ------------------------------------------------------------*/
+div.holder div.block{}
+/* ABOUT ------------------------------------------------------------*/
+div.fade-slide img{height:345px; width:960px;}
+div.separator{border-bottom:0px none;}
+/* FOOTER ------------------------------------------------------------*/
+div#footer div.footer-cols div{background:url(../img/footer-separator.png) no-repeat top right; float:left; margin:0 1px; min-height:170px; width:238px;}
+
+
+
+div#wrapper{margin:0 auto;/*не работает в ie5*/
+	position:relative;
+	width:960px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------для кнопки GO прозрачность png---------------------------------------*/
+form#keyword input#go{background:url(../img/go-button.png) no-repeat; border:0; height:49px; position:absolute; right:20px; top:-2px; width:49px;}

@@ -1,0 +1,30 @@
+b{font-weight:bolder;}/*Полужирный*/
+bx1{font-weight:bolder;font-style:italic;}/*Полужирный курсив*/
+i{font-style:italic;}/*Курсив*/
+s{text-decoration:line-through;}/*Вычеркнутый текст*/
+sub{vertical-align:sub;}/*Нижний индекс*/
+sup{vertical-align:super;}/*Верхний индекс*/
+u{text-decoration:underline;}/*Подчеркнутый*/
+center{text-align:center;}/*Текст по центру*/
+right{text-align:right;}/*текст справа*/
+/*++++++++++++++++++++++++++++++++(шрифты)++++++++++++++++++++++++++++++++++++*/
+arl{font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;}
+arl_b{font-family: "Arial Black", "Helvetica CY", "Nimbus Sans L" sans-serif;}
+comic{font-family: "Comic Sans MS", "Monaco CY", cursive;}
+cour{font-family: "Courier New", "Nimbus Mono L", monospace;}
+geor{font-family: Georgia, "Century Schoolbook L", Serif;}
+imp{font-family: Impact, "Charcoal CY", sans-serif;}
+luc_c{font-family: "Lucida Console", Monaco, monospace;}
+luc{font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+pal{font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+tah{font-family: Tahoma, "Geneva CY", sans-serif;}
+tnr{font-family: "Times New Roman", "Times CY", "Nimbus Roman No9 L", serif;}
+treb{font-family: "Trebuchet MS", "Helvetica CY", sans-serif;}
+ver{font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;}
+/*+++++++++++++++++++++++++++++++++++(цвета)+++++++++++++++++++++++++++++++++++++++++*/
+red{color:#F00;}
+green{color:#060;}
+blue{color:#009;}
+brown{color:#5B2E00;}
+grey{color:#333;}
+sky_b{color:#0FF;}
