@@ -1,8 +1,8 @@
 # host files, protections, temporary files of Gidrodinamika 
 
-/gidrodinamika.ru/home/gidrodin/cache/**
+/gidrodinamika.ru/home/gidrodin/cache/*
 
-/gidrodinamika.ru/home/gidrodin/etc/**
+/gidrodinamika.ru/home/gidrodin/etc/*
 
 *.log
 !error.log
@@ -27,5 +27,7 @@ robots.txt
 /gidrodinamika.ru/home/gidrodin/ssl/csrs/**
 /gidrodinamika.ru/home/gidrodin/ssl/keys/**
 /gidrodinamika.ru/home/gidrodin/ssl/**
+ssl.db
+ssl.db.cache
 
 /gidrodinamika.ru/home/gidrodin/tmp/**
