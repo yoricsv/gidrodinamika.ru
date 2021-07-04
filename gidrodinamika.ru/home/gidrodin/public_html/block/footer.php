@@ -1,155 +1,164 @@
-		<div id="footer">
-			<div id="footer-wrapper">
-				<ul id="follow">
-					<li>
-						<p>Мы в: </p>
-					</li>
-					<li>
-						<a href="" onclick="this.href=''">
-							<img src="img/twitter.png" alt="Twitter"/>
-						</a>
-					</li>
-					<li>
-						<a href="" onclick="this.href=''">
-							<img src="img/facebook.png" alt="Facebook"/>
-						</a>
-					</li>
-					<li>
-						<a href="" onclick="this.href=''">
-							<img src="img/linkedln.png" alt="In"/>
-						</a>
-					</li>
-					<li>
-						<a href="" onclick="this.href=''">
-							<img src="img/rss.png" alt="RSS"/>
-						</a>
-					</li>
-				</ul>
-				<div class="footer-cols">
-					<div>
-						<ul>
-							<li>
-								<a href="Обложка" onclick="this.href=''">
-									Обложка
-								</a>
-							</li>
-							<li>
-								<a href="Весна" onclick="this.href=''">
-									Весна
-								</a>
-							</li>
-							<li>
-								<a href="Лето" onclick="this.href=''">
-									Лето
-								</a>
-							</li>
-							<li>
-								<a href="Осень" onclick="this.href=''">
-									Осень
-								</a>
-							</li>
-							<li>
-								<a href="Зима" onclick="this.href=''">
-									Зима
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li>
-								<a href="Продукция" onclick="this.href=''">
-									Продукция
-								</a>
-							</li>
-							<li>
-								<a href="Бланк" onclick="this.href=''">
-									Бланк
-								</a>
-							</li>
-							<li>
-								<a href="Компания" onclick="this.href=''">
-									Компания
-								</a>
-							</li>
-							<li>
-								<a href="Достижения" onclick="this.href=''">
-									Достижения
-								</a>
-							</li>
-							<li>
-								<a href="Лицензии" onclick="this.href=''">
-									Лицензии
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li>
-								<a href="Заказ" onclick="this.href=''">
-									Заказ
-								</a>
-							</li>
-							<li>
-								<a href="Бланк" onclick="this.href=''">
-									Бланк
-								</a>
-							</li>
-							<li>
-								<a href="Почта" onclick="this.href=''">
-									Почта
-								</a>
-							</li>
-							<li>
-								<a href="Обратная связь" onclick="this.href=''">
-									Обратная связь
-								</a>
-							</li>
-							<li>
-								<a href="Контакты" onclick="this.href=''">
-									Контакты
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="last">
-						<ul>
-							<li>
-								<a href="Связь и консультация" onclick="this.href=''">
-									Связь и консультация
-								</a>
-							</li>
-							<li>
-								<a href="Маркетинг" onclick="this.href=''">
-									Маркетинг
-								</a>
-							</li>
-							<li>
-								<a href="Тех. поддержка" onclick="this.href=''">
-									Тех. поддержка
-								</a>
-							</li>
-							<li>
-								<a href="Запасные части" onclick="this.href=''">
-									Запасные части
-								</a>
-							</li>
-							<li>
-								<a href="Представители" onclick="this.href=''">
-									Представители
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p class="legal">
-						Верстка и программирование 
-						<a href="ссылка vk.com" onclick="this.href='http://vk.com/yoricsv'">
-							Selivonchyk
-						</a>
-					</p>
-				</div>
-			</div>
-		</div>
+<div id = "footer">
+    <div id = "footer-wrapper">
+
+        <ul id = "follow">
+            <li>
+                <p>
+				    РњС‹ РІ:
+				</p>
+            </li>
+
+            <li>
+                <a	href 	    = "" 
+					onclick     = "this.href = ''">
+                    <img    alt = "Twitter" 
+					        src = "img/twitter.png"/>
+                </a>
+            </li>
+            <li>
+                <a  href        = "" 
+				    onclick     = "this.href = ''">
+                    <img   alt  = "Facebook"
+					       src  = "img/facebook.png" />
+                </a>
+            </li>
+            <li>
+                <a href = "" onclick = "this.href = ''">
+                    <img src = "img/linkedln.png" alt = "In"/>
+                </a>
+            </li>
+            <li>
+                <a href = "" onclick = "this.href = ''">
+                    <img src = "img/rss.png" alt = "RSS"/>
+                </a>
+            </li>
+        </ul>
+        
+		<div class = "footer-cols">
+            <div>
+                <ul>
+                    <li>
+                        <a href = "РћР±Р»РѕР¶РєР°" onclick = "this.href = ''">
+                            РћР±Р»РѕР¶РєР°
+                        </a>
+                    </li>
+                <li>
+                    <a href = "Р’РµСЃРЅР°" onclick = "this.href = ''">
+                        Р’РµСЃРЅР°
+                    </a>
+                </li>
+                            <li>
+                                <a href = "Р›РµС‚Рѕ" onclick = "this.href = ''">
+                                    Р›РµС‚Рѕ
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РћСЃРµРЅСЊ" onclick = "this.href = ''">
+                                    РћСЃРµРЅСЊ
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "Р—РёРјР°" onclick = "this.href = ''">
+                                    Р—РёРјР°
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href = "РџСЂРѕРґСѓРєС†РёСЏ" onclick = "this.href = ''">
+                                    РџСЂРѕРґСѓРєС†РёСЏ
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "Р‘Р»Р°РЅРє" onclick = "this.href = ''">
+                                    Р‘Р»Р°РЅРє
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РљРѕРјРїР°РЅРёСЏ" onclick = "this.href = ''">
+                                    РљРѕРјРїР°РЅРёСЏ
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "Р”РѕСЃС‚РёР¶РµРЅРёСЏ" onclick = "this.href = ''">
+                                    Р”РѕСЃС‚РёР¶РµРЅРёСЏ
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "Р›РёС†РµРЅР·РёРё" onclick = "this.href = ''">
+                                    Р›РёС†РµРЅР·РёРё
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href = "Р—Р°РєР°Р·" onclick = "this.href = ''">
+                                    Р—Р°РєР°Р·
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "Р‘Р»Р°РЅРє" onclick = "this.href = ''">
+                                    Р‘Р»Р°РЅРє
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РџРѕС‡С‚Р°" onclick = "this.href = ''">
+                                    РџРѕС‡С‚Р°
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ" onclick = "this.href = ''">
+                                    РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РљРѕРЅС‚Р°РєС‚С‹" onclick = "this.href = ''">
+                                    РљРѕРЅС‚Р°РєС‚С‹
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "last">
+                        <ul>
+                            <li>
+                                <a href = "РЎРІСЏР·СЊ Рё РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ" onclick = "this.href = ''">
+                                    РЎРІСЏР·СЊ Рё РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РњР°СЂРєРµС‚РёРЅРі" onclick = "this.href = ''">
+                                    РњР°СЂРєРµС‚РёРЅРі
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РўРµС…. РїРѕРґРґРµСЂР¶РєР°" onclick = "this.href = ''">
+                                    РўРµС…. РїРѕРґРґРµСЂР¶РєР°
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "Р—Р°РїР°СЃРЅС‹Рµ С‡Р°СЃС‚Рё" onclick = "this.href = ''">
+                                    Р—Р°РїР°СЃРЅС‹Рµ С‡Р°СЃС‚Рё
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "РџСЂРµРґСЃС‚Р°РІРёС‚РµР»Рё" onclick = "this.href = ''">
+                                    РџСЂРµРґСЃС‚Р°РІРёС‚РµР»Рё
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "footer-bottom">
+                    <p class = "legal">
+                        Р’РµСЂСЃС‚РєР° Рё РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ 
+                        <a href = "СЃСЃС‹Р»РєР° vk.com" onclick = "this.href = 'http://vk.com/yoricsv'">
+                            Selivonchyk
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
