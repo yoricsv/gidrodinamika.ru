@@ -1,4 +1,7 @@
-# host files, protections, temporary files of Gidrodinamika 
+# host files, protections, temporary files of Gidrodinamika
+
+# all Database of gidrodinamika site 
+gidrodin_gid.sql
 
 /gidrodinamika.ru/home/gidrodin/cache/*
 
