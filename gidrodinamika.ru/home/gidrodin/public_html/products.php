@@ -1,6 +1,29 @@
-<?php include("block/db.php");include("block/filter_array_post_get_request.php");$myrow=mysql_fetch_array(mysql_query("SELECT meta_d,meta_k,title FROM settings WHERE page='products'",$db));mysql_close($db); 
+<?php
+include("block/db.php");
+include("block/filter_array_post_get_request.php");
 
-$set_var = array("hid_line_ins","hid_line_finder","a","a6","a5","p","kav","ins","cat","m","ro","t","w","h","q","hid_line_imager","hid_line");//products.php
+$query = mysql_query ("
+            SELECT
+                meta_d,
+			    meta_k,
+			    title
+			FROM
+			    settings
+			WHERE
+			    page ='products'",
+		$db);
+
+$myrow      = mysql_fetch_array ($query);
+mysql_close($db); 
+
+$set_var    = array(
+                "hid_line_ins",	"hid_line_finder",
+"a",
+                    "a6",           "a5",               "p",
+					"kav",          "ins",              "cat",
+					"m",            "ro",               "t",
+					"w",            "h",                "q",
+					"hid_line_imager",          "hid_line");//products.php
 foreach($set_var as $key => $val){
 	if(empty($$val)){
 			$$val='';
@@ -78,8 +101,8 @@ if(isset($_REQUEST['id'])&&!empty($_REQUEST['id'])&&is_numeric(trim($_REQUEST['i
 <body>
 <div class='hold_admin' id='right_holder_admin'>
 	<div class='navbar'>
-		<a href='#top' class='scroll_to_top' title='Вернуться к началу страницы'><img src="img/arrow_top_oval.png"></a>
-		<a href='javascript:history.back()' class='scroll_return' title='Вернуться обратно'><img src="img/arrow_return_oval.png"></a>
+		<a href='#top' class='scroll_to_top' title='пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'><img src="img/arrow_top_oval.png"></a>
+		<a href='javascript:history.back()' class='scroll_return' title='пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'><img src="img/arrow_return_oval.png"></a>
 	</div>
 </div>
 <div id="wrapper">
@@ -90,24 +113,24 @@ if(isset($_REQUEST['id'])&&!empty($_REQUEST['id'])&&is_numeric(trim($_REQUEST['i
 	</div>
 	<div id="main">
 		<p class="section-title">
-			<span class="title custom">Продукция</span>
-			<span class="desc">Отбор и поиск продукции</span>
+			<span class="title custom">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</span>
+			<span class="desc">пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</span>
 		</p>
 		<div class='download'>
 			<a href='files/gidrodinamika_cat_2014.pdf' target='_blank'>
-			<img src='img/icons/ico-pdf.png'><span>Скачать » Каталог продукции 2015 г.</span></a>
+			<img src='img/icons/ico-pdf.png'><span>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2015 пїЅ.</span></a>
 		</div>
 <?php
 switch($ins){
 	case 1:
-		$kav_input_find="<p>Кав. зап., hдоп.:<input name='kav' id='kav' type='text' value='$kav' size='2'/> м</p>";
-		$p_input_find="<p>Давл. на вх., P:<input name='p' id='p' type='text' value='$p' size='2'/> МПа</p>";
-		$kav_p_general_car="<span class='str'>hдоп</span> - допускаемый кавитационный запас, м;<br>
-				<span class='str'>P</span> - давление перекачиваемой жидкости на входе, МПа;<br>";
+		$kav_input_find="<p>пїЅпїЅпїЅ. пїЅпїЅпїЅ., hпїЅпїЅпїЅ.:<input name='kav' id='kav' type='text' value='$kav' size='2'/> пїЅ</p>";
+		$p_input_find="<p>пїЅпїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅ., P:<input name='p' id='p' type='text' value='$p' size='2'/> пїЅпїЅпїЅ</p>";
+		$kav_p_general_car="<span class='str'>hпїЅпїЅпїЅ</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ;<br>
+				<span class='str'>P</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ;<br>";
 		$kav_p_sort="<li>
 				<form action='products.php' method='post'>
 					<input type='hidden' value='$a5' name='a'>$hid_line_finder $hid_line_ins
-					<input type='submit' value='hдоп.' name='send_finder'>
+					<input type='submit' value='hпїЅпїЅпїЅ.' name='send_finder'>
 				</form>
 			</li>
 			<li>
@@ -126,14 +149,14 @@ switch($ins){
 		$input_width="style='width:33px;'";
 	break;
 	default:
-		$kav_input_find="<p>Кав. зап., hдоп.:<input name='kav' id='kav' type='text' value='$kav' size='2'/> м</p>";
-		$p_input_find="<p>Давл. на вх., P:<input name='p' id='p' type='text' value='$p' size='2'/> МПа</p>";
-		$kav_p_general_car="<span class='str'>hдоп</span> - допускаемый кавитационный запас, м;<br>
-				<span class='str'>P</span> - давление перекачиваемой жидкости на входе, МПа;<br>";
+		$kav_input_find="<p>пїЅпїЅпїЅ. пїЅпїЅпїЅ., hпїЅпїЅпїЅ.:<input name='kav' id='kav' type='text' value='$kav' size='2'/> пїЅ</p>";
+		$p_input_find="<p>пїЅпїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅ., P:<input name='p' id='p' type='text' value='$p' size='2'/> пїЅпїЅпїЅ</p>";
+		$kav_p_general_car="<span class='str'>hпїЅпїЅпїЅ</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ;<br>
+				<span class='str'>P</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ;<br>";
 		$kav_p_sort="<li>
 				<form action='products.php' method='post'>
 					<input type='hidden' value='$a5' name='a'>$hid_line_finder $hid_line_ins
-					<input type='submit' value='hдоп.' name='send_finder'>
+					<input type='submit' value='hпїЅпїЅпїЅ.' name='send_finder'>
 				</form>
 			</li>
 			<li>
@@ -153,14 +176,14 @@ switch($ret_single){
 				<a href="?ins=1">
 				<figure>
 					<img src="img/dummies/nasos2b.png"/>
-					<figcaption class="caption">Горизонтальные насосные агрегаты</figcaption>
+					<figcaption class="caption">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</figcaption>
 				</figure></a>
 			</div>
 			<div class="vert">
 				<a href="?ins=2">
 				<figure>
 					<img src="img/dummies/nasos1b.png"/>
-					<figcaption class="caption">Вертикальные полупогружные насосные агрегаты</figcaption>
+					<figcaption class="caption">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</figcaption>
 				</figure></a>
 			</div>
 		</div>
@@ -169,42 +192,42 @@ here;
 		<!-- filter_finder -->
 		<form id="filter" action="products.php" method="post">
 			<div id="finder">
-				<p><input type="submit" value="НАЙТИ" name="send_finder" id="send_finder" width="110px"/></p>
+				<p><input type="submit" value="пїЅпїЅпїЅпїЅпїЅ" name="send_finder" id="send_finder" width="110px"/></p>
 				<div class='f_line'>
-					<p>Подача, Q:<input name="q" id="q" type="text" value="$q" size="2"/> м<sup>3</sup>/ч</p>
-					<p>Напор, H:<input name="h" id="h" type="text" value="$h" size="2"/> м</p>
-					<p>Мощность, W:<input name="w" id="w" type="text" value="$w" size="2"/> кВт</p>
+					<p>пїЅпїЅпїЅпїЅпїЅпїЅ, Q:<input name="q" id="q" type="text" value="$q" size="2"/> пїЅ<sup>3</sup>/пїЅ</p>
+					<p>пїЅпїЅпїЅпїЅпїЅ, H:<input name="h" id="h" type="text" value="$h" size="2"/> пїЅ</p>
+					<p>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, W:<input name="w" id="w" type="text" value="$w" size="2"/> пїЅпїЅпїЅ</p>
 					$kav_input_find
 				</div>
 				<div class='s_line'>
 					$p_input_find
-					<p>Темп. жид., T:<input name="t" id="t" type="text" value="$t" size="2"/> °С</p>
-					<p>Плотность, p:<input name="ro" id="ro" type="text" value="$ro" size="2"/> кг/м<sup>3</sup></p>
-					<p>Масса, m:<input name="m" id="m" type="text" value="$m" size="2"/> кг</p>
+					<p>пїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ., T:<input name="t" id="t" type="text" value="$t" size="2"/> пїЅпїЅ</p>
+					<p>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, p:<input name="ro" id="ro" type="text" value="$ro" size="2"/> пїЅпїЅ/пїЅ<sup>3</sup></p>
+					<p>пїЅпїЅпїЅпїЅпїЅ, m:<input name="m" id="m" type="text" value="$m" size="2"/> пїЅпїЅ</p>
 					$hid_line_ins $hid_line
 				</div>
 			</div>
 		</form>
 here;
 		echo <<<here
-		<h2 class="str">Основные технические характеристики</h2>
+		<h2 class="str">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</h2>
 			<p>
-				<span class="str">Q</span> - подача, м<sup>3</sup>/ч;<br>
-				<span class="str">H</span> - напор, м;<br>
-				<span class="str">W</span> - мощность электродвигателя, кВт;<br>
+				<span class="str">Q</span> - пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ<sup>3</sup>/пїЅ;<br>
+				<span class="str">H</span> - пїЅпїЅпїЅпїЅпїЅ, пїЅ;<br>
+				<span class="str">W</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ;<br>
 				$kav_p_general_car
-				<span class="str">T</span> - температура перекачиваемой жидкости, °С;<br>
-				<span class="str">p</span> - плотность перекачиваемой жидкости, кг/м<sup>3</sup>;<br>
-				<span class="str">m</span> - масса агрегата, кг;
+				<span class="str">T</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ;<br>
+				<span class="str">p</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ/пїЅ<sup>3</sup>;<br>
+				<span class="str">m</span> - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ;
 			</p>
 		<br>
 		<!-- filter_sort -->
 		<ul id="filter">
-			<li>ФИЛЬТР: </li>
+			<li>пїЅпїЅпїЅпїЅпїЅпїЅ: </li>
 			<li>
 				<form class="fir_button" action='products.php' method='post'>
 					<input type="hidden" value="$a1" name="a">$hid_line_finder $hid_line_ins
-					<input type="submit" value="Наименование" name="send_finder">
+					<input type="submit" value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" name="send_finder">
 				</form>
 			</li>
 			<li><form action='products.php' method='post'>
@@ -273,24 +296,24 @@ here;
 		echo "
 <div class='one_pro'>
 	<h1>$myrow_sin[name]</h1>
-	<h5>Основные технические характеристики</h5>
+	<h5>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</h5>
 	<p>
-		Подача, Q: <span><strong>".$myrow_sin['pump_q']."</strong> м<sup>3</sup>/ч</span><br>
-		Напор, H: <span><strong>".$myrow_sin['pump_h']."</strong> м</span><br>";
-		echo ($myrow_sin['pump_kav']==0)?"":"Допускаемый кавитационный запас, hдоп.: <span>не более <strong>".$myrow_sin['pump_kav']." </strong> м</span><br>";
-		echo ($myrow_sin['pump_ro']==0)?"":"Плотность перекачиваемой жидкости, p: <span>до <strong>".$myrow_sin['pump_ro']."</strong> кг/м<sup>3</sup></span><br>";
-		echo ($myrow_sin['pump_t']==0)?"":"Температура перекачиваемой жидкости, T: <span>не более <strong>".$myrow_sin['pump_t']."</strong> °С</span><br>";
-		echo ($myrow_sin['pump_p']==0)?"":"Давление на входе, Pвх: <span>не более <strong>".$myrow_sin['pump_p']."</strong> МПа</span><br>";
-		echo "Мощность электродвигателя, W: <span><strong>".$myrow_sin['pump_w']."</strong> кВт</span><br>";
-		echo ($myrow_sin['pump_m']==0)?"":"Масса, m: <span><strong>".$myrow_sin['pump_m']."</strong> кг</span><br>";
+		пїЅпїЅпїЅпїЅпїЅпїЅ, Q: <span><strong>".$myrow_sin['pump_q']."</strong> пїЅ<sup>3</sup>/пїЅ</span><br>
+		пїЅпїЅпїЅпїЅпїЅ, H: <span><strong>".$myrow_sin['pump_h']."</strong> пїЅ</span><br>";
+		echo ($myrow_sin['pump_kav']==0)?"":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, hпїЅпїЅпїЅ.: <span>пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ <strong>".$myrow_sin['pump_kav']." </strong> пїЅ</span><br>";
+		echo ($myrow_sin['pump_ro']==0)?"":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, p: <span>пїЅпїЅ <strong>".$myrow_sin['pump_ro']."</strong> пїЅпїЅ/пїЅ<sup>3</sup></span><br>";
+		echo ($myrow_sin['pump_t']==0)?"":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, T: <span>пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ <strong>".$myrow_sin['pump_t']."</strong> пїЅпїЅ</span><br>";
+		echo ($myrow_sin['pump_p']==0)?"":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, PпїЅпїЅ: <span>пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ <strong>".$myrow_sin['pump_p']."</strong> пїЅпїЅпїЅ</span><br>";
+		echo "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, W: <span><strong>".$myrow_sin['pump_w']."</strong> пїЅпїЅпїЅ</span><br>";
+		echo ($myrow_sin['pump_m']==0)?"":"пїЅпїЅпїЅпїЅпїЅ, m: <span><strong>".$myrow_sin['pump_m']."</strong> пїЅпїЅ</span><br>";
 	echo "</p>
 	<div id='backlink'>
-		<a href='javascript:history.back()'>Назад</a>
+		<a href='javascript:history.back()'>пїЅпїЅпїЅпїЅпїЅ</a>
 	</div>";
 		echo empty($myrow_sin['link_gab'])?"":"
 	<div class='download'>
 		<a href='$myrow_sin[link]/$myrow_sin[link_gab]' target='_blank'>
-		<img src='img/icons/ico-pdf.png'><span>Скачать » Габаритный чертеж</span></a>
+		<img src='img/icons/ico-pdf.png'><span>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</span></a>
 	</div>
 	<div id='single_prod_ing'>
 		<img class='prod_img' src='$myrow_sin[link]/$myrow_sin[link_gab_png]' width='676' height='480'>
@@ -299,7 +322,7 @@ here;
 		echo empty($myrow_sin['link_character'])?"":"
 	<div class='download'>
 		<a href='$myrow_sin[link]/$myrow_sin[link_character]' target='_blank'>
-		<img src='img/icons/ico-pdf.png'><span>Скачать » Рекомендуемая схема обвязки</span></a>
+		<img src='img/icons/ico-pdf.png'><span>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</span></a>
 	</div>
 	<div id='single_prod_ing'>
 		<img class='prod_img' src='$myrow_sin[link]/$myrow_sin[link_character_png]' width='676' height='480'>
@@ -308,7 +331,7 @@ here;
 		echo empty($myrow_sin['link_schema'])?"":"
 	<div class='download'>
 		<a href='$myrow_sin[link]/$myrow_sin[link_schema]' target='_blank'>
-		<img src='img/icons/ico-pdf.png'><span>Скачать » Основная характеристика</span></a>
+		<img src='img/icons/ico-pdf.png'><span>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</span></a>
 	</div>
 	<div id='single_prod_ing'>
 		<img class='prod_img' src='$myrow_sin[link]/$myrow_sin[link_schema_png]' width='676' height='480'>
@@ -316,7 +339,7 @@ here;
 	</div>";
 		echo"
 	<div id='backlink'>
-		<a href='javascript:history.back()'>Назад</a>
+		<a href='javascript:history.back()'>пїЅпїЅпїЅпїЅпїЅ</a>
 	</div>
 </div>";mysql_close($db);
 	break;
@@ -327,14 +350,14 @@ here;
 				<a href="?ins=1">
 				<figure>
 					<img src="img/dummies/nasos2b.png"/>
-					<figcaption class="caption">Горизонтальные насосные агрегаты</figcaption>
+					<figcaption class="caption">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</figcaption>
 				</figure></a>
 			</div>
 			<div class="vert">
 				<a href="?ins=2">
 				<figure>
 					<img src="img/dummies/nasos1b.png"/>
-					<figcaption class="caption">Вертикальные полупогружные насосные агрегаты</figcaption>
+					<figcaption class="caption">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</figcaption>
 				</figure></a>
 			</div>
 		</div>
@@ -343,50 +366,50 @@ here;
 		<!-- filter_finder -->
 		<form id="filter" action="products.php" method="post">
 			<div id="finder">
-				<p><span><input type="submit" value="НАЙТИ" name="send_finder" id="send_finder" width="110px"/></span></p>
-				<p><span2>Подача, Q:<input name="q" id="q" type="text" value="$q" size="2"/> м<sup>3</sup>/ч</span2></p>
-				<p>Напор, H:<input name="h" id="h" type="text" value="$h" size="2"/> м</p>
-				<p>Мощность, W:<input name="w" id="w" type="text" value="$w" size="2"/> кВт</p>$hid_line $hid_line_ins
+				<p><span><input type="submit" value="пїЅпїЅпїЅпїЅпїЅ" name="send_finder" id="send_finder" width="110px"/></span></p>
+				<p><span2>пїЅпїЅпїЅпїЅпїЅпїЅ, Q:<input name="q" id="q" type="text" value="$q" size="2"/> пїЅ<sup>3</sup>/пїЅ</span2></p>
+				<p>пїЅпїЅпїЅпїЅпїЅ, H:<input name="h" id="h" type="text" value="$h" size="2"/> пїЅ</p>
+				<p>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, W:<input name="w" id="w" type="text" value="$w" size="2"/> пїЅпїЅпїЅ</p>$hid_line $hid_line_ins
 			</div>
 		</form>
 here;
 		echo <<<here
-		<h2 class="str">Основные технические характеристики</h2>
+		<h2 class="str">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</h2>
 			<p>
-				<span class="str">Q</span> - подача, м<sup>3</sup>/ч;<br>
-				<span class="str">H</span> - напор, м;<br>
-				<span class="str">W</span> - мощность электродвигателя, кВт;<br>
-				<span class="str">hдоп</span> - допускаемый кавитационный запас, м;<br>
-				<span class="str">P</span> - давление перекачиваемой жидкости на входе, МПа;<br>
-				<span class="str">T</span> - температура перекачиваемой жидкости, °С;<br>
-				<span class="str">p</span> - плотность перекачиваемой жидкости, кг/м<sup>3</sup>;<br>
-				<span class="str">m</span> - масса агрегата, кг;
+				<span class="str">Q</span> - пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ<sup>3</sup>/пїЅ;<br>
+				<span class="str">H</span> - пїЅпїЅпїЅпїЅпїЅ, пїЅ;<br>
+				<span class="str">W</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ;<br>
+				<span class="str">hпїЅпїЅпїЅ</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ;<br>
+				<span class="str">P</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ;<br>
+				<span class="str">T</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ;<br>
+				<span class="str">p</span> - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ/пїЅ<sup>3</sup>;<br>
+				<span class="str">m</span> - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ;
 			</p>
 		<br>
 		<!-- filter_sort -->
 		<ul id="filter">
-			<li>ФИЛЬТР: </li>
+			<li>пїЅпїЅпїЅпїЅпїЅпїЅ: </li>
 			<li>
 				<form class="fir_button" action='products.php' method='post'>
 					<input type="hidden" value="$a1" name="a">$hid_line_finder  $hid_line_ins
-					<input type="submit" value="Наименование" name="send_finder">
+					<input type="submit" value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" name="send_finder">
 				</form>
 			</li>
 			<li><form action='products.php' method='post'>
 					<input type="hidden" value="$a2" name="a">$hid_line_finder $hid_line_ins
-					<input type="submit" value="Q - подача" name="send_finder">
+					<input type="submit" value="Q - пїЅпїЅпїЅпїЅпїЅпїЅ" name="send_finder">
 				</form>
 			</li>
 			<li>
 				<form action='products.php' method='post'>
 					<input type="hidden" value="$a3" name="a">$hid_line_finder $hid_line_ins
-					<input type="submit" value="H - напор" name="send_finder">
+					<input type="submit" value="H - пїЅпїЅпїЅпїЅпїЅ" name="send_finder">
 				</form>
 			</li>
 			<li>
 				<form action='products.php' method='post'>
 					<input type="hidden" value="$a4" name="a">$hid_line_finder $hid_line_ins
-					<input type="submit" value="W - мощность электродвигателя" name="send_finder">
+					<input type="submit" value="W - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" name="send_finder">
 				</form>
 			</li>
 		</ul>
