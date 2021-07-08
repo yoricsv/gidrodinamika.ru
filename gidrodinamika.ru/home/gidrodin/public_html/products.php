@@ -13,28 +13,43 @@ $query = mysql_query ("
 			    page ='products'",
 		$db);
 
-$myrow      = mysql_fetch_array ($query);
-mysql_close($db); 
+$myrow  = mysql_fetch_array ($query);
+          mysql_close       ($db); 
 
 $set_var    = array(
-                "hid_line_ins",	"hid_line_finder",
-"a",
-                    "a6",           "a5",               "p",
-					"kav",          "ins",              "cat",
-					"m",            "ro",               "t",
-					"w",            "h",                "q",
-					"hid_line_imager",          "hid_line");//products.php
+	            "hid_line_ins",
+				"hid_line_finder",
+                "a",
+                "a6",
+				"a5",
+				"p",
+				"kav",
+				"ins",
+				"cat",
+				"m",
+				"ro",
+				"t",
+				"w",
+				"h",
+				"q",
+				"hid_line_imager",
+				"hid_line"
+			);//products.php
 foreach($set_var as $key => $val){
 	if(empty($$val)){
 			$$val='';
 		}
 }
 
+$clr_space = 
 
-if(isset($_REQUEST['id'])&&!empty($_REQUEST['id'])&&is_numeric(trim($_REQUEST['id']))){
-		$id=intval(trim($_REQUEST['id']));
-		$ret_single=1;
-	}else{
+if(     isset($_REQUEST['id'])
+    &&! empty($_REQUEST['id'])
+	&&  is_numeric(trim($_REQUEST['id'])))
+{
+	$id         = intval(trim($_REQUEST['id']));
+	$ret_single = 1;
+}else{
 		unset($_REQUEST['id']);
 		$ret_single=0;
 		if(isset($_REQUEST['a'])&&!empty($_REQUEST['a'])){$a=intval(trim($_REQUEST['a']));}else{unset($_REQUEST['a']);}
