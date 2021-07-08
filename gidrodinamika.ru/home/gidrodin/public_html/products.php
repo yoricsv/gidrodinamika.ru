@@ -2,8 +2,8 @@
 include("block/db.php");
 include("block/filter_array_post_get_request.php");
 
-$query = mysqli_query ("
-            SELECT
+$query = mysqli_query ($db,
+    " SELECT
                 meta_d,
 			    meta_k,
 			    title
@@ -11,7 +11,7 @@ $query = mysqli_query ("
 			    settings
 			WHERE
 			    page ='products'",
-		$db);
+		);
 
 $myrow   = mysqli_fetch_array ($query);
            mysqli_close       ($db);
@@ -79,7 +79,7 @@ else
             $a8=8;
             $a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 3:$order="pump_h,pump_q,pump_w,pump_kav,pump_p,pump_t,pump_ro,pump_m";
             $a1=1;
             $a2=2;
@@ -91,7 +91,7 @@ else
             $a8=8;
             $a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 4:$order="pump_w,pump_q,pump_h,pump_kav,pump_p,pump_t,pump_ro,pump_m";
             $a1=1;
             $a2=2;
@@ -103,61 +103,149 @@ else
             $a8=8;
             $a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 5:$order="pump_kav,pump_q,pump_h,pump_w,pump_p,pump_t,pump_ro,pump_m";
             $a1=1;$a2=11;$a3=3;$a4=4;$a5=14;$a6=6;$a7=7;$a8=8;$a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 6:$order="pump_p,pump_q,pump_h,pump_w,pump_kav,pump_t,pump_ro,pump_m";
             $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=15;$a7=7;$a8=8;$a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 7:$order="pump_t,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_ro,pump_m";
             $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=16;$a8=8;$a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 8:$order="pump_ro,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_m";
             $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=17;$a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 9:$order="pump_m,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_ro";
             $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=18;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 10:$order="name";
             $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 11:$order="pump_q DESC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
             $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 12:$order="pump_h DESC,pump_q ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
             $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
             $hid_line="<input type='hidden' value='".$a."' name='a'>";
-            break;
+                break;
             case 13:$order="pump_w DESC,pump_q ASC,pump_h ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
-            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 14:$order="pump_kav DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;	case 15:$order="pump_p DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 16:$order="pump_t DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 17:$order="pump_ro DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 18:$order="pump_m DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;default:$order="name";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="";break;}
-		if(isset($_REQUEST['ins'])&&!empty($_REQUEST['ins'])&&is_numeric(trim($_REQUEST['ins']))){
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+                break;
+            case 14:$order="pump_kav DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+                break;
+            case 15:$order="pump_p DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+                break;
+            case 16:$order="pump_t DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_ro ASC,pump_m ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+                break;
+            case 17:$order="pump_ro DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_m ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+                break;
+            case 18:$order="pump_m DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+                break;
+            default:$order="name";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="";
+                break;
+        }
+		if(isset($_REQUEST['ins'])
+            &&!empty($_REQUEST['ins'])
+            &&is_numeric(trim($_REQUEST['ins'])))
+		{
 				$ins=intval(trim($_REQUEST['ins']));
 				switch($ins){
-					case 1:$ins_b="inst='gor'";$hid_line_ins="<input type='hidden' value='1' name='ins'>";$ret_ins=1;break;
-					case 2:$ins_b="inst='vert'";$hid_line_ins="<input type='hidden' value='2' name='ins'>";$ret_ins=1;break;
-					default:$ins_b="";$hid_line_ins="";$ret_ins=0;break;
+					case 1:
+					    $ins_b="inst='gor'";
+					    $hid_line_ins="<input type='hidden' value='1' name='ins'>";
+					    $ret_ins=1;
+					    break;
+					case 2:
+					    $ins_b="inst='vert'";
+					    $hid_line_ins="<input type='hidden' value='2' name='ins'>";
+					    $ret_ins=1;
+					    break;
+					default:
+					    $ins_b="";
+					    $hid_line_ins="";
+					    $ret_ins=0;
+					    break;
 				}
 			}else{
-				unset($_REQUEST['ins']);$ins_b="";$hid_line_ins="";$ret_ins=0;
+				unset($_REQUEST['ins']);
+				$ins_b="";
+				$hid_line_ins="";
+				$ret_ins=0;
 			}
 		$search_prod=array('q','h','w','kav','p','t','ro','m');
 		if(isset($_REQUEST['send_finder'])){
-				$send=1;$hid_line_finder="";
+				$send=1;
+				$hid_line_finder="";
 				foreach($search_prod as $key=>$val){
-					if(empty($_REQUEST[$val])||!is_numeric(trim($_REQUEST[$val]))){
-							unset($_REQUEST[$$val]);
-						}else{
-							$$val=substr($_REQUEST[$val],0,4);
-							switch($val){case "q":if($q<=7){$q_min=5;$q_max=8;}elseif($q<=15){$q_min=$q-2;$q_max=$q+2;}elseif($q<=70){$q_min=$q-5;$q_max=$q+5;}elseif($q<=250){$q_min=$q-20;$q_max=$q+20;}elseif($q<=450){$q_min=$q-65;$q_max=$q+65;}elseif($q<=750){$q_min=$q-100;$q_max=$q+100;}elseif($q<=1250){$q_min=750;$q_max=1250;}else{$err_q=1;unset($q);}if(!isset($err_q)){$rq=1;$search_prod_tmp[]='q';$hid_line_finder.="<input type='hidden' value='".$q."' name='q' id='q'>";}break;case "h":if($h<=30){$h_min=18;$h_max=32;}elseif($h<=85){$h_min=$h-5;$h_max=$h+5;}elseif($h<=170){$h_min=$h-10;$h_max=$h+10;}elseif($h<=310){$h_min=$h-20;$h_max=$h+20;}elseif($h<=900){$h_min=$h-50;$h_max=$h+50;}elseif($h<=1000){$h_min=$h-100;$h_max=$h+100;}elseif($h<=1100){$h_min=1000;$h_max=1100;}else{$err_h=1;unset($h);}if(!isset($err_h)){$rh=1;$search_prod_tmp[]='h';$hid_line_finder.="<input type='hidden' value='".$h."' name='h' id='h'>";}break;case "w":if($w<=4){$w_min=2;$w_max=6;}elseif($w<=18.5){$w_min=$w-4;$w_max=$w+4;}elseif($w<=45){$w_min=$w-10;$w_max=$w+10;}elseif($w<=135){$w_min=$w-25;$w_max=$w+25;}elseif($w<=315){$w_min=$w-85;$w_max=$w+85;}elseif($w<=500){$w_min=$w-100;$w_max=$w+100;}elseif($w<=630){$w_min=500;$w_max=630;}else{$err_w=1;unset($w);}if(!isset($err_w)){$rw=1;$search_prod_tmp[]='w';$hid_line_finder.="<input type='hidden' value='".$w."' name='w' id='w'>";}break;case "kav":if($kav<=2){$kav_min=0;$kav_max=2.5;}elseif($kav<=4.5){$kav_min=$kaw-0.5;$kav_max=$kav+0.5;}elseif($kav<=6){$kav_min=$kaw-1;$kav_max=$kav+1;}elseif($kav<=8){$kav_min=6.5;$kav_max=8;}else{$err_kav=1;unset($kav);}if(!isset($err_kav)){$rkav=1;$search_prod_tmp[]='kav';$hid_line_finder.="<input type='hidden' value='".$kav."' name='kav' id='kav'>";}break;case "p":if($p<=0.2){$p_min=0;$p_max=0.3;}elseif($p<0.8){$p_min=$p-0.1;$p_max=$p+0.1;}elseif($p<=1.2){$p_min=$p-0.2;$p_max=$p+0.2;}elseif($p<=1.7){$p_min=$p-0.1;$p_max=$p+0.1;}elseif($p<=2.4){$p_min=$p-0.7;$p_max=$p+0.7;}elseif($p<=3){$p_min=$p-0.5;$p_max=$p+0.5;}elseif($p<=4){$p_min=3.2;$p_max=4;}else{$err_p=1;unset($p);}if(!isset($err_p)){$rp=1;$search_prod_tmp[]='p';$hid_line_finder.="<input type='hidden' value='".$p."' name='p' id='p'>";}break;case "t":if($t<=80){$t_min=0;$t_max=150;}elseif($t<=200){$t_min=$t-20;$t_max=$t+20;}elseif($t<=280){$t_min=$t-30;$t_max=$t+30;}elseif($t<=300){$t_min=280;$t_max=300;}else{$err_t=1;unset($t);}if(!isset($err_t)){$rt=1;$search_prod_tmp[]='t';$hid_line_finder.="<input type='hidden' value='".$t."' name='t' id='t'>";}break;case "ro":if($ro<=500){$ro_min=0;$ro_max=570;}elseif($ro<=950){$ro_min=$ro-30;$ro_max=$ro+30;}elseif($ro<=1200){$ro_min=$ro-50;$ro_max=$ro+50;}elseif($ro<=1700){$ro_min=$ro-100;$ro_max=$ro+100;}elseif($ro<=1800){$ro_min=1700;$ro_max=1800;}else{$err_ro=1;unset($ro);}if(!isset($err_ro)){$rro=1;$search_prod_tmp[]='ro';$hid_line_finder.="<input type='hidden' value='".$ro."' name='ro' id='ro'>";}break;case "m":if($m<=115){$m_min=0;$m_max=160;}elseif($m<=1300){$m_min=$m-150;$m_max=$m+150;}elseif($m<=3600){$m_min=$m-170;$m_max=$m+170;}elseif($m<=4700){$m_min=$m-300;$m_max=$m+300;}elseif($m<=5820){$m_min=$m-800;$m_max=$m+800;}elseif($m<=6620){$m_min=6520;$m_max=6620;}else{$err_m=1;unset($m);}if(!isset($err_m)){$rm=1;$search_prod_tmp[]='m';$hid_line_finder.="<input type='hidden' value='".$m."' name='m' id='m'>";}break;}
-						}
+					if(     empty($_REQUEST[$val])
+                        || !is_numeric(trim($_REQUEST[$val])))
+					{
+						unset($_REQUEST[$$val]);
+					}else{
+					    $$val=substr($_REQUEST[$val],0,4);
+						switch($val)
+                        {
+						    case "q":
+						        if($q<=7)
+						        {
+						            $q_min=5;
+						            $q_max=8;
+						        }elseif($q<=15)
+                                {
+                                    $q_min=$q-2;
+                                    $q_max=$q+2;
+                                }elseif($q<=70)
+                                {
+                                    $q_min=$q-5;
+                                    $q_max=$q+5;
+                                }elseif($q<=250)
+                                {
+                                    $q_min=$q-20;
+                                    $q_max=$q+20;
+                                }elseif($q<=450)
+                                {
+                                    $q_min=$q-65;
+                                    $q_max=$q+65;
+                                }elseif($q<=750)
+                                {
+                                    $q_min=$q-100;
+                                    $q_max=$q+100;
+                                }elseif($q<=1250){
+						            $q_min=750;
+						            $q_max=1250;
+						        }else{
+						            $err_q=1;
+						            unset($q);
+						        }if(!isset($err_q))
+						        {
+						            $rq=1;
+						            $search_prod_tmp[]='q';
+						            $hid_line_finder.="<input type='hidden' value='".$q."' name='q' id='q'>";
+						        }
+						        break;
+						        case "h":if($h<=30){$h_min=18;$h_max=32;}elseif($h<=85){$h_min=$h-5;$h_max=$h+5;}elseif($h<=170){$h_min=$h-10;$h_max=$h+10;}elseif($h<=310){$h_min=$h-20;$h_max=$h+20;}elseif($h<=900){$h_min=$h-50;$h_max=$h+50;}elseif($h<=1000){$h_min=$h-100;$h_max=$h+100;}elseif($h<=1100){$h_min=1000;$h_max=1100;}else{$err_h=1;unset($h);}if(!isset($err_h)){$rh=1;$search_prod_tmp[]='h';$hid_line_finder.="<input type='hidden' value='".$h."' name='h' id='h'>";}break;case "w":if($w<=4){$w_min=2;$w_max=6;}elseif($w<=18.5){$w_min=$w-4;$w_max=$w+4;}elseif($w<=45){$w_min=$w-10;$w_max=$w+10;}elseif($w<=135){$w_min=$w-25;$w_max=$w+25;}elseif($w<=315){$w_min=$w-85;$w_max=$w+85;}elseif($w<=500){$w_min=$w-100;$w_max=$w+100;}elseif($w<=630){$w_min=500;$w_max=630;}else{$err_w=1;unset($w);}if(!isset($err_w)){$rw=1;$search_prod_tmp[]='w';$hid_line_finder.="<input type='hidden' value='".$w."' name='w' id='w'>";}break;case "kav":if($kav<=2){$kav_min=0;$kav_max=2.5;}elseif($kav<=4.5){$kav_min=$kaw-0.5;$kav_max=$kav+0.5;}elseif($kav<=6){$kav_min=$kaw-1;$kav_max=$kav+1;}elseif($kav<=8){$kav_min=6.5;$kav_max=8;}else{$err_kav=1;unset($kav);}if(!isset($err_kav)){$rkav=1;$search_prod_tmp[]='kav';$hid_line_finder.="<input type='hidden' value='".$kav."' name='kav' id='kav'>";}break;case "p":if($p<=0.2){$p_min=0;$p_max=0.3;}elseif($p<0.8){$p_min=$p-0.1;$p_max=$p+0.1;}elseif($p<=1.2){$p_min=$p-0.2;$p_max=$p+0.2;}elseif($p<=1.7){$p_min=$p-0.1;$p_max=$p+0.1;}elseif($p<=2.4){$p_min=$p-0.7;$p_max=$p+0.7;}elseif($p<=3){$p_min=$p-0.5;$p_max=$p+0.5;}elseif($p<=4){$p_min=3.2;$p_max=4;}else{$err_p=1;unset($p);}if(!isset($err_p)){$rp=1;$search_prod_tmp[]='p';$hid_line_finder.="<input type='hidden' value='".$p."' name='p' id='p'>";}break;case "t":if($t<=80){$t_min=0;$t_max=150;}elseif($t<=200){$t_min=$t-20;$t_max=$t+20;}elseif($t<=280){$t_min=$t-30;$t_max=$t+30;}elseif($t<=300){$t_min=280;$t_max=300;}else{$err_t=1;unset($t);}if(!isset($err_t)){$rt=1;$search_prod_tmp[]='t';$hid_line_finder.="<input type='hidden' value='".$t."' name='t' id='t'>";}break;case "ro":if($ro<=500){$ro_min=0;$ro_max=570;}elseif($ro<=950){$ro_min=$ro-30;$ro_max=$ro+30;}elseif($ro<=1200){$ro_min=$ro-50;$ro_max=$ro+50;}elseif($ro<=1700){$ro_min=$ro-100;$ro_max=$ro+100;}elseif($ro<=1800){$ro_min=1700;$ro_max=1800;}else{$err_ro=1;unset($ro);}if(!isset($err_ro)){$rro=1;$search_prod_tmp[]='ro';$hid_line_finder.="<input type='hidden' value='".$ro."' name='ro' id='ro'>";}break;case "m":if($m<=115){$m_min=0;$m_max=160;}elseif($m<=1300){$m_min=$m-150;$m_max=$m+150;}elseif($m<=3600){$m_min=$m-170;$m_max=$m+170;}elseif($m<=4700){$m_min=$m-300;$m_max=$m+300;}elseif($m<=5820){$m_min=$m-800;$m_max=$m+800;}elseif($m<=6620){$m_min=6520;$m_max=6620;}else{$err_m=1;unset($m);}if(!isset($err_m)){$rm=1;$search_prod_tmp[]='m';$hid_line_finder.="<input type='hidden' value='".$m."' name='m' id='m'>";}break;}
+					}
 				}
 			}else{
 				$send=0;
