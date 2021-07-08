@@ -2,7 +2,7 @@
 include("block/db.php");
 include("block/filter_array_post_get_request.php");
 
-$query = mysql_query ("
+$query = mysqli_query ("
             SELECT
                 meta_d,
 			    meta_k,
@@ -13,10 +13,10 @@ $query = mysql_query ("
 			    page ='products'",
 		$db);
 
-$myrow  = mysql_fetch_array ($query);
-          mysql_close       ($db); 
+$myrow   = mysqli_fetch_array ($query);
+           mysqli_close       ($db);
 
-$set_var    = array(
+$set_var = array(
 	            "hid_line_ins",
 				"hid_line_finder",
                 "a",
@@ -34,26 +34,110 @@ $set_var    = array(
 				"q",
 				"hid_line_imager",
 				"hid_line"
-			);//products.php
+			);
 foreach($set_var as $key => $val){
-	if(empty($$val)){
-			$$val='';
-		}
+	if(empty($$val))
+	{
+		$$val='';
+	}
 }
 
-$clr_space = 
+$trim_id = $_REQUEST['id'];
 
-if(     isset($_REQUEST['id'])
-    &&! empty($_REQUEST['id'])
-	&&  is_numeric(trim($_REQUEST['id'])))
+if(     isset($trim_id)
+    && !empty($trim_id)
+	&&  is_numeric($trim_id))
 {
-	$id         = intval(trim($_REQUEST['id']));
+	$id         = intval($trim_id);
 	$ret_single = 1;
-}else{
-		unset($_REQUEST['id']);
+}
+else
+{
+		unset($trim_id);
 		$ret_single=0;
-		if(isset($_REQUEST['a'])&&!empty($_REQUEST['a'])){$a=intval(trim($_REQUEST['a']));}else{unset($_REQUEST['a']);}
-		switch($a){case 1:$order="name DESC";$a1=10;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 2:$order="pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_ro,pump_m";$a1=1;$a2= 11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 3:$order="pump_h,pump_q,pump_w,pump_kav,pump_p,pump_t,pump_ro,pump_m";$a1=1;$a2=2;$a3=12;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 4:$order="pump_w,pump_q,pump_h,pump_kav,pump_p,pump_t,pump_ro,pump_m";$a1=1;$a2=2;$a3=3;$a4=13;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 5:$order="pump_kav,pump_q,pump_h,pump_w,pump_p,pump_t,pump_ro,pump_m";$a1=1;$a2=11;$a3=3;$a4=4;$a5=14;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 6:$order="pump_p,pump_q,pump_h,pump_w,pump_kav,pump_t,pump_ro,pump_m";$a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=15;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 7:$order="pump_t,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_ro,pump_m";$a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=16;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 8:$order="pump_ro,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_m";$a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=17;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 9:$order="pump_m,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_ro";$a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=18;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 10:$order="name";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 11:$order="pump_q DESC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 12:$order="pump_h DESC,pump_q ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 13:$order="pump_w DESC,pump_q ASC,pump_h ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 14:$order="pump_kav DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;	case 15:$order="pump_p DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 16:$order="pump_t DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 17:$order="pump_ro DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 18:$order="pump_m DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;default:$order="name";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="";break;}
+		if(     isset($_REQUEST['a'])
+            && !empty($_REQUEST['a']))
+
+		    $a = intval(trim($_REQUEST['a']));
+		else
+		    unset($_REQUEST['a']);
+
+		switch($a)
+        {
+            case 1: $order = "name DESC";
+                    $a1 = 10; $a2 = 2; $a3 = 3; $a4 = 4; $a5 = 5; $a6 = 6; $a7 = 7; $a8 = 8; $a9 = 9;
+                    $hid_line = "<input type='hidden' value='".$a."' name='a'>";
+                break;
+            case 2: $order = "pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_ro,pump_m";
+            $a1=1;
+            $a2= 11;
+            $a3=3;
+            $a4=4;
+            $a5=5;
+            $a6=6;
+            $a7=7;
+            $a8=8;
+            $a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 3:$order="pump_h,pump_q,pump_w,pump_kav,pump_p,pump_t,pump_ro,pump_m";
+            $a1=1;
+            $a2=2;
+            $a3=12;
+            $a4=4;
+            $a5=5;
+            $a6=6;
+            $a7=7;
+            $a8=8;
+            $a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 4:$order="pump_w,pump_q,pump_h,pump_kav,pump_p,pump_t,pump_ro,pump_m";
+            $a1=1;
+            $a2=2;
+            $a3=3;
+            $a4=13;
+            $a5=5;
+            $a6=6;
+            $a7=7;
+            $a8=8;
+            $a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 5:$order="pump_kav,pump_q,pump_h,pump_w,pump_p,pump_t,pump_ro,pump_m";
+            $a1=1;$a2=11;$a3=3;$a4=4;$a5=14;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 6:$order="pump_p,pump_q,pump_h,pump_w,pump_kav,pump_t,pump_ro,pump_m";
+            $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=15;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 7:$order="pump_t,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_ro,pump_m";
+            $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=16;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 8:$order="pump_ro,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_m";
+            $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=17;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 9:$order="pump_m,pump_q,pump_h,pump_w,pump_kav,pump_p,pump_t,pump_ro";
+            $a1=1;$a2=11;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=18;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 10:$order="name";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 11:$order="pump_q DESC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 12:$order="pump_h DESC,pump_q ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;
+            $hid_line="<input type='hidden' value='".$a."' name='a'>";
+            break;
+            case 13:$order="pump_w DESC,pump_q ASC,pump_h ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";
+            $a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 14:$order="pump_kav DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_p ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;	case 15:$order="pump_p DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_t ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 16:$order="pump_t DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_ro ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 17:$order="pump_ro DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_m ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;case 18:$order="pump_m DESC,pump_q ASC,pump_h ASC,pump_w ASC,pump_kav ASC,pump_p ASC,pump_t ASC,pump_ro ASC";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="<input type='hidden' value='".$a."' name='a'>";break;default:$order="name";$a1=1;$a2=2;$a3=3;$a4=4;$a5=5;$a6=6;$a7=7;$a8=8;$a9=9;$hid_line="";break;}
 		if(isset($_REQUEST['ins'])&&!empty($_REQUEST['ins'])&&is_numeric(trim($_REQUEST['ins']))){
 				$ins=intval(trim($_REQUEST['ins']));
 				switch($ins){
