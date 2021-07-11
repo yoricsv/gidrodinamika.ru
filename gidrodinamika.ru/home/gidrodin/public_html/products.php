@@ -48,7 +48,7 @@ else
 
     $trim_a = $_REQUEST['a'];
 
-	if( isset($trim_a)
+	if( isset($trim_a))
 	{
 		$a = intval ($trim_a);
 	}
@@ -771,7 +771,7 @@ here;
 							?
 								"<td class = 'dan'>
 									".$myrow_prod['pump_kav']."
-								</td>";
+								</td>"
 							:
 								"<td class = 'dan'>
 									-

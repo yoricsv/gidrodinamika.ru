@@ -17,8 +17,8 @@ if(	isset($_REQUEST['new'])){
 }else{
 	$ret_ind	= 0;
 }
-$myrow =	mysql_fetch_array(
-				mysql_query(
+$myrow =	mysqli_fetch_array(
+				mysqli_query($db,
 					"SELECT
 						meta_d,
 						meta_k,
@@ -28,10 +28,51 @@ $myrow =	mysql_fetch_array(
 						settings
 					WHERE
 						page='index'"
-				,$db)
+				)
 			);
-mysql_close($db);
+mysqli_close($db);
 ?>
+
+<!DOCTYPE html>
+<html lang = "ru">
+
+<head>
+    <meta charset    = "UTF-8" />
+
+    <meta content    = "IE = edge, chrome = 1"
+          http-equiv = "X-UA-Compatible"
+    />
+
+    <meta content    = "<?php echo $myrow['meta_d'];?>"
+          lang       = "ru"
+          name       = "description"
+    />
+    <meta content    = "<?php echo $myrow['meta_k'];?>"
+          lang       = "ru"
+          name       = "keywords"
+    />
+
+    <meta content    = "index, follow"
+          name       = "robots"
+    />
+
+	<?php include("block/fixIE.php");?>
+
+    <!-- Title -->
+    <title><?php echo $myrow['title'];?></title>
+
+    <!-- Core Stylesheet -->
+    <link href       = "css/style.css"
+          media      = "screen"
+          rel        = "stylesheet"
+          type       = "text/css"
+    />
+    <link href       = "css/spring.css"
+          media      = "screen"
+          rel        = "stylesheet"
+          type       = "text/css"
+    />
+</head>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -67,12 +108,12 @@ mysql_close($db);
 			<div class='navbar'>
 				<a	class	= 'scroll_to_top'
 					href	= '#top'
-					title	= 'Вернуться к началу страницы'>
+					title	= 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'>
 					<img src= "img/arrow_top_oval.png">
 				</a>
 				<a	class	= 'scroll_return'
 					href	= 'javascript:history.back()'
-					title	= 'Вернуться обратно'>
+					title	= 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'>
 					<img src="img/arrow_return_oval.png">
 				</a>
 			</div>
@@ -129,26 +170,26 @@ mysql_close($db);
 <!-- *************** END Slideshow **************** -->
 			";
 			
-//Сюда вставляется скрипт смены слайдов
+//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 //		echo $myrow['text']; 
-//Вставил выше в код страницы, чтоб не выводить из базы
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 
 //Choose theme (If I do it)
 //		echo"
 //				<p class='custom excerpt'>
-//					Ваше персональное оформление : 
+//					пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ : 
 //					<a href='../spring/'>
-//						Светлое
+//						пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 //					</a>,
 //					<a href='../summer/'>
-//						Желтое
+//						пїЅпїЅпїЅпїЅпїЅпїЅ
 //					</a>,
 //					<a href='../autumn/'>
-//						Оранжевое
+//						пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 //					</a>
-//					, и 
+//					, пїЅ 
 //					<a href='../winter/'>
-//						Синее. 
+//						пїЅпїЅпїЅпїЅпїЅ. 
 //					</a>
 //				</p>
 //		";
@@ -156,28 +197,28 @@ mysql_close($db);
 
 		$d	=	"com.txt";
 
-/*		if(	$_POST['sett']	== "Добавить строку"){
+/*		if(	$_POST['sett']	== "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"){
 			if(	empty($_POST['tt'])){
 				echo "
 				<a href=".$_SERVER['PHP_SELF'].">
-					Назад
-				</a> « 
+					пїЅпїЅпїЅпїЅпїЅ
+				</a> пїЅ 
 				";
-				exit("Вы не ввели данные.");
+				exit("пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.");
 			}
 			$tt		= htmlspecialchars($_POST['tt']);
 			$fd		= fopen($d,"w"); 
-			if(	!$fd)exit("Не могу открыть файл. Ошибка");
+			if(	!$fd)exit("пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅ");
 			fwrite($fd, $tt);
 			fclose($fd);
-			$yes	= "Данные успешно добавлены.";
+			$yes	= "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.";
 		}
 */
 
 		if(	file_exists($d)){
 			$arr	= file($d);
 		}else{
-			$yes	= "Введите пожалуйста строку.";
+			$yes	= "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.";
 		}
 		echo <<<here
 	<marquee	
@@ -191,7 +232,7 @@ mysql_close($db);
 				
 here;
 		include("block/db.php");
-		$result_d	= mysql_query(
+		$result_d	= mysqli_query($db,
 						"SELECT
 							id,
 							img_d,
@@ -200,7 +241,7 @@ here;
 							m_dd
 						FROM
 							main_ind"
-					,$db);
+					);
 		$myrow_d	= mysql_fetch_array($result_d);
 		echo"
 				<div class='holder'>
@@ -230,7 +271,7 @@ here;
 						</p>
 						<p>
 							<a class='more' href='index.php?new=".$myrow_d['id']."'>
-								Далее
+								пїЅпїЅпїЅпїЅпїЅ
 							</a>
 						</p>
 					</div>
@@ -260,9 +301,9 @@ here;
 			echo"
 					<div id='rec_block_single'>
 						<div class='thumb-rec'>
-							<a	href	= 'Вернуться обратно'
+							<a	href	= 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'
 								onclick	= '$onclick'
-								title	= 'Вернуться обратно'>
+								title	= 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'>
 								<img	class='rec-img'
 										src='".$myrow_d['img_d']."'/>
 							</a>
@@ -278,10 +319,10 @@ here;
 						<span2></span2>
 						<div id='backlink_rec'>
 							<a	class	= 'more'
-								href	= 'Вернуться обратно'
+								href	= 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'
 								onclick	= '$onclick'
-								title	= 'Вернуться обратно'>
-								<strong>Назад</strong>
+								title	= 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'>
+								<strong>пїЅпїЅпїЅпїЅпїЅ</strong>
 							</a>
 					</div>
 				</div>
