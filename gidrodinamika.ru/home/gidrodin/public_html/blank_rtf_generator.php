@@ -83,12 +83,22 @@ if( isset($_REQUEST['send']))
 
     if($quests[10] == '')
     {
-        $quests[10] = "___________________________________________________________________________ ___________________________________________________________________________";
+        $quests[10] = 
+			"_________________________________
+			__________________________________
+			________ _________________________
+			__________________________________
+			________________";
     }
 
     if($quests[36] == '')
     {
-        $quests[36] = "___________________________________________________________________________ ___________________________________________________________________________";
+        $quests[36] =
+			"_________________________________
+			__________________________________
+			________ _________________________
+			__________________________________
+			________________";
     }
  
     for( $i = 0; $i < count($quests); $i++)
@@ -103,9 +113,9 @@ if( isset($_REQUEST['send']))
     }
 
 
-    header ('Content-type:        application/msword');
-    header ("Content-Disposition: attachment;
-             filename = blank.rtf"                   );
+    header ('Content-type:          application/msword');
+    header ("Content-Disposition:   attachment;
+             filename             = blank.rtf");
 
 
     $m     = date("m");
@@ -184,12 +194,13 @@ else
 {
     function back_page()
     {
-	printf( "<div id = 'backlink_rec'>
-                     <a href = '%s' class = 'more'>
-                         <strong>Назад</strong>
-                     </a>
-	         </div>",
-	         $_SERVER['PHP_SELF']
+		printf( 
+			"<div id = 'backlink_rec'>
+				<a href = '%s' class = 'more'>
+                    <strong>Назад</strong>
+                </a>
+	        </div>",
+	        $_SERVER['PHP_SELF']
         );
     }
 	

@@ -1,82 +1,182 @@
-<?php include("block/db.php");
+<?php
+include("block/db.php");
 include("block/filter_array_post_get_request.php");
-$result=mysql_query("SELECT meta_d,meta_k,title,text FROM settings WHERE page='contact'",$db);
-$myrow=mysql_fetch_array($result);
-mysql_close($db);
-if(isset($_REQUEST['send'])){
-		if(empty($_REQUEST['name'])){
-				unset($_REQUEST['name']);
-				$rn=0;
-			}else{
-				$name=$_REQUEST['name'];
-				$name=substr($name,0,80);
-				$rn=1;
-			}//$NAME
-		if(empty($_REQUEST['from'])){
-				unset($_REQUEST['from']);
-				$re=0;
-			}else{
-				$from=$_REQUEST['from'];
-				$from=trim(html_filter($from));		//	sanitize($from);
-				$from=substr($from,0,50);
-				$re=1;
-			}//$FROM
-		if(empty($_REQUEST['phone'])){
-				unset($_REQUEST['phone']);
-				$rp=0;
-			}else{
-				$phone=$_REQUEST['phone'];
-				$phone=substr($phone,0,40);
-				$rp=1;
-			}//$PHONE
-		if(empty($_REQUEST['text'])){
-				unset($_REQUEST['text']);
-				$rs=0;
-			}else{
-				$text=$_REQUEST['text'];
-				$text=trim(html_filter($text));		//	sanitize($text);
-				$text=str_replace("\n","<br>\n",$text);
-				$text=substr($text,0,2000);
-				$text.="<br><br><strong>Имя отправителя:</strong> ".$name." \r\n";
-				$text.="<br><strong>E-mail отправителя:</strong> ".$from." \r\n";
-				$text.="<br><strong>Контактный телефон отправителя:</strong> ".$phone." \r\n";$rs=1;}
-//				$rs=1;
-///////////////| Проверка передачи прикрепленного файла |////////////////
-		if(empty($_FILES['file'])){									//C//
-				unset($_FILES['file']);								//H//
-			}else{													//E//
-				$file_name	=	$_FILES['file']['name'];			//C//
-				$tmp_name	=	$_FILES['file']['tmp_name'];		//K//
-				$file_size	=	intval($_FILES['file']['size']);	//F//
-				$filename	=	trim(html_filter($file_name));		//I//	sanitize($file_name);
-				$tmpname	=	trim(html_filter($tmp_name));		//L//	sanitize($tmp_name);
-			}														//E//
-/////////////////////////////////////////////////////////////////////////
-		if(!empty($_REQUEST['subj'])){
-				$subj=$_REQUEST['subj'];
-				$subj=trim(html_filter($subj));		//	trim(html_filter($subj));sanitize($subj);
-				$subj=substr($subj,0,200);
-			}else{
-				$subj="";
-			}
-		$headers="X-Mailer: PHPMail Tool\n";
-		$headers.="MIME-Version: 1.0\r\n";
-		$headers.="Content-type: text/html; charset=windows-1251\r\n";
-		$headers.="From: GIDRODINAMIKA <mail@gidrodinamika.ru>\r\n";
-//		$headers.="Отправлено с сайта: <strong>".$_SERVER['HTTP_REFERER']."</strong><br>";
-//		$headers.=" IP-адрес отправителя: <strong>".$_SERVER['REMOTE_ADDR']."</strong><br><br>\r\n";
+
+
+
+$result = mysqli_query($db,
+	"SELECT
+		meta_d,
+		meta_k,
+		title,
+		text
+	FROM
+		settings
+	WHERE
+		page = 'contact'");
+	
+$myrow  = mysqli_fetch_array($result);
+		  mysqli_close($db);
+
+
+
+if( isset($_REQUEST['send']))
+{
+	if( empty($_REQUEST['name']))
+	{
+		unset($_REQUEST['name']);
+		$rn   = 0;
+	}
+	else
+	{
+		$name = $_REQUEST['name'];
+		$name = substr($name, 0, 80);
+		$rn   = 1;
+	}//$NAME
+
+	
+	if( empty($_REQUEST['from']))
+	{
+		unset($_REQUEST['from']);
+		$re   = 0;
+	}
+	else
+	{
+		$from = $_REQUEST['from'];
+		$from = trim(html_filter($from));
+		$from = substr($from, 0, 50);
+		$re   = 1;
+	}//$FROM
+
+
+	if( empty($_REQUEST['phone']))
+	{
+		unset($_REQUEST['phone']);
+		$rp    = 0;
+	}
+	else
+	{
+		$phone = $_REQUEST['phone'];
+		$phone = substr($phone, 0, 40);
+		$rp    = 1;
+	}//$PHONE
+
+
+	if( empty($_REQUEST['text']))
+	{
+		unset($_REQUEST['text']);
+		$rs = 0;
+	}
+	else
+	{
+		$text  = $_REQUEST['text'];
+		$text  = trim(html_filter($text));
+		$text  = str_replace("\n", "<br/>\n", $text);
+		$text  = substr($text, 0, 2000);
+		
+		$text .= 
+			"<br/>
+			<br/>
+			<strong>
+				Имя отправителя:
+			</strong> 
+			".$name." 
+			\r\n";
+			
+		$text .= 
+			"<br/>
+			<strong>
+				E-mail отправителя:
+			</strong> 
+			".$from." 
+			\r\n";
+			
+		$text .=
+			"<br/>
+			<strong>
+				Телефон отправителя:
+			</strong> 
+			".$phone." 
+			\r\n";
+		
+		$rs = 1;
+	}
+
+/////////////////| Check the received file |/////////////////
+	if( empty($_FILES['file']))							//C//
+		unset($_FILES['file']);							//H//
+	else												//E//
+	{													//C//
+		$file_name = $_FILES['file']['name'];			//K//
+		$tmp_name  = $_FILES['file']['tmp_name'];		/////
+		$file_size = intval($_FILES['file']['size']);	//F//
+		$filename  = trim(html_filter($file_name));		//I//
+		$tmpname   = trim(html_filter($tmp_name));		//L//
+	}													//E//
+/////////////////////////////////////////////////////////////
+
+	if( empty($_REQUEST['subj']))
+		$subj = "";
+	else
+	{
+		$subj = $_REQUEST['subj'];
+		$subj = trim(html_filter($subj));
+		$subj = substr($subj, 0, 200);
+	}
+
+
+
+
+		$headers  = "X-Mailer	  : PHPMail Tool\n";
+		$headers .= "MIME-Version : 1.0\r\n";
+		
+		$headers .= "Content-type : text/html;
+					 charset	  = windows-1251\r\n";
+
+		$headers .= "From		  : GIDRODINAMIKA 
+									<mail@gidrodinamika.ru>\r\n";
+
+//		$headers .= 
+//			"Sender e-mail: 
+//			<strong>
+//				".$_SERVER['HTTP_REFERER']."
+//			</strong>
+//			<br/>";
+			
+//		$headers .= 
+//			"Sender IP address: 
+//			<strong>
+//				".$_SERVER['REMOTE_ADDR']."
+//			</strong>
+//			<br/>
+//			<br/>\r\n";
+
+
 		include("block/db.php");
-		$res_to=mysql_query("SELECT * FROM contact",$db);
-		$my_to=mysql_fetch_array($res_to);
-		$to="<".$my_to['to'].">";
-		while($my_to = mysql_fetch_array($res_to)){
+
+		$res_to = mysqli_query($db,
+			"SELECT
+				*
+			FROM
+				contact");
+
+		$my_to  = mysqli_fetch_array($res_to);
+
+		$to     = "<".$my_to['to'].">";
+
+		while( $my_to = mysqli_fetch_array($res_to))
 			$to.=", <".$my_to['to'].">";
-		}mysql_close($db);
-			$to=trim($to);
-			$ret_send=1;
+
+		mysqli_close($db);
+
+		
+		$to       = trim($to);
+		$ret_send = 1;
 	}else{
 		$ret_send=0;
 	}?>
+	
+	
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -141,39 +241,39 @@ function XMail($from, $to, $subj, $text, $filename, $file){							//
 	}																				//
 //////////////////////////////////////////////////////////////////////////////////////
 if($ret_send==1){
-	echo $rn==0?"<p>Вы не указали своего ИМЕНИ.<p><br>":"";
-	echo $re==0?"<p>Вы не указали ваш E-MAIL адрес.<p><br>":"";
-	echo $rp==0?"<p>Вы не указали НОМЕР ТЕЛЕФОНА для связи с вами.<p><br>":"";
-	echo $rs==0?"<p>Вы не написали ничего в СООБЩЕНИИ.<p><br>":"";
+	echo $rn==0?"<p>Вы не указали своего ИМЕНИ.<p><br/>":"";
+	echo $re==0?"<p>Вы не указали ваш E-MAIL адрес.<p><br/>":"";
+	echo $rp==0?"<p>Вы не указали НОМЕР ТЕЛЕФОНА для связи с вами.<p><br/>":"";
+	echo $rs==0?"<p>Вы не написали ничего в СООБЩЕНИИ.<p><br/>":"";
 	if($from=="post@example.com"||$from=="mail@gidrodinamika.ru"){
 			unset($from);
-			echo"<p>Вы не указали ваш E-MAIL адрес.<p><br>";
+			echo"<p>Вы не указали ваш E-MAIL адрес.<p><br/>";
 		}
 	if($phone=="+7(495)-123-45-67"){
 			unset($phone);
-			echo"<p>Вы не указали НОМЕР ТЕЛЕФОНА для связи с вами.<p><br>";
+			echo"<p>Вы не указали НОМЕР ТЕЛЕФОНА для связи с вами.<p><br/>";
 		}
 	if($rn==0||$re==0||$rp==0||$rs==0){
-			echo"<p id='error'>Вернитесь обратно и заполните все поля со звездочкой (*)</p><br>".back_page();
+			echo"<p id='error'>Вернитесь обратно и заполните все поля со звездочкой (*)</p><br/>".back_page();
 		}else{
 /////////////////|Новая редакция выбор между отправкой письма с прикрепленным файлом или без|/////////////////
 			if($filename != "" and $file_size > 0){															//
 						if(XMail($from, $to, $subj, $text, $filename, $tmpname)){							//
-								echo"<p id='success'>Спасибо за ваше сообщение. </p><br>".back_page();		//
+								echo"<p id='success'>Спасибо за ваше сообщение. </p><br/>".back_page();		//
 							}else{																			//
-								echo"<p id='error'>Не могу отправить письмо !</p><br>".back_page();			//
+								echo"<p id='error'>Не могу отправить письмо !</p><br/>".back_page();			//
 							}																				//
 					}else{ //Если Не прикреплен файл														//
 						if(mail($to, $subj, $text, $headers)){												//
-								echo"<p id='success'>Спасибо за ваше сообщение.</p><br>".back_page();		//
+								echo"<p id='success'>Спасибо за ваше сообщение.</p><br/>".back_page();		//
 							}else{																			//
-								echo"<p id='error'>Не могу отправить письмо !</p><br>".back_page();			//
+								echo"<p id='error'>Не могу отправить письмо !</p><br/>".back_page();			//
 							}																				//
 					}																						//
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////|старая редакция отправки|////////////////////////////////////////////////////////////
-//			echo mail($to,$subj,$text,$headers)?"<p id='success'>Спасибо за ваше сообщение.</p><br>".back_page():"<p id='error'>Не могу отправить письмо !</p><br>".back_page();//
+//			echo mail($to,$subj,$text,$headers)?"<p id='success'>Спасибо за ваше сообщение.</p><br/>".back_page():"<p id='error'>Не могу отправить письмо !</p><br/>".back_page();//
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		}
 	}else{
