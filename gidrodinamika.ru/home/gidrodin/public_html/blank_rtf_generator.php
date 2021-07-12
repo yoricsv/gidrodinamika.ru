@@ -1,7 +1,7 @@
 <?php 
 include("block/filter_array_post_get_request.php");
 
-if(isset($_REQUEST['send']))
+if( isset($_REQUEST['send']))
 {
     $zakazchik        = $_REQUEST['zakazchik'];
     $tel_fax          = $_REQUEST['tel_fax'];
@@ -41,9 +41,8 @@ if(isset($_REQUEST['send']))
     $need_year        = $_REQUEST['need_year'];
     $dop_treb         = $_REQUEST['dop_treb'];
 
-    $quests = array
-        (
-            0  => $zakazchik,
+    $quests = array(
+        0  => $zakazchik,
 	    1  => $tel_fax,
 	    2  => $pump_name,
 	    3  => $podacha_q,
@@ -80,7 +79,7 @@ if(isset($_REQUEST['send']))
 	    34 => $kvartal,
 	    35 => $need_year,
 	    36 => $dop_treb
-        );
+    );
 
     if($quests[10] == '')
     {
@@ -112,21 +111,21 @@ if(isset($_REQUEST['send']))
     $m     = date("m");
     $rus_m = array
         (
-            '01' => 'ÿíâàðÿ',
-            '02' => 'ôåâðàëÿ',
-            '03' => 'ìàðòà',
-            '04' => 'àïðåëÿ',
-            '05' => 'ìàÿ',
-            '06' => 'èþíÿ',
-            '07' => 'èþëÿ',
-            '08' => 'àâãóñòà',
-            '09' => 'ñåíòÿáðÿ',
-            '10' => 'îêòÿáðÿ',
-            '11' => 'íîÿáðÿ',
-            '12' => 'äåêàáðÿ'
+            '01' => 'января',
+            '02' => 'Февраля',
+            '03' => 'марта',
+            '04' => 'апреля',
+            '05' => 'мая',
+            '06' => 'июня',
+            '07' => 'июля',
+            '08' => 'августа',
+            '09' => 'сентября',
+            '10' => 'октября',
+            '11' => 'ноября',
+            '12' => 'декабря'
         );
     $mon   = $rus_m[$m];
-    $date  = date("d $mon Y")." ã.";
+    $date  = date("d $mon Y")." г.";
 
 
     $filename = 'files/blank.rtf';
@@ -187,19 +186,20 @@ else
     {
 	printf( "<div id = 'backlink_rec'>
                      <a href = '%s' class = 'more'>
-                         <strong>Íàçàä</strong>
+                         <strong>Назад</strong>
                      </a>
 	         </div>",
 	         $_SERVER['PHP_SELF']
         );
     }
 	
-    echo " <p id = 'error'>
-               Íå ïðîèçîøëî àâòîìàòè÷åñêîé ãåíåðàöèè áëàíêà.
-               Âîçìîæíî, ïðîáëåìû ñ ñåðâåðîì âåðíèòåñü îáðàòíî 
-	       è ïîïðîáóéòå åùå ðàç, ëèáî ñêà÷àéòå áëàíê çàêàçà 
-	       íà ïðåäûäóùåé ñòðàíèöå.
+    echo
+		"<p id = 'error'>
+            Не произошло автоматической генерации бланка. 
+			Возможно, проблемы с сервером вернитесь обратно 
+			и попробуйте еще раз, либо скачайте бланк 
+			заказа на предыдущей странице.
 	   </p>
-	   <br>".back_page();
+	   <br/>".back_page();
 }
 ?>

@@ -1,30 +1,108 @@
-<?php include("block/db.php");include("block/filter_array_post_get_request.php");$result=mysql_query("SELECT meta_d,meta_k,title,text FROM settings WHERE page='blank'",$db);$myrow=mysql_fetch_array($result);mysql_close($db);?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta name="description" content="<?php echo $myrow['meta_d'];?>">
-		<meta name="keywords" content="<?php echo $myrow['meta_k'];?>">
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-			<?php include("block/fixIE.php");?>
-<title><?php echo $myrow['title'];?></title>
-			<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-			<link rel="stylesheet" href="css/spring.css" type="text/css" media="screen"/>
-	</head>
+<?php
+include("block/db.php");
+include("block/filter_array_post_get_request.php");
+
+$result = mysqli_query($db,
+	"SELECT
+		meta_d,
+		meta_k,
+		title,
+		text
+	FROM
+		settings
+	WHERE
+		page='blank'"
+);
+
+$myrow = mysqli_fetch_array($result);
+		 mysqli_close($db);
+?>
+
+<!DOCTYPE html>
+<html lang = "ru">
+
+<head>
+	<meta charset    = "UTF-8" />
+	
+	<meta content    = "IE = edge, chrome = 1"
+	      http-equiv = "X-UA-Compatible"
+	/>
+
+	<meta content    = "<?php echo $myrow['meta_d'];?>"
+		  lang       = "ru"
+		  name       = "description" 
+	/>
+	<meta content    = "<?php echo $myrow['meta_k'];?>"
+		  lang       = "ru"
+		  name       = "keywords"
+	/>
+	
+	<meta content    = "index, follow"
+	      name       = "robots"
+	/>
+	
+	<?php include("block/fixIE.php");?>
+	
+	<!-- Title -->
+	<title><?php echo $myrow['title'];?></title>
+	
+	<!-- Core Stylesheet -->
+	<link href       = "css/style.css" 
+		  media      = "screen"
+		  rel        = "stylesheet"
+		  type       = "text/css"
+	/>
+	<link href       = "css/spring.css"
+		  media      = "screen"
+		  rel        = "stylesheet"
+		  type       = "text/css"
+	/>
+</head>
+
+
 <body>
-<div class='hold_admin' id='right_holder_admin'>
-	<div class='navbar'>
-		<a href='#top' class='scroll_to_top' title='Вернуться к началу страницы'><img src="img/arrow_top_oval.png"></a>
-		<a href='javascript:history.back()' class='scroll_return' title='Вернуться обратно'><img src="img/arrow_return_oval.png"></a>
+
+<div class = 'hold_admin' 
+	 id    = 'right_holder_admin'
+>
+	<div class = 'navbar'>
+		<a class = 'scroll_to_top'
+		   href  = '#top'
+		   title = 'Вернуться к началу страницы'
+		>
+			<img src = "img/arrow_top_oval.png" />
+		</a>
+		
+		<a class = 'scroll_return'
+		   href  = 'javascript:history.back()'
+		   title = 'Вернуться обратно'
+		>
+			<img src = "img/arrow_return_oval.png" />
+		</a>
 	</div>
 </div>
-<div id="wrapper">
+
+<div id = "wrapper">
+
 	<?php include("block/header.php");?>
-	<div id="header">
+	
+	<div id = "header">
+	
 		<?php include("block/logo_search.php");?>
-		<img src="img/nav-arrow.png" alt="Active" id="arrow-bottom" class="arrow-blank"/>
+		
+		<img alt   = "Active"
+			 class = "arrow-blank"
+			 id    = "arrow-bottom"
+			 src   = "img/nav-arrow.png"
+		/>
 	</div>
+	
 	<?php echo $myrow['text'];?>
+	
 </div>
-	<?php include("block/footer.php");?>
-	</body>
+
+<?php include("block/footer.php");?>
+	
+</body>
+
 </html>
