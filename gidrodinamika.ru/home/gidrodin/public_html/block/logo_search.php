@@ -1,40 +1,46 @@
 <?php 
-$set_var = array("action");		//for logo_search.php
+$set_var = array("action");        //for logo_search.php
 
 foreach($set_var as $key => $val)
 {
-	if(empty($$val))
-	{
-		$$val = '';
-	}
+    if(empty($$val))
+    {
+        $$val = '';
+    }
 }
 ?>
 
-<a href = "˜˜˜˜˜˜˜" onclick = "this.href = 'index.php'">
-	<img    alt 	= "Logo" 
-	 		id 	 	= "logo" 
-			height  = "71" 
-			src 	= "img/logo.png"  
-			width 	= "378"
-	/>
+<a href    = "Ð“Ð»Ð°Ð²Ð½Ð°Ñ"
+   onclick = "this.href = 'index.php'"
+>
+    <img    alt     = "Logo" 
+            id      = "logo" 
+            height  = "71" 
+            src     = "img/logo.png"  
+            width   = "378"
+    />
 </a>
 
-<form action = "search_page.php" method = "post" id = "keyword">
-	<p>
-		<input  id      = "query"
-			    name    = "query"
-			    onblur  = "clearInput  (this)"
-			    onfocus = "defaultInput(this)"
-			    title   = "˜˜˜˜˜..."
-			    type    = "text" 
-			    value   = ""
-		/>
-	</p>
-	<p>
-		<input  id      = "go"
-			    type    = "submit"
-				value   = ""
-		/>
-	</p>
-	<div class = "clear"></div>
+<form action = "search_page.php"
+      id     = "keyword"
+      method = "post"
+      
+>
+    <p>
+        <input  id      = "query"
+                name    = "query"
+                onblur  = "clearInput  (this)"
+                onfocus = "defaultInput(this)"
+                title   = "ÐŸÐ¾Ð¸ÑÐº..."
+                type    = "text" 
+                value   = ""
+        />
+    </p>
+    <p>
+        <input  id      = "go"
+                type    = "submit"
+                value   = ""
+        />
+    </p>
+    <div class = "clear"></div>
 </form>
