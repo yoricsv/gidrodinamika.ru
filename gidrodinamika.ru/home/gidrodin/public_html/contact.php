@@ -2,7 +2,7 @@
 include("block/db.php");
 include("block/filter_array_post_get_request.php");
 
-
+define("CHARSET", "utf8"); //"windows-1251"; 
 
 $result = mysqli_query($db,
 	"SELECT
@@ -19,141 +19,125 @@ $myrow  = mysqli_fetch_array($result);
 		  mysqli_close($db);
 
 
-
-if( isset($_REQUEST['send']))
+if( !isset($_REQUEST['send']))
 {
-	if( empty($_REQUEST['name']))
-	{
-		unset($_REQUEST['name']);
-		$rn   = 0;
-	}
-	else
+	$ret_send = 0;
+}
+else
+{
+	if( !empty($_REQUEST['name']))    // Get NAME
 	{
 		$name = $_REQUEST['name'];
 		$name = substr($name, 0, 80);
 		$rn   = 1;
-	}//$NAME
-
-	
-	if( empty($_REQUEST['from']))
-	{
-		unset($_REQUEST['from']);
-		$re   = 0;
 	}
 	else
+	{
+		unset($_REQUEST['name']);
+		$rn   = 0;
+	}
+
+	
+	if( !empty($_REQUEST['from']))    // Get FROM
 	{
 		$from = $_REQUEST['from'];
 		$from = trim(html_filter($from));
 		$from = substr($from, 0, 50);
 		$re   = 1;
-	}//$FROM
-
-
-	if( empty($_REQUEST['phone']))
-	{
-		unset($_REQUEST['phone']);
-		$rp    = 0;
 	}
 	else
+	{
+		unset($_REQUEST['from']);
+		$re   = 0;
+	}
+
+
+	if( !empty($_REQUEST['phone']))    //Get PHONE
 	{
 		$phone = $_REQUEST['phone'];
 		$phone = substr($phone, 0, 40);
 		$rp    = 1;
-	}//$PHONE
+	}
+	else
+	{
+		unset($_REQUEST['phone']);
+		$rp    = 0;
+	}
 
 
-	if( empty($_REQUEST['text']))
+	if( !empty($_REQUEST['text']))   // Get MESSAGE
+	{
+		$text =  $_REQUEST['text'];
+        $text =  trim( html_filter($text));
+        $text =  str_replace("\n","<br>\n",$text);
+        $text =  substr($text, 0, 2000);
+        $text .= "<br>
+                    <br>
+                    <strong>
+                        РРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ:
+                    </strong> "
+                    .$name.
+                    " \r\n";
+        $text .= "<br>
+                    <strong>
+                        E-mail РѕС‚РїСЂР°РІРёС‚РµР»СЏ:
+                    </strong> "
+                    .$from.
+                    " \r\n";
+        $text .= "<br>
+                    <strong>
+                        РљРѕРЅС‚Р°РєС‚РЅС‹Р№ С‚РµР»РµС„РѕРЅ РѕС‚РїСЂР°РІРёС‚РµР»СЏ:
+                    </strong> "
+                    .$phone.
+                    " \r\n";
+        $rs   =  1;
+	}
+	else
 	{
 		unset($_REQUEST['text']);
-		$rs = 0;
-	}
-	else
-	{
-		$text  = $_REQUEST['text'];
-		$text  = trim(html_filter($text));
-		$text  = str_replace("\n", "<br/>\n", $text);
-		$text  = substr($text, 0, 2000);
-		
-		$text .= 
-			"<br/>
-			<br/>
-			<strong>
-				Имя отправителя:
-			</strong> 
-			".$name." 
-			\r\n";
-			
-		$text .= 
-			"<br/>
-			<strong>
-				E-mail отправителя:
-			</strong> 
-			".$from." 
-			\r\n";
-			
-		$text .=
-			"<br/>
-			<strong>
-				Телефон отправителя:
-			</strong> 
-			".$phone." 
-			\r\n";
-		
-		$rs = 1;
+		$rs   =  0;
 	}
 
-/////////////////| Check the received file |/////////////////
-	if( empty($_FILES['file']))							//C//
-		unset($_FILES['file']);							//H//
-	else												//E//
-	{													//C//
-		$file_name = $_FILES['file']['name'];			//K//
-		$tmp_name  = $_FILES['file']['tmp_name'];		/////
-		$file_size = intval($_FILES['file']['size']);	//F//
-		$filename  = trim(html_filter($file_name));		//I//
-		$tmpname   = trim(html_filter($tmp_name));		//L//
-	}													//E//
-/////////////////////////////////////////////////////////////
-
-	if( empty($_REQUEST['subj']))
-		$subj = "";
-	else
+	if( !empty($_FILES['file']))    // CHECK THE ATTACHMENT
 	{
-		$subj = $_REQUEST['subj'];
+        try
+        {
+            $file_name = $_FILES['file']['name'];
+            $tmp_name  = $_FILES['file']['tmp_name'];
+
+            $file_size = intval( $_FILES['file']['size']);
+            $filename  = trim( html_filter($file_name));
+
+            $tmpname   = trim( html_filter($tmp_name));
+        }
+        catch (Exception $e)
+        {
+            var_dump( $e -> getMessage());
+        }
+    }
+    else
+    {
+        unset($_FILES['file']);
+    }
+
+	if( !empty($_REQUEST['subj']))
+	{
+        $subj = $_REQUEST['subj'];
 		$subj = trim(html_filter($subj));
 		$subj = substr($subj, 0, 200);
+	}	
+	else
+	{
+		$subj = "";
 	}
 
+    $headers =  "X-Mailer:     PHPMail Tool\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=\"".CHARSET."\"\r\n";
+    $headers .= "From:         GIDRODINAMIKA <mail@gidrodinamika.ru>\r\n";
 
-
-
-		$headers  = "X-Mailer	  : PHPMail Tool\n";
-		$headers .= "MIME-Version : 1.0\r\n";
-		
-		$headers .= "Content-type : text/html;
-					 charset	  = windows-1251\r\n";
-
-		$headers .= "From		  : GIDRODINAMIKA 
-									<mail@gidrodinamika.ru>\r\n";
-
-//		$headers .= 
-//			"Sender e-mail: 
-//			<strong>
-//				".$_SERVER['HTTP_REFERER']."
-//			</strong>
-//			<br/>";
-			
-//		$headers .= 
-//			"Sender IP address: 
-//			<strong>
-//				".$_SERVER['REMOTE_ADDR']."
-//			</strong>
-//			<br/>
-//			<br/>\r\n";
-
-
-		include("block/db.php");
-
+    include("block/db.php");
+ 
 		$res_to = mysqli_query($db,
 			"SELECT
 				*
@@ -164,17 +148,17 @@ if( isset($_REQUEST['send']))
 
 		$to     = "<".$my_to['to'].">";
 
-		while( $my_to = mysqli_fetch_array($res_to))
+		while($my_to = mysqli_fetch_array($res_to))    // The Loop required for using a list of e-mails
+        {
 			$to.=", <".$my_to['to'].">";
+        }
 
 		mysqli_close($db);
 
-		
 		$to       = trim($to);
 		$ret_send = 1;
-	}else{
-		$ret_send=0;
-	}?>
+}
+?>
 	
 	
 <!DOCTYPE html>
@@ -200,10 +184,12 @@ if( isset($_REQUEST['send']))
 	      name       = "robots"
 	/>
 	
-	<?php include("block/fixIE.php");?>
+	<?php include("block/fixIE.php"); ?>
 	
 	<!-- Title -->
-	<title><?php echo $myrow['title'];?></title>
+	<title>
+		<?php echo $myrow['title']; ?>
+	</title>
 
 	<!-- Core Stylesheet -->
 	<link href       = "css/style.css" 
@@ -222,23 +208,22 @@ if( isset($_REQUEST['send']))
 <body>
 
 <div class = 'hold_admin'
-	 id    = 'right_holder_admin'
+     id    = 'right_holder_admin'
 >
-	<div class = 'navbar'>
-		<a class = 'scroll_to_top'
-		   href  = '#top'
-		   title = 'Вернуться к началу страницы'
-		>
-			<img src = "img/arrow_top_oval.png" />
-		</a>
-		
-		<a class = 'scroll_return'
-		   href  = 'javascript:history.back()'
-		   title = 'Вернуться обратно'
-		>
-			<img src = "img/arrow_return_oval.png" />
-		</a>
-	</div>
+    <div class = 'navbar'>
+        <a class = 'scroll_to_top'
+           href  = '#top'
+           title = 'Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє РЅР°С‡Р°Р»Сѓ СЃС‚СЂР°РЅРёС†С‹'
+        >
+            <img alt = "" src = "img/arrow_top_oval.png" />
+        </a>
+        <a class = 'scroll_return'
+           href  = 'javascript:history.back()'
+           title = 'Р’РµСЂРЅСѓС‚СЊСЃСЏ РѕР±СЂР°С‚РЅРѕ'
+        >
+            <img alt = "" src = "img/arrow_return_oval.png" />
+        </a>
+    </div>
 </div>
 
 <div id = "wrapper">
@@ -256,75 +241,132 @@ if( isset($_REQUEST['send']))
 		/>
 	</div>
 	
-	<div id = "main">
-		<p class = "section-title">
-			<span class = "title custom">
-				Связаться с нами
-			</span>
-			<span class = "desc">
-				Отправьте нам сообщение.
-			</span>
-		</p>
-		<div class = "contact-left">
+    <div id = "main">
+        <p class = "section-title">
+            <span class = "title custom">
+                РЎРІСЏР·Р°С‚СЊСЃСЏ СЃ РЅР°РјРё
+            </span>
+            <span class = "desc">
+                РћС‚РїСЂР°РІСЊС‚Рµ РЅР°Рј СЃРѕРѕР±С‰РµРЅРёРµ.
+            </span
+        ></p>
 
-		<?php
-		function html_filter($str)
-		{
-			$result = htmlspecialchars($str);
-			return $result;
-		}
-		
-		function isEmail($email)
-		{
-			if( eregi(
-					"^[a-z0-9]+([-_\.]?[a-z0-9])
-				    +@[a-z0-9]+([-_\.]?[a-z0-9])
-					+\.[a-z]+$",
-					$email))
-				return TRUE;
-			else
-				return FALSE;
-		}
-		
-		function back_page()
-		{
-			echo
-				"<div id = 'backlink_rec'>
-					<a class = 'more'
-					   href  = 'javascript:history.back()'
-					>
-						<strong>
-							Назад
-						</strong>
-					</a>
-				</div>";
-		}
+        <div class = "contact-left">
+
+<?php
+function html_filter( $str )
+{
+    return htmlspecialchars( $str );
+}
+
+function isEmail( $email )
+{
+    return preg_match(
+		"^[a-z0-9]+([-_\.]?[a-z0-9])
+		+@[a-z0-9]+([-_\.]?[a-z0-9])
+		+\.[a-z]+$",
+		$email
+	);
+}
+
+function back_page()
+{
+    return "
+        <div id = 'backlink_rec'>
+            <a class = 'more'
+                href = 'javascript:history.back()'
+            >
+                <strong>
+                    РќР°Р·Р°Рґ
+                </strong>
+            </a>
+        </div>";
+}
+
+function XMail (
+                    $from,
+                    $to,
+                    $subj,
+                    $text,
+                    $filename,
+                    $file
+                )
+{
+    try
+    {
+        $f    =  fopen($file, "rb");
+
+        $un   =  strtoupper( uniqid( time()));
+
+        $head =  "From: "       .$from. "\n";                 // HEADERS
+        $head .= "To: "         .$to.   "\n";
+        $head .= "Subject: "    .$subj. "\n";
+
+        $head .= "X-Mailer:     PHPMail Tool\n";
+  //    $head .= "Reply-To:     ".$from."\n";                 // copy to other mailbox
+        $head .= "Mime-Version: 1.0\n";
+        $head .= "Content-Type: multipart/mixed;";
+        $head .= "Content-type: text/plain; charset = \"".CHARSET."\"";
+
+        $head .= "boundary = \"----------".$un."\"\n\n";
 
 
+        $zag  =  "------------".$un."\n";                     // BODY
+        $zag  .= "Content-Type:              text/html;\n";
+        $zag  .= "Content-Transfer-Encoding: 8bit\n\n";
+        $zag  .= $text."\n\n";
+        $zag  .= "------------".$un."\n";
+
+        $zag  .= "Content-Type: application/octet-stream;";
+        $zag  .= "name = \"";
+        $zag  .= basename( $filename)."\"\n";
+
+        $zag  .= "Content-Transfer-Encoding: base64\n";
+        $zag  .= "Content-Disposition:       attachment;";
+
+        $zag  .= "filename = \"";
+        $zag  .= basename( $filename)."\"\n\n";
+
+        $tmp_RFC2045 = fread        ( $f, filesize($file));   // Formatting by RFC 2045
+        $tmp_RFC2045 = base64_encode( $tmp_RFC2045);
+        $tmp_RFC2045 = chunk_split  ( $tmp_RFC2045);
+
+        $zag  .= $tmp_RFC2045."\n";
+    }
+    catch (Exception $e)
+    {
+        var_dump( $e -> getMessage());
+    }
+
+    return mail("$to", "$subj", $zag, $head);                 // Sending E-MAIL (: boolean)
+}
 
 
-	if(	    isset($_SERVER['HTTP_X_REQUESTED_WITH']) 
-		&& !empty($_SERVER['HTTP_X_REQUESTED_WITH']) 
-		&&  strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' 
-		&& !empty($_POST['name']))
+/// BEGIN ????????????????????????????????????????????????????????????????????????????????????????????
+	if(	    isset      ($_SERVER['HTTP_X_REQUESTED_WITH']) 
+		&& !empty      ($_SERVER['HTTP_X_REQUESTED_WITH']) 
+		&&  strtolower ($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' 
+		&& !empty      ($_POST['name']))
 	{
-		$message  = 'Имя: '.$_POST['name'] . ' ';
-		$message .= 'Телефон: '.$_POST['phone'] . ' ';
+		$message  = 'Send from: '.$_POST['name'].  ' ';
+		$message .= 'My phone: ' .$_POST['phone']. ' ';
+
 		if(!empty($_POST['text']))
 		{
-			$message = 'Текст: ' . $_POST['text'] . ' ';
+			$message = 'You try to send the empty letter: ' . $_POST['text'] . ' ';
 		}
 		
-		$mailTo   = "mail@mail.ru"; 	// Ваш e-mail
-		$subject  = "Письмо с сайта"; 	// Тема сообщения
-		$from     = "info@site.ru"; 	// Почта отправителя
+		$mailTo   = "mail@mail.ru";
+		$subject  = "Test letter with file";
+		$from     = "info@site.ru";
 		
-		$boundary = "---"; 				//Разделитель
-		/* Заголовки */
-		$headers  = "From: $from\nReply-To: $from\n";
+		$boundary = "---";
+
+		$headers  = "From:     $from\n";
+		$headers .= "Reply-To: $from\n";
 		$headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"";
+
 		$body     = "--$boundary\n";
-		/* Присоединяем текстовое сообщение */
 		$body    .= "Content-type: text/html; charset='utf-8'\n";
 		$body    .= "Content-Transfer-Encoding: quoted-printablenn";
 		$body    .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($filename)."?=\n\n";
@@ -333,26 +375,23 @@ if( isset($_REQUEST['send']))
 		
 		if ($_FILES['file']['error'] == UPLOAD_ERR_OK)
 		{
-			// получаем расширение исходного файла
 			$ext = strtolower(
 					pathinfo(
 						$_FILES['file']['name'],
 						PATHINFO_EXTENSION)
 			);
-			// получаем уникальное имя под которым будет сохранён файл 
+ 
 			$filename = md5(uniqid('', true)).'.'.$ext;
-			
-			// перемещаем файл из временного хранилища в указанную директорию
+
 			if ( move_uploaded_file($_FILES['file']['tmp_name'],
 				 'uploads/'.$filename))
 			{
-				$file = fopen ($filename, "r"); 			//Открываем файл
-				$text = fread ($file, filesize($filename)); //Считываем весь файл
-						fclose($file); 						//Закрываем файл
+				$file = fopen ($filename, "r")
+				$text = fread ($file, filesize($filename));
+						fclose($file);
 			}
 		}
-		
-		/* Добавляем тип содержимого, кодируем текст файла и добавляем в тело письма */
+
 		$body 	.= "Content-Type: application/octet-stream; name==?utf-8?B?".base64_encode($filename)."?=\n";
 		$body  	.= "Content-Transfer-Encoding: base64\n";
 		$body 	.= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($filename)."?=\n\n";
@@ -360,58 +399,84 @@ if( isset($_REQUEST['send']))
 		$body 	.= "--".$boundary ."--\n";
 		
 		if(mail($mailTo, $subject, $body, $headers))
-			echo "Спасибо! Мы свяжемся с вами в самое ближайшее время!"; 
+			echo "Success!!"; 
 		else
-			echo "Сообщение не отправлено!"; 
+			echo "Something was wrong!"; 
 	}
 
-		
-//////////////////////|Отправка письма с прикрепленным файлом|////////////////////////
-		function XMail($from, $to, $subj, $text, $filename, $file)
-		{							//
-			$f		=	fopen($file, "rb");												//
-			$un		=	strtoupper(uniqid(time()));										//
-			$head	=	"From: ".$from."\n";											//
-			$head	.=	"To: ".$to."\n";												//
-			$head	.=	"Subject: ".$subj."\n";											//
-			$head	.=	"X-Mailer: PHPMail Tool\n";										//
-	//		$head	.=	"Reply-To: ".$from."\n";										//Включить если надо отправлять копию письма на какай либо ящик
-			$head	.=	"Mime-Version: 1.0\n";											//
-			$head	.=	"Content-Type:multipart/mixed;";								//
-	//		$head	.=	"Content-type:text/plain; charset = windows-1251";				//Включить если некорректно будут отображены русские символы
-			$head	.=	"boundary=\"----------".$un."\"\n\n";							//
-			$zag	=	"------------".$un."\nContent-Type:text/html;\n";				//
-			$zag	.=	"Content-Transfer-Encoding: 8bit\n\n$text\n\n";					//
-			$zag	.=	"------------".$un."\n";										//
-			$zag	.=	"Content-Type: application/octet-stream;";						//
-			$zag	.=	"name=\"".basename($filename)."\"\n";							//
-			$zag	.=	"Content-Transfer-Encoding:base64\n";							//
-			$zag	.=	"Content-Disposition:attachment;";								//
-			$zag	.=	"filename=\"".basename($filename)."\"\n\n";						//
-			$zag	.=	chunk_split(base64_encode(fread($f, filesize($file))))."\n";	//Форматирование данных в соответствии с RFC 2045
-			if(mail("$to", "$subj", $zag, $head)){										//
-					return TRUE;														//
-				}else{																	//
-					return FALSE;														//
-				}																		//
-		}																				//
-//////////////////////////////////////////////////////////////////////////////////////
+
+// function XMail (
+//                     $from,
+//                     $to,
+//                     $subj,
+//                     $text,
+//                     $filename,
+//                     $file
+//                 )
+// {
+//     try
+//     {
+//         $f    =  fopen($file, "rb");
+
+//         $un   =  strtoupper( uniqid( time()));
+
+//         $head =  "From: "       .$from. "\n";                 // HEADERS
+//         $head .= "To: "         .$to.   "\n";
+//         $head .= "Subject: "    .$subj. "\n";
+
+//         $head .= "X-Mailer:     PHPMail Tool\n";
+//   //    $head .= "Reply-To:     ".$from."\n";                 // copy to other mailbox
+//         $head .= "Mime-Version: 1.0\n";
+//         $head .= "Content-Type: multipart/mixed;";
+//         $head .= "Content-type: text/plain; charset = \"".CHARSET."\"";
+
+//         $head .= "boundary = \"----------".$un."\"\n\n";
+
+
+//         $zag  =  "------------".$un."\n";                     // BODY
+//         $zag  .= "Content-Type:              text/html;\n";
+//         $zag  .= "Content-Transfer-Encoding: 8bit\n\n";
+//         $zag  .= $text."\n\n";
+//         $zag  .= "------------".$un."\n";
+
+//         $zag  .= "Content-Type: application/octet-stream;";
+//         $zag  .= "name = \"";
+//         $zag  .= basename( $filename)."\"\n";
+
+//         $zag  .= "Content-Transfer-Encoding: base64\n";
+//         $zag  .= "Content-Disposition:       attachment;";
+
+//         $zag  .= "filename = \"";
+//         $zag  .= basename( $filename)."\"\n\n";
+
+//         $tmp_RFC2045 = fread        ( $f, filesize($file));   // Formatting by RFC 2045
+//         $tmp_RFC2045 = base64_encode( $tmp_RFC2045);
+//         $tmp_RFC2045 = chunk_split  ( $tmp_RFC2045);
+
+//         $zag  .= $tmp_RFC2045."\n";
+//     }
+//     catch (Exception $e)
+//     {
+//         var_dump( $e -> getMessage());
+//     }
+
+//     return mail("$to", "$subj", $zag, $head);                 // Sending E-MAIL (: boolean)
+// }
 
 
 
+	$subject = "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"; 
+	$message = "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"; 	// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ,
+									// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅ.пїЅ.
+	$filename = "file.doc";			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+	$filepath = "files/file.doc";	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-	$subject = "тема письма"; 
-	$message = "Текст сообщения"; 	// текст сообщения, здесь вы можете вставлять таблицы,
-									// рисунки, заголовки, оформление цветом и т.п.
-	$filename = "file.doc";			// название файла
-	$filepath = "files/file.doc";	// месторасположение файла
-
-// письмо с вложением состоит из нескольких частей, которые разделяются разделителем
-	$boundary = "--".md5(uniqid(time())); // генерируем разделитель
+// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	$boundary = "--".md5(uniqid(time())); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 	$mailheaders  = "MIME-Version: 1.0;\r\n"; 
 	$mailheaders .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n"; 
-	// разделитель указывается в заголовке в параметре boundary 
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ boundary 
 
 	$mailheaders .= "From: $user_email <$user_email>\r\n"; 
 	$mailheaders .= "Reply-To: $user_email\r\n"; 
@@ -424,17 +489,17 @@ if( isset($_REQUEST['send']))
 					base64_encode(
 						iconv( "utf8",
 							   "windows-1251",
-							   $message))); // первая часть само сообщение
+							   $message))); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-	$fp   = fopen($filepath,"r"); // Закачиваем файл
+	$fp   = fopen($filepath,"r"); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	
 	if (!$fp) 
 	{ 
-		print "Не удается открыть файл22"; 
+		print "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ22"; 
 		exit(); 
 	} 
 
-	$file = fread( $fp, filesize($filepath)); // чтение файла
+	$file = fread( $fp, filesize($filepath)); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		    fclose($fp); 
 
 	$message_part = "\r\n--$boundary\r\n"; 
@@ -443,85 +508,81 @@ if( isset($_REQUEST['send']))
 	$message_part .= "Content-Disposition: attachment; filename=\"$filename\"\r\n"; 
 	$message_part .= \r\n;
 	$message_part .= chunk_split(base64_encode($file));
-	$message_part .= "\r\n--$boundary--\r\n"; // второй частью прикрепляем файл, можно прикрепить два и более файла
+	$message_part .= "\r\n--$boundary--\r\n"; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
 	$multipart .= $message_part;
 
-	mail($to,$subject,$multipart,$mailheaders); // отправляем письмо
+	mail($to,$subject,$multipart,$mailheaders); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-	//удаляем файлы через 60 сек.
+	//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 60 пїЅпїЅпїЅ.
 	if (time_nanosleep(5, 0))
 		unlink($filepath);
-	// удаление файла
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
 
 
 
 
 
-// пример использования
-$file 	 = "./files/test.txt"; // файл
-$mailTo  = "admin@vk-book.ru"; // кому
-$from 	 = "test@files.com"; // от кого
-$subject = "Test file"; // тема письма
-$message = "Тестовое письмо с вложением"; // текст письма
-$r       = sendMailAttachment($mailTo, $from, $subject, $message, $file); // отправка письма c вложением
+
+$file 	 = "./files/test.txt";
+$mailTo  = "admin@vk-book.ru";
+$from 	 = "test@files.com";
+$subject = "Test file";
+$message = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$r       = sendMailAttachment($mailTo, $from, $subject, $message, $file);
 
 echo 
 	($r)
 	?
-		'Письмо отправлено'
+		'Success!'
 	:
-		'Ошибка. Письмо не отправлено!';
-//$r = sendMailAttachment($mailTo, $from, $subject, $message); // отправка письма без вложения
-//echo ($r)?'Письмо отправлено':'Ошибка. Письмо не отправлено!';
- 
+		'Something was wrong!';
+
 /**
-* Отправка письма с вложением
 * @param string $mailTo
 * @param string $from
 * @param string $subject
 * @param string $message
-* @param string|bool $file - не обязательный параметр, путь до файла
+* @param string|bool $file
 * 
-* @return bool - результат отправки
+* @return bool
 */
  
 function sendMailAttachment($mailTo, $from, $subject, $message, $file = false)
 {
-    $separator = "---"; // разделитель в письме
-    // Заголовки для письма
+    $separator = "---";
+
     $headers  = "MIME-Version: 1.0\r\n";
-    $headers .= "From: $from\nReply-To: $from\n"; // задаем от кого письмо
-    $headers .= "Content-Type: multipart/mixed; boundary=\"$separator\""; // в заголовке указываем разделитель
+    $headers .= "From: $from\nReply-To: $from\n";
+    $headers .= "Content-Type: multipart/mixed; boundary=\"$separator\"";
     
-    if($file) // если письмо с вложением
+    if($file)
 	{
-        $bodyMail  = "--$separator\n"; 								// начало тела письма, выводим разделитель
-        $bodyMail .= "Content-type: text/html; charset='utf-8'\n"; 	// кодировка письма
-        $bodyMail .= "Content-Transfer-Encoding: quoted-printable"; // задаем конвертацию письма
+        $bodyMail  = "--$separator\n";
+        $bodyMail .= "Content-type: text/html; charset='utf-8'\n";
+        $bodyMail .= "Content-Transfer-Encoding: quoted-printable";
         $bodyMail .= "Content-Disposition: attachment; filename==?utf-8?B?"
 					 .base64_encode(basename($file)).
-					 "?=\n\n"; // задаем название файла
+					 "?=\n\n"
 					 
-        $bodyMail .= $message."\n"; // добавляем текст письма
+        $bodyMail .= $message."\n";
         $bodyMail .= "--$separator\n";
 		
-        $fileRead    = fopen ($file, "r"); 					// открываем файл
-        $contentFile = fread ($fileRead, filesize($file));	// считываем его до конца
-					   fclose($fileRead);					// закрываем файл
+        $fileRead    = fopen ($file, "r");
+        $contentFile = fread ($fileRead, filesize($file));
+					   fclose($fileRead);
 		
         $bodyMail .= "Content-Type: application/octet-stream; name==?utf-8?B?".base64_encode(basename($file))."?=\n"; 
-        $bodyMail .= "Content-Transfer-Encoding: base64\n"; // кодировка файла
+        $bodyMail .= "Content-Transfer-Encoding: base64\n";
         $bodyMail .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode(basename($file))."?=\n\n";
-        $bodyMail .= chunk_split(base64_encode($contentFile))."\n"; // кодируем и прикрепляем файл
+        $bodyMail .= chunk_split(base64_encode($contentFile))."\n";
         $bodyMail .= "--".$separator ."--\n";
-    // письмо без вложения
     }
 	else
         $bodyMail = $message;
 	
-    $result = mail(			 // отправка письма
+    $result = mail(
 		$mailTo,
 		$subject,
 		$bodyMail,
@@ -531,69 +592,170 @@ function sendMailAttachment($mailTo, $from, $subject, $message, $file = false)
     return $result;
 }
 
+// END ?????????????????????????????????????????????????????????????????????????????????????????
 
 
 
 
+if( $ret_send == 1)                                                                     // Pre-checks before sending
+{ 
+    echo $rn == 0 ? "<p>Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё СЃРІРѕРµРіРѕ РРњР•РќР.<p><br>"                    : "";    // The checks of the ALL REQUIRED fields
+    echo $re == 0 ? "<p>Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё РІР°С€ E-MAIL Р°РґСЂРµСЃ.<p><br>"                : "";
+    echo $rp == 0 ? "<p>Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё РќРћРњР•Р  РўР•Р›Р•Р¤РћРќРђ РґР»СЏ СЃРІСЏР·Рё СЃ РІР°РјРё.<p><br>" : "";
+    echo $rs == 0 ? "<p>Р’С‹ РЅРµ РЅР°РїРёСЃР°Р»Рё РЅРёС‡РµРіРѕ РІ РЎРћРћР‘Р©Р•РќРР.<p><br>"             : "";
 
+    if(    $from == "post@example.com"
+        || $from == "mail@gidrodinamika.ru")
+    {
+        unset( $from);
+        echo "<p>Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё РІР°С€ E-MAIL Р°РґСЂРµСЃ.<p><br>";
+    }
 
+    if( $phone == "+7(495)-123-45-67")
+    {
+        unset($phone);
+        echo "<p>Р’С‹ РЅРµ СѓРєР°Р·Р°Р»Рё РќРћРњР•Р  РўР•Р›Р•Р¤РћРќРђ РґР»СЏ СЃРІСЏР·Рё СЃ РІР°РјРё.<p><br>";
+    }
+    
+    if(    $rn == 0
+        || $re == 0
+        || $rp == 0
+        || $rs == 0)
+    {
+        echo "
+        <p id = 'error'>
+            Р’РµСЂРЅРёС‚РµСЃСЊ РѕР±СЂР°С‚РЅРѕ Рё Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ СЃРѕ Р·РІРµР·РґРѕС‡РєРѕР№ (*)
+        </p><br>".back_page();
+    }
+    else
+    {
+        if(   $filename  != ""
+            & $file_size >  0)
+        {
+            if( XMail($from, $to, $subj, $text, $filename, $tmpname))                   // xMail()
+                echo"<p id='success'>РЎРїР°СЃРёР±Рѕ Р·Р° РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ. </p><br>".back_page();
+            else
+                echo"<p id='error'>РќРµ РјРѕРіСѓ РѕС‚РїСЂР°РІРёС‚СЊ РїРёСЃСЊРјРѕ !</p><br>".back_page();
+        }
+        else
+        { 
+            if( mail($to, $subj, $text, $headers))                                      // mail()
+                echo"<p id='success'>РЎРїР°СЃРёР±Рѕ Р·Р° РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ.</p><br>".back_page();
+            else
+                echo"<p id='error'>РќРµ РјРѕРіСѓ РѕС‚РїСЂР°РІРёС‚СЊ РїРёСЃСЊРјРѕ !</p><br>".back_page();
+        }
+    }
+}
+else
+{
+        echo <<<here
 
-if($ret_send==1){
-	echo $rn==0?"<p>Вы не указали своего ИМЕНИ.<p><br/>":"";
-	echo $re==0?"<p>Вы не указали ваш E-MAIL адрес.<p><br/>":"";
-	echo $rp==0?"<p>Вы не указали НОМЕР ТЕЛЕФОНА для связи с вами.<p><br/>":"";
-	echo $rs==0?"<p>Вы не написали ничего в СООБЩЕНИИ.<p><br/>":"";
-	if($from=="post@example.com"||$from=="mail@gidrodinamika.ru"){
-			unset($from);
-			echo"<p>Вы не указали ваш E-MAIL адрес.<p><br/>";
-		}
-	if($phone=="+7(495)-123-45-67"){
-			unset($phone);
-			echo"<p>Вы не указали НОМЕР ТЕЛЕФОНА для связи с вами.<p><br/>";
-		}
-	if($rn==0||$re==0||$rp==0||$rs==0){
-			echo"<p id = 'error'>Вернитесь обратно и заполните все поля со звездочкой (*)</p><br/>".back_page();
-		}else{
-/////////////////|Новая редакция выбор между отправкой письма с прикрепленным файлом или без|/////////////////
-			if($filename != "" and $file_size > 0){															//
-						if(XMail($from, $to, $subj, $text, $filename, $tmpname)){							//
-								echo"<p id = 'success'>Спасибо за ваше сообщение. </p><br/>".back_page();		//
-							}else{																			//
-								echo"<p id = 'error'>Не могу отправить письмо !</p><br/>".back_page();			//
-							}																				//
-					}else{ //Если Не прикреплен файл														//
-						if(mail($to, $subj, $text, $headers)){												//
-								echo"<p id = 'success'>Спасибо за ваше сообщение.</p><br/>".back_page();		//
-							}else{																			//
-								echo"<p id = 'error'>Не могу отправить письмо !</p><br/>".back_page();			//
-							}																				//
-					}																						//
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+<h5 class = 'custom'>
+    РСЃРїРѕР»СЊР·СѓР№С‚Рµ С„РѕСЂРјСѓ РЅРёР¶Рµ, С‡С‚РѕР±С‹ РѕС‚РїСЂР°РІРёС‚СЊ РЅР°Рј Р’Р°С€Рµ РїРёСЃСЊРјРѕ
+</h5>
 
-////////////////////////////////////////////////////////////////////////////////////////////|старая редакция отправки|////////////////////////////////////////////////////////////
-//			echo mail($to,$subj,$text,$headers)?"<p id = 'success'>Спасибо за ваше сообщение.</p><br/>".back_page():"<p id = 'error'>Не могу отправить письмо !</p><br/>".back_page();//
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		}
-	}else{
-		echo <<<here
-<h5 class = 'custom'>Используйте форму ниже, чтобы отправить нам Ваше письмо</h5>
-<form id = 'formMail' action='contact.php' method='post' enctype = 'multipart/form-data'>
-	<fieldset>
-		<p><label>ИМЯ * :<span> (Пример: Иванов Иван Иванович)</span></label><input name = 'name' id = 'name' type = 'text' value = ''/></p>
-		<p><label>Ваш E-MAIL * :<span> (Пример: post@example.com )</span></label><input name = 'from' id = 'from' type = 'text' value = ''/></p>
-		<p><label>Контактный телефон * :<span> (Пример: +7(495)-123-45-67 )</span></label><input name = 'phone' id = 'phone' type = 'text' value = ''/></p>
-		<p><label>Тема:</label><input name = 'subj' id = 'subj' type = 'text'/></p>
-		<p><label>ПИСЬМО * :</label><textarea name = 'text' id = 'text' rows = '5' cols = '20'></textarea></p>
-		<p><label>Прикрепить файл:</label><input type = "file" name = "file" id = "file"></p><!--|Кнопка добавления файла к письму|-->
-		<p><input type = 'submit' value = 'Отправить' name = 'send' id = 'send'/></p>
-	</fieldset>
+<form action  = 'contact.php'
+      enctype = 'multipart/form-data'
+      id      = 'formMail'
+      method  = 'post'
+>
+    <fieldset>
+        <p>
+            <label>
+                РРњРЇ * :
+                <span> 
+                    (РџСЂРёРјРµСЂ: РРІР°РЅРѕРІ РРІР°РЅ РРІР°РЅРѕРІРёС‡)
+                </span>
+            </label>
+            <input id    = 'name'
+                   name  = 'name'
+                   type  = 'text'
+                   value = ''
+            />
+        </p>
+        
+        <p>
+            <label>
+                Р’Р°С€ E-MAIL * :
+                <span> 
+                    (РџСЂРёРјРµСЂ: post@example.com )
+                </span>
+            </label>
+            <input id    = 'from'
+                   name  = 'from'
+                   type  = 'text'
+                   value = ''
+            />
+        </p>
+        
+        <p>
+            <label>
+                РљРѕРЅС‚Р°РєС‚РЅС‹Р№ С‚РµР»РµС„РѕРЅ * :
+                <span> 
+                    (РџСЂРёРјРµСЂ: +7(495)-123-45-67 )
+                </span>
+            </label>
+            <input id    = 'phone'
+                   name  = 'phone'
+                   type  = 'text'
+                   value = ''
+            />
+        </p>
+        
+        <p>
+            <label>
+                РўРµРјР°:
+            </label>
+            <input id   = 'subj'
+                   name = 'subj'
+                   type = 'text'
+            />
+        </p>
+        
+        <p>
+            <label>
+                РџРРЎР¬РњРћ * :
+            </label>
+            <textarea cols = '20'
+                      id   = 'text'
+                      name = 'text'
+                      rows = '5'
+            >
+            </textarea>
+        </p>
+        
+        <p>
+            <label>
+                РџСЂРёРєСЂРµРїРёС‚СЊ С„Р°Р№Р»:
+            </label>
+            <input id   = "file"
+                   name = "file"
+                   type = "file"
+            >
+        </p>
+        
+        <!--|РљРЅРѕРїРєР° РґРѕР±Р°РІР»РµРЅРёСЏ С„Р°Р№Р»Р° Рє РїРёСЃСЊРјСѓ|-->
+        <p>
+            <input id    = 'send'
+                   name  = 'send'
+                   type  = 'submit'
+                   value = 'РћС‚РїСЂР°РІРёС‚СЊ'
+            />
+        </p>
+    </fieldset>
 </form>
+
 here;
-	}?>
-	</div>
-	<?php echo $myrow['text'];?>
+}
+?>
+        </div>
+
+        <?php echo $myrow['text'];?>
+
+    </div>
 </div>
-</div>
-	<?php include("block/footer.php");?>
-	</body>
+
+<?php include("block/footer.php"); ?>
+
+</body>
 </html>
