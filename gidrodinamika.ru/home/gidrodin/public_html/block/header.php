@@ -1,15 +1,74 @@
-<ul id="nav" class="sf-menu">
-	<li class="custom"><a href="Продукция" onclick="this.href='products.php'">Продукция</a>
-		<ul>
-			<li><a href="Полупогружные насосы" onclick="this.href='products.php?ins=2'">Полупогружные насосы</a></li>
-			<li><a href="Горизонтальные нассосы" onclick="this.href='products.php?ins=1'">Горизонтальные нассосы</a></li>
-		</ul>
-	</li>
-	<!--<li class="custom"><a href="Новости" onclick="this.href='news.php'">Новости</a></li>-->
-	<li class="custom"><a href="О компании" onclick="this.href='about.php'">О компании</a></li>
-	<li class="custom"><a href="Главная" onclick="this.href='index.php'">Главная</a></li>
-	<!--<li class="custom"><a href="Заказ" onclick="this.href='blank.php'">Заказ</a></li>-->
-	<li class="custom"><a href="Контакты" onclick="this.href='contact.php'">Контакты</a></li>
-	<!--<li class="custom"><a href="Достижения" onclick="this.href='record.php'">Достижения</a></li>-->
-	<!--<li class="custom"><a href="Лицензии" onclick="this.href='honnor.php'">Лицензии</a>-->
+<ul id    = "nav"
+    class = "sf-menu">
+    <li class = "custom">
+        <a href    = "РџСЂРѕРґСѓРєС†РёСЏ"
+           onclick = "this.href = 'products.php'">
+            РџСЂРѕРґСѓРєС†РёСЏ
+        </a>
+
+        <ul>
+            <li>
+                <a href    = "РџРѕР»СѓРїРѕРіСЂСѓР¶РЅС‹Рµ РЅР°СЃРѕСЃС‹"
+                   onclick = "this.href = 'products.php?ins=2'">
+                    РџРѕР»СѓРїРѕРіСЂСѓР¶РЅС‹Рµ РЅР°СЃРѕСЃС‹
+                </a>
+            </li>
+
+            <li>
+                <a href    = "Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ РЅР°СЃСЃРѕСЃС‹"
+                   onclick = "this.href = 'products.php?ins=1'">
+                    Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ РЅР°СЃСЃРѕСЃС‹
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <!--<li class = "custom">
+        <a href    = "РќРѕРІРѕСЃС‚Рё"
+           onclick = "this.href = 'news.php'">
+                РќРѕРІРѕСЃС‚Рё
+        </a>
+    </li>-->
+
+    <li class = "custom">
+        <a href    = "Рћ РєРѕРјРїР°РЅРёРё"
+           onclick = "this.href = 'about.php'">
+            Рћ РєРѕРјРїР°РЅРёРё
+        </a>
+    </li>
+
+    <li class = "custom">
+        <a href    = "Р“Р»Р°РІРЅР°СЏ"
+           onclick = "this.href = 'index.php'">
+            Р“Р»Р°РІРЅР°СЏ
+        </a>
+    </li>
+
+    <!--<li class = "custom">
+        <a href    = "Р—Р°РєР°Р·"
+           onclick = "this.href = 'blank.php'">
+            Р—Р°РєР°Р·
+        </a>
+    </li>-->
+
+    <li class = "custom">
+        <a href    = "РљРѕРЅС‚Р°РєС‚С‹"
+           onclick = "this.href = 'contact.php'">
+            РљРѕРЅС‚Р°РєС‚С‹
+        </a>
+    </li>
+
+    <!--<li class = "custom">
+        <a href    = "Р”РѕСЃС‚РёР¶РµРЅРёСЏ"
+           onclick = "this.href = 'record.php'">
+            Р”РѕСЃС‚РёР¶РµРЅРёСЏ
+        </a>
+    </li>-->
+
+    <!--<li class = "custom">
+        <a href    = "Р›РёС†РµРЅР·РёРё"
+           onclick = "this.href = 'honnor.php'">
+            Р›РёС†РµРЅР·РёРё
+        </a>
+    </li>-->
 </ul>

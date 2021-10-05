@@ -1,129 +1,218 @@
-<?php include("block/db.php");
-include("block/filter_array_post_get_request.php");
-$set_var = array("sum");//search_page.php
-foreach($set_var as $key => $val){
-	if(empty($$val)){
-			$$val='';
-		}
-}
-function html_filter($str){
-	$result = mysql_real_escape_string(htmlspecialchars(stripslashes(str_replace("\n", "<br>\n", substr(trim($str), 0, 1000)))));
-return $result;}
-if(isset($_REQUEST['query'])){
-		$search = html_filter($_REQUEST['query']);
-		$send_query = "<p>По вашему запросу: <b class='chek'>".$search."</b> найдено:</p>";
-	}elseif(empty($_REQUEST['query'])){
-		$send_query = "<p>Вы не заполнили поле запроса! Заполните поле запроса.<br><br>";
-		$send_query .= "<div id='backlink'>
-								<a href='javascript:history.back()'>Назад</a>
-							</div>";
-	}
-$matches = preg_split("/[\s,;]+/", $search);
-$words = array_unique($matches);
-$true_words = Array();
-if (count($words)){
-		foreach($words as $word){
-			if (strlen($word)>3){
-					if (strlen($word)>7) {
-							$word=substr($word,0,(strlen($word)-2));
-						}
-						elseif (strlen($word)>5) {
-							$word=substr($word,0,(strlen($word)-1));
-						}
-					$true_words[]=addcslashes(addslashes($word),'%_');
-				}
-			$true_words[]=addcslashes(addslashes($word),'%_');
-		}
-	}
-$echo ="Массив True_words содержит ".count($true_words)." элемент(а/ов)";
-?>
 <?php
-$search_in_db = array('about','main_ind','news','products','record');
-foreach($search_in_db as $table => $val){
-	if($table == 'about'){
-		$coeff_title	= round((20/count($true_words)),2);
-		$coeff_text		= round((10/count($true_words)),2);
-		$query_about = "SELECT id,title,text,";
-		$query_about .= "(IF (title LIKE '%".$search."%', 60, 0)";
-		$query_about .= " + IF (text LIKE '%".$search."%', 10, 0)";
-			foreach($true_words as $word) {
-				$query_about .= " + IF (title LIKE '%".$word."%', ".$coeff_title.", 0)";
-				$query_about .= " + IF (text LIKE '%".$word."%', ".$coeff_text.", 0)";
+include("block/db.php");
+include("block/filter_array_post_get_request.php");
+
+$set_var = array("sum");
+
+foreach( $set_var as $key => $val)
+{
+	if( empty($$val))
+	{
+		$$val = '';
+	}
+}
+
+function html_filter($str)
+{
+	$result = mysql_real_escape_string(
+			  htmlspecialchars(
+			  stripslashes(
+			  str_replace(
+				"\n",
+				"<br/>\n",
+				substr(trim($str), 0, 1000))
+	)));
+	return $result;
+}
+
+if(isset($_REQUEST['query']))
+{
+	$search     = html_filter($_REQUEST['query']);
+	
+	$send_query = "
+		<p>
+			По вашему запросу: 
+			<b class = 'chek'>
+				".$search."
+			</b> 
+			найдено:
+		</p>
+	";
+}
+elseif(empty($_REQUEST['query']))
+{
+	$send_query =
+		"<p>
+			Вы не заполнили поле запроса! 
+			Заполните поле запроса.
+			<br/>
+			<br/>
+	";
+	
+	$send_query .=
+		"<div id = 'backlink'>
+			<a href = 'javascript:history.back()'>
+				Назад
+			</a>
+		</div>
+	";
+}
+$matches    = preg_split("/[\s,;]+/", $search);
+$words      = array_unique($matches);
+$true_words = Array();
+
+if (count($words))
+{
+	foreach($words as $word)
+	{
+		if (strlen($word) > 3)
+		{
+			if (strlen($word) > 7)
+			{
+				$word = substr($word, 0,(strlen($word) - 2));
 			}
-		$query_about.=") AS rel_ab FROM about";
-		$query_about .= " WHERE (title LIKE '%".$search."%' OR text LIKE '%".$search."%'";
-			foreach($true_words as $word) {
-				$query_about .= " OR title LIKE '%".$word."%'";
-				$query_about .= " OR text LIKE '%".$word."%'";
+			elseif (strlen($word) > 5)
+			{
+				$word = substr($word, 0,(strlen($word) - 1));
 			}
+			
+			$true_words [] = addcslashes(addslashes($word), '%_');
+		}
+		
+		$true_words [] = addcslashes(addslashes($word), '%_');
+	}
+}
+
+$echo = "Массив True_words содержит ".count($true_words)." элемент(а/ов)";
+
+
+$search_in_db = array(
+	'about',
+	'main_ind',
+	'news',
+	'products',
+	'record'
+);
+
+foreach($search_in_db as $table => $val)
+{
+	if($table == 'about')
+	{
+		$coeff_title	= round((20/count($true_words)), 2);
+		$coeff_text		= round((10/count($true_words)), 2);
+
+
+		$query_about  = "SELECT id, title, text,";
+		$query_about .= " ( IF (title LIKE '%".$search."%', 60, 0)";
+		$query_about .= " + IF (text  LIKE '%".$search."%', 10, 0)";
+
+		foreach($true_words as $word)
+		{
+			$query_about .= " + IF (title LIKE '%".$word."%', ".$coeff_title.", 0)";
+			$query_about .= " + IF (text  LIKE '%".$word."%', ".$coeff_text.",  0)";
+		}
+
+		$query_about .= " ) AS rel_ab FROM about";
+		$query_about .= " WHERE ";
+		$query_about .= " ( title LIKE '%".$search."%' OR text LIKE '%".$search."%'";
+
+		foreach($true_words as $word)
+		{
+			$query_about .= " OR title LIKE '%".$word."%'";
+			$query_about .= " OR text  LIKE '%".$word."%'";
+		}
+
 		$query_about .= ") ORDER BY rel_ab DESC";
+
 		$q_ab = $query_about;
+	}
+
+	if($table == "main_ind")
+	{
+		$coeff_text = round((30/count($true_words)), 2);
+
+		$for_count_main_ind  = "SELECT COUNT (text)";
+
+
+		$query_main_ind  = "SELECT id, text, m_kd, ";
+		$query_main_ind .= " ( IF (text LIKE '%".$search."%', 70, 0)";
+		foreach($true_words as $word)
+		{
+			$query_main_ind .= " + IF (text LIKE '%".$word."%', ".$coeff_text.", 0)";
 		}
-	if($table == "main_ind"){
-		$coeff_text=round((30/count($true_words)),2);
-		$query_main_ind = "SELECT id,text,m_kd, ";
-		$for_count_main_ind = "SELECT COUNT(text) ";
-		$query_main_ind .= "(IF (text LIKE '%".$search."%', 70, 0)";
-			foreach($true_words as $word) {
-				$query_main_ind .= " + IF (text LIKE '%".$word."%', ".$coeff_text.", 0)";
-			}
-		$like_main_ind = " WHERE (text LIKE '%".$search."%'";
-			foreach($true_words as $word) {
-				$like_main_ind .= " OR text LIKE '%".$word."%'";
-			}
+		$like_main_ind = " WHERE ";
+		$like_main_ind = " ( text LIKE '%".$search."%'";
+		foreach($true_words as $word)
+		{
+			$like_main_ind  .= " OR text LIKE '%".$word."%'";
+		}
 		$query_main_ind .= ") AS rel_m_i FROM main_ind ".$like_main_ind;
-		$for_count_main_ind .= "FROM main_ind ".$like_main_ind.")";
 		$query_main_ind .= ")ORDER BY rel_m_i DESC";
-		$q_m_i = $query_main_ind;
+
+
+		$for_count_main_ind .= "FROM main_ind ".$like_main_ind.")";
+
+		$q_m_i     = $query_main_ind;
 		$count_m_i = $for_count_main_ind;
-		}
-	if($table == "news"){
+	}
+
+	if($table == "news")
+	{
 		$coeff_title	= round((10/count($true_words)),2);
 		$coeff_source	= round((4/count($true_words)),2);
 		$coeff_autor	= round((4/count($true_words)),2);
 		$coeff_text		= round((2/count($true_words)),2);
-		$query_news = "SELECT SQL_CALC_FOUND_ROWS id,title,source,author,text, ";
-		$like_news_title = "WHERE (title LIKE '%".$search."%'";
+
+		$query_news  = "SELECT SQL_CALC_FOUND_ROWS ";
+		$query_news .= "id, title, source, author, text, ";
+
+		$like_news_title  = "WHERE (title  LIKE '%".$search."%'";
 		$like_news_source = "WHERE (source LIKE '%".$search."%'";
 		$like_news_author = "WHERE (author LIKE '%".$search."%'";
-		$like_news_text = "WHERE (text LIKE '%".$search."%'";
-			foreach($true_words as $word) {
-				$like_news_title .= " OR title LIKE '%".$word."%'";
-				$like_news_source .= " OR source LIKE '%".$word."%'";
-				$like_news_author .= " OR author LIKE '%".$word."%'";
-				$like_news_text .= " OR text LIKE '%".$word."%'";
-			}
-		$for_count_news = "SELECT COUNT(title) FROM news ".$like_news_title.")";
+		$like_news_text   = "WHERE (text   LIKE '%".$search."%'";
+		foreach($true_words as $word)
+		{
+			$like_news_title  .= " OR title  LIKE '%".$word."%'";
+			$like_news_source .= " OR source LIKE '%".$word."%'";
+			$like_news_author .= " OR author LIKE '%".$word."%'";
+			$like_news_text   .= " OR text   LIKE '%".$word."%'";
+		}
+		$for_count_news = "SELECT     COUNT(title)  FROM news ".$like_news_title." )";
 		$for_count_news .= "+ (SELECT COUNT(source) FROM news ".$like_news_source."))";
 		$for_count_news .= "+ (SELECT COUNT(author) FROM news ".$like_news_author."))";
-		$for_count_news .= "+ (SELECT COUNT(text) FROM news ".$like_news_text."))";
-		$query_news .= "(IF (title LIKE '%".$search."%', 40, 0)";
+		$for_count_news .= "+ (SELECT COUNT(text)   FROM news ".$like_news_text."  ))";
+
+		$query_news .= "(IF   (title  LIKE '%".$search."%', 40, 0)";
 		$query_news .= " + IF (source LIKE '%".$search."%', 15, 0)";
 		$query_news .= " + IF (author LIKE '%".$search."%', 15, 0)";
-		$query_news .= " + IF (text LIKE '%".$search."%', 10, 0)";
-			foreach($true_words as $word) {
-				$query_news .= " + IF (title LIKE '%".$word."%', ".$coeff_title.", 0)";
-				$query_news .= " + IF (source LIKE '%".$word."%', ".$coeff_source.", 0)";
-				$query_news .= " + IF (author LIKE '%".$word."%', ".$coeff_autor.", 0)";
-				$query_news .= " + IF (text LIKE '%".$word."%', ".$coeff_text.", 0)";
-			}
+		$query_news .= " + IF (text   LIKE '%".$search."%', 10, 0)";
+		foreach($true_words as $word)
+		{
+			$query_news .= " + IF (title  LIKE '%".$word."%', ".$coeff_title.",  0)";
+			$query_news .= " + IF (source LIKE '%".$word."%', ".$coeff_source.", 0)";
+			$query_news .= " + IF (author LIKE '%".$word."%', ".$coeff_autor.",  0)";
+			$query_news .= " + IF (text   LIKE '%".$word."%', ".$coeff_text.",   0)";
+		}
 		$like_news = " WHERE (title LIKE '%".$search."%' OR source LIKE '%".$search."%' OR author LIKE '%".$search."%' OR text LIKE '%".$search."%'";
-			foreach($true_words as $word) {
-				$like_news .= " OR title LIKE '%".$word."%'";
-				$like_news .= " OR source LIKE '%".$word."%'";
-				$like_news .= " OR author LIKE '%".$word."%'";
-				$like_news .= " OR text LIKE '%".$word."%'";
-			}
+		foreach($true_words as $word) {
+			$like_news .= " OR title LIKE '%".$word."%'";
+			$like_news .= " OR source LIKE '%".$word."%'";
+			$like_news .= " OR author LIKE '%".$word."%'";
+			$like_news .= " OR text LIKE '%".$word."%'";
+		}
 		$query_news .=") AS rel_news FROM news".$like_news;
 		$query_news .= ") ORDER BY rel_news DESC LIMIT 0, 3";
 		$q_news = $query_news;
 		$count_news = $for_count_news;
-		}
-	if($table == "products"){
+	}
+
+	if($table == "products")
+	{
 		$coeff_name		= round((15/count($true_words)),2);
 		$coeff_pump_q	= round((5/count($true_words)),2);
 		$coeff_pump_h	= round((5/count($true_words)),2);
 		$coeff_pump_w	= round((5/count($true_words)),2);
+		
 		$query_products = "SELECT id,name,pump_q,pump_h,pump_w, ";
 		$like_products_name = "WHERE (name LIKE '%".$search."%'";
 		$like_products_pump_q = "WHERE (pump_q LIKE '%".$search."%'";
@@ -135,7 +224,7 @@ foreach($search_in_db as $table => $val){
 				$like_products_pump_h .= " OR pump_h LIKE '%".$word."%'";
 				$like_products_pump_w .= " OR pump_w LIKE '%".$word."%'";
 			}
-		$for_count_products = "SELECT (COUNT (name) FROM products ".$like_products_name.")";
+		$for_count_products  = "SELECT (COUNT (name) FROM products ".$like_products_name.")";
 		$for_count_products .= "+ (SELECT COUNT (pump_q) FROM products ".$like_products_pump_q."))";
 		$for_count_products .= "+ (SELECT COUNT (pump_h) FROM products ".$like_products_pump_h."))";
 		$for_count_products .= "+ (SELECT COUNT (pump_w) FROM products ".$like_products_pump_w.")))";
@@ -161,8 +250,10 @@ foreach($search_in_db as $table => $val){
 		$for_count_products .= " AS count_products ";
 		$q_prod = $query_products;
 		$count_prod = $for_count_products;
-		}
-	if($table == "record"){
+	}
+
+	if($table == "record")
+	{
 		$coeff_title		= round((10/count($true_words)),2);
 		$coeff_title_img	= round((4/count($true_words)),2);
 		$coeff_category		= round((4/count($true_words)),2);
@@ -205,16 +296,43 @@ foreach($search_in_db as $table => $val){
 		$q_rec = $query_record;
 		$count_rec = $for_count_record;
 	}
-}$i=0;?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-			<?php include("block/fixIE.php");?>
-<title>Страница поиска</title>
-			<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-			<link rel="stylesheet" href="css/spring.css" type="text/css" media="screen" />
-	</head>
+}
+
+$i = 0;
+
+?>
+<!DOCTYPE html>
+<html lang = "ru">
+
+<head>
+    <meta charset    = "UTF-8" />
+
+    <meta content    = "IE = edge, chrome = 1"
+          http-equiv = "X-UA-Compatible"
+    />
+
+    <meta content    = "index, follow"
+          name       = "robots"
+    />
+
+	<?php include("block/fixIE.php");?>
+
+    <!-- Title -->
+    <title><?php echo $myrow['title'];?></title>
+	
+    <!-- Core Stylesheet -->
+    <link href       = "css/style.css"
+          media      = "screen"
+          rel        = "stylesheet"
+          type       = "text/css"
+    />
+    <link href       = "css/spring.css"
+          media      = "screen"
+          rel        = "stylesheet"
+          type       = "text/css"
+    />
+</head>
+
 <body>
 <div class='hold_admin' id='right_holder_admin'>
 	<div class='navbar'>
@@ -230,14 +348,14 @@ foreach($search_in_db as $table => $val){
 	<div id="main">
 
 		<?php
-echo $send_query."<br>";
+echo $send_query."<br/>";
 $r_ab	= mysql_query($q_ab, $db);
 $r_ab	= mysql_query($q_ab, $db);
 $r_m_i	= mysql_query($q_m_i,$db);
 $r_news	= mysql_query($q_news,$db);
 $r_prod	= mysql_query($q_prod,$db);
 $r_rec	= mysql_query($q_rec,$db);
-echo $sum."<br>";
+echo $sum."<br/>";
 $a = 0;
 	$m_ab = mysql_fetch_array($r_ab);
 	if($m_ab == TRUE){
@@ -248,9 +366,9 @@ $a = 0;
 		</div>
 	<form action='about.php' method='post' id='result'>
 		<div>
-			<input type='hidden' value=".$m_ab['id']." name='id'>";
+			<input type = 'hidden' value = ".$m_ab['id']." name = 'id'>";
 //используем оператор IF в конструкции ECHO для проверки полученного значения. Если переменная $m_m_i['m_kd'] пустая - оператор ECHO ничего не выведит в ином случае - отдаст строку с кодом (Конструкция следующая ECHO (условие) ? "TRUE" : "FALSE";)
-			echo empty($m_ab['title']) ? "<input type='submit' value='... »»»' id='search'>" : "<input type='submit' value='".$m_ab['title']."... »»»' id='search'>";
+			echo empty($m_ab['title']) ? "<input type = 'submit' value = '... »»»' id='search'>" : "<input type = 'submit' value = '".$m_ab['title']."... »»»' id='search'>";
 			echo empty($m_ab['text']) ? "...</p>" : substr($m_ab['text'],0,200)."...</p>";
 		echo "</div>
 	</form>";
@@ -263,8 +381,8 @@ while($m_m_i = mysql_fetch_array($r_m_i)){
 		</div>
 	<form action='index.php' method='post' id='result'>
 		<div>
-			<input type='hidden' value=".$m_m_i['id']." name='new'>";
-			echo empty($m_m_i['m_kd']) ? "" : "<input type='submit' value='".$m_m_i['m_kd']."... »»»' id='search'>";
+			<input type = 'hidden' value = ".$m_m_i['id']." name = 'new'>";
+			echo empty($m_m_i['m_kd']) ? "" : "<input type = 'submit' value = '".$m_m_i['m_kd']."... »»»' id='search'>";
 			echo empty($m_m_i['text']) ? "" : substr($m_m_i['text'],0,200)."...</p>";
 		echo"</div>
 	</form>";
@@ -276,8 +394,8 @@ while($m_news = mysql_fetch_array($r_news)){
 		</div>
 	<form action='news.php' method='post' id='result'>
 		<div>
-			<input type='hidden' value=".$m_news['id']." name='new'>
-			<input type='submit' value='".$m_news['title']."... »»»' id='search'>";
+			<input type = 'hidden' value = ".$m_news['id']." name = 'new'>
+			<input type = 'submit' value = '".$m_news['title']."... »»»' id='search'>";
 			if(empty($m_news['source']) && empty($m_news['author'])){
 					$pt_new = "";
 				}elseif(empty($m_news['author'])){
@@ -299,8 +417,8 @@ while($m_prod = mysql_fetch_array($r_prod)){
 		</div>
 	<form action='products.php' method='post' id='result'>
 		<div>
-			<input type='hidden' value=".$m_prod['id']." name='id'>
-			<input type='submit' value='".$m_prod['name']."... »»»' id='search'>
+			<input type = 'hidden' value = ".$m_prod['id']." name = 'id'>
+			<input type = 'submit' value = '".$m_prod['name']."... »»»' id='search'>
 			<p id='qtxt'>Напор: <strong>".$m_prod['pump_q']."</strong> м, подача: <strong>".$m_prod['pump_h']."</strong> м, мощность эл.двигателя: <strong>".$m_prod['pump_w']."</strong> кВт</p>
 		</div>
 	</form>";
@@ -312,8 +430,8 @@ while($m_rec = mysql_fetch_array($r_rec)){
 		</div>
 	<form action='record.php' method='post' id='result'>
 		<div>
-			<input type='hidden' value=".$m_rec['id']." name='rec'>
-			<input type='submit' value='".substr($m_rec['title'],0,50)."... »»»' id='search'>
+			<input type = 'hidden' value = ".$m_rec['id']." name = 'rec'>
+			<input type = 'submit' value = '".substr($m_rec['title'],0,50)."... »»»' id='search'>
 			";
 			if(empty($m_rec['title_img']) && empty($m_rec['category'])){
 					$pt_rec = "";

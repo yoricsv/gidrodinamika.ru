@@ -10,7 +10,7 @@ foreach($set_var as $key => $val)
 }
 ?>
 
-<a href = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" onclick = "this.href = 'index.php'">
+<a href = "˜˜˜˜˜˜˜" onclick = "this.href = 'index.php'">
 	<img    alt 	= "Logo" 
 	 		id 	 	= "logo" 
 			height  = "71" 
@@ -25,7 +25,7 @@ foreach($set_var as $key => $val)
 			    name    = "query"
 			    onblur  = "clearInput  (this)"
 			    onfocus = "defaultInput(this)"
-			    title   = "ï¿½ï¿½ï¿½ï¿½ï¿½..."
+			    title   = "˜˜˜˜˜..."
 			    type    = "text" 
 			    value   = ""
 		/>
